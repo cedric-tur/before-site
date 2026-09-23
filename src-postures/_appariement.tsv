@@ -1,0 +1,114 @@
+﻿gab	01	Aile	02	0,0054
+gab	02	Aile	01	0,1173
+gab	03	Aigle en torsion	01	0,0095
+gab	04	bambou	01	0,0027
+gab	05	bateau	02	0,0036
+gab	06	bateau	01	0,0017
+gab	07	Aigle	01	0,0033
+gab	08	arbre	01	0,0097
+gab	09	arbre	02	0,0068
+gab	10	Arc	01	0,0145
+gab	11	baton	01	0,0009
+gab	12	barque	01	0,0103
+gc	01	Chameau	02	0,0343
+gc	02	chandelle	01	0,0018
+gc	03	Chien qui s'étire	01	0,0583
+gc	04	Chameau	01	0,048
+gc	05	Chat	01	0,0136
+gc	06	Chien	01	0,0397
+gc	07	Chien qui s'étire	02	0,0093
+gc	08	croissant de lune	01	0,0362
+gc	09	chaise	01	0,0018
+gc	10	Croise	01	0,0039
+gc	11	charrue	01	0,0165
+gc	12	corbeau	01	0,0034
+gc	13	croise ventral	01	0,2258
+gc	14	Cygne	04	0,0066
+gc	15	charrue	02	0,0476
+gc	16	Cobra	01	0,0044
+gc	17	Cygne	03	0,0059
+gd	01	Danseur	01	0,0092
+gd	02	demi lune	01	0,1816
+gd	03	demi pont pointé	01	0,003
+gd	04	demi roue en rotation	01	0,0431
+gd	05	demi singe	01	0,0067
+gd	06	demi chien	01	0,0741
+gd	07	demi lune agenouillée	01	0,003
+gd	08	demi lune laterale 4500x4000	02	0,016
+gd	09	demi roue	01	0,1431
+gd	10	Deesse	01	0,0285
+gd	11	Deesse	02	0,0127
+gd	12	demi pince	01	0,0592
+gd	13	demi roue	02	0,0317
+gd	14	demi lune assis	02	0,0461
+gd	15	diamant	01	0,0075
+gd	16	demi lotus	01	0,0924
+gd	17	demi pont	01	0,0019
+gef	01	equerre en rotation	01	0,1847
+gef	02	equerre en rotation	02	0,2215
+gef	03	Fente sur cote	02	0,0301
+gef	04	Fente sur orteils	02	0,0153
+gef	05	Fente triangle	01	0,0378
+gef	06	Estomac NEW	01	0,0018
+gef	07	eleve	01	0,0014
+gef	08	force	01	0,0239
+gef	09	Equerre	01	0,0885
+gef	10	etoile	01	0,0912
+gef	11	fente demi lune	01	0,0017
+gef	12	Fente en rotation	01	0,0324
+gef	13	Equerre	02	0,1167
+gef	14	foudre	01	0,0057
+gef	15	enfant	02	0,0026
+gef	16	enfant	01	0,0029
+gef	17	expire	01	0,0017
+gef	18	foetus	01	0,1215
+gef	19	foetus	02	0,0136
+ggho	01	guetteur en rotation	01	0,034
+ggho	02	guetteur en rotation	02	0,1333
+ggho	03	Grand écart	01	0,2758
+ggho	04	grand écart incliné	01	0,0145
+ggho	05	Hamac	01	0,0014
+ggho	06	Heros	01	0,0284
+ggho	07	Heros	02	0,0456
+ggho	08	inspire	01	0,0012
+ggho	09	Grenouille	01	0,0028
+ggho	10	Grenouille	02	0,0126
+ggho	11	guetteur	01	0,0014
+ggho	12	Guirlande	02	0,0317
+ggho	13	Guirlande	01	0,0139
+ggho	14	loquet	02	0,2832
+ggho	15	mains jointes	01	0,0019
+ggho	16	oreilles pressées	02	0,1422
+gp	01	Perche	01	0,0463
+gp	02	Palmier	01	0,0196
+gp	03	Perche	02	0,0405
+gp	04	pigeon en rotation	01	0,0176
+gp	05	pilier NEW	01	0,0524
+gp	06	planche inversée	01	0,0014
+gp	07	Prosternation	02	0,0017
+gp	08	Pyramide	01	0,0436
+gp	09	poirier	02	0,0086
+gp	10	Poisson	01	0,0021
+gp	11	Pigeon royal	01	0,0265
+gp	12	Pigeon royal	02	0,0284
+gp	13	poirier	01	0,0343
+gp	14	Pont	02	0,0026
+gp	15	papillon	01	0,0209
+gp	16	Pont	01	0,0015
+grst	01	repos	01	0,0012
+grst	02	roi des poissons	01	0,0028
+grst	03	table	01	0,0262
+grst	04	Tigre	01	0,0515
+grst	05	Tigre	02	0,0057
+grst	06	rocher	01	0,0035
+grst	07	triangle incliné	01	0,1921
+grst	08	triangle	01	0,0024
+grst	09	Sphinx	01	0,0038
+grst	10	tourniquet	01	0,0021
+grst	11	trépied	01	0,0023
+grst	12	Sauterelle	01	0,0042
+gvy	01	Y	02	0,0722
+gvy	02	virgule	01	0,188
+gvy	03	Y	01	0,0193
+gvy	04	voilier	01	0,0071
+gvy	05	voilier	02	0,0231

@@ -1,0 +1,13 @@
+# Les fins de ligne restent en LF, dans le dépôt comme dans la copie de travail.
+# index.html et les fichiers de données sont manipulés par des scripts qui
+# repèrent leurs ancres en LF : une conversion en CRLF les ferait échouer.
+* text=auto eol=lf
+
+# binaires, à ne jamais convertir
+*.png  binary
+*.webp binary
+*.jpg  binary
+*.jpeg binary
+*.ico  binary
+*.mp4  binary
+*.mp3  binary

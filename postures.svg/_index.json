@@ -1,0 +1,487 @@
+﻿[
+    {
+        "nom":  "Aigle en torsion",
+        "fichier":  "aigle-en-torsion.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "Aigle",
+        "fichier":  "aigle.svg",
+        "difficulte":  4
+    },
+    {
+        "nom":  "Aile",
+        "fichier":  "aile.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "arbre",
+        "fichier":  "arbre.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Arc",
+        "fichier":  "arc.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "bambou",
+        "fichier":  "bambou.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "barque",
+        "fichier":  "barque.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "bateau",
+        "fichier":  "bateau.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "baton",
+        "fichier":  "baton.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "chaise",
+        "fichier":  "chaise.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Chameau",
+        "fichier":  "chameau.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "chandelle",
+        "fichier":  "chandelle.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "charrue",
+        "fichier":  "charrue.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Chat",
+        "fichier":  "chat.svg",
+        "difficulte":  1
+    },
+    {
+        "nom":  "Chien qui s\u0027étire",
+        "fichier":  "chien-qui-s-etire.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "Chien",
+        "fichier":  "chien.svg",
+        "difficulte":  1
+    },
+    {
+        "nom":  "Cobra",
+        "fichier":  "cobra.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "corbeau",
+        "fichier":  "corbeau.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "croise ventral",
+        "fichier":  "croise-ventral.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "Croise",
+        "fichier":  "croise.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "croissant de lune",
+        "fichier":  "croissant-de-lune.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "Cygne",
+        "fichier":  "cygne.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Danseur",
+        "fichier":  "danseur.svg",
+        "difficulte":  4
+    },
+    {
+        "nom":  "Deesse",
+        "fichier":  "deesse.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "demi chien",
+        "fichier":  "demi-chien.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "demi lotus",
+        "fichier":  "demi-lotus.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "demi lune agenouillée",
+        "fichier":  "demi-lune-agenouillee.svg",
+        "difficulte":  2,
+        "versions":  1
+    },
+    {
+        "nom":  "demi lune assis",
+        "fichier":  "demi-lune-assis.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "demi lune laterale 4500x4000",
+        "fichier":  "demi-lune-laterale.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "demi lune",
+        "fichier":  "demi-lune.svg",
+        "difficulte":  1,
+        "versions":  2
+    },
+    {
+        "nom":  "demi pince",
+        "fichier":  "demi-pince.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "demi pont pointé",
+        "fichier":  "demi-pont-pointe.svg",
+        "difficulte":  3,
+        "versions":  1
+    },
+    {
+        "nom":  "demi pont",
+        "fichier":  "demi-pont.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "demi roue en rotation",
+        "fichier":  "demi-roue-en-rotation.svg",
+        "difficulte":  3,
+        "versions":  2
+    },
+    {
+        "nom":  "demi roue",
+        "fichier":  "demi-roue.svg",
+        "difficulte":  2,
+        "versions":  2
+    },
+    {
+        "nom":  "demi singe",
+        "fichier":  "demi-singe.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "diamant",
+        "fichier":  "diamant.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "eleve",
+        "fichier":  "eleve.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "enfant",
+        "fichier":  "enfant.svg",
+        "difficulte":  1,
+        "versions":  2
+    },
+    {
+        "nom":  "equerre en rotation",
+        "fichier":  "equerre-en-rotation.svg",
+        "difficulte":  3,
+        "versions":  2
+    },
+    {
+        "nom":  "Equerre",
+        "fichier":  "equerre.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Estomac NEW",
+        "fichier":  "estomac-new.svg",
+        "difficulte":  1,
+        "versions":  2
+    },
+    {
+        "nom":  "etoile",
+        "fichier":  "etoile.svg",
+        "difficulte":  1
+    },
+    {
+        "nom":  "expire",
+        "fichier":  "expire.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "fente demi lune",
+        "fichier":  "fente-demi-lune.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "Fente en rotation",
+        "fichier":  "fente-en-rotation.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Fente sur cote",
+        "fichier":  "fente-sur-cote.svg",
+        "difficulte":  null
+    },
+    {
+        "nom":  "Fente sur orteils",
+        "fichier":  "fente-sur-orteils.svg",
+        "difficulte":  3,
+        "versions":  2
+    },
+    {
+        "nom":  "Fente triangle",
+        "fichier":  "fente-triangle.svg",
+        "difficulte":  3,
+        "versions":  2
+    },
+    {
+        "nom":  "foetus",
+        "fichier":  "foetus.svg",
+        "difficulte":  2,
+        "versions":  2
+    },
+    {
+        "nom":  "force",
+        "fichier":  "force.svg",
+        "difficulte":  4
+    },
+    {
+        "nom":  "foudre",
+        "fichier":  "foudre.svg",
+        "difficulte":  2,
+        "versions":  1
+    },
+    {
+        "nom":  "grand écart incliné",
+        "fichier":  "grand-ecart-incline.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Grand écart",
+        "fichier":  "grand-ecart.svg",
+        "difficulte":  1,
+        "versions":  2
+    },
+    {
+        "nom":  "Grenouille",
+        "fichier":  "grenouille.svg",
+        "difficulte":  1
+    },
+    {
+        "nom":  "guetteur en rotation",
+        "fichier":  "guetteur-en-rotation.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "guetteur",
+        "fichier":  "guetteur.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Guirlande",
+        "fichier":  "guirlande.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Hamac",
+        "fichier":  "hamac.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Heros",
+        "fichier":  "heros.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "inspire",
+        "fichier":  "inspire.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "loquet",
+        "fichier":  "loquet.svg",
+        "difficulte":  2,
+        "versions":  2
+    },
+    {
+        "nom":  "mains jointes",
+        "fichier":  "mains-jointes.svg",
+        "difficulte":  2,
+        "versions":  1
+    },
+    {
+        "nom":  "oreilles pressées",
+        "fichier":  "oreilles-pressees.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "Palmier",
+        "fichier":  "palmier.svg",
+        "difficulte":  1
+    },
+    {
+        "nom":  "papillon",
+        "fichier":  "papillon.svg",
+        "difficulte":  1
+    },
+    {
+        "nom":  "Perche",
+        "fichier":  "perche.svg",
+        "difficulte":  4,
+        "versions":  2
+    },
+    {
+        "nom":  "pigeon en rotation",
+        "fichier":  "pigeon-en-rotation.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Pigeon royal",
+        "fichier":  "pigeon-royal.svg",
+        "difficulte":  3,
+        "versions":  2
+    },
+    {
+        "nom":  "pilier NEW",
+        "fichier":  "pilier-new.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "planche inversée",
+        "fichier":  "planche-inversee.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "poirier",
+        "fichier":  "poirier.svg",
+        "difficulte":  4,
+        "versions":  2
+    },
+    {
+        "nom":  "Poisson",
+        "fichier":  "poisson.svg",
+        "difficulte":  4
+    },
+    {
+        "nom":  "Pont",
+        "fichier":  "pont.svg",
+        "difficulte":  4
+    },
+    {
+        "nom":  "Prosternation",
+        "fichier":  "prosternation.svg",
+        "difficulte":  1,
+        "versions":  2
+    },
+    {
+        "nom":  "Pyramide",
+        "fichier":  "pyramide.svg",
+        "difficulte":  1
+    },
+    {
+        "nom":  "repos",
+        "fichier":  "repos.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "rocher",
+        "fichier":  "rocher.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "roi des poissons",
+        "fichier":  "roi-des-poissons.svg",
+        "difficulte":  null,
+        "versions":  1
+    },
+    {
+        "nom":  "Sauterelle",
+        "fichier":  "sauterelle.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "Sphinx",
+        "fichier":  "sphinx.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "table",
+        "fichier":  "table.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "Tigre",
+        "fichier":  "tigre.svg",
+        "difficulte":  2
+    },
+    {
+        "nom":  "tourniquet",
+        "fichier":  "tourniquet.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "triangle incliné",
+        "fichier":  "triangle-incline.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "triangle",
+        "fichier":  "triangle.svg",
+        "difficulte":  3
+    },
+    {
+        "nom":  "trépied",
+        "fichier":  "trepied.svg",
+        "difficulte":  1
+    },
+    {
+        "nom":  "virgule",
+        "fichier":  "virgule.svg",
+        "difficulte":  1,
+        "versions":  1
+    },
+    {
+        "nom":  "voilier",
+        "fichier":  "voilier.svg",
+        "difficulte":  2,
+        "versions":  2
+    },
+    {
+        "nom":  "Y",
+        "fichier":  "y.svg",
+        "difficulte":  3
+    }
+]

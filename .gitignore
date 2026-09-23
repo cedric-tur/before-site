@@ -1,0 +1,21 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+
+# éditeurs
+.vscode/
+*.swp
+*~
+
+# réglages locaux de Claude Code, propres à la machine
+.claude/settings.local.json
+
+# fichiers de travail temporaires
+*.tmp
+*.bak
+~$*
