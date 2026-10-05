@@ -50,7 +50,7 @@ Grand écart, demi Lotus, Corbeau, demi Guirlande,
 Loquet, Trépied, Arbre, Fente sur côté, Déesse
 
 **Bras (13)**
-Bâton, Virgule, Aile en rotation, Mains jointes, Sauterelle, Arc,
+Bâton, Virgule, Aigle en rotation, Mains jointes, Sauterelle, Arc,
 Cygne, Pigeon royal, Fente sur côté, demi Lune, demi Roue, Palmier, Danseur
 
 **Ischio-jambiers (14)**
@@ -155,12 +155,17 @@ Les familles ne sont jamais triées, elles ne portent pas de muscle.
    La plaquette `famille inclinaison` étiquette donc Trépied sous le nom « Pilier ».
    Erreur de plaquette à corriger, ou renommage à confirmer.
 
-2. **Aile en rotation / Aigle en rotation** : tranché en octobre 2026. Les 2 noms de
-   plaquette désignent la même posture, celle que la bibliothèque appelle
-   **Aigle en torsion** (difficulté 1, la torsion allongée de l'éveil). Aucun des 2 noms
-   n'existe dans la bibliothèque : `famille rotation` et `etirement bras` citent donc
-   « Aigle en torsion » sur le site. Les postures **Aile** et **Aile (niveau confirmé)**
-   sont autre chose, elles relèvent de la famille Équilibre.
+2. **Aigle en rotation** : tranché par Cédric le 5 octobre 2026. Il n'y a qu'une posture
+   et qu'un nom de plaquette, **Aigle en rotation**, cité à l'identique par
+   `famille rotation` et `etirement bras`. « Aile en rotation » n'existe pas : c'était
+   une mauvaise lecture de la plaquette `etirement BRAS`, corrigée ci-dessus.
+   **Aile** et **Aile (niveau confirmé)** sont de tout autres postures, de la famille
+   Équilibre.
+
+   Reste un écart de nom entre la plaquette et la bibliothèque : le site, `_liste.tsv`
+   et le carrousel de l'éveil l'appellent **Aigle en torsion**. À trancher avec Cédric,
+   un renommage toucherait le nom affiché, le slug `aigle-en-torsion`, le fichier WebP,
+   le carrousel de l'accueil et les 2 questions qui la citent.
 
 3. **demi Guirlande** figure dans `etirement adducteur` mais pas dans le glossaire
    des 118 entrées.

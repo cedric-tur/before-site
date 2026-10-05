@@ -102,8 +102,8 @@ quelqu'un qui a fini d'apprendre.
 - **Kit sangles** : 2 sangles rigides type judo + planches imprimées, 39 € (stock : 10 000 sangles)
 - **Tapis** : caoutchouc 6 mm recouvert de liège, 4 kg, fabriqué en Chine après recherche
   infructueuse en Europe, 99 € (stock : 300). La page Boutique n'annonce **aucune origine**
-  de fabrication : la mention « Portugal » d'un ancien texte a disparu avec lui, et rien ne
-  doit la remplacer sans justificatif du fournisseur.
+  de fabrication : la mention « Portugal » d'un ancien texte a disparu avec lui.
+  La fabrication en Chine est confirmée, le texte de la fiche tapis reste à écrire.
 - **Le livre** : les 90 postures imprimées en grand format. En préparation avec une amie
   graphiste ; il reste à intégrer les plaquettes et à finaliser la mise en page.
   Affiché « Bientôt » sur le site pour mesurer l'intérêt. **Ne doit pas retarder la sortie.**

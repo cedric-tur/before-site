@@ -17,13 +17,16 @@ versionné. L'historique git réel démarre au premier commit.
 - **Page Séances.** La carte Before-Start portait encore « 15 min » et l'ancienne
   description. Elle reprend les 3 étapes de l'accueil, Découverte, Initiation et
   Initiation SPEED, dont les durées suivent le sélecteur de sangles.
-- **Origine du tapis.** La page Boutique n'annonce aucune origine de fabrication.
+- **Origine du tapis.** Fabrication en Chine confirmée par Cédric. La page Boutique
+  n'annonce aucune origine de fabrication pour l'instant, le texte de la fiche sera revu.
   La contradiction entre « Chine » et le « Portugal » d'un ancien texte est levée :
   l'ancien texte a disparu, et `CLAUDE.md` interdit désormais de remplacer la mention
   sans justificatif du fournisseur.
-- **Aile / Aigle en rotation.** Les 2 noms de plaquette désignent la même posture,
-  **Aigle en torsion**, déjà citée ainsi par le site. Le point est clos dans
-  `genere/thematiques.md`.
+- **Aigle en rotation.** Il n'y a qu'un nom de plaquette. « Aile en rotation » n'existe
+  pas, c'était une mauvaise lecture de `etirement BRAS`, corrigée dans le relevé.
+  **Aile** est une posture d'équilibre, sans rapport. Reste à trancher l'écart entre
+  le nom de plaquette, Aigle en rotation, et celui de la bibliothèque,
+  Aigle en torsion.
 
 ## 23 septembre 2026
 
