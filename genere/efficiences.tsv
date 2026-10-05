@@ -1,146 +1,201 @@
-base	famille	verbe	cible	note
-Aigle en torsion	ROTATION	étire	BRAS	2
-Aigle	EQUILIBRE	renforce	QUADRICEPS	4
-Aile	EQUILIBRE	étire	ISCHIO-JAMBIERS	2
-arbre	EQUILIBRE	étire	ADDUCTEURS	1
-Arc	EXTENSION	renforce	QUADRICEPS	3
-Arc	EXTENSION	étire	BRAS	4
-Arc	EXTENSION	tonifie	NUQUE	2
-bambou	ETIREMENT	tonifie	NUQUE	4
-bambou	ETIREMENT	étire	QUADRICEPS	3
-bambou	ETIREMENT	étire	VOÛTE PLANTAIRE	4
-barque	EXTENSION	renforce	ISCHIO-JAMBIERS	2
-barque	EXTENSION	fortifie	ÉPAULES	4
-barque	EXTENSION	tonifie	NUQUE	3
-bateau	RENFORCEMENT	fortifie	QUADRICEPS	3
-bateau	RENFORCEMENT	tonifie	ABDOMINAUX	3
-baton	ETIREMENT	étire	BRAS & MOLLETS	1
-chaise	RENFORCEMENT	fortifie	QUADRICEPS	3
-chaise	RENFORCEMENT	renforce	MOLLETS	3
-Chameau	EXTENSION	tonifie	NUQUE	4
-Chameau	EXTENSION	étire	QUADRICEPS	3
-chandelle	INVERSION	étire	NUQUE	3
-charrue	ENROULEMENT	étire	ISCHIO-JAMBIERS	3
-charrue	ENROULEMENT	étire	NUQUE	4
-Chat	ENROULEMENT
-Chien qui s'étire	INVERSION	renforce	ISCHIO-JAMBIERS	4
-Chien qui s'étire	INVERSION	fortifie	BRAS	3
-Chien qui s'étire	INVERSION	tonifie	MOLLETS	4
-Chien	EXTENSION
-Cobra	EXTENSION	tonifie	NUQUE	2
-corbeau	INVERSION	étire	ADDUCTEURS	3
-corbeau	INVERSION	renforce	TRICEPS	3
-croise ventral	RENFORCEMENT	fortifie	ISCHIO-JAMBIERS	4
-Croise	ROTATION	stimule	la mobilité du DOS
-croissant de lune	INCLINAISON	étire	FLANCS
-Cygne	ETIREMENT	étire	FESSIERS	4
-Cygne	ETIREMENT	étire	ISCHIO-JAMBIERS	1
-Cygne	ETIREMENT	renforce	ÉPAULES	3
-Danseur	EQUILIBRE	étire	ISCHIO-JAMBIERS	2
-Danseur	EQUILIBRE	renforce	QUADRICEPS	2
-Deesse	RENFORCEMENT	étire	ADDUCTEURS	2
-demi chien	INVERSION	renforce	ISCHIO-JAMBIERS	3
-demi chien	INVERSION	fortifie	BRAS	4
-demi lotus	ETIREMENT	étire	ADDUCTEURS	2
-demi lune agenouillée	INCLINAISON	tonifie	COU	2
-demi lune assis	INCLINAISON	tonifie	COU	1
-demi lune assis	INCLINAISON	étire	QUADRICEPS	2
-demi lune laterale 4500x4000	RENFORCEMENT	renforce	COU	2
-demi lune laterale 4500x4000	RENFORCEMENT	tonifie	ABDOMINAUX	3
-demi lune	INCLINAISON	tonifie	COU	1
-demi pince	ETIREMENT	étire	ISCHIO-JAMBIERS	2
-demi pont pointé	RENFORCEMENT	fortifie	QUADRICEPS	4
-demi pont pointé	RENFORCEMENT	tonifie	FESSIERS	3
-demi pont	EXTENSION	renforce	QUADRICEPS	2
-demi roue en rotation	EXTENSION	tonifie	NUQUE	2
-demi roue en rotation	EXTENSION	renforce	ABDOMINAUX	3
-demi roue en rotation	EXTENSION	étire	QUADRICEPS	1
-demi roue	EXTENSION	étire	QUADRICEPS	1
-demi roue	EXTENSION	tonifie	NUQUE	3
-demi singe	ETIREMENT	étire	ISCHIO-JAMBIERS	3
-demi singe	ETIREMENT	renforce	ÉPAULES	2
-diamant	ETIREMENT	étire	QUADRICEPS	1
-eleve	EXTENSION	renforce	BRAS	2
-enfant	ENROULEMENT	détend	le bas du DOS
-equerre en rotation	ETIREMENT	étire	ISCHIO-JAMBIERS	4
-equerre en rotation	ETIREMENT	renforce	ÉPAULES	3
-Equerre	ETIREMENT	renforce	ÉPAULES	3
-Equerre	ETIREMENT	étire	ISCHIO-JAMBIERS	4
-Equerre	ETIREMENT	tonifie	ABDOMINAUX	2
-Estomac NEW	ROTATION	étire	ISCHIO-JAMBIERS	2
-etoile	RENFORCEMENT	renforce	ÉPAULES	1
-expire	ENROULEMENT	comprime	les poumons
-fente demi lune	EXTENSION	étire	PSOAS	2
-Fente en rotation	ROTATION	renforce	QUADRICEPS	2
-Fente en rotation	ROTATION	étire	PSOAS	2
-Fente sur cote	ETIREMENT	étire	ADDUCTEURS	3
-Fente sur cote	ETIREMENT	renforce	QUADRICEPS	3
-Fente sur orteils	RENFORCEMENT	étire	PSOAS	3
-Fente sur orteils	RENFORCEMENT	fortifie	QUADRICEPS	4
-Fente triangle	ROTATION	étire	PSOAS	3
-Fente triangle	ROTATION	renforce	QUADRICEPS	2
-foetus	ENROULEMENT	renforce	ABDOMINAUX	2
-foetus	ENROULEMENT	étire	NUQUE	2
-force	RENFORCEMENT	fortifie	ÉPAULES	3
-force	RENFORCEMENT	étire	NUQUE	4
-foudre	EXTENSION	tonifie	NUQUE	2
-foudre	EXTENSION	renforce	QUADRICEPS	2
-grand écart incliné	INCLINAISON	tonifie	COU	2
-Grand écart	ETIREMENT	étire	ADDUCTEURS	2
-Grenouille	EQUILIBRE	étire	VOÛTE PLANTAIRE	2
-guetteur en rotation	ROTATION	tonifie	COU	2
-guetteur en rotation	ROTATION	étire	MOLLETS	2
-guetteur en rotation	ROTATION	renforce	ÉPAULES	4
-guetteur	RENFORCEMENT	fortifie	ÉPAULES	2
-guetteur	RENFORCEMENT	étire	MOLLETS	2
-Guirlande	ETIREMENT	détend	le bas du DOS
-Hamac	ENROULEMENT	étire	ISCHIO-JAMBIERS	4
-Heros	ETIREMENT	étire	QUADRICEPS	4
-Heros	ETIREMENT	tonifie	NUQUE	2
-inspire	ETIREMENT	déploie	la cage thoracique
-loquet	INCLINAISON	étire	ADDUCTEURS	2
-loquet	INCLINAISON	tonifie	COU	2
-mains jointes	ETIREMENT	tonifie	COU	3
-mains jointes	ETIREMENT	étire	BRAS	1
-oreilles pressées	ENROULEMENT	étire	NUQUE	4
-Palmier	EQUILIBRE	étire	BRAS	1
-papillon	ENROULEMENT	étire	ADDUCTEURS	1
-Perche	EQUILIBRE	étire	ISCHIO-JAMBIERS	4
-Perche	EQUILIBRE	renforce	ÉPAULES	3
-Perche	EQUILIBRE	fortifie	QUADRICEPS	4
-pigeon en rotation	ROTATION	étire	FESSIERS	2
-Pigeon royal	EXTENSION	étire	QUADRICEPS	4
-Pigeon royal	EXTENSION	étire	PSOAS	4
-pilier NEW	ETIREMENT	étire	ISCHIO-JAMBIERS	2
-planche inversée	RENFORCEMENT	tonifie	NUQUE	2
-planche inversée	RENFORCEMENT	fortifie	TRICEPS	3
-planche inversée	RENFORCEMENT	renforce	ISCHIO-JAMBIERS	2
-poirier	INVERSION	étire	MOLLETS	2
-Poisson	EXTENSION	renforce	ÉPAULES	3
-Poisson	EXTENSION	étire	NUQUE	4
-Pont	EXTENSION	renforce	TRICEPS	4
-Pont	EXTENSION	fortifie	QUADRICEPS	3
-Prosternation	ETIREMENT	étire	PSOAS	2
-Pyramide	ETIREMENT	étire	ISCHIO-JAMBIERS	2
-repos	ETIREMENT	détend	ÉPAULES & HANCHES
-rocher	INVERSION	étire	NUQUE	1
-roi des poissons	ROTATION	étire	FESSIERS	2
-Sauterelle	EXTENSION	renforce	ISCHIO-JAMBIERS	2
-Sauterelle	EXTENSION	tonifie	NUQUE	3
-Sphinx	EXTENSION	renforce	ÉPAULES	2
-Sphinx	EXTENSION	tonifie	NUQUE	2
-table	RENFORCEMENT	fortifie	TRICEPS	2
-table	RENFORCEMENT	fortifie	QUADRICEPS	2
-table	RENFORCEMENT	tonifie	NUQUE	3
-Tigre	RENFORCEMENT	renforce	QUADRICEPS	3
-Tigre	RENFORCEMENT	étire	BRAS	4
-tourniquet	RENFORCEMENT	tonifie	ABDOMINAUX	2
-tourniquet	RENFORCEMENT	fortifie	QUADRICEPS	3
-trépied	INCLINAISON	étire	ADDUCTEURS	2
-triangle incliné	INCLINAISON	tonifie	COU	2
-triangle	ROTATION	tonifie	COU	3
-triangle	ROTATION	étire	ISCHIO-JAMBIERS	3
-virgule	ETIREMENT	étire	QUADRICEPS	2
-voilier	RENFORCEMENT	étire	ISCHIO-JAMBIERS	3
-voilier	RENFORCEMENT	tonifie	ABDOMINAUX	4
-Y	EQUILIBRE	étire	ISCHIO-JAMBIERS	2
+slug	nom	famille	verbe	cible	note
+aile	Aile	EQUILIBRE			
+aile-niveau-confirme	Aile (niveau confirmé)	EQUILIBRE	étire	ISCHIO-JAMBIERS	2
+aigle-en-torsion	Aigle en torsion	ROTATION	étire	BRAS	2
+bambou	Bambou	ETIREMENT	tonifie	NUQUE	4
+bambou	Bambou	ETIREMENT	étire	QUADRICEPS	3
+bambou	Bambou	ETIREMENT	étire	VOÛTE PLANTAIRE	4
+bateau	Bateau	RENFORCEMENT	fortifie	QUADRICEPS	3
+bateau	Bateau	RENFORCEMENT	tonifie	ABDOMINAUX	3
+bateau-midi	Bateau (Midi)	RENFORCEMENT	fortifie	QUADRICEPS	3
+bateau-midi	Bateau (Midi)	RENFORCEMENT	tonifie	ABDOMINAUX	3
+aigle	Aigle	EQUILIBRE	renforce	QUADRICEPS	4
+arbre	Arbre (novice)	EQUILIBRE			
+arbre-niveau-confirme	Arbre	EQUILIBRE	étire	ADDUCTEURS	1
+arc	Arc	EXTENSION	renforce	QUADRICEPS	3
+arc	Arc	EXTENSION	étire	BRAS	4
+arc	Arc	EXTENSION	tonifie	NUQUE	2
+baton	Bâton	ETIREMENT	étire	BRAS & MOLLETS	1
+barque	Barque	EXTENSION	renforce	ISCHIO-JAMBIERS	2
+barque	Barque	EXTENSION	fortifie	ÉPAULES	4
+barque	Barque	EXTENSION	tonifie	NUQUE	3
+chameau	Chameau	EXTENSION	tonifie	NUQUE	4
+chameau	Chameau	EXTENSION	étire	QUADRICEPS	3
+chameau-niveau-confirme	Chameau (niveau confirmé)	EXTENSION	tonifie	NUQUE	4
+chameau-niveau-confirme	Chameau (niveau confirmé)	EXTENSION	étire	QUADRICEPS	3
+chandelle	Chandelle	INVERSION	étire	NUQUE	3
+chien-qui-s-etire	Chien qui s'étire	INVERSION	fortifie	BRAS	3
+chien-qui-s-etire	Chien qui s'étire	INVERSION	tonifie	MOLLETS	4
+chien-qui-s-etire-pointe	Chien qui s'étire (pointé)	INVERSION	renforce	ISCHIO-JAMBIERS	4
+chien-qui-s-etire-pointe	Chien qui s'étire (pointé)	INVERSION	fortifie	BRAS	3
+chien-qui-s-etire-pointe	Chien qui s'étire (pointé)	INVERSION	tonifie	MOLLETS	4
+chat	Chat	ENROULEMENT			
+chien	Chien	EXTENSION			
+croissant-de-lune	Croissant de lune	INCLINAISON	étire	FLANCS	
+chaise	Chaise	RENFORCEMENT	fortifie	QUADRICEPS	3
+chaise	Chaise	RENFORCEMENT	renforce	MOLLETS	3
+croise	Croisé	ROTATION	stimule	la mobilité du DOS	
+charrue	Charrue	ENROULEMENT	étire	ISCHIO-JAMBIERS	3
+charrue	Charrue	ENROULEMENT	étire	NUQUE	4
+charrue-niveau-confirme	Charrue (niveau confirmé)	ENROULEMENT	étire	ISCHIO-JAMBIERS	3
+charrue-niveau-confirme	Charrue (niveau confirmé)	ENROULEMENT	étire	NUQUE	4
+corbeau	Corbeau	INVERSION	étire	ADDUCTEURS	3
+corbeau	Corbeau	INVERSION	renforce	TRICEPS	3
+croise-ventral	Croisé ventral	RENFORCEMENT	fortifie	ISCHIO-JAMBIERS	4
+cygne	Cygne	ETIREMENT	étire	FESSIERS	4
+cygne	Cygne	ETIREMENT	étire	ISCHIO-JAMBIERS	1
+cygne-niveau-confirme	Cygne (niveau confirmé 2)	ETIREMENT	étire	FESSIERS	4
+cygne-niveau-confirme	Cygne (niveau confirmé 2)	ETIREMENT	étire	ISCHIO-JAMBIERS	1
+cygne-niveau-confirme	Cygne (niveau confirmé 2)	ETIREMENT	renforce	ÉPAULES	3
+cygne-niveau-confirme-2	Cygne (niveau confirmé)	ETIREMENT	étire	FESSIERS	4
+cygne-niveau-confirme-2	Cygne (niveau confirmé)	ETIREMENT	étire	ISCHIO-JAMBIERS	1
+cygne-niveau-confirme-2	Cygne (niveau confirmé)	ETIREMENT	renforce	ÉPAULES	3
+cobra	Cobra	EXTENSION	tonifie	NUQUE	2
+danseur	Danseur	EQUILIBRE	étire	ISCHIO-JAMBIERS	2
+danseur	Danseur	EQUILIBRE	renforce	QUADRICEPS	2
+demi-lune	demi Lune	INCLINAISON	tonifie	COU	1
+demi-pont-pointe	demi Pont pointé	RENFORCEMENT	fortifie	QUADRICEPS	4
+demi-pont-pointe	demi Pont pointé	RENFORCEMENT	tonifie	FESSIERS	3
+demi-roue-en-rotation	demi Roue en rotation	EXTENSION	tonifie	NUQUE	2
+demi-roue-en-rotation	demi Roue en rotation	EXTENSION	renforce	ABDOMINAUX	3
+demi-roue-en-rotation	demi Roue en rotation	EXTENSION	étire	QUADRICEPS	1
+demi-roue-en-rotation-niveau-confirme	demi Roue en rotation 2	EXTENSION	tonifie	NUQUE	2
+demi-roue-en-rotation-niveau-confirme	demi Roue en rotation 2	EXTENSION	renforce	ABDOMINAUX	3
+demi-roue-en-rotation-niveau-confirme	demi Roue en rotation 2	EXTENSION	étire	QUADRICEPS	1
+demi-singe	demi Singe	ETIREMENT	étire	ISCHIO-JAMBIERS	3
+demi-singe	demi Singe	ETIREMENT	renforce	ÉPAULES	2
+demi-chien	demi Chien	INVERSION	renforce	ISCHIO-JAMBIERS	3
+demi-chien	demi Chien	INVERSION	fortifie	BRAS	4
+demi-lune-agenouillee	demi Lune agenouillée	INCLINAISON	tonifie	COU	2
+demi-lune-laterale	demi Lune latérale	RENFORCEMENT	renforce	COU	2
+demi-lune-laterale	demi Lune latérale	RENFORCEMENT	tonifie	ABDOMINAUX	3
+demi-roue	demi Roue	EXTENSION	étire	QUADRICEPS	1
+demi-roue	demi Roue	EXTENSION	tonifie	NUQUE	3
+demi-roue-niveau-confirme	demi Roue (Soleil)	EXTENSION	étire	QUADRICEPS	1
+demi-roue-niveau-confirme	demi Roue (Soleil)	EXTENSION	tonifie	NUQUE	3
+deesse	Déesse	RENFORCEMENT	étire	ADDUCTEURS	2
+deesse	Déesse	RENFORCEMENT	fortifie	QUADRICEPS	3
+deesse-lune	Déesse (Lune)	RENFORCEMENT			
+demi-pince	demi Pince	ETIREMENT	étire	ISCHIO-JAMBIERS	2
+demi-lune-assis	demi Lune assis	INCLINAISON	tonifie	COU	1
+demi-lune-assis	demi Lune assis	INCLINAISON	étire	QUADRICEPS	2
+diamant	Diamant	ETIREMENT	étire	QUADRICEPS	1
+demi-lotus	demi Lotus	ETIREMENT	étire	ADDUCTEURS	2
+demi-pont	demi Pont	EXTENSION	renforce	QUADRICEPS	2
+equerre-en-rotation	Equerre en rotation	ETIREMENT	étire	ISCHIO-JAMBIERS	4
+equerre-en-rotation	Equerre en rotation	ETIREMENT	renforce	ÉPAULES	3
+fente-sur-cote	Fente sur côté	ETIREMENT	étire	ADDUCTEURS	3
+fente-sur-cote	Fente sur côté	ETIREMENT	renforce	QUADRICEPS	3
+fente-sur-cote-niveau-confirme	Fente sur côté (niveau confirmé)	ETIREMENT	étire	ADDUCTEURS	3
+fente-sur-cote-niveau-confirme	Fente sur côté (niveau confirmé)	ETIREMENT	renforce	QUADRICEPS	3
+fente-sur-orteils	Fente sur orteils	RENFORCEMENT	étire	PSOAS	3
+fente-sur-orteils	Fente sur orteils	RENFORCEMENT	fortifie	QUADRICEPS	4
+fente-triangle	Fente triangle	ROTATION	étire	PSOAS	3
+fente-triangle	Fente triangle	ROTATION	renforce	QUADRICEPS	2
+estomac	Estomac	ROTATION	étire	ISCHIO-JAMBIERS	2
+estomac-sangle	Estomac (sangle)	ROTATION	étire	ISCHIO-JAMBIERS	2
+eleve	Élève	EXTENSION	renforce	BRAS	2
+force	Force	RENFORCEMENT	fortifie	ÉPAULES	3
+force	Force	RENFORCEMENT	étire	NUQUE	4
+equerre-debout	Equerre	ETIREMENT	renforce	ÉPAULES	3
+equerre-debout	Equerre	ETIREMENT	étire	ISCHIO-JAMBIERS	4
+equerre-debout	Equerre	ETIREMENT	tonifie	ABDOMINAUX	2
+equerre-allongee	Equerre allongée	ETIREMENT	renforce	ÉPAULES	3
+equerre-allongee	Equerre allongée	ETIREMENT	étire	ISCHIO-JAMBIERS	4
+equerre-allongee	Equerre allongée	ETIREMENT	tonifie	ABDOMINAUX	2
+etoile-lune	Étoile (Lune)	RENFORCEMENT	renforce	ÉPAULES	1
+fente-demi-lune	Fente demi lune	EXTENSION	étire	PSOAS	2
+fente-en-rotation	Fente en rotation	ROTATION	renforce	QUADRICEPS	2
+fente-en-rotation	Fente en rotation	ROTATION	étire	PSOAS	2
+foudre	Foudre	EXTENSION	tonifie	NUQUE	2
+foudre	Foudre	EXTENSION	renforce	QUADRICEPS	2
+enfant	Enfant	ENROULEMENT	détend	le bas du DOS	
+enfant-front-au-sol	Enfant (front au sol)	ENROULEMENT	détend	le bas du DOS	
+expire	Expire	ENROULEMENT	comprime	les poumons	
+foetus	Foetus	ENROULEMENT	renforce	ABDOMINAUX	2
+foetus	Foetus	ENROULEMENT	étire	NUQUE	2
+foetus-sangle	Foetus (sangle)	ENROULEMENT	renforce	ABDOMINAUX	2
+foetus-sangle	Foetus (sangle)	ENROULEMENT	étire	NUQUE	2
+guetteur-en-rotation	Guetteur en rotation	ROTATION	tonifie	COU	2
+guetteur-en-rotation	Guetteur en rotation	ROTATION	étire	MOLLETS	2
+guetteur-en-rotation	Guetteur en rotation	ROTATION	renforce	ÉPAULES	4
+guetteur-en-rotation-niveau-confirme	Guetteur en rotation (niveau confirmé)	ROTATION	tonifie	COU	2
+guetteur-en-rotation-niveau-confirme	Guetteur en rotation (niveau confirmé)	ROTATION	étire	MOLLETS	2
+guetteur-en-rotation-niveau-confirme	Guetteur en rotation (niveau confirmé)	ROTATION	renforce	ÉPAULES	4
+grand-ecart	Grand écart	ETIREMENT	étire	ADDUCTEURS	2
+grand-ecart-sangle	Grand écart (sangle)	ETIREMENT	étire	ADDUCTEURS	2
+grand-ecart-incline	Grand écart incliné	INCLINAISON	tonifie	COU	2
+hamac-sangle	Hamac (sangle)	ENROULEMENT	étire	ISCHIO-JAMBIERS	4
+heros	Héros	ETIREMENT	étire	QUADRICEPS	4
+heros	Héros	ETIREMENT	tonifie	NUQUE	2
+heros-niveau-confirme	Héros (niveau confirmé)	ETIREMENT	étire	QUADRICEPS	4
+heros-niveau-confirme	Héros (niveau confirmé)	ETIREMENT	tonifie	NUQUE	2
+inspire	Inspire	ETIREMENT	déploie	la cage thoracique	
+grenouille	Grenouille	EQUILIBRE	étire	VOÛTE PLANTAIRE	2
+grenouille-penchee	Grenouille penchée	EQUILIBRE	étire	VOÛTE PLANTAIRE	2
+guetteur	Guetteur	RENFORCEMENT	fortifie	ÉPAULES	2
+guetteur	Guetteur	RENFORCEMENT	étire	MOLLETS	2
+guirlande	Guirlande	ETIREMENT	détend	le bas du DOS	
+demi-guirlande	demi Guirlande	ETIREMENT	étire	ADDUCTEURS	3
+loquet	Loquet	INCLINAISON	étire	ADDUCTEURS	2
+loquet	Loquet	INCLINAISON	tonifie	COU	2
+loquet-2	Loquet 2	INCLINAISON	étire	ADDUCTEURS	2
+loquet-2	Loquet 2	INCLINAISON	tonifie	COU	2
+mains-jointes	Mains jointes	ETIREMENT	tonifie	COU	3
+mains-jointes	Mains jointes	ETIREMENT	étire	BRAS	1
+oreilles-pressees	Oreilles pressées	ENROULEMENT	étire	NUQUE	4
+oreilles-pressees-niveau-confirme	Oreilles pressées (niveau confirmé)	ENROULEMENT	étire	NUQUE	4
+perche	Perche	EQUILIBRE	étire	ISCHIO-JAMBIERS	4
+perche	Perche	EQUILIBRE	renforce	ÉPAULES	3
+perche	Perche	EQUILIBRE	fortifie	QUADRICEPS	4
+perche-jambe-pliee	Perche jambe pliée	EQUILIBRE	étire	ISCHIO-JAMBIERS	4
+perche-jambe-pliee	Perche jambe pliée	EQUILIBRE	renforce	ÉPAULES	3
+perche-jambe-pliee	Perche jambe pliée	EQUILIBRE	fortifie	QUADRICEPS	4
+palmier	Palmier	EQUILIBRE	étire	BRAS	1
+pigeon-en-rotation	Pigeon en rotation	ROTATION	étire	FESSIERS	2
+pilier-sangle	Pilier (sangle)	ETIREMENT	étire	ISCHIO-JAMBIERS	2
+planche-inversee	Planche inversée	RENFORCEMENT	tonifie	NUQUE	2
+planche-inversee	Planche inversée	RENFORCEMENT	fortifie	TRICEPS	3
+planche-inversee	Planche inversée	RENFORCEMENT	renforce	ISCHIO-JAMBIERS	2
+prosternation	Prosternation	ETIREMENT	étire	PSOAS	2
+pyramide	Pyramide	ETIREMENT	étire	ISCHIO-JAMBIERS	2
+poirier	Poirier	INVERSION	étire	MOLLETS	2
+poirier-niveau-confirme	Poirier (niveau confirmé)	INVERSION	étire	MOLLETS	2
+poisson	Poisson	EXTENSION	renforce	ÉPAULES	3
+poisson	Poisson	EXTENSION	étire	NUQUE	4
+pigeon-royal	Pigeon royal	EXTENSION	étire	QUADRICEPS	4
+pigeon-royal	Pigeon royal	EXTENSION	étire	PSOAS	4
+pigeon-royal-niveau-confirme	Pigeon royal (niveau confirmé)	EXTENSION	étire	QUADRICEPS	4
+pigeon-royal-niveau-confirme	Pigeon royal (niveau confirmé)	EXTENSION	étire	PSOAS	4
+pont	Pont	EXTENSION	renforce	TRICEPS	4
+pont	Pont	EXTENSION	fortifie	QUADRICEPS	3
+pont-niveau-confirme	Pont (niveau confirmé)	EXTENSION	renforce	TRICEPS	4
+pont-niveau-confirme	Pont (niveau confirmé)	EXTENSION	fortifie	QUADRICEPS	3
+papillon	Papillon	ENROULEMENT	étire	ADDUCTEURS	1
+repos	Repos	ETIREMENT	détend	ÉPAULES & HANCHES	
+roi-des-poissons	Roi des poissons	ROTATION	étire	FESSIERS	2
+table	Table	RENFORCEMENT	fortifie	TRICEPS	2
+table	Table	RENFORCEMENT	fortifie	QUADRICEPS	2
+table	Table	RENFORCEMENT	tonifie	NUQUE	3
+tigre	Tigre	RENFORCEMENT	renforce	QUADRICEPS	3
+tigre	Tigre	RENFORCEMENT	étire	BRAS	4
+rocher	Rocher	INVERSION	étire	NUQUE	1
+triangle-incline	Triangle incliné	INCLINAISON	tonifie	COU	2
+triangle	Triangle	ROTATION	tonifie	COU	3
+triangle	Triangle	ROTATION	étire	ISCHIO-JAMBIERS	3
+sphinx	Sphinx	EXTENSION	renforce	ÉPAULES	2
+sphinx	Sphinx	EXTENSION	tonifie	NUQUE	2
+tourniquet	Tourniquet	RENFORCEMENT	tonifie	ABDOMINAUX	2
+tourniquet	Tourniquet	RENFORCEMENT	fortifie	QUADRICEPS	3
+trepied	Trépied	INCLINAISON	étire	ADDUCTEURS	2
+sauterelle	Sauterelle	EXTENSION	renforce	ISCHIO-JAMBIERS	2
+sauterelle	Sauterelle	EXTENSION	tonifie	NUQUE	3
+y-majuscule	Y Majuscule	EQUILIBRE	étire	ISCHIO-JAMBIERS	2
+y-majuscule-niveau-confirme	Y Majuscule (niveau confirmé)	EQUILIBRE	étire	ISCHIO-JAMBIERS	2
+virgule	Virgule	ETIREMENT	étire	QUADRICEPS	2
+voilier	Voilier	RENFORCEMENT	étire	ISCHIO-JAMBIERS	3
+voilier	Voilier	RENFORCEMENT	tonifie	ABDOMINAUX	4
+voilier-sangle	Voilier (sangle)	RENFORCEMENT	étire	ISCHIO-JAMBIERS	3
+voilier-sangle	Voilier (sangle)	RENFORCEMENT	tonifie	ABDOMINAUX	4
+tigre-posture-dynamique	Tigre (posture dynamique)	RENFORCEMENT	renforce	QUADRICEPS	3
+tigre-posture-dynamique	Tigre (posture dynamique)	RENFORCEMENT	étire	BRAS	4

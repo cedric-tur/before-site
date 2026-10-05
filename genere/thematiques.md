@@ -92,6 +92,13 @@ Arc, Sauterelle, Barque,
 Héros, Foudre, Bambou, demi Roue,
 Planche inversée, Table, Chameau
 
+**Mollets (2)**
+Chaise, Chien qui s'étire
+
+Ajouté par Cédric en octobre 2026, sans plaquette source. Les 2 postures portent
+déjà un mollet sur leur fiche : Chaise renforce MOLLETS 3, Chien qui s'étire
+tonifie MOLLETS 4.
+
 **Quadriceps (13)**
 Arc, Bateau, Table, Pont, demi Pont pointé, Fente sur côté,
 Tigre, Fente sur orteils, Perche, Danseur, Aigle, Chaise, Déesse
