@@ -33,6 +33,7 @@ Fente sur côté, Tigre, Guetteur, Fente sur orteils, Étoile, Déesse, Chaise
 
 ### Rotation (9)
 Croisé, Aigle en rotation, Estomac,
+*La plaquette porte l'ancien nom : lire **Aigle en torsion**.*
 Triangle, Roi des poissons, Pigeon en rotation,
 Guetteur en rotation, Fente triangle, Fente en rotation
 
@@ -52,6 +53,7 @@ Loquet, Trépied, Arbre, Fente sur côté, Déesse
 **Bras (13)**
 Bâton, Virgule, Aigle en rotation, Mains jointes, Sauterelle, Arc,
 Cygne, Pigeon royal, Fente sur côté, demi Lune, demi Roue, Palmier, Danseur
+*La plaquette porte l'ancien nom : lire **Aigle en torsion**.*
 
 **Ischio-jambiers (14)**
 Estomac, Voilier, Pilier, Hamac, demi Pince, demi Singe,
@@ -162,10 +164,10 @@ Les familles ne sont jamais triées, elles ne portent pas de muscle.
    **Aile** et **Aile (niveau confirmé)** sont de tout autres postures, de la famille
    Équilibre.
 
-   Reste un écart de nom entre la plaquette et la bibliothèque : le site, `_liste.tsv`
-   et le carrousel de l'éveil l'appellent **Aigle en torsion**. À trancher avec Cédric,
-   un renommage toucherait le nom affiché, le slug `aigle-en-torsion`, le fichier WebP,
-   le carrousel de l'accueil et les 2 questions qui la citent.
+   Le nom retenu est **Aigle en torsion**, celui du site, de `_liste.tsv` et du carrousel
+   de l'éveil. « Aigle en rotation » est le nom des débuts du projet : les 2 plaquettes
+   le portent encore, elles sont en retard sur la bibliothèque. Aucun renommage à faire,
+   le relevé ci-dessus transcrit la plaquette, pas le nom d'usage.
 
 3. **demi Guirlande** figure dans `etirement adducteur` mais pas dans le glossaire
    des 118 entrées.

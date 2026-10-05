@@ -24,9 +24,9 @@ versionné. L'historique git réel démarre au premier commit.
   sans justificatif du fournisseur.
 - **Aigle en rotation.** Il n'y a qu'un nom de plaquette. « Aile en rotation » n'existe
   pas, c'était une mauvaise lecture de `etirement BRAS`, corrigée dans le relevé.
-  **Aile** est une posture d'équilibre, sans rapport. Reste à trancher l'écart entre
-  le nom de plaquette, Aigle en rotation, et celui de la bibliothèque,
-  Aigle en torsion.
+  **Aile** est une posture d'équilibre, sans rapport. Le nom d'usage reste
+  **Aigle en torsion**, celui du site : « Aigle en rotation » datait des débuts du
+  projet et n'a survécu que sur les plaquettes. Question close, rien à renommer.
 
 ## 23 septembre 2026
 
