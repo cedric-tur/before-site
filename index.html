@@ -1089,7 +1089,9 @@ a { color: inherit; }
 
 /* ============================ CAPTURE E-MAIL ============================ */
 
-.capture { display: grid; grid-template-columns: 1.05fr .95fr; gap: 3rem; align-items: center; }
+/* les 2 colonnes se rejoignent en bas : les vignettes finissent sur la
+   meme ligne que la derniere ligne de texte */
+.capture { display: grid; grid-template-columns: 1.05fr .95fr; gap: 3rem; align-items: end; }
 @media (max-width: 880px) { .capture { grid-template-columns: 1fr; gap: 2rem; } }
 
 .capture h2 { font-size: var(--step-3); font-weight: 500; margin-bottom: 1rem; }
