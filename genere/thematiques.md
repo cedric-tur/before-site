@@ -155,9 +155,12 @@ Les familles ne sont jamais triées, elles ne portent pas de muscle.
    La plaquette `famille inclinaison` étiquette donc Trépied sous le nom « Pilier ».
    Erreur de plaquette à corriger, ou renommage à confirmer.
 
-2. **Aile en rotation** apparaît dans `etirement BRAS` sur une torsion allongée,
-   alors que `famille rotation` nomme **Aigle en rotation** une posture voisine.
-   À confirmer : deux postures distinctes ou deux noms pour la même.
+2. **Aile en rotation / Aigle en rotation** : tranché en octobre 2026. Les 2 noms de
+   plaquette désignent la même posture, celle que la bibliothèque appelle
+   **Aigle en torsion** (difficulté 1, la torsion allongée de l'éveil). Aucun des 2 noms
+   n'existe dans la bibliothèque : `famille rotation` et `etirement bras` citent donc
+   « Aigle en torsion » sur le site. Les postures **Aile** et **Aile (niveau confirmé)**
+   sont autre chose, elles relèvent de la famille Équilibre.
 
 3. **demi Guirlande** figure dans `etirement adducteur` mais pas dans le glossaire
    des 118 entrées.

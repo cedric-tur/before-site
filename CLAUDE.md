@@ -101,7 +101,9 @@ quelqu'un qui a fini d'apprendre.
 
 - **Kit sangles** : 2 sangles rigides type judo + planches imprimées, 39 € (stock : 10 000 sangles)
 - **Tapis** : caoutchouc 6 mm recouvert de liège, 4 kg, fabriqué en Chine après recherche
-  infructueuse en Europe, 99 € (stock : 300)
+  infructueuse en Europe, 99 € (stock : 300). La page Boutique n'annonce **aucune origine**
+  de fabrication : la mention « Portugal » d'un ancien texte a disparu avec lui, et rien ne
+  doit la remplacer sans justificatif du fournisseur.
 - **Le livre** : les 90 postures imprimées en grand format. En préparation avec une amie
   graphiste ; il reste à intégrer les plaquettes et à finaliser la mise en page.
   Affiché « Bientôt » sur le site pour mesurer l'intérêt. **Ne doit pas retarder la sortie.**
@@ -327,7 +329,9 @@ le formulaire e-mail, les titres des 15 mini-cours, et les mentions légales / C
 - Écrire « yoga » sans le qualifier (accessible, détaillé, non élitiste)
 - Promettre de soigner quoi que ce soit
 - Présenter la sangle comme indispensable pour commencer (on découvre sans, on s'équipe
-  ensuite), ou le tapis comme nécessaire à la pratique
+  ensuite), ou le tapis comme nécessaire à la pratique. « Fortement conseillées », dans
+  l'encadré mobilité de l'accueil, est la formule la plus haute admise : elle vise la
+  version adaptée, pas l'éveil lui-même, qui se fait sans matériel en 11 postures
 - Suggérer d'attendre que tout soit terminé pour publier : le projet est prêt depuis
   longtemps et le risque réel est de continuer à le peaufiner
 

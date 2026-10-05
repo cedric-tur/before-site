@@ -1639,24 +1639,43 @@ fill="currentColor" stroke="none">
         <div class="daymark"><h3>Allongé : sur un lit ou sur un tapis</h3></div>
         <div class="grid">
 
-          <article class="card card--featured" data-max="15" data-audio="">
+          <article class="card card--featured" data-max="15">
             <div class="card__top">
               <h3 class="card__name bs"><span class="pre">Before-</span><span class="s">Start</span></h3>
-              <span class="card__dur">15 min</span>
             </div>
             <p class="card__where">La découverte, à faire en premier</p>
-            <p class="card__desc">Chaque appui expliqué, une fois pour toutes.</p>
+
+            <div class="etape" data-audio="">
+              <div class="etape__txt"><p class="card__desc">À écouter en premier, chaque mouvement est détaillé pour prendre vos repères.</p>
+              <ul class="etape__pts">
+                <li>4 postures sont raccourcies (demi-Pont &amp; Bâton &amp; Inspire &amp; Expire)</li>
+                <li>Le croissant de Lune est retiré</li>
+              </ul></div>
+              <button class="play" type="button" data-etape="decouverte"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>Découverte</span></button>
+              <div class="card__player"></div>
+            </div>
+
+            <div class="etape" data-audio="">
+              <div class="etape__txt"><p class="card__desc">Dans un second temps, on ajoute le croissant de Lune pour vous familiariser avec le déroulé.</p></div>
+              <button class="play" type="button" data-etape="initiation"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>Initiation</span></button>
+              <div class="card__player"></div>
+            </div>
+
+            <div class="etape" data-audio="">
+              <div class="etape__txt"><p class="card__desc">Dernière version, de même durée que la précédente, mais le placement entre chaque posture s'exécute rapidement et le demi-Pont, Inspire et Expire sont rallongés.</p></div>
+              <button class="play" type="button" data-etape="speed"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>Initiation SPEED</span></button>
+              <div class="card__player"></div>
+            </div>
+
             <div class="card__foot">
               <div class="tags"><span class="tag">Allongé</span><span class="tag">12 postures</span></div>
-              <button class="play" type="button"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Écouter</button>
             </div>
-            <div class="card__player"></div>
           </article>
 
           <article class="card card--day" data-max="10" data-audio="">
             <div class="card__top">
               <h3 class="card__name bs"><span class="pre">Before-</span><span class="s">Speed</span></h3>
-              <span class="card__dur">6 min</span>
+              <span class="card__dur">à venir</span>
             </div>
             <p class="card__where">L'express</p>
             <p class="card__desc">Les mêmes postures, tenues moins longtemps.</p>
@@ -1670,7 +1689,7 @@ fill="currentColor" stroke="none">
           <article class="card card--dawn" data-max="10" data-audio="">
             <div class="card__top">
               <h3 class="card__name bs"><span class="pre">Before-</span><span class="s">Standup</span></h3>
-              <span class="card__dur">9 min</span>
+              <span class="card__dur">8mn20</span>
             </div>
             <p class="card__where">Le matin, dans le lit</p>
             <p class="card__desc">Le corps se déplie avant de se lever.</p>
@@ -1684,7 +1703,7 @@ fill="currentColor" stroke="none">
           <article class="card card--night" data-max="15" data-audio="">
             <div class="card__top">
               <h3 class="card__name bs"><span class="pre">Before-</span><span class="s">Sleep</span></h3>
-              <span class="card__dur">12 min</span>
+              <span class="card__dur">11 min</span>
             </div>
             <p class="card__where">Au coucher</p>
             <p class="card__desc">La version lente : une détente profonde avant de dormir.</p>

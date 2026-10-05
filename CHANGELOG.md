@@ -7,6 +7,24 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 5 octobre 2026
+
+- **Carrousel de l'éveil.** Le sélecteur sans/avec Sangles de l'accueil ne rafraîchissait
+  plus les postures : l'appel à `poserEveil` avait été perdu dans `setMode` lors de la
+  refonte de la page. Les 12 postures sanglées reviennent, Pilier, Estomac et Grand écart
+  compris.
+- **Bandeau d'accueil.** « sans même sortir du LIT » repasse en « sans même sortir du lit ».
+- **Page Séances.** La carte Before-Start portait encore « 15 min » et l'ancienne
+  description. Elle reprend les 3 étapes de l'accueil, Découverte, Initiation et
+  Initiation SPEED, dont les durées suivent le sélecteur de sangles.
+- **Origine du tapis.** La page Boutique n'annonce aucune origine de fabrication.
+  La contradiction entre « Chine » et le « Portugal » d'un ancien texte est levée :
+  l'ancien texte a disparu, et `CLAUDE.md` interdit désormais de remplacer la mention
+  sans justificatif du fournisseur.
+- **Aile / Aigle en rotation.** Les 2 noms de plaquette désignent la même posture,
+  **Aigle en torsion**, déjà citée ainsi par le site. Le point est clos dans
+  `genere/thematiques.md`.
+
 ## 23 septembre 2026
 
 - **Témoignages.** La section « 3 autres séances GRATUITES » cède la place à
