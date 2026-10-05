@@ -244,8 +244,13 @@ Before-Step 1 dure 20 minutes, il ne rentre ni dans une classe ni dans une pause
 
 ## Le site
 
-Un seul fichier : `index.html`. Quatre vues, routage par ancre (`#accueil`, `#seances`,
-`#methode`, `#acces`). Autonome, aucune dépendance externe hormis Google Fonts.
+Un seul fichier : `index.html`. Six vues, routage par ancre (`#accueil`, `#seances`,
+`#postures`, `#methode`, `#boutique`, `#acces`). Autonome, aucune dépendance externe
+hormis Google Fonts.
+
+**La boutique** est une page à part depuis octobre 2026. Elle porte le tapis, le kit sangles
+et le livre ; la page Méthode n'en garde qu'un renvoi. Les 3 boutons d'achat attendent leurs
+liens Stripe, signalés par un commentaire dans le HTML.
 
 **Le dépôt.** `https://github.com/cedric-tur/before-site` . Tout le projet y est versionné,
 soit environ 35 Mo. Le site étant autonome, il n'y a ni installation ni compilation :
@@ -260,6 +265,7 @@ on ouvre `index.html` dans un navigateur.
 | `photo-posture/` | les 120 visuels de postures du site, plus `_liste.tsv` qui porte leurs dimensions et leur échelle | 2,4 Mo |
 | `photo-posture/_anciennes/` | 38 découpes remplacées au fil des versions, à ne pas confondre avec les fichiers actifs | |
 | `photo-moi/` | le portrait de Cédric, original et version WebP publiée | 1,5 Mo |
+| `photo-boutique/` | les photos du tapis et des sangles, originaux et versions WebP | 26 Mo |
 | `genere/` | données produites : `postures.js`, `efficiences.tsv`, `thematiques.md`, `notation.html` | 2,8 Mo |
 | `postures-img/` | les crops issus des planches de glossaire | 19,8 Mo |
 | `repris/` | les redécoupes faites depuis les planches individuelles | 5,4 Mo |
