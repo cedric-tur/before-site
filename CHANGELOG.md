@@ -13,6 +13,8 @@ versionné. L'historique git réel démarre au premier commit.
   plus les postures : l'appel à `poserEveil` avait été perdu dans `setMode` lors de la
   refonte de la page. Les 12 postures sanglées reviennent, Pilier, Estomac et Grand écart
   compris.
+- **Carrousel, version sans sangles.** L'effet d'Estomac devient « tonifie l'arrière des
+  cuisses », celui que portait Pilier (sangle), retiré de cette version.
 - **Bandeau d'accueil.** « sans même sortir du LIT » repasse en « sans même sortir du lit ».
 - **Page Séances.** La carte Before-Start portait encore « 15 min » et l'ancienne
   description. Elle reprend les 3 étapes de l'accueil, Découverte, Initiation et
