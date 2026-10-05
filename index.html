@@ -920,8 +920,11 @@ a { color: inherit; }
 .adapt {
   margin-top: 1.75rem; padding: 1.4rem 1.5rem;
   border: 1px solid var(--accent); border-radius: var(--radius-lg);
-  background: var(--accent-wash); display: grid; gap: .8rem; justify-items: start;
+  background: var(--accent-wash);
+  display: grid; grid-template-columns: 1fr auto; gap: 1.2rem 2rem; align-items: center;
 }
+.adapt__txt { display: grid; gap: .8rem; justify-items: start; }
+@media (max-width: 760px) { .adapt { grid-template-columns: 1fr; } }
 
 .adapt p { font-size: .97rem; line-height: 1.6; color: var(--ink); }
 
@@ -1460,9 +1463,11 @@ fill="currentColor" stroke="none">
       </div>
 
       <div class="adapt">
+        <div class="adapt__txt">
         <p class="eyebrow">Vous manquez de mobilité ?</p>
         <p>Placez des coussins de part et d'autre pour alléger les rotations, et un oreiller pour préserver les cervicales.</p>
         <p>Les sangles sont fortement conseillées pour éviter d'engager la musculature des bras.</p>
+        </div>
         <!-- VIDÉO DE LA VERSION ADAPTÉE : décommentez et pointez vers votre fichier,
              puis retirez le bloc .reel__ph juste en dessous.
         <video controls playsinline poster="images/adapte-poster.jpg">
@@ -1576,11 +1581,11 @@ fill="currentColor" stroke="none">
           <p>Découvrez le glossaire, la classification des postures selon la difficulté d'exécution et le tri par famille.</p>
           <p style="margin-top:1rem;">Sur une plaquette individuelle, une posture peut se pratiquer sous différentes variantes. Sur 18 d'entre elles, principalement des fentes et des extensions, vous aurez la version « niveau confirmé ».</p>
           <p style="margin-top:1rem;">Enfin, amusez-vous à explorer quels sont les muscles étirés ou renforcés : vous incorporez de nouvelles connaissances juste par le visionnage.</p>
-          <p style="margin-top:1.5rem;">
-            <a class="btn btn--ghost" href="#postures">Ouvrir le répertoire</a>
-          </p>
         </div>
         <div>
+          <p style="margin-bottom:1rem;">
+            <a class="btn btn--ghost" href="#postures">Ouvrir le répertoire</a>
+          </p>
           <div class="flori" id="florilege"></div>
         </div>
       </div>
@@ -2337,7 +2342,7 @@ fill="currentColor" stroke="none">
      DURÉES « SANS SANGLES » À CONFIRMER une fois les audios montés. */
   var MODES = {
     avec: {
-      hint: "12 postures (Pilier, Estomac & Grand écart sont soutenus par les sangles rigides installées sur chaque pied, permet d’atteindre un relâchement musculaire profond).",
+      hint: "12 postures (Pilier, Estomac & Grand écart sont soutenus par les sangles qui procurent un relâchement musculaire profond).",
       dur: { "card--night": "12 min", "card--dawn": "9 min", "card--day": "à venir" },
       etapes: { decouverte: "Découverte : 12mn", initiation: "Initiation : 14mn", speed: "Initiation SPEED : 14mn" }
     },
