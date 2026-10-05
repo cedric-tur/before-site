@@ -1343,7 +1343,7 @@ fill="currentColor" stroke="none">
     -->
     <div class="wrap hero__in">
       <p class="eyebrow">Méthode Before-S</p>
-      <h1>Du YOGA sans tapis, <em>sans même sortir du LIT</em></h1>
+      <h1>Du YOGA sans tapis, <em>sans même sortir du lit</em></h1>
       <div class="hero__row">
         <div class="hero__txt">
           <p class="hero__lede">Peu importe votre âge ou votre condition physique, l'éveil musculaire avec ces 12 postures allongées sur le dos permet d'étirer le corps sans effort.</p>
@@ -2374,9 +2374,13 @@ fill="currentColor" stroke="none">
 
     document.querySelectorAll("[data-modehint]").forEach(function (el) { el.textContent = data.hint; });
 
-  document.querySelectorAll(".modebtn").forEach(function (btn) {
+    document.querySelectorAll(".modebtn").forEach(function (btn) {
       btn.setAttribute("aria-pressed", String(btn.getAttribute("data-mode") === mode));
     });
+
+    // le carrousel de l'eveil n'existe qu'une fois son script execute,
+    // d'ou la garde : au chargement c'est poserEveil lui-meme qui se pose.
+    if (window.poserEveil) { window.poserEveil(mode); }
   }
 
   document.querySelectorAll(".modebtn").forEach(function (btn) {
