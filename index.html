@@ -509,8 +509,28 @@ a { color: inherit; }
 
 
 /* --- Before-Start : 3 etapes dans une meme carte --- */
-.etape { display: grid; gap: .7rem; justify-items: start; padding-top: 1.15rem; border-top: 1px solid rgba(234,240,246,.16); }
+/* texte a gauche, bouton d'ecoute a droite */
+.etape {
+  display: grid; grid-template-columns: 1fr auto; gap: .7rem 1.6rem;
+  align-items: center; padding-top: 1.15rem;
+  border-top: 1px solid rgba(234,240,246,.16);
+}
 .etape:first-of-type { padding-top: 0; border-top: 0; }
+.etape__txt { display: grid; gap: .55rem; }
+.etape .play { justify-self: end; }
+.etape .card__player { grid-column: 1 / -1; }
+@media (max-width: 560px) {
+  .etape { grid-template-columns: 1fr; }
+  .etape .play { justify-self: start; }
+}
+
+/* l'eveil adapte, en plus petit, dans l'encadre mobilite */
+.adaptvid { margin: .5rem 0 0; width: 100%; max-width: 400px; }
+.adaptvid .reel__frame { border-color: var(--accent); }
+.adaptvid .reel__ph { padding: 1.1rem; gap: .6rem; }
+.adaptvid .reel__glyph { width: 42px; height: 42px; font-size: .9rem; }
+.adaptvid .reel__ph p { font-size: .8rem; max-width: 32ch; }
+.adaptvid video { width: 100%; height: 100%; object-fit: cover; }
 .etape__pts { display: grid; gap: .3rem; margin: 0; padding: 0; list-style: none; font-size: .93rem; color: var(--hero-muted); }
 .etape__pts li { display: flex; gap: .55rem; align-items: baseline; }
 .etape__pts li::before { content: ""; width: 4px; height: 4px; border-radius: 50%; background: var(--hero-accent); flex: none; transform: translateY(-.25em); }
@@ -1376,23 +1396,23 @@ fill="currentColor" stroke="none">
           </div>
 
           <div class="etape" data-audio="">
-            <p class="card__desc">À écouter en premier, chaque mouvement est détaillé pour prendre vos repères.</p>
+            <div class="etape__txt"><p class="card__desc">À écouter en premier, chaque mouvement est détaillé pour prendre vos repères.</p>
             <ul class="etape__pts">
               <li>4 postures sont raccourcies (demi-Pont &amp; Bâton &amp; Inspire &amp; Expire)</li>
               <li>Le croissant de Lune est retiré</li>
-            </ul>
+            </ul></div>
             <button class="play" type="button" data-etape="decouverte"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>Découverte</span></button>
             <div class="card__player"></div>
           </div>
 
           <div class="etape" data-audio="">
-            <p class="card__desc">Dans un second temps, on ajoute le croissant de Lune pour vous familiariser avec le déroulé.</p>
+            <div class="etape__txt"><p class="card__desc">Dans un second temps, on ajoute le croissant de Lune pour vous familiariser avec le déroulé.</p></div>
             <button class="play" type="button" data-etape="initiation"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>Initiation</span></button>
             <div class="card__player"></div>
           </div>
 
           <div class="etape" data-audio="">
-            <p class="card__desc">Dernière version, de même durée que la précédente, mais le placement entre chaque posture s'exécute rapidement et le demi-Pont, Inspire et Expire sont rallongés.</p>
+            <div class="etape__txt"><p class="card__desc">Dernière version, de même durée que la précédente, mais le placement entre chaque posture s'exécute rapidement et le demi-Pont, Inspire et Expire sont rallongés.</p></div>
             <button class="play" type="button" data-etape="speed"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>Initiation SPEED</span></button>
             <div class="card__player"></div>
           </div>
@@ -1443,8 +1463,20 @@ fill="currentColor" stroke="none">
         <p class="eyebrow">Vous manquez de mobilité ?</p>
         <p>Placez des coussins de part et d'autre pour alléger les rotations, et un oreiller pour préserver les cervicales.</p>
         <p>Les sangles sont fortement conseillées pour éviter d'engager la musculature des bras.</p>
-        <!-- À BRANCHER : lien vers la vidéo de la version adaptée. -->
-        <a class="btn btn--ghost" href="#seances">Voir la version adaptée</a>
+        <!-- VIDÉO DE LA VERSION ADAPTÉE : décommentez et pointez vers votre fichier,
+             puis retirez le bloc .reel__ph juste en dessous.
+        <video controls playsinline poster="images/adapte-poster.jpg">
+          <source src="videos/eveil-adapte.mp4" type="video/mp4">
+        </video>
+        -->
+        <figure class="adaptvid">
+          <div class="reel__frame">
+            <div class="reel__ph">
+              <span class="reel__glyph" aria-hidden="true">&#9654;</span>
+              <p>L'éveil adapté, en accéléré, avec les coussins et l'oreiller.</p>
+            </div>
+          </div>
+        </figure>
       </div>
 
       <p class="note"><b>L'approche de YOGA la plus simple :</b> il suffit d'être dans son lit. Pour ressentir des effets décuplés, il faudra vous munir d'un tapis de yoga.</p>
