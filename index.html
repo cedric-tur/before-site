@@ -1092,6 +1092,7 @@ a { color: inherit; }
 /* les 2 colonnes se rejoignent en bas : les vignettes finissent sur la
    meme ligne que la derniere ligne de texte */
 .capture { display: grid; grid-template-columns: 1.05fr .95fr; gap: 3rem; align-items: end; }
+#plaquettes .band__head { margin-bottom: 1rem; }
 @media (max-width: 880px) { .capture { grid-template-columns: 1fr; gap: 2rem; } }
 
 .capture h2 { font-size: var(--step-3); font-weight: 500; margin-bottom: 1rem; }
@@ -1585,7 +1586,7 @@ fill="currentColor" stroke="none">
           <p style="margin-top:1rem;">Enfin, amusez-vous à explorer quels sont les muscles étirés ou renforcés : vous incorporez de nouvelles connaissances juste par le visionnage.</p>
         </div>
         <div>
-          <p style="margin-bottom:1rem;text-align:center;">
+          <p style="margin-bottom:.7rem;text-align:center;">
             <a class="btn btn--ghost" href="#postures">Ouvrir le répertoire</a>
           </p>
           <div class="flori" id="florilege"></div>
