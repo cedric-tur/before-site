@@ -525,7 +525,7 @@ a { color: inherit; }
 }
 
 /* l'eveil adapte, en plus petit, dans l'encadre mobilite */
-.adaptvid { margin: .5rem 0 0; width: 100%; max-width: 400px; }
+.adaptvid { margin: 0; width: 100%; }
 .adaptvid .reel__frame { border-color: var(--accent); }
 .adaptvid .reel__ph { padding: 1.1rem; gap: .6rem; }
 .adaptvid .reel__glyph { width: 42px; height: 42px; font-size: .9rem; }
@@ -921,7 +921,7 @@ a { color: inherit; }
   margin-top: 1.75rem; padding: 1.4rem 1.5rem;
   border: 1px solid var(--accent); border-radius: var(--radius-lg);
   background: var(--accent-wash);
-  display: grid; grid-template-columns: 1fr auto; gap: 1.2rem 2rem; align-items: center;
+  display: grid; grid-template-columns: 1fr minmax(0, 400px); gap: 1.2rem 2rem; align-items: center;
 }
 .adapt__txt { display: grid; gap: .8rem; justify-items: start; }
 @media (max-width: 760px) { .adapt { grid-template-columns: 1fr; } }
@@ -1583,7 +1583,7 @@ fill="currentColor" stroke="none">
           <p style="margin-top:1rem;">Enfin, amusez-vous à explorer quels sont les muscles étirés ou renforcés : vous incorporez de nouvelles connaissances juste par le visionnage.</p>
         </div>
         <div>
-          <p style="margin-bottom:1rem;">
+          <p style="margin-bottom:1rem;text-align:center;">
             <a class="btn btn--ghost" href="#postures">Ouvrir le répertoire</a>
           </p>
           <div class="flori" id="florilege"></div>
