@@ -28,7 +28,7 @@ Son objectif déclaré, à long terme : que ces séances s'enseignent à l'écol
 
 | Séance | Durée | Position | Contexte |
 |---|---|---|---|
-| **Before-S Initiation** | 15 min | Allongé | La découverte, à faire en premier |
+| **Before-Start** | 12 à 14 min | Allongé | La découverte, en 3 versions : Découverte, Initiation, Initiation SPEED |
 | **Before-Speed** | 6 min | Allongé | L'express |
 | **Before-Standup** | 9 min | Allongé | Le matin, dans le lit |
 | **Before-Sleep** | 12 min | Allongé | Au coucher |
@@ -50,8 +50,8 @@ arrivant sur le site, et le discours est « découvrez sans, équipez-vous ensui
 
 | Mode | Postures | Durées |
 |---|---|---|
-| Avec sangles | 12 | 15 / 12 / 9 / 6 min |
-| Sans sangles | 11 | plus court, **à confirmer** (14 / 11 / 8 / 5 estimés) |
+| Avec sangles | 12 | Start 12 à 14 / Sleep 12 / Standup 9 / Speed à venir |
+| Sans sangles | 11 | Start 11 à 13 / Sleep 11 / Standup 8mn20 / Speed à venir |
 
 **3 postures de l'éveil se pratiquent avec une sangle rigide.** En mode « sans sangles » :
 1 posture est retirée (12 → 11) et les 2 autres deviennent plus engageantes, les bras devant
@@ -196,8 +196,8 @@ d'une posture peut apparaître sur les planches et dans la partie payante, jamai
 
 **4. Vouvoiement**, sur tout le site.
 
-**4 ter. Aucun tiret cadratin.** Le caractère « : » est banni des textes, du code et de cette
-documentation. C'est la ponctuation qui signe un texte écrit par une IA, et elle décrédibilise
+**4 ter. Aucun tiret cadratin.** Le tiret long, celui que les traitements de texte
+appellent cadratin, est banni des textes, du code et de cette documentation. C'est la ponctuation qui signe un texte écrit par une IA, et elle décrédibilise
 tout le reste. On utilise selon le sens : **deux-points** pour annoncer ou expliquer, **virgule**
 pour une incise, **point** pour séparer deux idées, **parenthèses** pour un aparté.
 Les tirets demi-cadratins restent admis dans les plages de chiffres (12–14 min).
@@ -234,7 +234,7 @@ Deux règles :
 - Typographiquement, `Before-` est en graisse légère et estompée, le mot en S en gras plein
   (classe `.bs` avec `.pre` et `.s` dans le HTML). Ce verrou se répète partout.
 
-Exception au système : **Before-S Initiation** ne nomme pas un moment mais une étape.
+Exception au système : **Before-Start** ne nomme pas un moment mais une étape.
 C'est assumé : c'est la seule séance dont le rôle est d'être la première.
 
 Reste à créer : une séance debout vraiment courte pour les écoles et les bureaux.
