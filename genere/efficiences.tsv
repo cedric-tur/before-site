@@ -99,8 +99,6 @@ force	Force	RENFORCEMENT	fortifie	ÉPAULES	3
 force	Force	RENFORCEMENT	étire	NUQUE	4
 equerre-debout	Equerre	ETIREMENT	renforce	ÉPAULES	3
 equerre-debout	Equerre	ETIREMENT	étire	ISCHIO-JAMBIERS	4
-equerre-debout	Equerre	ETIREMENT	tonifie	ABDOMINAUX	2
-equerre-allongee	Equerre allongée	ETIREMENT	renforce	ÉPAULES	3
 equerre-allongee	Equerre allongée	ETIREMENT	étire	ISCHIO-JAMBIERS	4
 equerre-allongee	Equerre allongée	ETIREMENT	tonifie	ABDOMINAUX	2
 etoile-lune	Étoile (Lune)	RENFORCEMENT	renforce	ÉPAULES	1
@@ -114,11 +112,9 @@ enfant-front-au-sol	Enfant (front au sol)	ENROULEMENT	détend	le bas du DOS
 expire	Expire	ENROULEMENT	comprime	les poumons	
 foetus	Foetus	ENROULEMENT	renforce	ABDOMINAUX	2
 foetus	Foetus	ENROULEMENT	étire	NUQUE	2
-foetus-sangle	Foetus (sangle)	ENROULEMENT	renforce	ABDOMINAUX	2
 foetus-sangle	Foetus (sangle)	ENROULEMENT	étire	NUQUE	2
 guetteur-en-rotation	Guetteur en rotation	ROTATION	tonifie	COU	2
 guetteur-en-rotation	Guetteur en rotation	ROTATION	étire	MOLLETS	2
-guetteur-en-rotation	Guetteur en rotation	ROTATION	renforce	ÉPAULES	4
 guetteur-en-rotation-niveau-confirme	Guetteur en rotation (niveau confirmé)	ROTATION	tonifie	COU	2
 guetteur-en-rotation-niveau-confirme	Guetteur en rotation (niveau confirmé)	ROTATION	étire	MOLLETS	2
 guetteur-en-rotation-niveau-confirme	Guetteur en rotation (niveau confirmé)	ROTATION	renforce	ÉPAULES	4
@@ -139,7 +135,6 @@ guirlande	Guirlande	ETIREMENT	détend	le bas du DOS
 demi-guirlande	demi Guirlande	ETIREMENT	étire	ADDUCTEURS	3
 loquet	Loquet	INCLINAISON	étire	ADDUCTEURS	2
 loquet	Loquet	INCLINAISON	tonifie	COU	2
-loquet-2	Loquet 2	INCLINAISON	étire	ADDUCTEURS	2
 loquet-2	Loquet 2	INCLINAISON	tonifie	COU	2
 mains-jointes	Mains jointes	ETIREMENT	tonifie	COU	3
 mains-jointes	Mains jointes	ETIREMENT	étire	BRAS	1
@@ -147,8 +142,6 @@ oreilles-pressees	Oreilles pressées	ENROULEMENT	étire	NUQUE	4
 oreilles-pressees-niveau-confirme	Oreilles pressées (niveau confirmé)	ENROULEMENT	étire	NUQUE	4
 perche	Perche	EQUILIBRE	étire	ISCHIO-JAMBIERS	4
 perche	Perche	EQUILIBRE	renforce	ÉPAULES	3
-perche	Perche	EQUILIBRE	fortifie	QUADRICEPS	4
-perche-jambe-pliee	Perche jambe pliée	EQUILIBRE	étire	ISCHIO-JAMBIERS	4
 perche-jambe-pliee	Perche jambe pliée	EQUILIBRE	renforce	ÉPAULES	3
 perche-jambe-pliee	Perche jambe pliée	EQUILIBRE	fortifie	QUADRICEPS	4
 palmier	Palmier	EQUILIBRE	étire	BRAS	1
@@ -160,14 +153,14 @@ planche-inversee	Planche inversée	RENFORCEMENT	renforce	ISCHIO-JAMBIERS	2
 prosternation	Prosternation	ETIREMENT	étire	PSOAS	2
 pyramide	Pyramide	ETIREMENT	étire	ISCHIO-JAMBIERS	2
 poirier	Poirier	INVERSION	étire	MOLLETS	2
-poirier-niveau-confirme	Poirier (niveau confirmé)	INVERSION	étire	MOLLETS	2
+poirier	Poirier	INVERSION	renforce	TRICEPS	3
+poirier-niveau-confirme	Poirier (niveau confirmé)	INVERSION	renforce	TRICEPS	4
 poisson	Poisson	EXTENSION	renforce	ÉPAULES	3
 poisson	Poisson	EXTENSION	étire	NUQUE	4
-pigeon-royal	Pigeon royal	EXTENSION	étire	QUADRICEPS	4
 pigeon-royal	Pigeon royal	EXTENSION	étire	PSOAS	4
 pigeon-royal-niveau-confirme	Pigeon royal (niveau confirmé)	EXTENSION	étire	QUADRICEPS	4
 pigeon-royal-niveau-confirme	Pigeon royal (niveau confirmé)	EXTENSION	étire	PSOAS	4
-pont	Pont	EXTENSION	renforce	TRICEPS	4
+pont	Pont	EXTENSION	renforce	TRICEPS	2
 pont	Pont	EXTENSION	fortifie	QUADRICEPS	3
 pont-niveau-confirme	Pont (niveau confirmé)	EXTENSION	renforce	TRICEPS	4
 pont-niveau-confirme	Pont (niveau confirmé)	EXTENSION	fortifie	QUADRICEPS	3
@@ -190,12 +183,11 @@ tourniquet	Tourniquet	RENFORCEMENT	fortifie	QUADRICEPS	3
 trepied	Trépied	INCLINAISON	étire	ADDUCTEURS	2
 sauterelle	Sauterelle	EXTENSION	renforce	ISCHIO-JAMBIERS	2
 sauterelle	Sauterelle	EXTENSION	tonifie	NUQUE	3
-y-majuscule	Y Majuscule	EQUILIBRE	étire	ISCHIO-JAMBIERS	2
+y-majuscule	Y Majuscule	EQUILIBRE			
 y-majuscule-niveau-confirme	Y Majuscule (niveau confirmé)	EQUILIBRE	étire	ISCHIO-JAMBIERS	2
 virgule	Virgule	ETIREMENT	étire	QUADRICEPS	2
 voilier	Voilier	RENFORCEMENT	étire	ISCHIO-JAMBIERS	3
 voilier	Voilier	RENFORCEMENT	tonifie	ABDOMINAUX	4
 voilier-sangle	Voilier (sangle)	RENFORCEMENT	étire	ISCHIO-JAMBIERS	3
 voilier-sangle	Voilier (sangle)	RENFORCEMENT	tonifie	ABDOMINAUX	4
-tigre-posture-dynamique	Tigre (posture dynamique)	RENFORCEMENT	renforce	QUADRICEPS	3
-tigre-posture-dynamique	Tigre (posture dynamique)	RENFORCEMENT	étire	BRAS	4
+tigre-posture-dynamique	Tigre (posture dynamique)	RENFORCEMENT			
