@@ -92,6 +92,7 @@ fente-sur-orteils	Fente sur orteils	RENFORCEMENT	étire	PSOAS	3
 fente-sur-orteils	Fente sur orteils	RENFORCEMENT	fortifie	QUADRICEPS	4
 fente-triangle	Fente triangle	ROTATION	étire	PSOAS	3
 fente-triangle	Fente triangle	ROTATION	renforce	QUADRICEPS	2
+fente-triangle	Fente triangle	ROTATION	tonifie	COU	3
 estomac	Estomac	ROTATION	étire	ISCHIO-JAMBIERS	2
 estomac-sangle	Estomac (sangle)	ROTATION	étire	ISCHIO-JAMBIERS	2
 eleve	Élève	EXTENSION	renforce	BRAS	2
@@ -138,7 +139,7 @@ loquet	Loquet	INCLINAISON	tonifie	COU	2
 loquet-2	Loquet 2	INCLINAISON	tonifie	COU	2
 mains-jointes	Mains jointes	ETIREMENT	tonifie	COU	3
 mains-jointes	Mains jointes	ETIREMENT	étire	BRAS	1
-oreilles-pressees	Oreilles pressées	ENROULEMENT	étire	NUQUE	4
+oreilles-pressees	Oreilles pressées	ENROULEMENT	étire	NUQUE	2
 oreilles-pressees-niveau-confirme	Oreilles pressées (niveau confirmé)	ENROULEMENT	étire	NUQUE	4
 perche	Perche	EQUILIBRE	étire	ISCHIO-JAMBIERS	4
 perche	Perche	EQUILIBRE	renforce	ÉPAULES	3
