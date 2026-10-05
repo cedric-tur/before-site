@@ -2553,7 +2553,7 @@ fill="currentColor" stroke="none">
 
     var RENFORCEMENTS = [
       { t: "Abdominaux", p: ["Foetus", "Bateau", "Tourniquet", "Bambou", "demi Lune latérale", "Voilier", "Equerre allongée", "demi Roue en rotation"] },
-      { t: "Bras", p: ["Cygne", "Barque", "Poisson", "Force", "Foudre", "demi Singe", "Equerre", "Guetteur en rotation", "Chien qui s'étire", "Sphinx", "Guetteur", "Élève", "demi Chien"] },
+      { t: "Bras", aussi: ["ÉPAULES"], p: ["Cygne", "Barque", "Poisson", "Force", "demi Singe", "Equerre", "Guetteur en rotation", "Chien qui s'étire", "Sphinx", "Guetteur", "Élève", "demi Chien"] },
       { t: "Cou", p: ["demi Lune latérale", "Mains jointes", "Loquet", "Grand écart incliné", "Triangle incliné", "Fente triangle", "Triangle"] },
       { t: "Ischio-jambiers", p: ["Croisé ventral", "Planche inversée", "Barque", "Sauterelle", "demi Chien", "Chien qui s'étire (pointé)", "Perche"] },
       { t: "Mollets", p: ["Chaise", "Chien qui s'étire"] },
@@ -2586,9 +2586,12 @@ fill="currentColor" stroke="none">
 
     function noteThematique(p, rub) {
       if (!rub || !rub.cible) { return 0; }
-      var vise = cle(rub.cible);
+      // une question peut viser plusieurs muscles : renforcer les bras couvre
+      // aussi les lignes ecrites avec les epaules
+      var vises = [cle(rub.cible)].concat((rub.aussi || []).map(cle));
       var candidats = (EFFICIENCES[p.s] || []).filter(function (e) {
-        return cle(e.c).indexOf(vise) !== -1;
+        var c = cle(e.c);
+        return vises.some(function (v) { return c.indexOf(v) !== -1; });
       });
       if (!candidats.length) { return 0; }
       var accordes = candidats.filter(function (e) {
@@ -2626,6 +2629,7 @@ fill="currentColor" stroke="none">
         rubriques.push({
           id: prefixe + i, titre: g.t, nb: lot.length, lot: lot, pips: "",
           cible: prefixe === "f" ? "" : g.t,
+          aussi: g.aussi || [],
           sens: prefixe === "e" ? "e" : "r"
         });
       });
