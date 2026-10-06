@@ -34,6 +34,25 @@ versionné. L'historique git réel démarre au premier commit.
   la version « niveau confirmé ». » Le décompte des 18 postures et la mention des
   fentes et des extensions disparaissent.
 
+### Le site n'était pas adaptatif sur `before-s.com`
+
+Cédric : *« sur mon ordinateur le responsive fonctionne, mais sur mon téléphone le site
+s'affiche sans responsive et c'est moi qui dois agrandir les parties ».*
+
+**`index.html` n'avait ni doctype ni balise `viewport`.** Le fichier était écrit comme un
+fragment : il commençait directement par `<title>`, sans `<!doctype html>`, sans `<html>`
+ni `<head>`. Sur l'apercu publié chez Claude, l'hébergeur ajoute lui-même cette
+enveloppe, ce qui masquait le défaut. Sur `before-s.com`, servi par GitHub Pages, le
+fichier part tel quel : un téléphone affiche alors la page sur une largeur fictive de
+980 px, la réduit à l'échelle, et **aucune des règles `@media` ne se déclenche**.
+D'où l'obligation d'agrandir chaque partie au doigt. L'absence de doctype faisait en
+plus basculer le navigateur en mode de compatibilité ancienne.
+
+`index.html` est désormais un document complet : doctype, `<html lang="fr">`,
+`<head>` avec `charset` et `viewport`, `<body>` ouvert après la feuille de style.
+Les 2 pages légales les avaient déjà. Un commentaire au-dessus de la ligne `viewport`
+avertit de ne jamais la retirer.
+
 ### Lisibilité sur téléphone
 
 Cédric a testé le site sur son téléphone en mode portrait : le texte y est trop petit,
