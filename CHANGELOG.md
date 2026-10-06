@@ -7,6 +7,13 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 6 octobre 2026
+
+- **Accueil, bloc des plaquettes.** La phrase sur les variantes est raccourcie :
+  « Sur une plaquette individuelle, parfois une posture se pratique de différentes
+  manières avec la version « niveau confirmé ». » Le décompte des 18 postures et la
+  mention des fentes et des extensions disparaissent.
+
 ## 5 octobre 2026
 
 - **Carrousel de l'éveil.** Le sélecteur sans/avec Sangles de l'accueil ne rafraîchissait
