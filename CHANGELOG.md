@@ -34,6 +34,28 @@ versionné. L'historique git réel démarre au premier commit.
   la version « niveau confirmé ». » Le décompte des 18 postures et la mention des
   fentes et des extensions disparaissent.
 
+### Lisibilité sur téléphone
+
+Cédric a testé le site sur son téléphone en mode portrait : le texte y est trop petit.
+
+- **La racine passe de 16 à 18 px sous 700 px de large.** Le corps du texte était déjà
+  à 16 px, mais les 77 libellés secondaires écrits en rem descendaient jusqu'à 11 px :
+  descriptions de cartes, noms de postures, effets du carrousel, mention légale.
+  Plutôt que de reprendre ces 77 règles une par une, tout ce qui est exprimé en rem
+  grandit de 12,5 %. À 390 px de large : le corps passe de 16,1 à 18,1 px, les titres
+  de section de 31,9 à 35,3 px, la mention légale de 12,5 à 14 px, les effets du
+  carrousel de 13,1 à 14,8 px.
+- **Le grand titre d'ouverture est retenu**, de 40,1 à 38,2 px : il remplissait déjà
+  toute la largeur, le laisser grandir l'aurait fait déborder.
+- **La barre du haut passe sur 2 lignes** : la marque, puis les 4 entrées réparties sur
+  toute la largeur. À 18 px elles ne tenaient plus à côté de la marque et les libellés
+  se coupaient en deux. Leur taille monte de 11,8 à 14,8 px.
+- Plancher de 14,4 px posé sur les 5 libellés les plus petits, qui restaient sous 13 px :
+  la mention « Difficulté » de la fiche, les noms de variantes, l'étiquette des
+  témoignages et le compte des lettres de l'index.
+- La phrase du pied de page, « Quelques minutes par jour jusqu'à l'autonomie », peut
+  désormais passer à la ligne : elle tenait sur une ligne à 16 px, plus à 18.
+
 ### Postures
 
 - **Fiche d'une posture : plus rien n'est posé au-dessus du dessin.** La notation de

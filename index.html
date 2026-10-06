@@ -123,7 +123,7 @@ a { color: inherit; }
 .topnav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
 
 @media (max-width: 820px) {
-  .topnav { gap: 1rem; font-size: .74rem; }
+  .topnav { gap: 1rem; font-size: .82rem; }
   .topnav a.opt { display: none; }
 }
 
@@ -1272,10 +1272,40 @@ a { color: inherit; }
 .foot__nav { display: flex; flex-wrap: wrap; gap: 1.5rem; font-family: "Archivo", sans-serif; font-size: var(--step--1); font-weight: 500; }
 .foot__nav a { color: var(--ink-muted); text-decoration: none; }
 .foot__nav a:hover { color: var(--ink); }
+.foot__bl { color: var(--ink-muted); font-size: .9rem; margin-top: .5rem; white-space: nowrap; }
 .foot__legal { font-family: "Archivo", sans-serif; font-size: .78rem; color: var(--ink-muted); flex: 1 1 100%; padding-top: 1.5rem; border-top: 1px solid var(--line-soft); line-height: 1.6; text-align: center; }
 
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 
+
+/* ============================ TÉLÉPHONE, MODE PORTRAIT ============================
+   Le corps du texte était déjà à 16 px, mais les 77 libellés secondaires écrits en
+   rem descendaient jusqu'à 11 px : descriptions de cartes, noms de postures, effets
+   du carrousel, mention légale. Plutôt que de reprendre ces 77 règles une par une,
+   la racine passe de 16 à 18 px : tout ce qui est exprimé en rem grandit de 12,5 %.
+   Le corps atteint 18 px, le plus petit libellé courant 14 px.
+   Seul le grand titre d'ouverture est retenu : il remplissait déjà la largeur. */
+@media (max-width: 700px) {
+  html { font-size: 112.5%; }
+
+  :root { --step-4: clamp(2.1rem, 1.6rem + 2.4vw, 3.6rem); }
+
+  /* la phrase du pied de page tenait sur une ligne à 16 px, plus à 18 */
+  .foot__bl { white-space: normal; }
+
+  /* la barre du haut passe sur 2 lignes : la marque, puis les 4 entrees
+     reparties sur toute la largeur. A 18 px elles ne tenaient plus a cote
+     de la marque et les libelles se coupaient en deux. */
+  .topbar__in { flex-wrap: wrap; gap: .3rem 1rem; min-height: 0; padding-block: .55rem; }
+  .topnav { flex: 1 1 100%; justify-content: space-between; gap: .6rem; }
+
+  /* les libelles les plus petits restaient sous 13 px : on leur pose un plancher */
+  .fiche__crit span,
+  .fiche__var span,
+  .tile__var,
+  .temoin__pied span,
+  .idxlettre b { font-size: .8rem; }
+}
 </style>
 
 <!-- Les 116 visuels de postures, decoupes depuis les planches de glossaire de Cedric -->
@@ -1989,7 +2019,7 @@ fill="currentColor" stroke="none">
   <div class="wrap foot__in">
     <div>
       <p class="brand bs" style="font-size:1.2rem;"><span class="pre">Before-</span><span class="s">S</span></p>
-      <p style="color:var(--ink-muted);font-size:.9rem;margin-top:.5rem;white-space:nowrap;">Quelques minutes par jour jusqu'à l'autonomie.</p>
+      <p class="foot__bl">Quelques minutes par jour jusqu'à l'autonomie.</p>
     </div>
     <nav class="foot__nav" aria-label="Pied de page">
       <a href="#accueil">Accueil</a>
