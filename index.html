@@ -1330,6 +1330,36 @@ a { color: inherit; }
 
   /* les vignettes de variantes tenaient à 2 par ligne à 16 px, plus à 20 */
   .fiche__var { width: 118px; }
+
+  /* ---- plus rien ne dépasse la largeur de l'écran ----
+     Mesuré sur 390, 360 et 320 px de large. Les 5 cas ci-dessous étaient
+     écrits en une seule ligne insécable et sortaient de l'écran. */
+
+  /* le sélecteur sans / avec Sangles : 321 px de boutons, il passe sur 2 lignes */
+  .modeset { flex-wrap: wrap; justify-content: center; }
+  .modebtn { padding: .5rem .9rem; }
+  .modeblock { justify-items: center; text-align: center; }
+
+  /* « Initiation SPEED : 13mn » dépassait dès 320 px : le libellé peut se couper */
+  .play { white-space: normal; }
+
+  /* les 4 entrées du menu : elles passent sur 2 lignes plutôt que de se couper
+     chacune en deux */
+  .topnav { flex-wrap: wrap; row-gap: .15rem; }
+
+  /* « verbe + muscle + notation » tient sur une ligne sur écran large, c'est une
+     demande de Cédric. Sur téléphone la ligne la plus longue fait 300 px pour
+     274 px disponibles : elle se coupe ici, plutôt que d'obliger à faire défiler
+     la fiche de côté. */
+  .fiche__eff { white-space: normal; overflow-x: visible; }
+  .fiche__eff p { white-space: normal; }
+
+  /* les postures très larges débordent dans le rembourrage de leur vignette :
+     la valeur doit suivre le rembourrage réduit à .6rem ci-dessus */
+  .tile[data-bord] .tile__box { width: calc(100% + 1.2rem); margin-left: -.6rem; margin-right: -.6rem; }
+
+  /* un mot plus long que sa colonne se coupe au lieu de la faire déborder */
+  h1, h2, h3, h4, p, li { overflow-wrap: break-word; }
 }
 </style>
 

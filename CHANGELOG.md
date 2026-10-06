@@ -63,6 +63,28 @@ et l'encadré de Before-Sleep ne rentre pas dans la largeur.
 - La phrase du pied de page, « Quelques minutes par jour jusqu'à l'autonomie », peut
   passer à la ligne : elle tenait sur une ligne à 16 px, plus à 20.
 
+**Plus rien ne dépasse la largeur de l'écran.** La taille de 20 px étant validée par
+Cédric, le site a été repris pour que tout y tienne. Les 23 mises en page basculent
+bien en une colonne sous 700 px ; le défaut venait de 5 textes écrits en une ligne
+insécable, mesurés ici sur 390, 360 et 320 px de large :
+
+| Ce qui débordait | Largeur | Remède |
+|---|---|---|
+| Sélecteur sans / avec Sangles | 321 px pour 350 | passe sur 2 lignes, rembourrage réduit |
+| Les 4 entrées du menu | 330 px pour 350 | passent sur 2 lignes au besoin |
+| Bouton « Initiation SPEED : 13mn » | 270 px pour 238 à 320 px d'écran | le libellé peut se couper |
+| Ligne « verbe + muscle + notation » | 300 px pour 274 | se coupe sur téléphone seulement |
+| Phrase du pied de page | 431 px pour 350 | peut passer à la ligne |
+
+La ligne « verbe + muscle + notation » reste sur une seule ligne sur écran large,
+comme Cédric l'avait demandé le 7 septembre : elle ne se coupe que sous 700 px, où
+l'alternative était de faire défiler la fiche latéralement.
+
+S'y ajoutent 2 corrections : les postures très larges (`data-bord`) débordaient de
+4 px sur leur voisine, leur marge négative ne suivant pas le rembourrage réduit des
+vignettes ; et tout mot plus long que sa colonne se coupe désormais au lieu de la
+faire déborder. Vérifié : plus aucun dépassement jusqu'à 320 px de large.
+
 ### Postures
 
 - **Fiche d'une posture : plus rien n'est posé au-dessus du dessin.** La notation de
