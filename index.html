@@ -1375,6 +1375,15 @@ a { color: inherit; }
 
   /* un mot plus long que sa colonne se coupe au lieu de la faire déborder */
   h1, h2, h3, h4, p, li { overflow-wrap: break-word; }
+
+  /* LES FLÈCHES DU CARROUSEL RENTRENT DANS LA PAGE.
+     Elles sont posées à cheval sur les bords de la bande, à -0,7 rem soit 14 px.
+     Tant que la gouttière valait 20 px elles restaient dedans ; resserrée à 11 px,
+     la flèche de droite sortait de 3 px et la page devenait plus large que l'écran.
+     C'était le seul débordement du site, sur « Les postures, dans l'ordre de la
+     séance ». Elles passent donc à l'intérieur. */
+  .carou__b--g { left: 0; }
+  .carou__b--d { right: 0; }
 }
 </style>
 </head>

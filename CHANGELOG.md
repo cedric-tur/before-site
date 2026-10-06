@@ -48,6 +48,10 @@ fichier part tel quel : un téléphone affiche alors la page sur une largeur fic
 D'où l'obligation d'agrandir chaque partie au doigt. L'absence de doctype faisait en
 plus basculer le navigateur en mode de compatibilité ancienne.
 
+**Le mode « Site pour ordinateur »** du navigateur produit exactement le même symptôme
+et l'avait masqué une fois la correction faite : Cédric l'a décoché et la page s'est
+adaptée. À vérifier en premier si le cas se représente.
+
 `index.html` est désormais un document complet : doctype, `<html lang="fr">`,
 `<head>` avec `charset` et `viewport`, `<body>` ouvert après la feuille de style.
 Les 2 pages légales les avaient déjà. Un commentaire au-dessus de la ligne `viewport`
@@ -67,6 +71,11 @@ et l'encadré de Before-Sleep ne rentre pas dans la largeur.
 - **Les 4 entrées du menu tiennent sur une seule ligne**, à 0,76 rem avec un écart de
   0,45 rem : 319 px pour 368 disponibles, et elles tiennent encore à 360 px d'écran.
   Le repli sur 2 lignes reste autorisé en dessous.
+- **Les flèches du carrousel rentrent dans la page.** Elles sont posées à cheval sur
+  les bords de la bande, à -0,7 rem soit 14 px. Tant que la gouttière valait 20 px
+  elles restaient dedans ; resserrée à 11 px, la flèche de droite sortait de 3 px et
+  la page devenait plus large que l'écran. C'était le seul débordement du site,
+  repéré par Cédric sur « Les postures, dans l'ordre de la séance ».
 - *Mesure du palier de 20 px :* Le corps du texte était déjà
   à 16 px, mais les 77 libellés secondaires écrits en rem descendaient jusqu'à 11 px :
   descriptions de cartes, noms de postures, effets du carrousel, mention légale.
