@@ -58,7 +58,14 @@ avertit de ne jamais la retirer.
 Cédric a testé le site sur son téléphone en mode portrait : le texte y est trop petit,
 et l'encadré de Before-Sleep ne rentre pas dans la largeur.
 
-- **La racine passe de 16 à 20 px sous 700 px de large.** Le corps du texte était déjà
+- **La racine passe de 16 à 25 px sous 700 px de large**, en 2 étapes dans la journée :
+  20 px d'abord, jugé encore trop petit par Cédric sur son téléphone, puis 25 px.
+  À 390 px de large le corps du texte atteint 25 px, les noms de carte 30 px, les noms
+  de posture 22,5 px, la mention légale 19,5 px. Les 2 plus grands titres sont retenus,
+  à 42,5 et 40 px au lieu des 50 et 48,8 px qu'ils atteindraient : au-delà, il ne reste
+  plus que 6 mots par écran. Le rembourrage des cartes descend à 0,9 rem et l'écart
+  entre le nom de séance et sa durée à 0,5 rem, les 2 étant insécables.
+- *Mesure du premier palier, conservée pour mémoire :* Le corps du texte était déjà
   à 16 px, mais les 77 libellés secondaires écrits en rem descendaient jusqu'à 11 px :
   descriptions de cartes, noms de postures, effets du carrousel, mention légale.
   Plutôt que de reprendre ces 77 règles une par une, tout ce qui est exprimé en rem

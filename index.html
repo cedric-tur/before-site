@@ -1289,7 +1289,8 @@ a { color: inherit; }
 /* ============================ TÉLÉPHONE, MODE PORTRAIT ============================
    Le corps du texte était à 16 px, mais les 77 libellés secondaires écrits en rem
    descendaient jusqu'à 11 px. Plutôt que de reprendre ces 77 règles une par une,
-   la racine passe de 16 à 20 px : tout ce qui est exprimé en rem grandit de 25 %.
+   la racine passe de 16 à 25 px : tout ce qui est exprimé en rem grandit de 56 %.
+   Palier précédent 20 px, jugé encore trop petit par Cédric sur son téléphone.
    C'est la seule valeur à bouger si la taille doit encore changer.
 
    Contrepartie : à 20 px, les marges et les colonnes minimales exprimées en px
@@ -1297,13 +1298,15 @@ a { color: inherit; }
    une seule colonne, et les rembourrages sont resserrés pour rendre la place au
    texte. ======================================================================= */
 @media (max-width: 700px) {
-  html { font-size: 125%; }
+  html { font-size: 156.25%; }
 
   /* la gouttière se resserre : chaque pixel rendu va au texte */
   :root {
     --gutter: 1rem;
-    /* le grand titre d'ouverture remplissait déjà la largeur, on le retient */
-    --step-4: clamp(2rem, 1.5rem + 2.2vw, 3.4rem);
+    /* les 2 plus grands titres sont retenus : à 25 px de racine ils passeraient
+       à 50 px, ce qui ne laisse plus que 6 mots par écran */
+    --step-4: clamp(1.7rem, 1.3rem + 2vw, 2.8rem);
+    --step-3: clamp(1.6rem, 1.35rem + 1.1vw, 2.35rem);
   }
 
   /* UNE SEULE COLONNE partout : un encadré ne peut plus être plus large que l'écran,
@@ -1314,7 +1317,9 @@ a { color: inherit; }
   .simple { gap: 1.4rem; }
 
   /* rembourrages resserrés, pour que la ligne de texte reste longue */
-  .card { padding: 1.1rem 1.05rem 1rem; }
+  .card { padding: .95rem .9rem .9rem; }
+  /* nom de séance et durée sont tous deux insécables : l'écart se resserre */
+  .card__top { gap: .5rem; }
   .tile { padding: .6rem; }
   .fiche__box { padding: 1.1rem; }
   .fiche { padding: .8rem; }
