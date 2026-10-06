@@ -396,6 +396,7 @@ a { color: inherit; }
 .tile:hover { transform: translateY(-3px); border-color: var(--accent); }
 .tile__box {
   height: calc(100cqw * 1.17); width: 100%;
+  margin-bottom: calc(100cqw * .055);
   display: flex; align-items: flex-end; justify-content: center;
 }
 
@@ -2314,7 +2315,14 @@ fill="currentColor" stroke="none">
 
     var A_PLEIN = { "perche-jambe-pliee": 1 };
     // quelques postures paraissent trop imposantes a l'echelle commune
-    var FACTEUR = { "equerre-debout": .90, "equerre-allongee": .95, "oreilles-pressees": 1.15, "oreilles-pressees-niveau-confirme": 1.15 };
+    var FACTEUR = {
+      "equerre-debout": .90, "equerre-allongee": .95,
+      "oreilles-pressees": 1.15, "oreilles-pressees-niveau-confirme": 1.15,
+      // montees au plus haut que le cadre autorise, sans le depasser
+      "palmier": 1.04, "chaise": 1.15, "poirier-niveau-confirme": 1.22,
+      "demi-roue": 1.45, "demi-roue-niveau-confirme": 1.24,
+      "demi-roue-en-rotation": 1.30, "demi-roue-en-rotation-niveau-confirme": 1.24
+    };
     var A_BORD = { "perche": 1, "barque": 1, "demi-lune-laterale": 1, "cygne": 1, "cygne-niveau-confirme": 1, "cygne-niveau-confirme-2": 1 };
     var A_REDUIT = { "cygne": 1, "cygne-niveau-confirme": 1, "cygne-niveau-confirme-2": 1, "perche": 1, "demi-lune-laterale": 1 };
 
