@@ -1289,24 +1289,25 @@ a { color: inherit; }
 /* ============================ TÉLÉPHONE, MODE PORTRAIT ============================
    Le corps du texte était à 16 px, mais les 77 libellés secondaires écrits en rem
    descendaient jusqu'à 11 px. Plutôt que de reprendre ces 77 règles une par une,
-   la racine passe de 16 à 25 px : tout ce qui est exprimé en rem grandit de 56 %.
-   Palier précédent 20 px, jugé encore trop petit par Cédric sur son téléphone.
-   C'est la seule valeur à bouger si la taille doit encore changer.
+   la racine passe de 16 à 20 px : tout ce qui est exprimé en rem grandit de 25 %.
+   25 px a été essayé puis écarté, trop gros. C'est la seule valeur à bouger si
+   la taille doit encore changer.
 
    Contrepartie : à 20 px, les marges et les colonnes minimales exprimées en px
    faisaient déborder les encadrés. Toutes les grilles de cartes passent donc sur
    une seule colonne, et les rembourrages sont resserrés pour rendre la place au
    texte. ======================================================================= */
 @media (max-width: 700px) {
-  html { font-size: 156.25%; }
+  html { font-size: 125%; }
 
-  /* la gouttière se resserre : chaque pixel rendu va au texte */
+  /* LA LARGEUR DU SITE COLLE AUX BORDS DE L'ÉCRAN.
+     La gouttière tombe à 11 px au lieu de 20, et les rembourrages avec elle :
+     la ligne de texte passe de 350 à 368 px sur un écran de 390 px, et la
+     colonne utile d'une carte de 308 à 336 px. */
   :root {
-    --gutter: 1rem;
-    /* les 2 plus grands titres sont retenus : à 25 px de racine ils passeraient
-       à 50 px, ce qui ne laisse plus que 6 mots par écran */
-    --step-4: clamp(1.7rem, 1.3rem + 2vw, 2.8rem);
-    --step-3: clamp(1.6rem, 1.35rem + 1.1vw, 2.35rem);
+    --gutter: .55rem;
+    /* le grand titre d'ouverture remplissait déjà la largeur, on le retient */
+    --step-4: clamp(2rem, 1.5rem + 2.2vw, 3.4rem);
   }
 
   /* UNE SEULE COLONNE partout : un encadré ne peut plus être plus large que l'écran,
@@ -1317,13 +1318,13 @@ a { color: inherit; }
   .simple { gap: 1.4rem; }
 
   /* rembourrages resserrés, pour que la ligne de texte reste longue */
-  .card { padding: .95rem .9rem .9rem; }
+  .card { padding: .9rem .8rem .85rem; }
   /* nom de séance et durée sont tous deux insécables : l'écart se resserre */
   .card__top { gap: .5rem; }
-  .tile { padding: .6rem; }
-  .fiche__box { padding: 1.1rem; }
-  .fiche { padding: .8rem; }
-  .zoom__box { padding: 2rem 1.1rem 1.1rem; }
+  .tile { padding: .5rem; }
+  .fiche__box { padding: 1rem; }
+  .fiche { padding: .5rem; }
+  .zoom__box { padding: 2rem 1rem 1rem; }
 
   /* la barre du haut passe sur 2 lignes : la marque, puis les 4 entrées
      réparties sur toute la largeur. À 20 px elles ne tenaient plus à côté
@@ -1356,9 +1357,10 @@ a { color: inherit; }
   /* « Initiation SPEED : 13mn » dépassait dès 320 px : le libellé peut se couper */
   .play { white-space: normal; }
 
-  /* les 4 entrées du menu : elles passent sur 2 lignes plutôt que de se couper
-     chacune en deux */
-  .topnav { flex-wrap: wrap; row-gap: .15rem; }
+  /* LES 4 ENTRÉES DU MENU TIENNENT SUR UNE SEULE LIGNE : « Boutique » passait à
+     la ligne. Les 37 caractères des 4 libellés font 300 px à cette taille, pour
+     368 px disponibles. Le repli reste autorisé pour les écrans plus étroits. */
+  .topnav { flex-wrap: wrap; row-gap: .15rem; font-size: .76rem; gap: .45rem; }
 
   /* « verbe + muscle + notation » tient sur une ligne sur écran large, c'est une
      demande de Cédric. Sur téléphone la ligne la plus longue fait 300 px pour
@@ -1369,7 +1371,7 @@ a { color: inherit; }
 
   /* les postures très larges débordent dans le rembourrage de leur vignette :
      la valeur doit suivre le rembourrage réduit à .6rem ci-dessus */
-  .tile[data-bord] .tile__box { width: calc(100% + 1.2rem); margin-left: -.6rem; margin-right: -.6rem; }
+  .tile[data-bord] .tile__box { width: calc(100% + 1rem); margin-left: -.5rem; margin-right: -.5rem; }
 
   /* un mot plus long que sa colonne se coupe au lieu de la faire déborder */
   h1, h2, h3, h4, p, li { overflow-wrap: break-word; }
