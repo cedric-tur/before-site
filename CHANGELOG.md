@@ -9,6 +9,16 @@ versionné. L'historique git réel démarre au premier commit.
 
 ## 6 octobre 2026
 
+- **Pages légales.** Création de `mentions-legales.html` et `confidentialite.html`, liées
+  depuis le pied de page. Les conditions générales de vente restent à écrire avant
+  l'ouverture de la boutique.
+- **Polices hébergées localement.** Archivo et Newsreader sont téléchargées dans `fonts/`,
+  sous-ensembles latin et latin-ext, 6 fichiers woff2 pour 516 ko. Les 2 `preconnect` et
+  l'appel à `fonts.googleapis.com` disparaissent de `index.html` : le site ne contacte plus
+  aucun serveur tiers, et l'adresse IP des visiteurs n'est plus transmise à Google.
+
+## 6 octobre 2026
+
 - **Accueil, bloc des plaquettes.** La phrase sur les variantes est raccourcie :
   « Sur une plaquette individuelle, parfois une posture se pratique de différentes
   manières avec la version « niveau confirmé ». » Le décompte des 18 postures et la
