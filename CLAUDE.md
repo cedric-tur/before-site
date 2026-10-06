@@ -99,14 +99,19 @@ quelqu'un qui a fini d'apprendre.
 
 ### Physique
 
-- **Kit sangles** : 2 sangles rigides type judo + planches imprimées, 39 € (stock : 10 000 sangles)
-- **Tapis** : caoutchouc 6 mm recouvert de liège, 4 kg, fabriqué en Chine après recherche
-  infructueuse en Europe, 99 € (stock : 300). La page Boutique n'annonce **aucune origine**
-  de fabrication : la mention « Portugal » d'un ancien texte a disparu avec lui.
-  La fabrication en Chine est confirmée, le texte de la fiche tapis reste à écrire.
+*Prix et descriptifs arrêtés par Cédric le 6 octobre 2026, ils remplacent les précédents.*
+
+- **Sangles** : vendues **par paire**, **9 €** (stock : 10 000 sangles). Rigides, type judo,
+  tissées pour tenir des années. Les planches imprimées ne sont plus annoncées avec elles.
+- **Tapis** : **5 mm de caoutchouc recouverts de 1 mm de liège**, 3,2 kg, **78 €**
+  (stock : 300). Livré avec sa sangle de transport et un petit tapis d'appui qui porte
+  l'épaisseur à 12 mm sous les genoux. Fabrication en Chine confirmée, après recherche
+  infructueuse en Europe, mais la page Boutique n'annonce **aucune origine** : la mention
+  « Portugal » d'un ancien texte a disparu avec lui, et le texte de la fiche reste à écrire.
 - **Le livre** : les 90 postures imprimées en grand format. En préparation avec une amie
   graphiste ; il reste à intégrer les plaquettes et à finaliser la mise en page.
-  Affiché « Bientôt » sur le site pour mesurer l'intérêt. **Ne doit pas retarder la sortie.**
+  **Retiré de la boutique le 6 octobre 2026**, il n'est plus annoncé sur le site.
+  **Ne doit pas retarder la sortie.**
 
 ### Le matériel selon les offres
 
@@ -246,13 +251,24 @@ Before-Step 1 dure 20 minutes, il ne rentre ni dans une classe ni dans une pause
 
 ## Le site
 
-Un seul fichier : `index.html`. Six vues, routage par ancre (`#accueil`, `#seances`,
-`#postures`, `#methode`, `#boutique`, `#acces`). Autonome, aucune dépendance externe
+Un seul fichier : `index.html`. **Cinq vues**, routage par ancre (`#accueil`, `#seances`,
+`#postures`, `#methode`, `#boutique`). Autonome, aucune dépendance externe
 hormis Google Fonts.
 
-**La boutique** est une page à part depuis octobre 2026. Elle porte le tapis, le kit sangles
-et le livre ; la page Méthode n'en garde qu'un renvoi. Les 3 boutons d'achat attendent leurs
-liens Stripe, signalés par un commentaire dans le HTML.
+**Deux vues sont en retrait depuis le 6 octobre 2026**, le temps que les contenus existent :
+
+- **La méthode** ne porte plus qu'un bandeau « Bientôt disponible ». Before-Small,
+  Before-Session, le bloc de prix à 8 € et le bouton d'abonnement sont retirés du site.
+- **L'espace élève** est retiré entièrement, vue, menus et routage : il n'y avait rien
+  à y accéder tant que la page Méthode n'est pas écrite. Son bouton Stripe (`data-buy`)
+  part avec lui.
+
+Les 2 blocs sont récupérables dans l'historique git, commit du 6 octobre 2026.
+**La page Séances existe toujours** mais plus aucun lien n'y mène depuis que son entrée
+de menu a été retirée : elle est atteignable par `#seances` seulement.
+
+**La boutique** est une page à part depuis octobre 2026. Elle porte le tapis et les sangles.
+Les 2 boutons d'achat attendent leurs liens Stripe, signalés par un commentaire dans le HTML.
 
 **Le dépôt.** `https://github.com/cedric-tur/before-site` . Tout le projet y est versionné,
 soit environ 35 Mo. Le site étant autonome, il n'y a ni installation ni compilation :
@@ -331,7 +347,10 @@ le formulaire e-mail, les titres des 15 mini-cours, et les mentions légales / C
 - Présenter la sangle comme indispensable pour commencer (on découvre sans, on s'équipe
   ensuite), ou le tapis comme nécessaire à la pratique. « Fortement conseillées », dans
   l'encadré mobilité de l'accueil, est la formule la plus haute admise : elle vise la
-  version adaptée, pas l'éveil lui-même, qui se fait sans matériel en 11 postures
+  version adaptée, pas l'éveil lui-même, qui se fait sans matériel en 11 postures.
+  **Depuis le 6 octobre 2026 la page Boutique ne porte plus de garantie « rien n'est
+  nécessaire pour commencer »** : Cédric a retiré l'accroche du bandeau et la note de
+  bas de page. L'argument reste porté par l'accueil, il ne faut pas l'y perdre aussi
 - Suggérer d'attendre que tout soit terminé pour publier : le projet est prêt depuis
   longtemps et le risque réel est de continuer à le peaufiner
 

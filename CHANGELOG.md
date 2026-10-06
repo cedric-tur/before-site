@@ -9,20 +9,54 @@ versionné. L'historique git réel démarre au premier commit.
 
 ## 6 octobre 2026
 
+### Structure du site
+
+- **Page Méthode vidée.** Tout le contenu est retiré, il ne reste qu'un bandeau
+  « Bientôt disponible ». Partent avec lui Before-Small, Before-Session, le bloc de
+  prix à 8 € et le bouton d'abonnement.
+- **Espace élève retiré**, le temps que la page Méthode soit écrite : la vue, ses
+  27 pistes, son entrée de menu, son lien de pied de page et son routage disparaissent.
+  Le site compte désormais 5 vues au lieu de 6. Les 2 blocs restent dans l'historique git.
+
+### Accueil
+
+- La légende « Visualisez Before-S en accéléré » est centrée sous la vidéo.
+- « À écouter en PREMIER » et « Dans un SECOND temps » passent en capitales dans les
+  2 premières étapes de Before-Start, sur l'accueil comme sur la page Séances.
+- Le bouton « Découvrir la méthode » devient « À découvrir bientôt ».
+- « Ouvrir le répertoire » quitte la colonne de droite et passe centré sous le titre
+  « Parcourir les 90 postures », dont la marge basse tombe de 1 rem à 0,55 rem.
+- **Bloc des plaquettes.** La phrase sur les variantes est raccourcie : « Sur une
+  plaquette individuelle, parfois une posture se pratique de différentes manières avec
+  la version « niveau confirmé ». » Le décompte des 18 postures et la mention des
+  fentes et des extensions disparaissent.
+
+### Boutique
+
+- Le titre « L'équipement, et un livre » devient « Le tapis de YOGA et les sangles »,
+  et l'accroche « Les seules choses qu'on ne télécharge pas… » est retirée.
+- **Tapis : 78 €** au lieu de 99 €, descriptif réécrit par Cédric. 5 mm de caoutchouc
+  recouverts de 1 mm de liège, 3,2 kg, sangle de transport et petit tapis d'appui portant
+  l'épaisseur à 12 mm. Les 3 photos passent **sous** le texte, la grande à gauche et les
+  2 petites empilées à droite, bas alignés.
+- **Sangles : 9 € la paire** au lieu de 39 € le kit, descriptif réécrit. Les planches
+  imprimées ne sont plus annoncées avec elles.
+- **Le livre est retiré** de la boutique, ainsi que la note « Aucun matériel n'est
+  demandé pour commencer ».
+
+### Pied de page et technique
+
+- Le pied de page légal est centré, sur toutes les pages.
 - **Pages légales.** Création de `mentions-legales.html` et `confidentialite.html`, liées
   depuis le pied de page. Les conditions générales de vente restent à écrire avant
-  l'ouverture de la boutique.
+  l'ouverture de la boutique. Une adresse de contact y est renseignée.
+- Leurs 2 liens passent de chemins absolus (`/mentions-legales.html`) à des chemins
+  relatifs. Mon audit de la veille les avait ratés et concluait à tort que tous les
+  chemins du site étaient relatifs.
 - **Polices hébergées localement.** Archivo et Newsreader sont téléchargées dans `fonts/`,
   sous-ensembles latin et latin-ext, 6 fichiers woff2 pour 516 ko. Les 2 `preconnect` et
   l'appel à `fonts.googleapis.com` disparaissent de `index.html` : le site ne contacte plus
   aucun serveur tiers, et l'adresse IP des visiteurs n'est plus transmise à Google.
-
-## 6 octobre 2026
-
-- **Accueil, bloc des plaquettes.** La phrase sur les variantes est raccourcie :
-  « Sur une plaquette individuelle, parfois une posture se pratique de différentes
-  manières avec la version « niveau confirmé ». » Le décompte des 18 postures et la
-  mention des fentes et des extensions disparaissent.
 
 ## 5 octobre 2026
 
