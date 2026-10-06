@@ -389,7 +389,7 @@ a { color: inherit; }
 
 .tile {
   background: #F3EDE1; border: 1px solid transparent; border-radius: 8px;
-  padding: .8rem; display: grid; gap: .45rem; justify-items: center; cursor: pointer; container-type: inline-size;
+  padding: .8rem; display: grid; gap: .7rem; justify-items: center; cursor: pointer; container-type: inline-size;
   transition: transform .18s ease, border-color .18s ease;
 }
 
@@ -405,7 +405,7 @@ a { color: inherit; }
 .tile[data-bord] img { width: 100%; max-width: 100%; }
 .tile[data-reduit] img { width: 93%; }
 
-.tile img { width: calc(var(--w) * var(--f) * var(--k, 1)); height: auto; max-width: 100%; margin-bottom: calc(var(--bl) * var(--f) * -1); }
+.tile img { width: calc(var(--w) * var(--f) * var(--k, 1)); height: auto; max-width: 100%; max-height: 100%; margin-bottom: calc(var(--bl) * var(--f) * -1); }
 
 /* --- eveil musculaire : la video et les postures cote a cote --- */
 .eveilrow { display: grid; grid-template-columns: 1fr; gap: 2rem; }
@@ -447,7 +447,7 @@ a { color: inherit; }
   cursor: pointer;
 }
 .ev__box { height: calc(100cqw * .70); width: 100%; display: flex; align-items: flex-end; justify-content: center; }
-.ev__box img { width: calc(var(--w) * var(--f)); height: auto; max-width: 100%; flex: none; }
+.ev__box img { width: calc(var(--w) * var(--f)); height: auto; max-width: 100%; max-height: 100%; flex: none; }
 .ev__t { display: flex; align-items: baseline; gap: .4rem; margin-top: .25rem; }
 .ev__n { font-family: "Archivo", sans-serif; font-size: .78rem; font-weight: 700; color: #B09154; }
 .ev__nom { font-family: "Archivo", sans-serif; font-size: .92rem; font-weight: 600; color: #2A2419; }
@@ -613,7 +613,7 @@ a { color: inherit; }
   --f: calc(100cqw / 728);
 }
 .fl__box { height: calc(100cqw * .92); width: 100%; display: flex; align-items: flex-end; justify-content: center; }
-.fl__box img { width: calc(var(--w) * var(--f) * var(--k, 1)); height: auto; max-width: 93%; flex: none; }
+.fl__box img { width: calc(var(--w) * var(--f) * var(--k, 1)); height: auto; max-width: 93%; max-height: 100%; flex: none; }
 
 /* --- index alphabetique --- */
 .index { display: grid; gap: 0; margin-bottom: 2.5rem; }
@@ -784,7 +784,7 @@ a { color: inherit; }
 }
 
 .fiche__close:hover { background: #E5DBC9; }
-.fiche__img { display: grid; place-items: center; min-height: 300px; }
+.fiche__img { display: grid; place-items: center; min-height: 300px; margin-bottom: .4rem; }
 .fiche__img img { max-width: 100%; max-height: 46vh; }
 .fiche__nom { font-family: "Archivo", sans-serif; font-size: var(--step-2); font-weight: 600; color: #2A2419; text-align: center; }
 .fiche__meta { font-family: "Archivo", sans-serif; font-size: .9rem; color: #7A6A50; text-align: center; }
@@ -1975,9 +1975,9 @@ fill="currentColor" stroke="none">
 <div class="fiche" id="fiche" hidden>
   <div class="fiche__box">
     <button class="fiche__close" id="ficheclose" type="button">Fermer</button>
-    <div class="fiche__note" id="fichenote"></div>
     <div class="fiche__img" id="ficheimg"></div>
     <h2 class="fiche__nom" id="fichenom"></h2>
+    <div class="fiche__note" id="fichenote"></div>
     <div class="fiche__meta" id="fichemeta"></div>
     <div class="fiche__vars" id="fichevars"></div>
     <div class="fiche__video"><p>Espace vidéo : la mise en place de la posture, à venir</p></div>

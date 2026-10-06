@@ -34,6 +34,31 @@ versionné. L'historique git réel démarre au premier commit.
   la version « niveau confirmé ». » Le décompte des 18 postures et la mention des
   fentes et des extensions disparaissent.
 
+### Postures
+
+- **Fiche d'une posture : plus rien n'est posé au-dessus du dessin.** La notation de
+  difficulté, qui était placée au-dessus depuis le 7 septembre 2026, passe sous le nom
+  de la posture. Pour les postures hautes, dont la tête touche le haut de la découpe,
+  le mot « Difficulté » n'arrivait qu'à 16 px du personnage et semblait posé dessus.
+- **Garde-fou sur les 3 cadres de posture** (répertoire, carrousel, florilège) :
+  `max-height: 100%` sur l'image, pour qu'aucune posture ne puisse dépasser son cadre
+  et recouvrir le texte voisin. Sans effet sur les 120 postures actuelles, l'audit
+  ci-dessous le montre.
+- Plus d'air entre la posture et son texte : l'écart des vignettes du répertoire passe
+  de 0,45 rem à 0,70 rem, et la fiche gagne 0,40 rem sous le dessin.
+
+**Audit des 120 postures**, hauteur de l'image rapportée à la hauteur de son cadre,
+facteurs `--k` et attributs `data-bord` / `data-plein` / `data-reduit` compris :
+
+| Contexte | Cadre | Postures qui dépassent |
+|---|---|---|
+| Répertoire, `.tile` | 1,17 × largeur | **aucune sur 120**, à 274, 350 et 500 px de vignette |
+| Carrousel, `.ev` | 0,70 × largeur | aucune des 12 affichées, la plus haute étant Equerre allongée à 89 % |
+| Florilège, `.fl` | 0,92 × largeur | aucune des 15 affichées, la plus haute étant Triangle incliné à 99 % |
+
+31 postures dépasseraient le cadre du carrousel et 8 celui du florilège si elles y
+étaient placées, Palmier en tête à +60 % et +22 %. Le garde-fou les couvre désormais.
+
 ### Boutique
 
 - Le bandeau est réduit à son seul surtitre « Boutique » : le titre
