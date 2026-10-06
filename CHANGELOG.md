@@ -24,8 +24,11 @@ versionné. L'historique git réel démarre au premier commit.
 - « À écouter en PREMIER » et « Dans un SECOND temps » passent en capitales dans les
   2 premières étapes de Before-Start, sur l'accueil comme sur la page Séances.
 - Le bouton « Découvrir la méthode » devient « À découvrir bientôt ».
-- « Ouvrir le répertoire » quitte la colonne de droite et passe centré sous le titre
-  « Parcourir les 90 postures », dont la marge basse tombe de 1 rem à 0,55 rem.
+- « Ouvrir le répertoire » quitte le bas de la colonne de droite et passe centré
+  au-dessus du texte, dans la colonne de gauche. Les 2 colonnes du bloc se calent
+  désormais en haut et non plus en bas, si bien que le bouton se trouve sur la même
+  ligne que le haut des vignettes de postures. La marge basse du titre
+  « Parcourir les 90 postures » tombe de 1 rem à 0,55 rem.
 - **Bloc des plaquettes.** La phrase sur les variantes est raccourcie : « Sur une
   plaquette individuelle, parfois une posture se pratique de différentes manières avec
   la version « niveau confirmé ». » Le décompte des 18 postures et la mention des
