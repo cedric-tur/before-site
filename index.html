@@ -1279,32 +1279,57 @@ a { color: inherit; }
 
 
 /* ============================ TÉLÉPHONE, MODE PORTRAIT ============================
-   Le corps du texte était déjà à 16 px, mais les 77 libellés secondaires écrits en
-   rem descendaient jusqu'à 11 px : descriptions de cartes, noms de postures, effets
-   du carrousel, mention légale. Plutôt que de reprendre ces 77 règles une par une,
-   la racine passe de 16 à 18 px : tout ce qui est exprimé en rem grandit de 12,5 %.
-   Le corps atteint 18 px, le plus petit libellé courant 14 px.
-   Seul le grand titre d'ouverture est retenu : il remplissait déjà la largeur. */
+   Le corps du texte était à 16 px, mais les 77 libellés secondaires écrits en rem
+   descendaient jusqu'à 11 px. Plutôt que de reprendre ces 77 règles une par une,
+   la racine passe de 16 à 20 px : tout ce qui est exprimé en rem grandit de 25 %.
+   C'est la seule valeur à bouger si la taille doit encore changer.
+
+   Contrepartie : à 20 px, les marges et les colonnes minimales exprimées en px
+   faisaient déborder les encadrés. Toutes les grilles de cartes passent donc sur
+   une seule colonne, et les rembourrages sont resserrés pour rendre la place au
+   texte. ======================================================================= */
 @media (max-width: 700px) {
-  html { font-size: 112.5%; }
+  html { font-size: 125%; }
 
-  :root { --step-4: clamp(2.1rem, 1.6rem + 2.4vw, 3.6rem); }
+  /* la gouttière se resserre : chaque pixel rendu va au texte */
+  :root {
+    --gutter: 1rem;
+    /* le grand titre d'ouverture remplissait déjà la largeur, on le retient */
+    --step-4: clamp(2rem, 1.5rem + 2.2vw, 3.4rem);
+  }
 
-  /* la phrase du pied de page tenait sur une ligne à 16 px, plus à 18 */
+  /* UNE SEULE COLONNE partout : un encadré ne peut plus être plus large que l'écran,
+     quelle que soit la largeur du téléphone. C'était le minimum de 292 px des cartes
+     de séance qui empêchait Before-Sleep de rentrer. */
+  .grid, .cols, .simple { grid-template-columns: 1fr; }
+  .cols { gap: 1.6rem; }
+  .simple { gap: 1.4rem; }
+
+  /* rembourrages resserrés, pour que la ligne de texte reste longue */
+  .card { padding: 1.1rem 1.05rem 1rem; }
+  .tile { padding: .6rem; }
+  .fiche__box { padding: 1.1rem; }
+  .fiche { padding: .8rem; }
+  .zoom__box { padding: 2rem 1.1rem 1.1rem; }
+
+  /* la barre du haut passe sur 2 lignes : la marque, puis les 4 entrées
+     réparties sur toute la largeur. À 20 px elles ne tenaient plus à côté
+     de la marque et les libellés se coupaient en deux. */
+  .topbar__in { flex-wrap: wrap; gap: .3rem 1rem; min-height: 0; padding-block: .5rem; }
+  .topnav { flex: 1 1 100%; justify-content: space-between; gap: .5rem; font-size: .78rem; }
+
+  /* la phrase du pied de page tenait sur une ligne à 16 px, plus à 20 */
   .foot__bl { white-space: normal; }
 
-  /* la barre du haut passe sur 2 lignes : la marque, puis les 4 entrees
-     reparties sur toute la largeur. A 18 px elles ne tenaient plus a cote
-     de la marque et les libelles se coupaient en deux. */
-  .topbar__in { flex-wrap: wrap; gap: .3rem 1rem; min-height: 0; padding-block: .55rem; }
-  .topnav { flex: 1 1 100%; justify-content: space-between; gap: .6rem; }
-
-  /* les libelles les plus petits restaient sous 13 px : on leur pose un plancher */
+  /* les libellés les plus petits restaient sous 14 px : on leur pose un plancher */
   .fiche__crit span,
   .fiche__var span,
   .tile__var,
   .temoin__pied span,
-  .idxlettre b { font-size: .8rem; }
+  .idxlettre b { font-size: .78rem; }
+
+  /* les vignettes de variantes tenaient à 2 par ligne à 16 px, plus à 20 */
+  .fiche__var { width: 118px; }
 }
 </style>
 

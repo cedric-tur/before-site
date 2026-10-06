@@ -252,8 +252,17 @@ Before-Step 1 dure 20 minutes, il ne rentre ni dans une classe ni dans une pause
 ## Le site
 
 Un seul fichier : `index.html`. **Cinq vues**, routage par ancre (`#accueil`, `#seances`,
-`#postures`, `#methode`, `#boutique`). Autonome, aucune dépendance externe
-hormis Google Fonts.
+`#postures`, `#methode`, `#boutique`). **Aucune dépendance externe depuis le
+6 octobre 2026** : Archivo et Newsreader sont hébergées dans `fonts/`, l'appel à
+`fonts.googleapis.com` a disparu, et le site ne contacte plus aucun serveur tiers.
+La page publiée emporte donc `fonts/fonts.css`, les 6 fichiers woff2 et les 2 pages
+légales en plus de `index.html`.
+
+**Taille du texte sur téléphone.** Sous 700 px de large, la racine passe de 16 à 20 px :
+tout ce qui est exprimé en rem grandit de 25 %. C'est **la seule valeur à bouger** si la
+taille doit changer, le bloc est en fin de feuille de style. Contrepartie assumée : les
+grilles de cartes passent sur une seule colonne et les rembourrages sont resserrés, sinon
+les encadrés débordent de l'écran.
 
 **Deux vues sont en retrait depuis le 6 octobre 2026**, le temps que les contenus existent :
 
