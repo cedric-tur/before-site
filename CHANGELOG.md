@@ -52,13 +52,20 @@ versionné. L'historique git réel démarre au premier commit.
   Le cadre reçoit une marge basse de 5,5 % de la largeur de la vignette, proportionnelle
   donc, ce qui porte le dégagement à une bonne vingtaine de pixels. Cédric avait relevé
   le défaut sur une soixantaine de postures.
-- **7 postures debout ou cambrées paraissaient minuscules** et montent au plus haut que
-  le cadre autorise, sans jamais le dépasser : Palmier 1,04, Chaise 1,15,
-  Poirier (niveau confirmé) 1,22, demi Roue 1,45, demi Roue (Soleil) 1,24,
-  demi Roue en rotation 1,30, demi Roue en rotation 2 1,24. Elles occupent désormais
-  de 96,5 à 99,4 % de la hauteur du cadre. **Cela rompt l'échelle humaine commune**
-  pour ces 7 postures : une cambrée y paraît aussi haute qu'une debout. Palmier, qui
-  définit la hauteur du cadre, ne pouvait gagner que 4 %.
+- **7 postures avaient été agrandies** (Palmier, Chaise, Poirier niveau confirmé et les
+  4 demi Roue) pour qu'elles paraissent moins petites. Cédric a écarté ce remède :
+  l'agrandissement rompait l'échelle humaine commune et ne réglait pas le vrai défaut.
+  Les 7 facteurs sont **annulés**, `FACTEUR` retrouve ses 4 entrées d'origine.
+- **Le dégagement sous la posture est porté à 13 % de la largeur de la vignette**
+  (au lieu de 5,5 %), soit 47 px pour une vignette de 274 px et 57 px pour 350 px.
+  Le carrousel de l'accueil, qui n'avait que 5 px entre la posture et son nom, reçoit
+  9 %, soit 21 px. La fiche d'une posture passe à 42 px sous le dessin.
+
+**Vérification faite à cette occasion** : les dimensions de `_liste.tsv` correspondent
+au pixel près à celles des 120 fichiers WebP, et aucune image ne dépasse son cadre.
+Le texte n'était donc jamais recouvert par un débordement, seulement collé : les
+découpes sont alignées par le bas avec un calage `bl` à 0, le pied ou la main la plus
+basse touche le bord du cadre, et il n'y avait que l'écart de la grille avant le nom.
 
 **Audit des 120 postures**, hauteur de l'image rapportée à la hauteur de son cadre,
 facteurs `--k` et attributs `data-bord` / `data-plein` / `data-reduit` compris :

@@ -396,7 +396,7 @@ a { color: inherit; }
 .tile:hover { transform: translateY(-3px); border-color: var(--accent); }
 .tile__box {
   height: calc(100cqw * 1.17); width: 100%;
-  margin-bottom: calc(100cqw * .055);
+  margin-bottom: calc(100cqw * .13);
   display: flex; align-items: flex-end; justify-content: center;
 }
 
@@ -447,7 +447,7 @@ a { color: inherit; }
   --f: calc(100cqw / 728);
   cursor: pointer;
 }
-.ev__box { height: calc(100cqw * .70); width: 100%; display: flex; align-items: flex-end; justify-content: center; }
+.ev__box { height: calc(100cqw * .70); width: 100%; margin-bottom: calc(100cqw * .09); display: flex; align-items: flex-end; justify-content: center; }
 .ev__box img { width: calc(var(--w) * var(--f)); height: auto; max-width: 100%; max-height: 100%; flex: none; }
 .ev__t { display: flex; align-items: baseline; gap: .4rem; margin-top: .25rem; }
 .ev__n { font-family: "Archivo", sans-serif; font-size: .78rem; font-weight: 700; color: #B09154; }
@@ -785,7 +785,7 @@ a { color: inherit; }
 }
 
 .fiche__close:hover { background: #E5DBC9; }
-.fiche__img { display: grid; place-items: center; min-height: 300px; margin-bottom: .4rem; }
+.fiche__img { display: grid; place-items: center; min-height: 300px; margin-bottom: 1.6rem; }
 .fiche__img img { max-width: 100%; max-height: 46vh; }
 .fiche__nom { font-family: "Archivo", sans-serif; font-size: var(--step-2); font-weight: 600; color: #2A2419; text-align: center; }
 .fiche__meta { font-family: "Archivo", sans-serif; font-size: .9rem; color: #7A6A50; text-align: center; }
@@ -2315,14 +2315,7 @@ fill="currentColor" stroke="none">
 
     var A_PLEIN = { "perche-jambe-pliee": 1 };
     // quelques postures paraissent trop imposantes a l'echelle commune
-    var FACTEUR = {
-      "equerre-debout": .90, "equerre-allongee": .95,
-      "oreilles-pressees": 1.15, "oreilles-pressees-niveau-confirme": 1.15,
-      // montees au plus haut que le cadre autorise, sans le depasser
-      "palmier": 1.04, "chaise": 1.15, "poirier-niveau-confirme": 1.22,
-      "demi-roue": 1.45, "demi-roue-niveau-confirme": 1.24,
-      "demi-roue-en-rotation": 1.30, "demi-roue-en-rotation-niveau-confirme": 1.24
-    };
+    var FACTEUR = { "equerre-debout": .90, "equerre-allongee": .95, "oreilles-pressees": 1.15, "oreilles-pressees-niveau-confirme": 1.15 };
     var A_BORD = { "perche": 1, "barque": 1, "demi-lune-laterale": 1, "cygne": 1, "cygne-niveau-confirme": 1, "cygne-niveau-confirme-2": 1 };
     var A_REDUIT = { "cygne": 1, "cygne-niveau-confirme": 1, "cygne-niveau-confirme-2": 1, "perche": 1, "demi-lune-laterale": 1 };
 
