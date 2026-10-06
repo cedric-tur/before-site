@@ -33,8 +33,10 @@ versionné. L'historique git réel démarre au premier commit.
 
 ### Boutique
 
-- Le titre « L'équipement, et un livre » devient « Le tapis de YOGA et les sangles »,
-  et l'accroche « Les seules choses qu'on ne télécharge pas… » est retirée.
+- Le bandeau est réduit à son seul surtitre « Boutique » : le titre
+  « L'équipement, et un livre » est d'abord devenu « Le tapis de YOGA et les sangles »,
+  puis a été retiré à son tour, comme l'accroche
+  « Les seules choses qu'on ne télécharge pas… ».
 - **Tapis : 78 €** au lieu de 99 €, descriptif réécrit par Cédric. 5 mm de caoutchouc
   recouverts de 1 mm de liège, 3,2 kg, sangle de transport et petit tapis d'appui portant
   l'épaisseur à 12 mm. Disposition en 2 colonnes : la photo du tapis seul à gauche, le
