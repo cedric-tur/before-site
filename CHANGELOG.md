@@ -37,10 +37,14 @@ versionné. L'historique git réel démarre au premier commit.
   et l'accroche « Les seules choses qu'on ne télécharge pas… » est retirée.
 - **Tapis : 78 €** au lieu de 99 €, descriptif réécrit par Cédric. 5 mm de caoutchouc
   recouverts de 1 mm de liège, 3,2 kg, sangle de transport et petit tapis d'appui portant
-  l'épaisseur à 12 mm. Les 3 photos passent **sous** le texte, la grande à gauche et les
-  2 petites empilées à droite, bas alignés.
+  l'épaisseur à 12 mm. Disposition en 2 colonnes : la photo du tapis seul à gauche, le
+  texte à droite avec les 2 petites photos sous lui, dans leur format d'origine. Les
+  2 colonnes sont calées en bas, le bas de la grande photo tombe donc sur celui des
+  2 petites.
 - **Sangles : 9 € la paire** au lieu de 39 € le kit, descriptif réécrit. Les planches
-  imprimées ne sont plus annoncées avec elles.
+  imprimées ne sont plus annoncées avec elles. Les 4 postures qu'elles rendent
+  indispensables sont citées sous leur nom de bibliothèque : Foetus, Hamac,
+  Pigeon royal, Voilier.
 - **Le livre est retiré** de la boutique, ainsi que la note « Aucun matériel n'est
   demandé pour commencer ».
 
