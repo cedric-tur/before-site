@@ -559,8 +559,8 @@ a { color: inherit; }
   border-radius: 100px; padding: .35rem .8rem; cursor: pointer;
 }
 .zoom__close:hover { background: #E5DBC9; }
-.zoom__img { display: flex; align-items: flex-end; justify-content: center; width: 100%; min-height: 200px; margin-bottom: 1.5rem; }
-.zoom__img img { max-width: 100%; max-height: 52vh; }
+.zoom__img { width: 100%; margin-bottom: 1.5rem; }
+.zoom__img img { display: block; margin-inline: auto; max-width: 100%; max-height: 52vh; }
 .zoom__t { display: flex; align-items: baseline; gap: .55rem; font-family: "Archivo", sans-serif; }
 .zoom__n { font-size: 1.05rem; font-weight: 700; color: #B09154; }
 .zoom__nom { font-size: 1.3rem; font-weight: 600; color: #2A2419; }
@@ -793,8 +793,8 @@ a { color: inherit; }
 }
 
 .fiche__close:hover { background: #E5DBC9; }
-.fiche__img { display: flex; align-items: flex-end; justify-content: center; min-height: 300px; margin-bottom: 1.8rem; }
-.fiche__img img { max-width: 100%; max-height: 46vh; }
+.fiche__img { margin-bottom: 1.8rem; }
+.fiche__img img { display: block; margin-inline: auto; max-width: 100%; max-height: 46vh; }
 .fiche__nom { font-family: "Archivo", sans-serif; font-size: var(--step-2); font-weight: 600; color: #2A2419; text-align: center; }
 .fiche__meta { font-family: "Archivo", sans-serif; font-size: .9rem; color: #7A6A50; text-align: center; }
 /* verbe, sujet et notation dans un seul flux de texte insecable */
@@ -1349,11 +1349,18 @@ a { color: inherit; }
      Le dégagement était exprimé en rem, il grandissait donc avec le texte au lieu
      de grandir avec la posture, qui occupe presque toute la largeur de l'écran.
      Il passe à 82 px dans la fiche et 70 px dans le zoom du carrousel.
-     Le cadre minimal n'est PAS réduit : le réduire remonte le titre d'autant. */
+     Le cadre minimal a disparu : le dessin est en flux normal, son cadre vaut
+     exactement sa hauteur, ni débordement ni vide possibles. */
   .fiche__box { gap: 1.3rem; }
   .fiche__img { margin-bottom: 2.8rem; }
   .zoom__box { gap: 1.1rem; }
   .zoom__img { margin-bottom: 2.4rem; }
+
+  /* la posture dépassait en hauteur : sur un téléphone l'écran est haut et
+     étroit, 46 % de sa hauteur fait un personnage plus grand que la fenêtre
+     une fois le nom, la notation et les efficiences posés en dessous */
+  .fiche__img img { max-height: 38vh; }
+  .zoom__img img { max-height: 42vh; }
 
   /* ---- plus rien ne dépasse la largeur de l'écran ----
      Mesuré sur 390, 360 et 320 px de large. Les 5 cas ci-dessous étaient

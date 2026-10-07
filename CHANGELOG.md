@@ -21,13 +21,19 @@ versionné. L'historique git réel démarre au premier commit.
 - **Le zoom du carrousel n'avait aucun dégagement** : 13 px seulement, sur ordinateur
   comme sur téléphone. Le correctif du 6 octobre n'avait touché que la fiche du
   répertoire. Il passe à 34 px sur ordinateur.
-- **La posture est posée sur le bas de son cadre**, comme dans le répertoire et le
-  carrousel, au lieu d'y être centrée. Le centrage rendait la position du dessin
-  dépendante de sa hauteur : le dégagement sous lui variait donc d'une posture à
-  l'autre, et la première tentative avait même **remonté** le titre sur les postures
-  plates, le cadre minimal étant passé de 300 à 240 px (60 px gagnés en haut pour
-  20 px de marge ajoutés en bas). Le cadre minimal revient à 300 px, et les
-  120 postures partagent désormais la même ligne de sol et le même dégagement.
+- **Le cadre du dessin passe en flux normal**, après 3 tentatives ratées. Il était une
+  grille centrée avec une hauteur minimale de 300 px, ce qui a produit 3 défauts
+  successifs : le dégagement sous le dessin variait selon la hauteur de la posture ;
+  réduire la hauteur minimale à 240 px a **remonté** le titre de 60 px sur les postures
+  plates pour 20 px de marge ajoutés en bas ; et caler le dessin sur le bas du cadre
+  l'a fait **déborder par le haut**. Sans grille, sans flex et sans hauteur minimale,
+  le cadre vaut exactement la hauteur du dessin : ni débordement ni vide ne sont
+  possibles, et la marge basse est garantie.
+- **La hauteur du dessin est réduite sur téléphone**, de 46 à 38 % de la hauteur de
+  l'écran dans la fiche et de 52 à 42 % dans le zoom. Un écran de téléphone étant
+  haut et étroit, 46 % de sa hauteur donnait un personnage plus grand que la fenêtre
+  une fois le nom, la notation et les efficiences posés en dessous. Sur ordinateur,
+  les valeurs sont inchangées.
 - *Entretien :* `CHANGELOG.md` avait des fins de ligne mélangées, 85 CRLF et 278 LF,
   héritées de mes insertions successives. Le fichier est uniformisé en LF.
 
