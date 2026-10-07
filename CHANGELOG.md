@@ -25,6 +25,11 @@ versionné. L'historique git réel démarre au premier commit.
   le site. Le retour en arrière tient en une règle, signalée en commentaire.
   Largeur vérifiée : « Before-Standup » passe de 175 à 203 px sur téléphone, pour
   275 px disponibles dans la carte.
+  *Corrigé dans la foulée :* le mot était **invisible**, le préfixe `data:image/svg+xml,`
+  manquait devant le masque. Le navigateur cherchait donc un fichier inexistant, et un
+  masque introuvable ne laisse rien passer. Les espaces du tracé sont aussi encodés, et
+  le remplacement est désormais placé derrière un `@supports` : si un navigateur ne sait
+  pas poser de masque, le mot reste lisible en Archivo au lieu de disparaître.
 - Nouveau dossier `photo-marque/` : `before-s.webp` (celui du site), `before-s.png` et
   `before-s-vectoriel.svg`, extrait du `.ai` par PyMuPDF. Dans ce SVG le texte reste
   vectoriel, mais le dégradé du ruban y devient une image : les dégradés PDF n'ont pas
