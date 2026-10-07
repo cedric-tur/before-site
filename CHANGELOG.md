@@ -16,7 +16,7 @@ versionné. L'historique git réel démarre au premier commit.
   qu'une fois, les 2 emplacements la partageant : 21 ko pour 1106 x 267 px, affiché
   à 38 px de haut en en-tête et 50 px en pied de page, soit 7 fois la densité
   nécessaire. Le verrou typographique `.bs` reste en place pour les noms de séance.
-- **À l'essai : « Before- » manuscrit dans les noms de séance.** Le mot n'est plus
+- **« Before- » manuscrit dans les noms de séance**, essayé puis retenu par Cédric. Le mot n'est plus
   composé en Archivo maigre estompé, c'est le tracé du logo, extrait du `.ai` en
   vectoriel puis posé en **masque CSS sur un aplat de la couleur courante** : il prend
   donc la teinte de son contexte sans qu'aucune version colorée soit nécessaire, et

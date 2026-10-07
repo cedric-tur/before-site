@@ -238,9 +238,13 @@ Deux règles :
 
 - Le nom anglais n'apparaît **jamais seul**. Toujours accompagné d'un sous-titre français :
   *Before-Standup : 9 minutes, au réveil, dans votre lit.*
-- Typographiquement, `Before-` est en graisse légère et estompée, le mot en S en gras plein
-  (classe `.bs` avec `.pre` et `.s` dans le HTML). Ce verrou se répète partout **pour les
-  noms de séance**.
+- Typographiquement, **`Before-` est le tracé manuscrit du logo** et le mot en S est en
+  Archivo gras plein (classe `.bs` avec `.pre` et `.s` dans le HTML). Ce verrou se répète
+  partout pour les noms de séance. *Retenu par Cédric le 7 octobre 2026, en remplacement
+  de l'Archivo maigre estompé.* Le tracé est posé en **masque CSS sur un aplat de la
+  couleur courante** : il prend donc la teinte de son contexte, et il n'existe pas de
+  version colorée à maintenir. Il est placé derrière un `@supports` : sans masque,
+  le mot revient en Archivo plutôt que de disparaître.
 - **La marque elle-même, en en-tête et en pied de page, est le logo déposé à l'INPI**
   depuis le 7 octobre 2026 : ruban doré et « Before-S » manuscrit, texte blanc sur fond
   transparent. Il n'est plus composé en Archivo. Sources dans `photo-marque/` :
