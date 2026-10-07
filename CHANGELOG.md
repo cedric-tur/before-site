@@ -16,6 +16,15 @@ versionné. L'historique git réel démarre au premier commit.
   qu'une fois, les 2 emplacements la partageant : 21 ko pour 1106 x 267 px, affiché
   à 38 px de haut en en-tête et 50 px en pied de page, soit 7 fois la densité
   nécessaire. Le verrou typographique `.bs` reste en place pour les noms de séance.
+- **À l'essai : « Before- » manuscrit dans les noms de séance.** Le mot n'est plus
+  composé en Archivo maigre estompé, c'est le tracé du logo, extrait du `.ai` en
+  vectoriel puis posé en **masque CSS sur un aplat de la couleur courante** : il prend
+  donc la teinte de son contexte sans qu'aucune version colorée soit nécessaire, et
+  reste net à toute taille. Le mot demeure dans le texte pour la lecture vocale et le
+  copier-coller, il n'est simplement plus dessiné. 12 ko, une seule copie pour tout
+  le site. Le retour en arrière tient en une règle, signalée en commentaire.
+  Largeur vérifiée : « Before-Standup » passe de 175 à 203 px sur téléphone, pour
+  275 px disponibles dans la carte.
 - Nouveau dossier `photo-marque/` : `before-s.webp` (celui du site), `before-s.png` et
   `before-s-vectoriel.svg`, extrait du `.ai` par PyMuPDF. Dans ce SVG le texte reste
   vectoriel, mais le dégradé du ruban y devient une image : les dégradés PDF n'ont pas
