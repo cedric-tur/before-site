@@ -239,7 +239,15 @@ Deux règles :
 - Le nom anglais n'apparaît **jamais seul**. Toujours accompagné d'un sous-titre français :
   *Before-Standup : 9 minutes, au réveil, dans votre lit.*
 - Typographiquement, `Before-` est en graisse légère et estompée, le mot en S en gras plein
-  (classe `.bs` avec `.pre` et `.s` dans le HTML). Ce verrou se répète partout.
+  (classe `.bs` avec `.pre` et `.s` dans le HTML). Ce verrou se répète partout **pour les
+  noms de séance**.
+- **La marque elle-même, en en-tête et en pied de page, est le logo déposé à l'INPI**
+  depuis le 7 octobre 2026 : ruban doré et « Before-S » manuscrit, texte blanc sur fond
+  transparent. Il n'est plus composé en Archivo. Sources dans `photo-marque/` :
+  `before-s.webp` (1106 x 267, celui du site), `before-s.png` et
+  `before-s-vectoriel.svg`. L'original Illustrator est chez Cédric,
+  `logo INPI TURMEL 3 versions.ai`, dont la page 3 est la version à fond transparent
+  et texte blanc.
 
 Exception au système : **Before-Start** ne nomme pas un moment mais une étape.
 C'est assumé : c'est la seule séance dont le rôle est d'être la première.
@@ -293,6 +301,7 @@ on ouvre `index.html` dans un navigateur.
 | `photo-posture/_anciennes/` | 38 découpes remplacées au fil des versions, à ne pas confondre avec les fichiers actifs | |
 | `photo-moi/` | le portrait de Cédric, original et version WebP publiée | 1,5 Mo |
 | `photo-boutique/` | les photos du tapis et des sangles, originaux et versions WebP | 26 Mo |
+| `photo-marque/` | le logo INPI : WebP publié, PNG et SVG vectoriel | 125 ko |
 | `genere/` | données produites : `postures.js`, `efficiences.tsv`, `thematiques.md`, `notation.html` | 2,8 Mo |
 | `postures-img/` | les crops issus des planches de glossaire | 19,8 Mo |
 | `repris/` | les redécoupes faites depuis les planches individuelles | 5,4 Mo |

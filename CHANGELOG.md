@@ -9,6 +9,18 @@ versionné. L'historique git réel démarre au premier commit.
 
 ## 7 octobre 2026
 
+- **La marque devient le logo déposé à l'INPI**, en en-tête et en pied de page : ruban
+  doré et « Before-S » manuscrit, à la place du mot composé en Archivo. Tiré du fichier
+  Illustrator de Cédric, page 3, la version à fond transparent et texte blanc, seule
+  lisible sur la palette Sable. Le logo est posé en image de fond pour n'être embarqué
+  qu'une fois, les 2 emplacements la partageant : 21 ko pour 1106 x 267 px, affiché
+  à 38 px de haut en en-tête et 50 px en pied de page, soit 7 fois la densité
+  nécessaire. Le verrou typographique `.bs` reste en place pour les noms de séance.
+- Nouveau dossier `photo-marque/` : `before-s.webp` (celui du site), `before-s.png` et
+  `before-s-vectoriel.svg`, extrait du `.ai` par PyMuPDF. Dans ce SVG le texte reste
+  vectoriel, mais le dégradé du ruban y devient une image : les dégradés PDF n'ont pas
+  d'équivalent SVG direct.
+
 - **Equerre allongée** : « étire ISCHIO-JAMBIERS » passe de 4 à 2 icônes, sur sa fiche
   comme sur sa vignette dans la question « Quelles postures étirent les ischio-jambiers ? »,
   les 2 lisant la même donnée. `genere/efficiences.tsv` est corrigé en même temps.
