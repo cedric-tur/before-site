@@ -9,6 +9,10 @@ versionné. L'historique git réel démarre au premier commit.
 
 ## 7 octobre 2026
 
+- **Equerre allongée** : « étire ISCHIO-JAMBIERS » passe de 4 à 2 icônes, sur sa fiche
+  comme sur sa vignette dans la question « Quelles postures étirent les ischio-jambiers ? »,
+  les 2 lisant la même donnée. `genere/efficiences.tsv` est corrigé en même temps.
+
 - **Le titre s'écrivait sur la posture, sur téléphone seulement.** Le dégagement sous
   le dessin était exprimé en rem : il grandissait donc avec le texte, pas avec la
   posture, qui occupe presque toute la largeur de l'écran sur un téléphone alors
