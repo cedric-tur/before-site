@@ -17,9 +17,13 @@ versionné. L'historique git réel démarre au premier commit.
 - **Le zoom du carrousel n'avait aucun dégagement** : 13 px seulement, sur ordinateur
   comme sur téléphone. Le correctif du 6 octobre n'avait touché que la fiche du
   répertoire. Il passe à 34 px sur ordinateur.
-- Le cadre minimal de la fiche tombe de 300 à 240 px sur téléphone, et celui du zoom
-  de 200 à 170 px : 300 px représentaient 91 % de la largeur disponible, ce qui
-  laissait un grand vide sous les postures très larges, qui sont plates.
+- **La posture est posée sur le bas de son cadre**, comme dans le répertoire et le
+  carrousel, au lieu d'y être centrée. Le centrage rendait la position du dessin
+  dépendante de sa hauteur : le dégagement sous lui variait donc d'une posture à
+  l'autre, et la première tentative avait même **remonté** le titre sur les postures
+  plates, le cadre minimal étant passé de 300 à 240 px (60 px gagnés en haut pour
+  20 px de marge ajoutés en bas). Le cadre minimal revient à 300 px, et les
+  120 postures partagent désormais la même ligne de sol et le même dégagement.
 - *Entretien :* `CHANGELOG.md` avait des fins de ligne mélangées, 85 CRLF et 278 LF,
   héritées de mes insertions successives. Le fichier est uniformisé en LF.
 
