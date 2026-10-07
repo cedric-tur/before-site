@@ -7,6 +7,22 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 7 octobre 2026
+
+- **Le titre s'écrivait sur la posture, sur téléphone seulement.** Le dégagement sous
+  le dessin était exprimé en rem : il grandissait donc avec le texte, pas avec la
+  posture, qui occupe presque toute la largeur de l'écran sur un téléphone alors
+  qu'elle en occupe le tiers sur un ordinateur. Il passe de 42 à **78 px** dans la
+  fiche d'une posture et de 13 à **66 px** dans le zoom du carrousel de l'accueil.
+- **Le zoom du carrousel n'avait aucun dégagement** : 13 px seulement, sur ordinateur
+  comme sur téléphone. Le correctif du 6 octobre n'avait touché que la fiche du
+  répertoire. Il passe à 34 px sur ordinateur.
+- Le cadre minimal de la fiche tombe de 300 à 240 px sur téléphone, et celui du zoom
+  de 200 à 170 px : 300 px représentaient 91 % de la largeur disponible, ce qui
+  laissait un grand vide sous les postures très larges, qui sont plates.
+- *Entretien :* `CHANGELOG.md` avait des fins de ligne mélangées, 85 CRLF et 278 LF,
+  héritées de mes insertions successives. Le fichier est uniformisé en LF.
+
 ## 6 octobre 2026
 
 ### Structure du site
