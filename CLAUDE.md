@@ -342,10 +342,30 @@ partir d'eux et de `_liste.tsv`. Modifier une image sans régénérer ne change 
   matin `#DFBA6E`, express `#A9BC7A`, soir `#AFA2DA`.
 
 **Mécanismes**
-- Les boutons « Écouter » lisent un attribut `data-audio` (porté par la carte pour les séances,
-  par le bouton dans l'espace élève). Vide → le bouton affiche « Bientôt » et reste inactif.
-  Renseigné → il devient un lecteur. Rien d'autre à modifier pour mettre un audio en ligne.
+- Les boutons « Écouter » lisent un attribut posé sur la carte, ou sur l'étape pour les
+  3 temps de Before-Start. Vide → le bouton affiche sa durée ou « Bientôt » et reste
+  inactif. Renseigné → il devient un lecteur. Rien d'autre à modifier.
 - Le filtre par durée de la page Séances utilise `data-max` sur chaque carte.
+- **Les 7 séances de l'éveil ont 2 enregistrements**, un par mode, et portent donc
+  `data-audio-sans` et `data-audio-avec` : le sélecteur change l'enregistrement en même
+  temps que la durée. Les 4 autres séances gardent `data-audio`. Soit **14 fichiers pour
+  17 emplacements**, chaque séance de l'éveil figurant sur l'accueil et sur la page
+  Séances, sauf la version adaptée qui n'est que sur l'accueil.
+  Durées confirmées par Cédric le 12 octobre 2026 :
+
+| Séance | Sans sangles | Avec sangles |
+|---|---|---|
+| Before-Start, Découverte | 11 min | 12 min |
+| Before-Start, Initiation | 13 min | 14 min |
+| Before-Start, Initiation SPEED | 13 min | 14 min |
+| Before-Sleep | 11 min | 12 min |
+| Before-Standup | 8mn20 | 9 min |
+| Before-Speed | en cours | en cours |
+| Version adaptée (encadré mobilité) | 13 min | 14 min |
+
+La **version adaptée** est la pratique avec coussins et oreiller, présentée dans
+l'encadré « Vous manquez de mobilité ? » de l'accueil. Elle a son bouton d'écoute
+depuis le 12 octobre 2026, à côté de l'espace vidéo qui l'attend déjà.
 
 **Infrastructure prévue**
 - Paiement : **Stripe Payment Link**

@@ -7,6 +7,29 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 12 octobre 2026
+
+- **Chaque séance de l'éveil a désormais 2 enregistrements**, un par mode, là où le site
+  n'en prévoyait qu'un. Les blocs concernés portent `data-audio-sans` et `data-audio-avec`
+  au lieu de `data-audio`, et **le sélecteur sans / avec Sangles change l'enregistrement
+  en même temps que la durée affichée**. Les 4 séances hors éveil, Before-Sport,
+  Before-Step 1, Before-Step 2 et Before-School, gardent `data-audio`.
+- **Le lecteur est reconstruit.** Il lisait la source une seule fois au chargement, ce qui
+  ne permettait pas d'en changer. Une fonction `majLecteurs` recalcule maintenant la source
+  de chaque bouton à chaque bascule : elle active ou désactive le bouton, écrit son libellé
+  ou sa durée d'attente, et **referme le lecteur ouvert si l'enregistrement a changé**,
+  pour qu'on ne continue pas d'écouter la version sans sangles après avoir cliqué sur
+  « avec ». Le libellé d'origine de chaque bouton est mémorisé au chargement.
+- **La version adaptée devient la 7e séance de l'éveil** et reçoit son bouton d'écoute
+  dans l'encadré « Vous manquez de mobilité ? », à côté de l'espace vidéo qui l'attendait
+  déjà. 13 min sans sangles, 14 min avec.
+- Le décompte passe donc à **14 fichiers pour 17 emplacements**, chaque séance de l'éveil
+  figurant sur l'accueil et sur la page Séances, sauf la version adaptée.
+- 7 boutons portaient leur libellé en texte nu et les autres dans un `span` : tous sont
+  uniformisés, le script écrivant désormais dans le dernier enfant quel qu'il soit.
+- Les durées déjà en place ont été vérifiées contre celles que Cédric a communiquées :
+  elles correspondent toutes, aucune n'a été modifiée.
+
 ## 7 octobre 2026
 
 - **La marque devient le logo déposé à l'INPI**, en en-tête et en pied de page : ruban
