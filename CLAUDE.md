@@ -24,6 +24,18 @@ Son objectif déclaré, à long terme : que ces séances s'enseignent à l'écol
 
 ## Ce qui se vend
 
+**La phrase de référence, arrêtée par Cédric le 12 octobre 2026.** Toute nouvelle
+rédaction s'y conforme, dans cet ordre : gratuit d'abord, équipé ensuite, abonné enfin.
+
+> L'éveil musculaire reste gratuit et se pratique dans un lit, avec des sangles fortement
+> conseillées à 9 € la paire ; au-delà, je vends un abonnement à 8 € par mois à une
+> méthode de yoga accessible et détaillée, 15 mini-cours et 6 séances progressives
+> guidées à la voix, qui se pratiquent au sol sur un tapis en liège proposé à 78 €.
+
+Elle s'adresse en priorité aux **adultes de 40 à 65 ans qui ont mal au dos, se réveillent
+raides et sentent leur mobilité diminuer**. Premier jalon chiffré : **100 abonnés payants**,
+soit 800 € par mois, avant de fixer un objectif annuel.
+
 ### Gratuit : huit séances, définitivement
 
 | Séance | Durée | Position | Contexte |
@@ -119,8 +131,8 @@ quelqu'un qui a fini d'apprendre.
 ### Le matériel selon les offres
 
 - **Éveil musculaire (gratuit)** : aucun matériel obligatoire. 12 postures avec sangles,
-  11 sans. La sangle n'est **jamais** présentée comme nécessaire : on explique son intérêt,
-  on ne la vend pas.
+  11 sans. La sangle peut être dite **fortement conseillée**, jamais nécessaire : on
+  explique son intérêt, on ne la rend pas obligatoire.
 - **Before-Small et Before-Session (payant)** : les sangles sont **obligatoires** sur certaines
   postures, et le tapis devient indispensable pour les séances au sol. C'est là, et seulement
   là, que la vente de matériel est légitime.
@@ -369,13 +381,21 @@ le formulaire e-mail, les titres des 15 mini-cours, et les mentions légales / C
 - Ajouter un palier de prix supplémentaire, ou proposer du live
 - Écrire « yoga » sans le qualifier (accessible, détaillé, non élitiste)
 - Promettre de soigner quoi que ce soit
-- Présenter la sangle comme indispensable pour commencer (on découvre sans, on s'équipe
-  ensuite), ou le tapis comme nécessaire à la pratique. « Fortement conseillées », dans
-  l'encadré mobilité de l'accueil, est la formule la plus haute admise : elle vise la
-  version adaptée, pas l'éveil lui-même, qui se fait sans matériel en 11 postures.
-  **Depuis le 6 octobre 2026 la page Boutique ne porte plus de garantie « rien n'est
-  nécessaire pour commencer »** : Cédric a retiré l'accroche du bandeau et la note de
-  bas de page. L'argument reste porté par l'accueil, il ne faut pas l'y perdre aussi
+- Laisser croire qu'il faut un tapis **pour commencer**. *Règle précisée le 12 octobre
+  2026 : elle ne vaut plus que pour la partie gratuite.* Le partage est le suivant :
+  - **Éveil gratuit** : aucun matériel obligatoire, il se fait dans un lit en 11 postures.
+    « Les sangles sont fortement conseillées » est la formule la plus haute admise ;
+    « nécessaires » ou « indispensables » restent interdits.
+  - **Abonnement** : le tapis est **nécessaire**, les séances se pratiquent au sol, et les
+    sangles sont obligatoires sur certaines postures. Le dire franchement est légitime,
+    c'est là que la vente de matériel a du sens.
+
+  *« Du yoga sans tapis, sans tenue, sans même sortir du lit »* reste le titre d'ouverture
+  et le seul différenciateur qu'aucun concurrent ne peut copier : il ne doit jamais être
+  contredit par une phrase d'accueil. **Depuis le 6 octobre 2026 la page Boutique ne porte
+  plus de garantie « rien n'est nécessaire pour commencer »** : Cédric a retiré l'accroche
+  du bandeau et la note de bas de page. L'argument reste porté par l'accueil, il ne faut
+  pas l'y perdre aussi
 - Suggérer d'attendre que tout soit terminé pour publier : le projet est prêt depuis
   longtemps et le risque réel est de continuer à le peaufiner
 
