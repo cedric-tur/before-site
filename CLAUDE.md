@@ -40,6 +40,12 @@ Son objectif déclaré, à long terme : que ces séances s'enseignent à l'écol
 Les quatre premières sont le même éveil musculaire, **12 postures allongé sur le dos**,
 faisable sur un lit ou sur un tapis, décliné en quatre durées.
 
+**Le répertoire des 90 postures est gratuit lui aussi**, et c'est délibéré : la page
+Postures est en accès libre, classée par famille, par muscle sollicité et par difficulté.
+*Corrigé le 12 octobre 2026 : ce document le rangeait à tort dans l'offre payante.*
+Ne jamais le compter comme un argument de vente de l'abonnement, et ne pas le passer
+derrière le paiement : c'est une vitrine, pas une contrepartie.
+
 Durées provisoires pour Step 1 et Step 2 : elles seront ajustées une fois les audios terminés.
 C'est l'efficacité qui décide, pas le chronomètre, et les durées ne sont pas mises en avant
 dans les accroches.
@@ -84,9 +90,6 @@ chacune (une détaillée pour apprendre, une resserrée où les postures sont te
 | IV | **Before-Sun** |
 | V | **Before-Stone** |
 | VI | **Before-Sky** |
-
-**Le répertoire.** 90 postures illustrées en planches, classées par famille, par muscle
-sollicité et par difficulté.
 
 Abonnement mensuel, sans engagement, résiliable à tout moment.
 L'abonnement finance les nouvelles séances **et permet de garder les séances gratuites
