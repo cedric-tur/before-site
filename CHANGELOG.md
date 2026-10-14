@@ -7,6 +7,14 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 14 octobre 2026
+
+- **Crédit musical Modjo ajouté sous l'espace vidéo de l'accueil.** Il est imposé mot pour
+  mot par l'article 3(c) de l'Exhibit A du contrat Finger Printz Music du 15 octobre 2025,
+  qui exige un crédit clair sur le site et à la fin de chaque vidéo YouTube ou réseaux
+  sociaux. Les 9 lignes ne doivent être ni modifiées ni abrégées, un commentaire HTML
+  le rappelle. Nouvelle classe `.credit`, discrète mais lisible.
+
 ## 12 octobre 2026
 
 - **Chaque séance de l'éveil a désormais 2 enregistrements**, un par mode, là où le site

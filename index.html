@@ -393,6 +393,14 @@ a { color: inherit; }
   color: var(--ink-muted); text-align: center;
 }
 
+/* le credit musical : discret mais lisible, comme l'exige le contrat */
+.credit {
+  font-family: "Archivo", sans-serif; font-size: .72rem; line-height: 1.5;
+  color: var(--ink-muted); text-align: center; opacity: .75;
+}
+.credit a { color: inherit; text-decoration: underline; text-underline-offset: .15em; }
+.credit a:hover { color: var(--accent); }
+
 /* --- ce qui distingue Before-S : la simplicité de pratique --- */
 .simple { display: grid; grid-template-columns: repeat(auto-fit, minmax(226px, 1fr)); gap: 1.9rem; }
 .simple__item { display: grid; gap: .4rem; }
@@ -1532,6 +1540,20 @@ fill="currentColor" stroke="none">
             </div>
           </div>
           <p class="reel__cap">Visualisez Before-S en accéléré : voyez ce qui vous attend.</p>
+          <!-- CRÉDIT MUSICAL OBLIGATOIRE. Imposé mot pour mot par l'article 3(c) de
+               l'Exhibit A du contrat Finger Printz Music du 15 octobre 2025 : le crédit
+               doit apparaître clairement sur le site, et à la fin de chaque vidéo publiée
+               sur YouTube et les réseaux sociaux. NE RIEN MODIFIER, NE RIEN ABRÉGER. -->
+          <p class="credit" lang="en">Savior Eyes<br>
+          (R. Tranchart, Y. Destagnol)<br>
+          Produced and performed by Modjo (Romain Tranchart &amp; Yann Destagnol).<br>
+          Recorded at Modjo Music Studio &amp; Le Park, mixed by Modjo &amp; Hervé Bordes.<br>
+          Universal Music Publishing<br>
+          ISRC: FR-9W1-01-00543<br>
+          (P) &amp; (C) 2001 Modjo Music<br>
+          Under license from Finger Printz Entertainment Group for Modjo Music<br>
+          <a href="https://www.modjo.com" rel="noopener">www.modjo.com</a> ||
+          <a href="https://www.fingerprintzmusic.com" rel="noopener">www.fingerprintzmusic.com</a></p>
         </div>
       </div>
     </div>
