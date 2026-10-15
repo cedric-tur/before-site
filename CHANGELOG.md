@@ -32,6 +32,11 @@ versionné. L'historique git réel démarre au premier commit.
   contrairement à ce que je pensais. **Ne jamais sortir le fichier final depuis Resolve** :
   son encodeur à bas débit tombe à 0,8484 là où x264 tient 0,9484 pour un poids
   comparable.
+- **La planche des 12 postures remplace le cadre noir de l'espace vidéo.** Elle y est
+  visible dès maintenant, et servira de vignette d'attente au lecteur le jour où la
+  vidéo sera activée : un seul fichier pour les 2 usages. Compressée de **14,3 Mo à
+  107 ko** en 1920 x 1080, soit 136 fois plus léger, sans perte visible à la taille
+  d'affichage. La vignette extraite de la vidéo, qui servait jusque-là, est remplacée.
 - **Une seule zone de texte autour de l'espace vidéo**, les 2 faisant double emploi.
   Le cadre ne garde que son triangle de lecture, et la phrase passe **sous** lui :
   « 1 minute pour visionner Before-S en accéléré ». C'est la bonne place, car le

@@ -363,7 +363,8 @@ a { color: inherit; }
   display: grid; place-items: center;
 }
 
-.reel__frame video { width: 100%; height: 100%; object-fit: cover; }
+.reel__frame video,
+.reel__frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 .reel__ph {
   position: absolute; inset: 0;
@@ -1534,18 +1535,18 @@ fill="currentColor" stroke="none">
           <div class="reel__frame">
             <!-- VIDÉO ACCÉLÉRÉE, PRÊTE À ACTIVER.
                  Le fichier et sa vignette sont en place : videos/eveil-accelere.mp4,
-                 16,4 Mo, 1 min 08 carton de crédit compris, et images/eveil-poster.jpg.
+                 16,4 Mo, 1 min 08 carton de crédit compris, et images/eveil-poster.webp.
                  EN ATTENTE DE L'ACCORD ÉCRIT DE GINO OLIVIERI, exigé par l'article 11(g)
                  du contrat Finger Printz. Le jour venu : retirer ces 2 lignes de
-                 commentaire, et supprimer le bloc .reel__ph juste en dessous.
+                 commentaire, et supprimer la planche <img> juste en dessous, que
+                 l'attribut poster du lecteur reprendra.
                  Gardez les contrôles : la musique implique de laisser la main à l'utilisateur.
-            <video controls playsinline poster="images/eveil-poster.jpg">
+            <video controls playsinline poster="images/eveil-poster.webp">
               <source src="videos/eveil-accelere.mp4" type="video/mp4">
             </video>
             -->
-            <div class="reel__ph">
-              <span class="reel__glyph" aria-hidden="true">&#9654;</span>
-            </div>
+            <img src="images/eveil-poster.webp" width="1920" height="1080"
+                 alt="Les 12 postures de l'éveil musculaire avec sangles, numérotées de 1 à 12 : demi Pont, Bâton, Croissant de lune, Pilier, Croisé, Estomac, Equerre, Aigle en torsion, Grand écart, Expire, Inspire, Repos.">
           </div>
           <p class="reel__cap">1 minute pour visionner Before-S en accéléré</p>
           <!-- CRÉDIT MUSICAL OBLIGATOIRE, EN ATTENTE. Imposé mot pour mot par l'article
