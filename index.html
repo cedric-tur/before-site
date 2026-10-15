@@ -397,6 +397,8 @@ a { color: inherit; }
   font-family: "Archivo", sans-serif; font-size: var(--step--1);
   color: var(--ink-muted); text-align: center;
 }
+.reel__cap strong { font-weight: 600; }
+.hero .reel__cap strong { color: var(--hero-ink); }
 
 /* le credit musical : discret mais lisible, comme l'exige le contrat */
 .credit {
@@ -1540,6 +1542,13 @@ fill="currentColor" stroke="none">
                  du contrat Finger Printz. Le jour venu : retirer ces 2 lignes de
                  commentaire, et supprimer la planche <img> juste en dessous, que
                  l'attribut poster du lecteur reprendra.
+                 BOUTON DE LECTURE : le bouton natif est toujours au centre exact et
+                 ne se deplace pas. Il faut donc un bouton sur mesure pose par-dessus
+                 la vignette. Position arretee par Cedric apres mesure des espaces
+                 libres de la planche : 45,2 % de la largeur et 69 % de la hauteur,
+                 entre Expire et Inspire. Elle degage 176 px sur la planche, ne couvre
+                 aucun nom de posture, aucun visage, et se tient pres du bandeau
+                 "Before-S EVEIL MUSCULAIRE". Diametre 50 px a l'affichage.
                  Gardez les contrôles : la musique implique de laisser la main à l'utilisateur.
             <video controls playsinline poster="images/eveil-poster.webp">
               <source src="videos/eveil-accelere.mp4" type="video/mp4">
@@ -1548,7 +1557,7 @@ fill="currentColor" stroke="none">
             <img src="images/eveil-poster.webp" width="1920" height="1080"
                  alt="Les 12 postures de l'éveil musculaire avec sangles, numérotées de 1 à 12 : demi Pont, Bâton, Croissant de lune, Pilier, Croisé, Estomac, Equerre, Aigle en torsion, Grand écart, Expire, Inspire, Repos.">
           </div>
-          <p class="reel__cap">1 minute pour visionner Before-S en accéléré</p>
+          <p class="reel__cap"><strong>1 minute</strong> pour visionner Before-S en accéléré</p>
           <!-- CRÉDIT MUSICAL OBLIGATOIRE, EN ATTENTE. Imposé mot pour mot par l'article
                3(c) de l'Exhibit A du contrat Finger Printz Music du 15 octobre 2025 : le
                crédit doit apparaître clairement sur le site, et à la fin de chaque vidéo

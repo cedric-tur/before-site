@@ -32,6 +32,16 @@ versionné. L'historique git réel démarre au premier commit.
   contrairement à ce que je pensais. **Ne jamais sortir le fichier final depuis Resolve** :
   son encodeur à bas débit tombe à 0,8484 là où x264 tient 0,9484 pour un poids
   comparable.
+- « **1 minute** » passe en gras dans la légende de l'espace vidéo.
+- **Position du futur bouton de lecture, arrêtée après mesure.** Le bouton natif des
+  navigateurs est toujours au centre exact et ne se déplace pas : il faudra un bouton
+  sur mesure posé par-dessus la vignette, à écrire le jour de l'activation. L'espace
+  libre de la planche a été cartographié : le centre exact n'offre que 48 px, les
+  2 plus grands espaces intérieurs sont 200 px en haut entre Bâton et Croissant de Lune,
+  et 192 px en bas entre Expire et Inspire. **Retenu : 45,2 % de la largeur, 69 % de la
+  hauteur**, soit la position basse légèrement remontée pour s'écarter des visages.
+  Elle dégage 176 px, ne couvre aucun nom ni aucun visage, et reste près du bandeau
+  « Before-S ÉVEIL MUSCULAIRE ». Diamètre 50 px à l'affichage.
 - **La planche des 12 postures remplace le cadre noir de l'espace vidéo.** Elle y est
   visible dès maintenant, et servira de vignette d'attente au lecteur le jour où la
   vidéo sera activée : un seul fichier pour les 2 usages. Compressée de **14,3 Mo à
