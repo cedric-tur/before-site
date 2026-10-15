@@ -32,8 +32,10 @@ versionné. L'historique git réel démarre au premier commit.
   contrairement à ce que je pensais. **Ne jamais sortir le fichier final depuis Resolve** :
   son encodeur à bas débit tombe à 0,8484 là où x264 tient 0,9484 pour un poids
   comparable.
-- Textes de l'espace vidéo raccourcis : « L'éveil en 1 minute chrono » et
-  « Visualisez Before-S en accéléré ». Ces 2 textes sont **publiés**, contrairement au
+- **Une seule zone de texte autour de l'espace vidéo**, les 2 faisant double emploi.
+  La légende sous le cadre est retirée, et le texte à l'intérieur devient
+  « Visualisez Before-S en accéléré (1 minute) ». La règle `.reel__cap` est conservée
+  pour les prochains espaces vidéo, un commentaire l'explique. Ces 2 textes sont **publiés**, contrairement au
   reste : le crédit Modjo est masqué dans un commentaire, exactement comme le bloc vidéo,
   et les 2 seront réactivés ensemble dès l'accord écrit de Gino Olivieri.
 
