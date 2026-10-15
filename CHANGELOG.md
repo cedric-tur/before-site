@@ -33,9 +33,10 @@ versionné. L'historique git réel démarre au premier commit.
   son encodeur à bas débit tombe à 0,8484 là où x264 tient 0,9484 pour un poids
   comparable.
 - **Une seule zone de texte autour de l'espace vidéo**, les 2 faisant double emploi.
-  La légende sous le cadre est retirée, et le texte à l'intérieur devient
-  « Visualisez Before-S en accéléré (1 minute) ». La règle `.reel__cap` est conservée
-  pour les prochains espaces vidéo, un commentaire l'explique. Ces 2 textes sont **publiés**, contrairement au
+  Le cadre ne garde que son triangle de lecture, et la phrase passe **sous** lui :
+  « 1 minute pour visionner Before-S en accéléré ». C'est la bonne place, car le
+  contenu du cadre sera remplacé par la vignette du lecteur le jour où la vidéo sera
+  activée, alors que la légende, elle, restera. Ces 2 textes sont **publiés**, contrairement au
   reste : le crédit Modjo est masqué dans un commentaire, exactement comme le bloc vidéo,
   et les 2 seront réactivés ensemble dès l'accord écrit de Gino Olivieri.
 
