@@ -7,6 +7,34 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 15 octobre 2026
+
+- **La vidéo de l'éveil est encodée et en place**, `videos/eveil-accelere.mp4`, 16,4 Mo
+  pour 1 min 08, carton de crédit Modjo compris, avec sa vignette `images/eveil-poster.jpg`.
+  **Elle reste désactivée** dans le HTML tant que Gino Olivieri n'a pas donné son accord
+  écrit, exigé par l'article 11(g) du contrat Finger Printz. Un commentaire dit quoi faire
+  le jour venu.
+- **Choix de l'encodage, mesuré au SSIM** contre le master de 546 Mo exporté par Resolve :
+
+| Fichier | Poids | SSIM |
+|---|---|---|
+| Export Resolve, qualité minimale | 56,2 Mo | 0,9636 |
+| x264 CRF 26 depuis le master | 21,6 Mo | 0,9625 |
+| x264 CRF 26 depuis le 56 Mo | 21,5 Mo | 0,9529 |
+| **x264 CRF 28, retenu** | **16,4 Mo** | **0,9561** |
+| x264 CRF 30 | 13,2 Mo | 0,9484 |
+| x264 CRF 24 en 720p | 13,7 Mo | 0,9461 |
+| Export Resolve à 1 000 kb/s | 11,6 Mo | 0,8484 |
+
+  Trois enseignements à retenir pour les prochaines vidéos. **Encoder depuis le master,
+  jamais depuis un fichier déjà compressé** : à poids égal, la double compression coûte
+  0,01 de SSIM pour rien. **Rester en 1080p** : le 720p perd à tous les niveaux de poids,
+  contrairement à ce que je pensais. **Ne jamais sortir le fichier final depuis Resolve** :
+  son encodeur à bas débit tombe à 0,8484 là où x264 tient 0,9484 pour un poids
+  comparable.
+- Textes de l'espace vidéo raccourcis : « L'éveil en 1 minute chrono » et
+  « Visualisez Before-S en accéléré ».
+
 ## 14 octobre 2026
 
 - **Crédit musical Modjo ajouté sous l'espace vidéo de l'accueil.** Il est imposé mot pour
