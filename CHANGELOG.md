@@ -33,7 +33,9 @@ versionné. L'historique git réel démarre au premier commit.
   son encodeur à bas débit tombe à 0,8484 là où x264 tient 0,9484 pour un poids
   comparable.
 - Textes de l'espace vidéo raccourcis : « L'éveil en 1 minute chrono » et
-  « Visualisez Before-S en accéléré ».
+  « Visualisez Before-S en accéléré ». Ces 2 textes sont **publiés**, contrairement au
+  reste : le crédit Modjo est masqué dans un commentaire, exactement comme le bloc vidéo,
+  et les 2 seront réactivés ensemble dès l'accord écrit de Gino Olivieri.
 
 ## 14 octobre 2026
 
