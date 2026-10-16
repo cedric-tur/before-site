@@ -19,8 +19,15 @@ qui l'attendaient sont activés ensemble.
   Expire et Inspire sur la planche. Les contrôles natifs n'apparaissent qu'au lancement :
   avant, le navigateur poserait son propre bouton au centre exact, par-dessus le nôtre.
   À la fin de la lecture, les contrôles s'effacent et le bouton revient.
-- **Le crédit musical Modjo est visible**, sous la légende, dans les termes exacts
-  imposés par l'article 3(c) de l'Exhibit A du contrat Finger Printz.
+- **Le crédit musical Modjo est visible**, dans les termes exacts imposés par l'article
+  3(c) de l'Exhibit A du contrat Finger Printz. **Placé dans le pied de page** et non
+  sous la vidéo : 9 lignes sous un film d'1 minute pesaient plus que le film lui-même
+  et repoussaient le reste de l'accueil. Le pied de page est l'emplacement conventionnel
+  d'un crédit, il le rend visible sur les 5 pages au lieu d'une seule, et il satisfait
+  donc mieux l'exigence contractuelle d'apparaître « clairement sur le site ».
+  Une demande de forme courte est partie chez Gino Olivieri : si elle aboutit, les
+  9 lignes deviendront « Modjo : Savior Eyes, sous licence Finger Printz Entertainment
+  Group », au même endroit, le crédit intégral restant à la fin de la vidéo.
 
 ## 15 octobre 2026
 
