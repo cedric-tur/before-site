@@ -88,6 +88,21 @@ img { max-width: 100%; height: auto; }
 .article--index .article__tete,
 .article--index .corps { max-width: none; }
 
+/* Le titre tient sur UNE ligne et va jusqu'au bord du site : il se dimensionne
+   sur sa colonne, d'ou le container-type. Le diviseur vient d'une mesure dans
+   les 2 polices reelles, Archivo pour la premiere moitie et Newsreader italique
+   pour la seconde : 26,4 em mesures, 28 retenus pour la graisse 600 et la
+   marge. Sous 700 px le titre reprend sa liberte, une ligne y serait illisible. */
+.article--index .article__tete { container-type: inline-size; }
+.article--index h1 {
+  font-size: min(var(--step-3), calc(100cqw / 28));
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .article--index h1 { white-space: normal; font-size: var(--step-3); }
+  .article--index h1 em { display: block; }
+}
+
 /* seconde moitie du titre, en dore et en italique, comme sur l'accueil du site */
 .article--index h1 em {
   font-family: "Newsreader", Georgia, serif;
