@@ -9,6 +9,15 @@ versionné. L'historique git réel démarre au premier commit.
 
 ## 16 octobre 2026
 
+- **Le titre d'accueil descend dans la colonne de gauche**, au lieu de s'étaler en pleine
+  largeur au-dessus. La vidéo s'aligne désormais sur lui et remonte d'autant : l'espace
+  vide qui restait à sa droite disparaît. Le surtitre l'accompagne.
+  « sans même sortir du lit » passe à la ligne, le `<em>` devenant un bloc. Le titre se
+  dimensionne sur **sa** colonne et non plus sur la largeur du bandeau, d'où un
+  `container-type` posé sur `.hero__txt` : il garde la même taille, environ 47 px, sur
+  2 lignes au lieu d'une. Les bandeaux fins des autres pages ne sont pas touchés, leur
+  titre reste d'un seul tenant.
+
 - **Le crédit Modjo passe de 9 à 3 lignes sur le site.** Gino Olivieri a accepté la
   demande de forme courte et a rédigé lui-même le texte de remplacement, en 5 lignes,
   dans son mail du 16 octobre 2026 : « Ok for the website, you can place this instead ».

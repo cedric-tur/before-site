@@ -201,8 +201,11 @@ a { color: inherit; }
 
 .hero .eyebrow { color: var(--hero-accent); }
 
-.hero h1 { font-size: min(var(--step-4), calc(100cqw / 21)); font-weight: 500; letter-spacing: -.035em; max-width: none; white-space: nowrap; }
-@media (max-width: 700px) { .hero h1 { white-space: normal; font-size: var(--step-4); } }
+/* Le titre vit dans la colonne de gauche depuis le 16 octobre 2026, et non plus
+   en pleine largeur au-dessus : la video s'aligne ainsi sur lui et le vide qui
+   restait a sa droite disparait. Il se dimensionne sur SA colonne, d'ou le
+   container-type pose sur .hero__txt, et la seconde moitie passe a la ligne. */
+.hero h1 { font-size: min(var(--step-4), calc(100cqw / 11)); font-weight: 500; letter-spacing: -.035em; max-width: none; }
 .hero--slim h1 { font-size: var(--step-3); max-width: 22ch; }
 
 .hero h1 em {
@@ -210,6 +213,9 @@ a { color: inherit; }
   font-style: italic; font-weight: 300; letter-spacing: -.01em;
   color: var(--hero-accent);
 }
+/* la seconde moitie du titre d'accueil passe a la ligne. Les bandeaux fins des
+   autres pages gardent leur titre d'un seul tenant, d'ou le :not() */
+.hero:not(.hero--slim) h1 em { display: block; }
 
 .hero__lede { font-size: var(--step-1); line-height: 1.55; color: var(--hero-muted); max-width: none; }
 .hero__lede--2 { color: var(--hero-ink); }
@@ -217,7 +223,7 @@ a { color: inherit; }
 /* le titre garde toute la largeur ; dessous, le texte a gauche et la video a droite */
 .hero__row { display: grid; grid-template-columns: 1.05fr .95fr; gap: 2.5rem; align-items: center; }
 @media (max-width: 880px) { .hero__row { grid-template-columns: 1fr; gap: 1.75rem; } }
-.hero__txt { display: grid; gap: 1rem; }
+.hero__txt { display: grid; gap: 1rem; container-type: inline-size; }
 .hero .reel { gap: .7rem; }
 .hero .reel__frame { border-color: var(--hero-line); }
 .hero .reel__ph { background: rgba(0,0,0,.32); }
@@ -1546,10 +1552,10 @@ fill="currentColor" stroke="none">
     </video>
     -->
     <div class="wrap hero__in">
-      <p class="eyebrow">Méthode Before-S</p>
-      <h1>Du YOGA sans tapis, <em>sans même sortir du lit</em></h1>
       <div class="hero__row">
         <div class="hero__txt">
+          <p class="eyebrow">Méthode Before-S</p>
+          <h1>Du YOGA sans tapis, <em>sans même sortir du lit</em></h1>
           <p class="hero__lede">Peu importe votre âge ou votre condition physique, l'éveil musculaire avec ces 12 postures allongées sur le dos permet d'étirer le corps sans effort.</p>
           <p class="hero__lede hero__lede--2">De 6 à 14 minutes, entièrement gratuit.</p>
         </div>
