@@ -9,6 +9,13 @@ versionné. L'historique git réel démarre au premier commit.
 
 ## 16 octobre 2026
 
+- **La vidéo était rognée en plein écran sur téléphone**, en haut et en bas, quand
+  Cédric basculait l'appareil en paysage. En cause, `object-fit: cover`, qui remplit
+  le cadre quitte à couper. Dans la page le défaut ne se voyait pas, la vidéo comme
+  la planche étant en 16/9 exact comme leur cadre, mais le navigateur conserve cette
+  règle en plein écran, où les proportions changent. Passé en `contain` sur les
+  3 espaces vidéo : même rendu dans la page, plus rien de coupé en plein écran.
+
 **Gino Olivieri a donné son accord écrit**, rangé dans BEFORE-S - Juridique. Les 3 éléments
 qui l'attendaient sont activés ensemble.
 

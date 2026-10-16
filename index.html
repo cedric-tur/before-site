@@ -363,8 +363,11 @@ a { color: inherit; }
   display: grid; place-items: center;
 }
 
+/* contain et non cover : le rendu est le meme dans la page, la video comme la
+   planche etant en 16/9 exact comme leur cadre, mais en plein ecran sur un
+   telephone en paysage, cover rognait le haut et le bas de l'image. */
 .reel__frame video,
-.reel__frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.reel__frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
 
 /* bouton de lecture sur mesure : le bouton natif est toujours au centre exact
    et ne se deplace pas. Position mesuree sur la planche des 12 postures, entre
@@ -543,7 +546,7 @@ a { color: inherit; }
   padding: 1.5rem; text-align: center;
 }
 
-.temoin__cadre video { width: 100%; height: 100%; object-fit: cover; }
+.temoin__cadre video { width: 100%; height: 100%; object-fit: contain; }
 
 /* tant qu'il n'y a rien dedans, le cadre est en pointilles */
 .temoin__vide { border-style: dashed; color: var(--ink-muted); }
@@ -604,7 +607,7 @@ a { color: inherit; }
 .adaptvid .reel__ph { padding: 1.1rem; gap: .6rem; }
 .adaptvid .reel__glyph { width: 42px; height: 42px; font-size: .9rem; }
 .adaptvid .reel__ph p { font-size: .8rem; max-width: 32ch; }
-.adaptvid video { width: 100%; height: 100%; object-fit: cover; }
+.adaptvid video { width: 100%; height: 100%; object-fit: contain; }
 .etape__pts { display: grid; gap: .3rem; margin: 0; padding: 0; list-style: none; font-size: .93rem; color: var(--hero-muted); }
 .etape__pts li { display: flex; gap: .55rem; align-items: baseline; }
 .etape__pts li::before { content: ""; width: 4px; height: 4px; border-radius: 50%; background: var(--hero-accent); flex: none; transform: translateY(-.25em); }
