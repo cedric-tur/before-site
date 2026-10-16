@@ -9,6 +9,16 @@ versionné. L'historique git réel démarre au premier commit.
 
 ## 16 octobre 2026
 
+- **Le crédit Modjo passe de 9 à 3 lignes sur le site.** Gino Olivieri a accepté la
+  demande de forme courte et a rédigé lui-même le texte de remplacement, en 5 lignes,
+  dans son mail du 16 octobre 2026 : « Ok for the website, you can place this instead ».
+  Les retours à la ligne ont été regroupés de 5 à 3, **aucun mot n'a bougé**.
+  Il a précisé qu'aucun avenant n'était nécessaire : « We don't need an amendment, you
+  can keep this email as approval. » Le mail est rangé dans BEFORE-S - Juridique,
+  `2026-10-16 approval video by Gino site internet.pdf`.
+  Le crédit intégral de l'article 3(c) **reste inchangé à la fin de la vidéo**, sur
+  YouTube et sur les réseaux sociaux.
+
 - **La vidéo était rognée en plein écran sur téléphone**, en haut et en bas, quand
   Cédric basculait l'appareil en paysage. En cause, `object-fit: cover`, qui remplit
   le cadre quitte à couper. Dans la page le défaut ne se voyait pas, la vidéo comme
