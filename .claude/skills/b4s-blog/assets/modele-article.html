@@ -2,7 +2,7 @@
 <!--
   MODÈLE D'ARTICLE BEFORE-S
   Copier ce fichier en /blog/<slug>/index.html, puis remplacer chaque {{...}}.
-  Ordre fixe, ne pas le changer : encadré de réponse, introduction, sommaire,
+  Ordre fixe, ne pas le changer : sommaire (colonne de gauche), encadré de réponse, introduction,
   6 à 8 sections, mise en garde, FAQ (dernière section), appel à l'action, auteur.
   Statut : retirer la ligne « robots noindex » et ce statut à la publication seulement.
   STATUT : brouillon
@@ -77,8 +77,9 @@
   <nav class="topnav" aria-label="Principal">
     <a href="/#accueil" class="opt">Accueil</a>
     <a href="/#postures">Les postures</a>
-    <a href="/blog/" aria-current="page">Blog</a>
+    <a href="/#methode" class="opt">La méthode</a>
     <a href="/#boutique" class="opt">Boutique</a>
+    <a href="/blog/" aria-current="page">Blog</a>
   </nav>
 </div></header>
 
@@ -89,6 +90,18 @@
     <p class="meta">Par <a href="/auteur/">Cédric Turmel</a>, professeur de yoga postural · Publié le {{JJ mois AAAA}} · {{N}} min de lecture</p>
   </div>
 
+  <div class="article__grille">
+    <!-- 3. SOMMAIRE : colonne de gauche (sous 900 px, au-dessus du texte), une ligne par section h2, ancres identiques aux id. -->
+    <nav class="sommaire" aria-label="Sommaire">
+      <p>Dans cet article</p>
+      <ol>
+        <li><a href="#{{ancre-1}}">{{Section 1}}</a></li>
+        <li><a href="#{{ancre-2}}">{{Section 2}}</a></li>
+        <li><a href="#faq">Questions fréquentes</a></li>
+      </ol>
+    </nav>
+
+    <div class="article__texte">
   <div class="corps">
 
     <!-- 1. ENCADRÉ DE RÉPONSE : 4 à 6 phrases qui se comprennent seules.
@@ -105,15 +118,6 @@
     <!-- 2. INTRODUCTION : 2 à 4 paragraphes, la thèse et pour qui. -->
     <p>{{Introduction.}}</p>
 
-    <!-- 3. SOMMAIRE : une ligne par section h2, ancres identiques aux id. -->
-    <nav class="sommaire" aria-label="Sommaire">
-      <p>Dans cet article</p>
-      <ol>
-        <li><a href="#{{ancre-1}}">{{Section 1}}</a></li>
-        <li><a href="#{{ancre-2}}">{{Section 2}}</a></li>
-        <li><a href="#faq">Questions fréquentes</a></li>
-      </ol>
-    </nav>
 
     <!-- 4. 6 À 8 SECTIONS. Chaque section commence par une phrase qui répond.
          Chiffres sourcés par un lien, citations attribuées. -->
@@ -147,7 +151,9 @@
   </div>
 
   <!-- 6. APPEL À L'ACTION : reprend la promesse de l'article,
-       mène vers une séance gratuite, aucun prix de l'offre payante. -->
+       mène vers une séance gratuite, aucun prix de l'offre payante.
+       Tant que la séance n'a pas son audio sur l'accueil (bouton « Bientôt »), ne pas écrire
+       « Écouter » : annoncer « Séance disponible très bientôt » et mener vers /#postures. -->
   <aside class="cta">
     <h2>{{Titre qui reprend la promesse de l'article}}</h2>
     <p>{{Une phrase : quelle séance gratuite, combien de minutes, où.}}</p>
@@ -157,7 +163,9 @@
 
   <div class="auteur">
     <img src="/photo-moi/cedric-turmel.webp" alt="Cédric Turmel" width="64" height="64">
-    <p><a href="/auteur/">Cédric Turmel</a> enseigne le yoga postural depuis plus de 10 ans. Il a passé un an à réécrire chaque posture pour qu'elle se suive à l'oreille, sans image.</p>
+    <p><a href="/auteur/">Cédric Turmel</a> enseigne le yoga postural depuis plus de 10 ans. Il a passé 1 an à réécrire chaque posture pour qu'elle se suive à l'oreille, sans image.</p>
+  </div>
+  </div>
   </div>
 </main>
 

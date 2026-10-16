@@ -14,7 +14,7 @@ Un seul gabarit : `assets/modele-article.html`. Un article apporte du contenu, j
 | 1 | En-tête | Catégorie, titre (h1), « Par Cédric Turmel », date, durée de lecture |
 | 2 | **La réponse en bref** | 4 à 6 phrases autonomes : la réponse, une idée reçue corrigée, le vrai enjeu, la phrase canonique, le lien avec Before-S sans vendre |
 | 3 | Introduction | 2 à 4 paragraphes : la gêne de départ, à qui s'adresse l'article, ce qu'il va traiter |
-| 4 | Sommaire | Une ligne par section, ancres identiques aux `id` |
+| 4 | Sommaire | Colonne de gauche, fixe pendant la lecture, effet doré au survol (sous 900 px, il repasse au-dessus du texte). Une ligne par section, ancres identiques aux `id`. Dans le HTML, il est placé avant le texte, dans `.article__grille` |
 | 5 | 6 à 8 sections h2 | Chacune ouvre sur sa réponse. Une citation attribuée au moins. Chiffres sourcés. |
 | 6 | Mise en garde | « Les séances proposées ne remplacent pas un avis médical... » |
 | 7 | **FAQ, dernière section** | 4 à 7 questions, la 1re est « C'est quoi la méthode Before-S ? » |
