@@ -1,0 +1,190 @@
+<!doctype html>
+<!--
+  MODÈLE D'ARTICLE BEFORE-S
+  Copier ce fichier en /blog/<slug>/index.html, puis remplacer chaque {{...}}.
+  Ordre fixe, ne pas le changer : encadré de réponse, introduction, sommaire,
+  6 à 8 sections, mise en garde, FAQ (dernière section), appel à l'action, auteur.
+  Statut : retirer la ligne « robots noindex » et ce statut à la publication seulement.
+  STATUT : brouillon
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>{{Titre SEO, 60 caractères au plus}} | Before-S</title>
+<meta name="description" content="{{Description de 140 à 160 caractères : la réponse d'abord, dite en une phrase.}}">
+<link rel="canonical" href="https://before-s.com/blog/{{slug}}/">
+<link rel="icon" href="/favicon.png" type="image/png">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Before-S">
+<meta property="og:title" content="{{Titre de l'article}}">
+<meta property="og:description" content="{{Même description}}">
+<meta property="og:url" content="https://before-s.com/blog/{{slug}}/">
+<meta property="og:image" content="https://before-s.com/photo-marque/before-s.png">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/blog/blog.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://before-s.com/blog/{{slug}}/#article",
+      "headline": "{{Titre de l'article}}",
+      "description": "{{Même description}}",
+      "inLanguage": "fr-FR",
+      "datePublished": "{{AAAA-MM-JJ}}",
+      "dateModified": "{{AAAA-MM-JJ, date de la dernière retouche de fond}}",
+      "author": { "@id": "https://before-s.com/auteur/#person" },
+      "publisher": { "@id": "https://before-s.com/#organisation" },
+      "mainEntityOfPage": "https://before-s.com/blog/{{slug}}/",
+      "image": "https://before-s.com/photo-marque/before-s.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://before-s.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://before-s.com/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "{{Titre de l'article}}", "item": "https://before-s.com/blog/{{slug}}/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "C'est quoi la méthode Before-S ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{PHRASE CANONIQUE, au mot près}}" }
+        },
+        {
+          "@type": "Question",
+          "name": "{{Question 2, telle qu'on la tape}}",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{Réponse 2, identique au texte visible}}" }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar"><div class="wrap topbar__in">
+  <a class="brand" href="/" aria-label="Before-S, retour à l'accueil"><img src="/photo-marque/before-s.webp" alt="Before-S" width="157" height="38"></a>
+  <nav class="topnav" aria-label="Principal">
+    <a href="/#accueil" class="opt">Accueil</a>
+    <a href="/#postures">Les postures</a>
+    <a href="/blog/" aria-current="page">Blog</a>
+    <a href="/#boutique" class="opt">Boutique</a>
+  </nav>
+</div></header>
+
+<main class="wrap article">
+  <div class="article__tete">
+    <p class="eyebrow">{{Catégorie : Au lit, Sans matériel, Mobilité, Avant le sport}}</p>
+    <h1>{{Titre de l'article}}</h1>
+    <p class="meta">Par <a href="/auteur/">Cédric Turmel</a>, professeur de yoga postural · Publié le {{JJ mois AAAA}} · {{N}} min de lecture</p>
+  </div>
+
+  <div class="corps">
+
+    <!-- 1. ENCADRÉ DE RÉPONSE : 4 à 6 phrases qui se comprennent seules.
+         Ordre : la réponse, une idée reçue corrigée, le vrai enjeu,
+         la phrase canonique, le lien avec Before-S sans vendre. -->
+    <aside class="reponse" aria-label="La réponse en bref">
+      <p class="reponse__titre">La réponse en bref</p>
+      <p>{{La réponse directe à la question du titre, en une phrase.}}</p>
+      <p>{{Une idée reçue que l'article corrige.}}</p>
+      <p>{{Le vrai enjeu pour le lecteur, à partir d'une gêne concrète.}}</p>
+      <p>{{PHRASE CANONIQUE, au mot près}}</p>
+    </aside>
+
+    <!-- 2. INTRODUCTION : 2 à 4 paragraphes, la thèse et pour qui. -->
+    <p>{{Introduction.}}</p>
+
+    <!-- 3. SOMMAIRE : une ligne par section h2, ancres identiques aux id. -->
+    <nav class="sommaire" aria-label="Sommaire">
+      <p>Dans cet article</p>
+      <ol>
+        <li><a href="#{{ancre-1}}">{{Section 1}}</a></li>
+        <li><a href="#{{ancre-2}}">{{Section 2}}</a></li>
+        <li><a href="#faq">Questions fréquentes</a></li>
+      </ol>
+    </nav>
+
+    <!-- 4. 6 À 8 SECTIONS. Chaque section commence par une phrase qui répond.
+         Chiffres sourcés par un lien, citations attribuées. -->
+    <h2 id="{{ancre-1}}">{{Section 1, formulée comme une question ou une action}}</h2>
+    <p>{{Texte. Un chiffre externe porte toujours son lien : <a href="{{URL vérifiée en 200}}">{{Nom de la source}}</a>.}}</p>
+
+    <blockquote>
+      <p>{{Citation exacte.}}</p>
+      <cite>{{Nom, fonction, source}}</cite>
+    </blockquote>
+
+    <h2 id="{{ancre-2}}">{{Section 2}}</h2>
+    <p>{{Texte. Un lien interne vers une page qui existe : <a href="/blog/{{autre-slug}}/">{{ancre qui décrit la destination}}</a>.}}</p>
+
+    <p class="prudence">Les séances proposées ne remplacent pas un avis médical. En cas de douleur ou de pathologie, demandez conseil à votre médecin avant de pratiquer.</p>
+
+    <!-- 5. FAQ, TOUJOURS EN DERNIÈRE SECTION : 4 à 7 questions.
+         La première est toujours « C'est quoi la méthode Before-S ? ».
+         Le texte doit être identique au FAQPage du JSON-LD ci-dessus. -->
+    <section class="faq" aria-labelledby="faq">
+      <h2 id="faq">Questions fréquentes</h2>
+      <details open>
+        <summary>C'est quoi la méthode Before-S ?</summary>
+        <p>{{PHRASE CANONIQUE, au mot près}}</p>
+      </details>
+      <details>
+        <summary>{{Question 2, telle qu'on la tape}}</summary>
+        <p>{{Réponse 2}}</p>
+      </details>
+    </section>
+  </div>
+
+  <!-- 6. APPEL À L'ACTION : reprend la promesse de l'article,
+       mène vers une séance gratuite, aucun prix de l'offre payante. -->
+  <aside class="cta">
+    <h2>{{Titre qui reprend la promesse de l'article}}</h2>
+    <p>{{Une phrase : quelle séance gratuite, combien de minutes, où.}}</p>
+    <a class="btn" href="/?utm_source=blog-{{slug}}#accueil">Écouter la séance gratuite</a>
+    <p class="cta__note">Gratuit, sans inscription, sans tapis.</p>
+  </aside>
+
+  <div class="auteur">
+    <img src="/photo-moi/cedric-turmel.webp" alt="Cédric Turmel" width="64" height="64">
+    <p><a href="/auteur/">Cédric Turmel</a> enseigne le yoga postural depuis plus de 10 ans. Il a passé un an à réécrire chaque posture pour qu'elle se suive à l'oreille, sans image.</p>
+  </div>
+</main>
+
+<footer class="foot"><div class="wrap foot__in">
+  <div>
+    <a class="brand" href="/"><img src="/photo-marque/before-s.webp" alt="Before-S" width="207" height="50" style="height:50px"></a>
+    <p class="foot__def">{{PHRASE CANONIQUE, au mot près}}</p>
+  </div>
+  <nav class="foot__col" aria-label="Ressources">
+    <h2>Ressources</h2>
+    <ul>
+      <!-- Ancres = la requête telle qu'on la tape. Seulement des pages publiées. -->
+      <li><a href="/blog/yoga-au-lit-le-matin/">Yoga au lit le matin</a></li>
+      <li><a href="/blog/">Tous les articles</a></li>
+    </ul>
+  </nav>
+  <nav class="foot__col" aria-label="Before-S">
+    <h2>Before-S</h2>
+    <ul>
+      <li><a href="/#accueil">Les séances gratuites</a></li>
+      <li><a href="/#postures">Les 90 postures</a></li>
+      <li><a href="/auteur/">Qui est Cédric Turmel</a></li>
+    </ul>
+  </nav>
+  <p class="foot__legal">Before-S, marque déposée à l'INPI. Tous droits réservés. <a href="/mentions-legales.html">Mentions légales</a> · <a href="/confidentialite.html">Politique de confidentialité</a><br>
+  Les séances proposées ne remplacent pas un avis médical. En cas de douleur ou de pathologie, demandez conseil à votre médecin avant de pratiquer.</p>
+</div></footer>
+
+</body>
+</html>
