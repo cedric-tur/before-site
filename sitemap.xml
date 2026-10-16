@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap de before-s.com.
+  Règle : <lastmod> ne change QUE si le contenu de la page change vraiment
+  (jamais la date du jour par défaut). Une page neuve prend sa date de publication.
+  Les vues #postures, #boutique... ne sont pas des pages : elles ne figurent pas ici.
+  Un article en brouillon (noindex) n'entre pas dans le sitemap.
+  Date juste d'une page : la date du dernier commit du fichier (git log, format %cs).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://before-s.com/</loc>
+    <lastmod>2026-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://before-s.com/auteur/</loc>
+    <lastmod>2026-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://before-s.com/blog/</loc>
+    <lastmod>2026-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://before-s.com/blog/yoga-au-lit-le-matin/</loc>
+    <lastmod>2026-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://before-s.com/mentions-legales.html</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://before-s.com/confidentialite.html</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+</urlset>

@@ -1,0 +1,54 @@
+# robots.txt de before-s.com
+# Tout le site est ouvert, aux moteurs de recherche comme aux assistants IA.
+# Les blocs nommés ne sont pas obligatoires (le joker suffit), mais certains
+# robots cherchent leur propre nom : on les déclare pour lever tout doute.
+
+User-agent: *
+Allow: /
+
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google (Gemini, aperçus IA)
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft (Bing, Copilot)
+User-agent: Bingbot
+Allow: /
+
+# Apple (Siri, Apple Intelligence)
+User-agent: Applebot-Extended
+Allow: /
+
+# Mistral (Le Chat)
+User-agent: MistralAI-User
+Allow: /
+
+Sitemap: https://before-s.com/sitemap.xml
+
+# Résumé du site pour les assistants IA : https://before-s.com/llms.txt
