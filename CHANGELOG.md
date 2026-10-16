@@ -7,6 +7,21 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 16 octobre 2026
+
+**Gino Olivieri a donné son accord écrit**, rangé dans BEFORE-S - Juridique. Les 3 éléments
+qui l'attendaient sont activés ensemble.
+
+- **La vidéo de l'éveil est en ligne**, `videos/eveil-accelere.mp4`, 16,4 Mo pour 1 min 08.
+  `preload="none"` : le fichier n'est téléchargé qu'au clic, la vignette suffit avant, ce qui
+  évite d'imposer 16 Mo à chaque visiteur de l'accueil.
+- **Bouton de lecture sur mesure**, à 45,2 % de la largeur et 69 % de la hauteur, entre
+  Expire et Inspire sur la planche. Les contrôles natifs n'apparaissent qu'au lancement :
+  avant, le navigateur poserait son propre bouton au centre exact, par-dessus le nôtre.
+  À la fin de la lecture, les contrôles s'effacent et le bouton revient.
+- **Le crédit musical Modjo est visible**, sous la légende, dans les termes exacts
+  imposés par l'article 3(c) de l'Exhibit A du contrat Finger Printz.
+
 ## 15 octobre 2026
 
 - **La vidéo de l'éveil est encodée et en place**, `videos/eveil-accelere.mp4`, 16,4 Mo

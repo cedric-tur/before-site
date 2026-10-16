@@ -11,7 +11,7 @@ Un seul gabarit : `assets/modele-article.html`. Un article apporte du contenu, j
 
 | # | Bloc | Contenu |
 |---|---|---|
-| 1 | En-tête | Catégorie, titre (h1), « Par Cédric Turmel », date, durée de lecture |
+| 1 | En-tête | Catégorie, titre (h1), « Par Cédric TURMEL », date, durée de lecture |
 | 2 | **La réponse en bref** | 4 à 6 phrases autonomes : la réponse, une idée reçue corrigée, le vrai enjeu, la phrase canonique, le lien avec Before-S sans vendre |
 | 3 | Introduction | 2 à 4 paragraphes : la gêne de départ, à qui s'adresse l'article, ce qu'il va traiter |
 | 4 | Sommaire | Colonne de gauche, fixe pendant la lecture, effet doré au survol (sous 900 px, il repasse au-dessus du texte). Une ligne par section, ancres identiques aux `id`. Dans le HTML, il est placé avant le texte, dans `.article__grille` |

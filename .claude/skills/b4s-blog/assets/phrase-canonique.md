@@ -1,6 +1,6 @@
 # La phrase canonique de Before-S
 
-> Before-S est une méthode de yoga accessible et détaillée, guidée à la voix par Cédric Turmel : un éveil musculaire gratuit de 12 postures allongé sur le dos, qui se pratique dans un lit, sans tapis ni tenue.
+> Before-S est une méthode de yoga accessible et détaillée : un éveil musculaire gratuit de 12 postures allongé sur le dos, qui se pratique dans un lit, sans tapis ni tenue.
 
 ## Pourquoi une seule phrase, recopiée au mot près
 
@@ -22,4 +22,4 @@ Elle ne se reformule donc jamais, même « en mieux ». Pour la changer : Cédri
 
 Contrôle : `grep -rLF "Before-S est une méthode de yoga accessible et détaillée" blog/*/index.html auteur/index.html` ne doit rien lister.
 
-⚠️ Phrase proposée, **à valider par Cédric** avant la première publication. Elle reprend sa phrase de référence (gratuit d'abord, dans un lit).
+Phrase validée par Cédric le 16 octobre 2026 (il a retiré « guidée à la voix par Cédric TURMEL »). Elle reprend sa phrase de référence (gratuit d'abord, dans un lit).

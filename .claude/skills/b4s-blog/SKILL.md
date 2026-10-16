@@ -1,6 +1,6 @@
 ---
 name: b4s-blog
-description: Propose, rédige et prépare la publication d'un article du blog de before-s.com (méthode Before-S de Cédric Turmel, yoga accessible au lit et sans tapis). À utiliser dès que Cédric parle d'article, de blog, de sujet à écrire, de référencement, de Google, de ChatGPT ou de « être cité par les IA », ou demande une veille de ses concurrents. Il fait la veille, propose 3 sujets, rédige un brouillon au gabarit fixe, lance les contrôles, et ne publie qu'après la validation écrite de Cédric. Ne jamais commiter ni pousser sans son accord.
+description: Propose, rédige et prépare la publication d'un article du blog de before-s.com (méthode Before-S de Cédric TURMEL, yoga accessible au lit et sans tapis). À utiliser dès que Cédric parle d'article, de blog, de sujet à écrire, de référencement, de Google, de ChatGPT ou de « être cité par les IA », ou demande une veille de ses concurrents. Il fait la veille, propose 3 sujets, rédige un brouillon au gabarit fixe, lance les contrôles, et ne publie qu'après la validation écrite de Cédric. Ne jamais commiter ni pousser sans son accord.
 ---
 
 # b4s-blog : le blog de before-s.com

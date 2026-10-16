@@ -28,7 +28,7 @@ Deux couches. Les règles de `CLAUDE.md` (la marque) priment ; les règles GEO (
 5. **3 à 5 liens externes** vers des sources d'autorité, chaque adresse vérifiée en 200. Jamais une adresse écrite de mémoire.
 6. **2 à 4 liens internes**, vers des pages qui existent déjà, ancres qui décrivent la destination.
 7. **Une FAQ en dernière section**, 4 à 7 questions écrites comme on les tape dans Google ou qu'on les pose à ChatGPT. La première est toujours « C'est quoi la méthode Before-S ? » et sa réponse est la phrase canonique. Le texte du JSON-LD FAQPage est identique à la FAQ visible.
-8. **L'auteur est nommé** : Cédric Turmel, avec un lien vers `/auteur/`. Les assistants citent plus volontiers un texte signé par une personne identifiable.
+8. **L'auteur est nommé** : Cédric TURMEL, avec un lien vers `/auteur/`. Les assistants citent plus volontiers un texte signé par une personne identifiable.
 9. **La phrase canonique au mot près** (`assets/phrase-canonique.md`).
 10. **Des titres de section qui répondent** ou qui posent la question du lecteur. Chaque section commence par sa réponse.
 11. **De la prose liée** plutôt que des listes à puces partout ; des phrases de longueurs variées. Éviter les tics d'écriture automatique : pas de « dans un monde où », pas de « il est important de noter », pas de série de phrases de trois mots, pas de « ce n'est pas X, c'est Y » répété.
