@@ -81,6 +81,19 @@ img { max-width: 100%; height: auto; }
 .meta a { color: var(--ink-soft); }
 
 .corps { max-width: var(--texte); }
+
+/* L'accueil du blog n'est pas un article : son titre et son accroche prennent
+   toute la largeur du site. La mesure de 68 caracteres reste en vigueur dans
+   les articles, ou elle sert la lecture. */
+.article--index .article__tete,
+.article--index .corps { max-width: none; }
+
+/* seconde moitie du titre, en dore et en italique, comme sur l'accueil du site */
+.article--index h1 em {
+  font-family: "Newsreader", Georgia, serif;
+  font-style: italic; font-weight: 300; letter-spacing: -.01em;
+  color: var(--accent);
+}
 .corps h2 { font-size: var(--step-2); margin: 2.8rem 0 1rem; scroll-margin-top: 80px; }
 .corps h3 { font-size: var(--step-1); margin: 2rem 0 .6rem; }
 .corps p, .corps ul, .corps ol { margin: 0 0 1.1rem; color: var(--ink-soft); }
