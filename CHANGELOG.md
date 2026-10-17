@@ -7,6 +7,19 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 17 octobre 2026
+
+- **Nouvelle version de la vidéo de l'accueil.** Cédric a adouci l'incrustation de son
+  logo, qui reposait sur un bandeau noir opaque découpant l'image : il est maintenant
+  translucide, le parquet transparaît dessous. Le montage et sa durée sont inchangés,
+  1 min 08, carton de crédit compris.
+- Encodée avec les mêmes réglages que la première, x264 CRF 28 depuis le master de
+  552 Mo : **16,7 Mo pour un SSIM de 0,9556**, contre 16,4 Mo et 0,9561 pour la
+  précédente. L'écart tient à la transparence du logo, plus coûteuse à compresser
+  qu'un aplat noir.
+- La vignette d'attente n'est pas touchée : c'est la planche des 12 postures, pas une
+  image tirée de la vidéo.
+
 ## 16 octobre 2026
 
 - **Le titre d'accueil descend dans la colonne de gauche**, au lieu de s'étaler en pleine
