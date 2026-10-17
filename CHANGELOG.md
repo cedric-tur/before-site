@@ -9,6 +9,26 @@ versionné. L'historique git réel démarre au premier commit.
 
 ## 17 octobre 2026
 
+- **10 des 14 séances audio sont en ligne.** Cédric a terminé ses masters après avoir
+  acheté la licence de la musique sur AudioJungle. Before-Start en 3 étapes,
+  Before-Sleep et Before-Standup, chacune en version avec et sans sangles, soit
+  10 fichiers câblés sur 20 emplacements, l'accueil et la page Séances partageant
+  les mêmes.
+- **Traitement en 2 passes.** Coupe des infrabasses sous 70 Hz, inaudibles mais
+  coûteuses en débit, puis normalisation EBU R128 : une passe mesure, la seconde
+  corrige avec les valeurs mesurées. Les 10 fichiers sortent à **-16,0 LUFS exactement
+  et -1,5 dB de pic vrai**, là où les masters allaient de -14,7 à -15,9. Une passe
+  unique aurait laissé des écarts audibles entre 2 séances, ce qui compte pour
+  quelqu'un qui écoute allongé, les yeux fermés.
+- Sortie en **AAC 96 kbit/s stéréo**, le débit retenu depuis l'ajout de la musique :
+  **86 Mo au total**, de 6,2 Mo pour Before-Standup sans sangles à 10,3 Mo pour
+  Before-Start Initiation avec sangles. Les masters pesaient 2 Go.
+- Index placé en tête de chaque fichier, vérifié sur les 10 : la lecture démarre sans
+  attendre le téléchargement complet.
+- Les 10 durées correspondent exactement à celles annoncées sur le site.
+  **Restent 4 fichiers** : Before-Speed et la version adaptée, chacune en 2 modes.
+
+
 - **Nouvelle version de la vidéo de l'accueil.** Cédric a adouci l'incrustation de son
   logo, qui reposait sur un bandeau noir opaque découpant l'image : il est maintenant
   translucide, le parquet transparaît dessous. Le montage et sa durée sont inchangés,
