@@ -356,7 +356,15 @@ a { color: inherit; }
 .card--featured .play {
   background: var(--hero-accent); border-color: var(--hero-accent); color: #14100A;
 }
-.card--featured .play:hover:not(:disabled) { filter: brightness(1.08); }
+/* Les 3 boutons de Before-Start passent au blanc au survol. Le fondu est
+   porté à .28s : plus long que les .18s du site, pour que l'or glisse vers le
+   blanc au lieu de basculer d'un coup. Le focus clavier suit, sans quoi la
+   navigation au clavier n'aurait aucun retour visuel. */
+.card--featured .play { transition-duration: .28s; }
+.card--featured .play:hover:not(:disabled),
+.card--featured .play:focus-visible:not(:disabled) {
+  background: #FFFFFF; border-color: #FFFFFF; color: #14100A;
+}
 
 /* --- la vidéo accélérée de l'éveil --- */
 .reel { display: grid; gap: 1.25rem; }

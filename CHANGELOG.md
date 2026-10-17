@@ -9,6 +9,12 @@ versionné. L'historique git réel démarre au premier commit.
 
 ## 17 octobre 2026
 
+- **Les 3 boutons d'écoute de Before-Start passent au blanc au survol**, là où ils se
+  contentaient d'un éclaircissement de 8 %. Le fondu est porté à 0,28 s, plus long que
+  les 0,18 s du reste du site, pour que l'or glisse vers le blanc au lieu de basculer
+  d'un coup. Le focus clavier reçoit le même traitement, sans quoi la navigation au
+  clavier n'aurait aucun retour visuel.
+
 - **Le téléchargement des audios n'est plus proposé.** `controlsList="nodownload"`
   retire le bouton du menu du lecteur, et le clic droit ne propose plus
   « Enregistrer l'audio sous ». C'est une mesure de présentation, pas de protection :
