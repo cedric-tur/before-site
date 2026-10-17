@@ -2451,6 +2451,11 @@ fill="currentColor" stroke="none">
         audio.preload = "none";
         audio.src = src;
         audio.style.width = "100%";
+        // retire le bouton de telechargement du menu du lecteur, et le
+        // « Enregistrer l'audio sous » du clic droit. Cela ecarte le
+        // telechargement d'un clic, pas celui de qui sait regarder la source.
+        audio.setAttribute("controlsList", "nodownload");
+        audio.addEventListener("contextmenu", function (e) { e.preventDefault(); });
         cible.appendChild(audio);
       }
 

@@ -9,6 +9,13 @@ versionné. L'historique git réel démarre au premier commit.
 
 ## 17 octobre 2026
 
+- **Le téléchargement des audios n'est plus proposé.** `controlsList="nodownload"`
+  retire le bouton du menu du lecteur, et le clic droit ne propose plus
+  « Enregistrer l'audio sous ». C'est une mesure de présentation, pas de protection :
+  le chemin du fichier reste lisible dans la source de la page. Une vraie protection
+  demanderait des adresses signées et expirantes, ce que Bunny Stream fera pour la
+  partie payante.
+
 - **10 des 14 séances audio sont en ligne.** Cédric a terminé ses masters après avoir
   acheté la licence de la musique sur AudioJungle. Before-Start en 3 étapes,
   Before-Sleep et Before-Standup, chacune en version avec et sans sangles, soit
