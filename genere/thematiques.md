@@ -13,27 +13,26 @@ Papillon, Expire, Foetus, Hamac, Oreilles pressées, Charrue, Chat, Enfant
 ### Équilibre (8)
 Arbre, Aile, Grenouille, Aigle, Danseur, Perche, Y majuscule, Palmier
 
-### Extension (16)
+### Extension (15)
 Arc, Sauterelle, Barque, Cobra, Sphinx, Élève,
-Foudre, Poisson, demi Pont, Pont,
+Foudre, Poisson, Pont,
 Chien, Chameau, Pigeon royal, Fente demi Lune, demi Roue, demi Roue en rotation
 
 ### Inclinaison (8)
 Croissant de Lune, demi Lune assis, Grand écart incliné,
-demi Lune agenouillée, Pilier, Loquet, Triangle incliné, demi Lune
+demi Lune agenouillée, Trépied, Loquet, Triangle incliné, demi Lune
 
 ### Inversion (8)
 Chien, Chien qui s'étire, demi Chien,
 Poirier, Poirier (niveau confirmé), Corbeau, Rocher, Chandelle
 
-### Renforcement (17)
+### Renforcement (18)
 Cygne, demi Lune latérale, Croisé ventral, Planche inversée, Table,
-Force, Voilier, demi Pont pointé, Bateau, Tourniquet,
+Force, Voilier, demi Pont, demi Pont pointé, Bateau, Tourniquet,
 Fente sur côté, Tigre, Guetteur, Fente sur orteils, Étoile, Déesse, Chaise
 
 ### Rotation (9)
-Croisé, Aigle en rotation, Estomac,
-*La plaquette porte l'ancien nom : lire **Aigle en torsion**.*
+Croisé, Aigle en torsion, Estomac,
 Triangle, Roi des poissons, Pigeon en rotation,
 Guetteur en rotation, Fente triangle, Fente en rotation
 
