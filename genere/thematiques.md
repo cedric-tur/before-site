@@ -23,7 +23,7 @@ Croissant de Lune, demi Lune assis, Grand écart incliné,
 demi Lune agenouillée, Trépied, Loquet, Triangle incliné, demi Lune
 
 ### Inversion (8)
-Chien, Chien qui s'étire, demi Chien,
+Chien qui s'étire, Chien qui s'étire (pointé), demi Chien,
 Poirier, Poirier (niveau confirmé), Corbeau, Rocher, Chandelle
 
 ### Renforcement (18)
