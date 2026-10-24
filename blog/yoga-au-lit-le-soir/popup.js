@@ -72,7 +72,9 @@
     lst.forEach(function (s) {
       h += "<li>" + nomDe(s) + "</li>";
     });
-    h += '</ul><p class="po-lien"><a href="/#postures">Voir les 90 postures du répertoire</a></p>';
+    /* le repertoire ouvre cette famille de lui-meme, voir index.html */
+    h += '</ul><p class="po-lien"><a href="/?famille=' + encodeURIComponent(nom) +
+         '#postures">Ouvrir la famille ' + nom + ' dans le répertoire</a></p>';
     ouvrir("Famille " + nom, h, declencheur);
   }
 

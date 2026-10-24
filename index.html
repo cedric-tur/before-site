@@ -2728,6 +2728,21 @@ fill="currentColor" stroke="none">
     poser("rowniv", "galniv", rubriques.filter(function (r) { return r.id.charAt(0) === "n"; }));
     poser("rowglo", "galglo", rubriques.filter(function (r) { return r.id.charAt(0) === "a"; }));
 
+    /* Lien direct vers une famille, utilise par les articles du blog :
+       /?famille=Rotation#postures ouvre la pastille correspondante au
+       chargement et amene le lecteur dessus. Un nom inconnu ne fait rien. */
+    (function () {
+      var demande = decodeURIComponent((/[?&]famille=([^&]*)/.exec(location.search) || [])[1] || "");
+      if (!demande) { return; }
+      var rang = -1;
+      FAMILLES.forEach(function (g, i) { if (g.t === demande) { rang = i; } });
+      if (rang < 0) { return; }
+      var pastille = document.querySelector('#rowfam .pill2[data-id="f' + rang + '"]');
+      if (!pastille) { return; }
+      pastille.click();
+      pastille.scrollIntoView({ block: "center" });
+    }());
+
     /* ---------- le carrousel de l'eveil, sur l'accueil ---------- */
     // Relevé sur les 2 plaquettes. La version avec sangle ajoute Pilier et
     // remplace Estomac et Grand écart par leurs variantes sanglées.

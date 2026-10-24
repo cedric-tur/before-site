@@ -1,6 +1,12 @@
 /* Fenetres de posture du blog. Reprend les tokens de blog.css, aucune couleur en dur.
    A deplacer dans blog.css le jour ou un deuxieme article s'en sert. */
 
+:root {
+  /* les decoupes de posture sont sombres : elles se lisent sur du blanc.
+     L'encadre reste brun, sinon un lisere clair cerne l'image. */
+  --po-fond-image: #FFFFFF;
+}
+
 /* le mot cliquable dans le texte : un bouton qui a l'air d'un lien */
 .po {
   font: inherit;
@@ -86,9 +92,12 @@
   max-height: 46vh;
   object-fit: contain;
   margin-bottom: .9rem;
-  background: var(--surface-2);
   border-radius: var(--radius);
 }
+
+.po-corps img { background: var(--po-fond-image); padding: .6rem; }
+
+.po-corps video { background: #000; }
 
 .po-fam {
   margin: 0 0 .35rem;
