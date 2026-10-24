@@ -39,7 +39,7 @@ Guetteur en rotation, Fente triangle, Fente en rotation
 ### Étirement (18)
 Bâton, Mains jointes, Virgule, Inspire, demi Lotus, Repos,
 Grand écart, Pilier, demi Pince, Diamant, Bambou, Héros,
-Guirlande, Prosternation, demi Singe, Equerre en rotation, Equerre, Pyramide
+Guirlande, Prosternation, demi Singe, Equerre en rotation, Equerre allongée, Pyramide
 
 ## Les 11 questions
 
@@ -50,13 +50,12 @@ Grand écart, demi Lotus, Corbeau, demi Guirlande,
 Loquet, Trépied, Arbre, Fente sur côté, Déesse
 
 **Bras (13)**
-Bâton, Virgule, Aigle en rotation, Mains jointes, Sauterelle, Arc,
+Bâton, Virgule, Aigle en torsion, Mains jointes, Sauterelle, Arc,
 Cygne, Pigeon royal, Fente sur côté, demi Lune, demi Roue, Palmier, Danseur
-*La plaquette porte l'ancien nom : lire **Aigle en torsion**.*
 
 **Ischio-jambiers (14)**
-Estomac, Voilier, Pilier, Hamac, demi Pince, demi Singe,
-Poirier, Charrue, Triangle, Pyramide, Equerre, Perche, Danseur, Equerre en rotation
+Estomac, Equerre allongée, Voilier, Pilier, Hamac, demi Pince,
+demi Singe, Poirier, Charrue, Triangle, Pyramide, Perche, Danseur, Equerre en rotation
 
 **Nuque (8)**
 Oreilles pressées, Oreilles pressées (2), Charrue,

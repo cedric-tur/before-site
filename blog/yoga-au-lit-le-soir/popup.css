@@ -1,0 +1,121 @@
+/* Fenetres de posture du blog. Reprend les tokens de blog.css, aucune couleur en dur.
+   A deplacer dans blog.css le jour ou un deuxieme article s'en sert. */
+
+/* le mot cliquable dans le texte : un bouton qui a l'air d'un lien */
+.po {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 1px dotted currentColor;
+  transition: color .18s ease;
+}
+.po:hover,
+.po:focus-visible { color: var(--accent-lift); }
+
+/* le bouton de la video, plus visible */
+.po--video {
+  display: inline-block;
+  margin-top: .4rem;
+  padding: .55rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  border-bottom: 1px solid var(--accent);
+}
+.po--video:hover,
+.po--video:focus-visible {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.po-fond {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: var(--gutter);
+  background: rgba(10, 8, 5, .82);
+}
+.po-fond[hidden] { display: none; }
+
+.po-boite {
+  position: relative;
+  width: min(32rem, 100%);
+  max-height: 86vh;
+  overflow: auto;
+  padding: 1.6rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.po-boite h2 {
+  margin: 0 2rem .9rem 0;
+  font-size: var(--step-1);
+  color: var(--accent);
+}
+
+.po-fermer {
+  position: absolute;
+  top: .7rem;
+  right: .7rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--ink-soft);
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.po-fermer:hover,
+.po-fermer:focus-visible {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.po-corps img,
+.po-corps video {
+  display: block;
+  width: 100%;
+  max-height: 46vh;
+  object-fit: contain;
+  margin-bottom: .9rem;
+  background: var(--surface-2);
+  border-radius: var(--radius);
+}
+
+.po-fam {
+  margin: 0 0 .35rem;
+  font-size: var(--step--1);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.po-eff {
+  margin: 0 0 .9rem;
+  color: var(--ink-soft);
+}
+
+.po-liste {
+  margin: 0 0 .9rem;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  columns: 2;
+  column-gap: 1.4rem;
+}
+.po-liste li { margin-bottom: .2rem; break-inside: avoid; }
+
+.po-lien { margin: 0; font-size: var(--step--1); }
+.po-lien a { color: var(--accent); }
+
+@media (max-width: 520px) {
+  .po-boite { padding: 1.2rem; }
+  .po-liste { columns: 1; }
+}
