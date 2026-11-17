@@ -690,7 +690,8 @@ a { color: inherit; }
 .art__spec { color: var(--ink-soft); font-size: .99rem; line-height: 1.6; }
 .art__spec b { color: var(--ink); font-weight: 500; }
     .art__port { margin-top: .6rem; color: var(--ink-muted); font-size: .92rem; line-height: 1.5; }
-    .art__port a { color: var(--accent); }
+    .art__plus { color: var(--ink-muted); font-size: .95rem; }
+    .art__offre { margin-top: .75rem; }
 
 .art__pied { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-top: .4rem; }
 .art__prix {
@@ -2187,10 +2188,12 @@ fill="currentColor" stroke="none">
           <p class="art__spec">Ces sangles sont rigides (type judo) et tissées pour tenir des années.</p>
           <div class="art__pied">
             <span class="art__prix">9 €</span>
+            <span class="art__plus">+ livraison 3,90 €</span>
             <a class="btn" href="https://buy.stripe.com/7sYfZa15i1wQ6Wo5vsaEE01">Commander</a>
           </div>
-          <p class="art__port">Livraison 3,90 €.
-          <a href="https://buy.stripe.com/eVq9AM29mb7q5SkaPMaEE02">À partir de 3 paires, livraison offerte</a>.</p>
+          <div class="art__offre">
+            <a class="btn btn--ghost" href="https://buy.stripe.com/eVq9AM29mb7q5SkaPMaEE02">Livraison offerte à partir de 3 paires</a>
+          </div>
         </div>
       </article>
 
