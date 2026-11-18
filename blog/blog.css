@@ -4,17 +4,17 @@
    Toute nouvelle couleur passe par un token, jamais par une valeur en dur. */
 
 :root {
-  --bg:          #E9F1F6;
-  --surface:     #FBF8F1;
-  --surface-2:   #F3EDE1;
-  --ink:         #16242E;
-  --ink-soft:    #40545F;
-  --ink-muted:   #5A6E7A;
-  --line:        #DFD7C7;
-  --line-soft:   #D3E0EA;
-  --accent:      #8A6418;
-  --accent-lift: #6E4F12;
-  --accent-wash: #F6EDD8;
+  --bg:          #191510;
+  --surface:     #221D16;
+  --surface-2:   #2E271D;
+  --ink:         #F2EADB;
+  --ink-soft:    #D3C7B2;
+  --ink-muted:   #9C8F78;
+  --line:        #3A3226;
+  --line-soft:   #2A2419;
+  --accent:      #DFBA6E;
+  --accent-lift: #EED08B;
+  --accent-wash: #33290F;
 
   --wrap: 1120px;
   --texte: 68ch;
@@ -28,7 +28,6 @@
 
   --radius: 4px;
   --radius-lg: 8px;
-  --accent-fill: #DFBA6E;
 }
 
 * { box-sizing: border-box; }
@@ -173,9 +172,9 @@ img { max-width: 100%; height: auto; }
   display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
   font-family: "Archivo", sans-serif; font-size: var(--step-0); font-weight: 600; letter-spacing: -.01em;
   text-decoration: none; padding: .85rem 1.4rem; border-radius: 100px;
-  border: 1px solid var(--accent-fill); background: var(--accent-fill); color: var(--ink);
+  border: 1px solid var(--accent); background: var(--accent); color: #100C06;
 }
-.btn:hover { filter: brightness(1.08); color: var(--ink); }
+.btn:hover { filter: brightness(1.08); color: #100C06; }
 .cta__note { font-family: "Archivo", sans-serif; font-size: var(--step--1); color: var(--ink-muted); margin: .9rem 0 0; }
 
 /* auteur en fin d'article */

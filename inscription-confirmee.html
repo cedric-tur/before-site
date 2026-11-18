@@ -16,9 +16,9 @@
 <link rel="stylesheet" href="fonts/fonts.css">
 <style>
   :root{
-    --bg:#E9F1F6; --surface:#FBF8F1; --ink:#16242E; --ink-soft:#40545F;
-    --ink-muted:#5A6E7A; --line:#DFD7C7; --accent:#8A6418; --accent-lift:#6E4F12; --accent-fill:#DFBA6E;
-    --accent-wash:#F6EDD8; --wrap:640px;
+    --bg:#191510; --surface:#221D16; --ink:#F2EADB; --ink-soft:#D3C7B2;
+    --ink-muted:#9C8F78; --line:#3A3226; --accent:#DFBA6E; --accent-lift:#EED08B;
+    --accent-wash:#33290F; --wrap:640px;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);
@@ -42,9 +42,9 @@
   .box strong{color:var(--ink)}
   .liens{display:flex;flex-wrap:wrap;gap:.8rem;margin:0 0 2.5rem}
   .btn{display:inline-block;padding:.85rem 1.4rem;border-radius:100px;
-       font-size:.95rem;text-decoration:none;background:var(--accent-fill);
-       color:var(--ink);font-weight:600}
-  .btn:hover{filter:brightness(1.06);color:var(--ink)}
+       font-size:.95rem;text-decoration:none;background:var(--accent);
+       color:#191510;font-weight:600}
+  .btn:hover{background:var(--accent-lift);color:#191510}
   .btn--ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
   .btn--ghost:hover{background:transparent;color:var(--accent);border-color:var(--accent)}
   footer{border-top:1px solid var(--line);padding-top:1.3rem;

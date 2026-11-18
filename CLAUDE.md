@@ -331,35 +331,15 @@ et encodées dans `index.html`. Les fichiers sont la source ; `index.html` se r�
 partir d'eux et de `_liste.tsv`. Modifier une image sans régénérer ne change rien au site.
 
 **Design**
-- Palette **« Azur et crème »** depuis le 19 novembre 2026 : fond azur pâle (`#E9F1F6`),
-  cartes crème (`#FBF8F1`), encre bleu nuit (`#16242E`), or conservé (`#DFBA6E`).
-  Choisie par Cédric parmi 4 propositions. *Elle remplace « Sable », brun sombre et or,
-  en place depuis l'origine.*
-- **La raison du changement, à ne pas perdre :** Cédric pratique en tenue noire. Sur
-  l'ancien fond sombre, la silhouette des 120 postures détourées se fondait dans le fond
-  et il ne restait que les mains, le visage et le tapis. Sur fond clair, la posture se lit
-  entièrement. C'est 1 an et demi de détourage qui redevient visible. **Ne jamais revenir
-  à un fond sombre sans refaire ce test.**
-- **L'or se dédouble.** Sur fond clair, `#DFBA6E` en texte tombe à 1,7 de contraste, donc
-  illisible. Il y a désormais 2 jetons : `--accent` (`#8A6418`, un bronze) pour le texte,
-  les liens et les filets, et `--accent-fill` (`#DFBA6E`, l'or d'origine) réservé aux
-  **fonds** de bouton, où il porte un texte encre. Ne pas les intervertir.
-- **Un seul endroit reste sombre, et c'est voulu :** la séance mise en avant et les cadres
-  vidéo, décrits par la famille `--deep-*` (`#15303F`). Ils portent le regard, et les
-  affiches de vidéo sont sombres. Ces jetons sont nés avec la palette claire : avant, ce
-  bloc empruntait ceux du bandeau d'ouverture, qui est passé au clair.
-- **Le logo a 2 versions.** Le dépôt INPI est en lettrage blanc, invisible sur clair.
-  Le site publie `photo-marque/before-s-encre.webp`, où le lettrage est passé à l'encre
-  et le ruban doré conservé tel quel. La version blanche reste dans `photo-marque/` pour
-  les fonds sombres, vidéos et impression. *Cédric a 3 versions dans son fichier
-  Illustrator : si l'une est déjà à encre sombre, elle vaut mieux que ma recoloration.*
-- **Palette unique et assumée, pas de mode sombre.** La page s'affiche en Azur quel que soit
+- Palette **« Sable »** : brun sombre (`#191510`) et or clair (`#DFBA6E`). Choisie par Cédric
+  parmi quatre propositions : *« sombre mais intimiste, doux à la lecture »*.
+- **Palette unique et assumée, pas de mode clair.** La page s'affiche en Sable quel que soit
   le réglage du visiteur. Toutes les couleurs sont posées explicitement dans `:root` ; il n'y
   a plus de bloc `@media (prefers-color-scheme)` ni de `[data-theme]`, et il ne faut pas en
   réintroduire. Toute nouvelle couleur passe par un token, jamais par une valeur en dur.
 - Typographie : **Archivo** (titres, interface, chiffres) + **Newsreader** (texte courant).
-- Les 3 versions courtes de l'éveil gardent chacune leur teinte, assombries pour le fond
-  clair : matin `#8A6418`, express `#55702E`, soir `#564A8C`.
+- Les 3 versions courtes de l'éveil gardent chacune leur teinte, accordée à l'or :
+  matin `#DFBA6E`, express `#A9BC7A`, soir `#AFA2DA`.
 
 **Mécanismes**
 - Les boutons « Écouter » lisent un attribut posé sur la carte, ou sur l'étape pour les
