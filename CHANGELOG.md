@@ -7,6 +7,55 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 18 novembre 2026
+
+- **La lettre d'information est en service.** Un bloc d'inscription figure au bas des
+  3 articles du blog. Il poste directement sur l'adresse hébergée de Brevo,
+  `sibforms.com/serve/...` : le site est statique, il n'y a pas de serveur pour cacher
+  une clé d'API, et une clé posée dans le JavaScript d'une page publique donnerait à
+  n'importe qui la liste des contacts.
+
+- **Le JSON brut a disparu.** Brevo répondait `{"success":true,...}` dans un nouvel
+  onglet, illisible pour un visiteur. `blog/lettre.js` intercepte l'envoi, poste en
+  arrière-plan et affiche le message sous le formulaire. Vérifié au préalable que Brevo
+  autorise bien les requêtes venant de `before-s.com`. En cas d'échec, réseau coupé ou
+  requête refusée, le formulaire repart en envoi classique : une inscription n'est
+  jamais perdue en silence, elle est au pire moins bien présentée.
+
+- **Inscription en double opt-in.** L'adresse n'entre dans la liste qu'après un clic
+  dans le courriel de confirmation, et le contact porte alors l'attribut
+  `DOUBLE_OPT-IN`, qui tient la preuve du consentement. Le réglage est dans Brevo, à
+  Marketing > Formulaires > Paramètres : il n'existe aucun point d'entrée d'API pour
+  les formulaires, cela ne se fait qu'à la main.
+
+- **2 pages d'arrivée, à ne pas confondre.**
+  `confirmez-votre-inscription.html` s'affiche après l'envoi du formulaire et dit
+  d'aller cliquer dans le courriel. `inscription-confirmee.html` s'affiche après ce
+  clic et annonce l'inscription validée. Les inverser annoncerait une inscription
+  confirmée avant qu'elle le soit. Les 2 sont en `noindex` : elles n'ont aucun intérêt
+  pour un moteur de recherche.
+
+- **Les 4 modèles de courriel de Brevo sont réécrits** aux couleurs Before-S, avec le
+  bandeau du logo, le doré du bouton et la signature. Bandeau sombre mais corps clair,
+  volontairement : Gmail et Outlook inversent de force les fonds sombres en mode
+  sombre, et un courriel entièrement sombre ressort souvent illisible. Le logo Brevo
+  en pied de courriel reste, le plan gratuit ne permet pas de l'enlever.
+
+- **Expéditeur corrigé, et c'est ce qui sortait les courriels de la boîte de
+  réception.** Les modèles partaient de `capzen.info@gmail.com`, un domaine non
+  authentifié dans le compte, que Brevo réécrivait en
+  `capzen.info@12566773.brevosend.com`. Une adresse inconnue sur un domaine inconnu,
+  donc les indésirables. Tout part désormais de `contact@before-s.com`, authentifié et
+  signé en DKIM. L'ancien expéditeur est supprimé du compte pour qu'il ne puisse plus
+  être choisi par erreur.
+
+- **Politique de confidentialité mise en conformité.** Elle affirmait qu'aucune donnée
+  ne partait vers un tiers en dehors d'un achat, ce que le formulaire rendait faux.
+  Nouvelle section 2.4 sur la lettre d'information, ligne au tableau des traitements
+  (consentement, conservation jusqu'à la désinscription puis 3 ans pour la preuve) et
+  Brevo ajouté aux sous-traitants. Aucune adresse postale n'est donnée pour Brevo :
+  ses propres pages légales en publient 4 différentes.
+
 ## 17 octobre 2026
 
 - **Les 3 boutons d'écoute de Before-Start passent au blanc au survol**, là où ils se

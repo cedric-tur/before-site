@@ -370,7 +370,19 @@ depuis le 12 octobre 2026, à côté de l'espace vidéo qui l'attend déjà.
 **Infrastructure prévue**
 - Paiement : **Stripe Payment Link**
 - Audios : **Bunny Stream**
-- E-mails : **Brevo** ou MailerLite
+- E-mails : **Brevo**, retenu et en service depuis le 18 novembre 2026. Compte
+  « Before-S newsletter », plan gratuit (300 envois par jour, logo Brevo en pied de
+  courriel non supprimable). Expéditeur unique `contact@before-s.com`, domaine
+  authentifié et signé en DKIM. Liste **Abonnes Before-S**, identifiant 3.
+  **Inscription en double opt-in**, réglée dans Marketing > Formulaires >
+  Paramètres : le contact n'entre dans la liste qu'après avoir cliqué, et porte
+  alors l'attribut `DOUBLE_OPT-IN`, qui sert de preuve de consentement.
+  Les 4 modèles systèmes (3, 4, 5 et 6) sont réécrits aux couleurs Before-S.
+  Le bandeau est sombre et le corps clair : Gmail et Outlook inversent de force
+  les fonds sombres en mode sombre.
+  **La clé d'API ne doit jamais entrer dans le dépôt** ni dans une page publique :
+  elle donne accès à tous les contacts. Le formulaire du site poste directement
+  sur l'adresse hébergée `sibforms.com/serve/...`, sans clé.
 - **Aucun compte utilisateur.** Après paiement, Stripe redirige vers une adresse d'accès
   impossible à deviner, envoyée aussi par e-mail. Pas de mot de passe à gérer. On n'ajoutera
   de vrais comptes (Memberstack, Outseta) que si le volume le justifie un jour.
@@ -390,9 +402,13 @@ Base de contacts à réactiver : une cinquantaine de pratiquantes (téléphones)
 de l'activité shiatsu / massage antérieure. Ancien site capzen.fr, à l'arrêt depuis 2020,
 avec de bons avis Facebook à récupérer comme témoignages.
 
-**Reste à brancher sur le site** : les fichiers audio, le lien Stripe, la vidéo drone,
-le formulaire e-mail, les titres des 15 mini-cours, et les mentions légales / CGV
-(obligatoires avant d'encaisser le premier euro).
+**Branché en novembre 2026** : les 3 liens de paiement Stripe de la boutique, les
+mentions légales, les CGV, la politique de confidentialité, et le formulaire
+d'inscription à la lettre d'information, présent au bas des articles du blog.
+
+**Reste à brancher sur le site** : les fichiers audio, la vidéo drone, les titres des
+15 mini-cours, et le bloc d'inscription sur la page d'accueil (il n'existe que sur
+le blog).
 
 ---
 
