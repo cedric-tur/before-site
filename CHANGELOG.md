@@ -7,6 +7,38 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 19 novembre 2026
+
+- **La palette passe de « Sable » à « Azur et crème ».** Fond azur pâle, cartes crème,
+  encre bleu nuit, or conservé. Choisie par Cédric parmi 4 propositions, après qu'un
+  visiteur lui a reproché une page trop chargée.
+
+- **La raison tient en une image, et elle n'était pas prévue.** Je m'attendais à ce que
+  les 120 postures détourées, faites pour un fond sombre, passent mal en clair. C'est
+  l'inverse : Cédric pratique en tenue noire, et sur le fond de nuit sa silhouette se
+  fondait dans le fond. Il ne restait que les mains, le visage et le tapis. Un an et demi
+  de détourage ne se voyait qu'à moitié.
+
+- **L'or est dédoublé.** `#DFBA6E` en texte sur fond clair tombe à 1,7 de contraste.
+  `--accent` devient un bronze `#8A6418` pour le texte et les filets, `--accent-fill`
+  garde l'or d'origine pour les fonds de bouton, où il porte un texte encre à 8,2 de
+  contraste.
+
+- **La famille `--deep-*` apparaît.** La séance mise en avant et les cadres vidéo restent
+  sombres, volontairement : ils portent le regard et les affiches de vidéo sont sombres.
+  Ils empruntaient jusqu'ici les jetons du bandeau d'ouverture, qui est passé au clair.
+
+- **Le logo reçoit une version à encre sombre.** Le dépôt INPI est en lettrage blanc,
+  invisible sur la nouvelle palette. Le lettrage a été recoloré pixel par pixel, le ruban
+  doré conservé intact. La version blanche reste disponible pour les fonds sombres.
+
+- **2 contrastes relevés au passage.** Le crédit musical, qui est une obligation
+  contractuelle envers Finger Printz, était tombé à 2,2 : il passe à 5,6. Le gris de
+  texte secondaire passe de 3,3 à 4,6, au-dessus du seuil AA.
+
+- Vérifié au navigateur, page par page : accueil, boutique, article de blog, CGV et pages
+  d'inscription.
+
 ## 18 novembre 2026
 
 - **La lettre d'information est en service.** Un bloc d'inscription figure au bas des
