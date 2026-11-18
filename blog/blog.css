@@ -4,14 +4,14 @@
    Toute nouvelle couleur passe par un token, jamais par une valeur en dur. */
 
 :root {
-  --bg:          #191510;
-  --surface:     #221D16;
-  --surface-2:   #2E271D;
+  --bg:          #231E16;
+  --surface:     #2C261D;
+  --surface-2:   #383022;
   --ink:         #F2EADB;
   --ink-soft:    #D3C7B2;
   --ink-muted:   #9C8F78;
   --line:        #3A3226;
-  --line-soft:   #2A2419;
+  --line-soft:   #342C20;
   --accent:      #DFBA6E;
   --accent-lift: #EED08B;
   --accent-wash: #33290F;
