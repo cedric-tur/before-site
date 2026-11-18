@@ -247,7 +247,8 @@
       <input type="hidden" name="locale" value="fr">
       <button class="btn" type="submit">Je m'inscris</button>
     </form>
-    <p class="lettre__note">Vous recevrez un courriel de confirmation. Vos données ne
+    <p class="lettre__etat" role="status" aria-live="polite" hidden></p>
+    <p class="lettre__note">Vous recevrez un courriel pour confirmer votre inscription : il faut cliquer sur le lien qu'il contient. Vos données ne
     sont ni vendues ni cédées, conformément à notre
     <a href="/confidentialite.html">politique de confidentialité</a>.</p>
   </aside>
@@ -285,5 +286,6 @@
   Les séances proposées ne remplacent pas un avis médical. En cas de douleur ou de pathologie, demandez conseil à votre médecin avant de pratiquer.</p>
 </div></footer>
 
+<script src="/blog/lettre.js" defer></script>
 </body>
 </html>

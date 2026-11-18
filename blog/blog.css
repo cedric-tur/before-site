@@ -228,3 +228,12 @@ img { max-width: 100%; height: auto; }
 .lettre__piege { position: absolute; left: -9999px; }
 .lettre__note { font-family: "Archivo", sans-serif; font-size: var(--step--1);
   color: var(--ink-muted); margin: .9rem 0 0; }
+
+/* Etat de l'inscription, rempli par blog/lettre.js. Le formulaire est en
+   display:flex, donc l'attribut hidden ne suffit pas : il faut le forcer. */
+.lettre__f[hidden] { display: none; }
+.lettre__etat { margin: 1.1rem 0 0; padding: .9rem 1.1rem; border: 1px solid var(--line);
+  border-radius: var(--radius-lg); background: var(--bg); color: var(--ink-soft);
+  font-family: "Archivo", sans-serif; font-size: var(--step--1); line-height: 1.6; }
+.lettre__etat--ok { border-color: var(--accent); color: var(--ink); }
+.lettre__etat--attente { color: var(--ink-muted); }
