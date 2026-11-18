@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inscription confirmée · Before-S</title>
+<link rel="icon" href="/favicon.png?v=3" type="image/png">
+<link rel="shortcut icon" href="/favicon.png?v=3" type="image/png">
+<link rel="apple-touch-icon" href="/favicon.png?v=3">
+<meta name="description" content="Votre inscription à la lettre d'information de Before-S est confirmée.">
+<!-- Page d'arrivée après le clic sur le lien de confirmation du courriel Brevo.
+     Elle se règle dans Brevo, dans les paramètres du formulaire d'inscription,
+     à la ligne de la page de confirmation finale. Hors index : elle n'a aucun
+     intérêt pour un moteur de recherche. -->
+<meta name="robots" content="noindex, follow">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root{
+    --bg:#191510; --surface:#221D16; --ink:#F2EADB; --ink-soft:#D3C7B2;
+    --ink-muted:#9C8F78; --line:#3A3226; --accent:#DFBA6E; --accent-lift:#EED08B;
+    --accent-wash:#33290F; --wrap:640px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:Archivo,"Helvetica Neue",Arial,sans-serif;line-height:1.65;font-size:1rem}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:clamp(3rem,10vw,6rem) clamp(1.25rem,5vw,2rem)}
+  a{color:var(--accent)}
+  .marque{font-size:.78rem;letter-spacing:.2em;color:var(--ink-muted);
+          text-decoration:none;display:inline-block;margin-bottom:2.5rem}
+  .marque:hover{color:var(--accent)}
+  .coche{width:3rem;height:3rem;border-radius:50%;background:var(--accent-wash);
+         border:1px solid var(--accent);display:flex;align-items:center;
+         justify-content:center;margin-bottom:1.6rem}
+  .coche svg{width:1.5rem;height:1.5rem;stroke:var(--accent);fill:none;
+             stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+  h1{font-size:clamp(1.8rem,1.4rem+1.6vw,2.6rem);margin:0 0 .8rem;letter-spacing:-.01em}
+  .lede{color:var(--ink-soft);margin:0 0 2rem;font-size:1.08rem}
+  .box{background:var(--surface);border:1px solid var(--line);border-radius:8px;
+       padding:1.3rem 1.4rem;margin:0 0 2.2rem}
+  .box p{margin:0 0 .7rem;color:var(--ink-soft)}
+  .box p:last-child{margin:0}
+  .box strong{color:var(--ink)}
+  .liens{display:flex;flex-wrap:wrap;gap:.8rem;margin:0 0 2.5rem}
+  .btn{display:inline-block;padding:.85rem 1.4rem;border-radius:100px;
+       font-size:.95rem;text-decoration:none;background:var(--accent);
+       color:#191510;font-weight:600}
+  .btn:hover{background:var(--accent-lift);color:#191510}
+  .btn--ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  .btn--ghost:hover{background:transparent;color:var(--accent);border-color:var(--accent)}
+  footer{border-top:1px solid var(--line);padding-top:1.3rem;
+         color:var(--ink-muted);font-size:.85rem}
+  footer a{color:var(--ink-muted)}
+  footer a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <a class="marque" href="/">BEFORE-S</a>
+
+  <div class="coche" aria-hidden="true">
+    <svg viewBox="0 0 24 24" role="presentation"><polyline points="4,13 9,18 20,6"></polyline></svg>
+  </div>
+
+  <h1>Votre inscription est confirmée</h1>
+  <p class="lede">Merci de votre confiance. Vous recevrez les prochaines séances et les
+  articles du blog à cette adresse.</p>
+
+  <div class="box">
+    <p><strong>Ce que vous allez recevoir :</strong> un courriel de temps en temps, pas
+    davantage. Les nouvelles séances mises en ligne, les articles publiés sur le blog et
+    les coulisses de la méthode.</p>
+    <p>Pas de publicité, pas de liste revendue, et un lien de désinscription dans chaque
+    courriel. Si vous changez d'avis, un clic suffit.</p>
+  </div>
+
+  <div class="liens">
+    <a class="btn" href="/#accueil">Les séances gratuites</a>
+    <a class="btn btn--ghost" href="/blog/">Le blog</a>
+  </div>
+
+  <footer>
+    Before-S est une méthode de yoga accessible et détaillée : un éveil musculaire gratuit
+    de 12 postures allongé sur le dos, qui se pratique dans un lit, sans tapis ni tenue.
+    <br><br>
+    <a href="/mentions-legales.html">Mentions légales</a> ·
+    <a href="/cgv.html">Conditions générales de vente</a> ·
+    <a href="/confidentialite.html">Politique de confidentialité</a> ·
+    <a href="mailto:contact@before-s.com">contact@before-s.com</a>
+  </footer>
+
+</main>
+</body>
+</html>
