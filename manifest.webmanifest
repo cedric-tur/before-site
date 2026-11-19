@@ -1,0 +1,17 @@
+{
+  "name": "Before-S",
+  "short_name": "Before-S",
+  "description": "Un éveil musculaire de 12 postures allongé sur le dos, qui se pratique dans un lit, sans tapis ni tenue.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#212A3E",
+  "theme_color": "#151B2C",
+  "icons": [
+    { "src": "/icone-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
