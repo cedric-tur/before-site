@@ -58,6 +58,12 @@
   .attente { font-family: "Archivo", sans-serif; font-size: .8rem; color: var(--ink-muted);
     margin: .2rem 0 0; }
 
+  /* Le mot sangles mene a la boutique. En or et en gras : le lecteur raide
+     qui comprend a quoi elles servent doit pouvoir agir sans chercher. Le
+     propos reste pedagogique, le lien n'insiste pas. */
+  .or { color: var(--or); font-weight: 700; text-decoration-color: var(--or); }
+  .or:hover { color: var(--accent-lift); }
+
   .retour { margin-top: 3rem; }
 
   /* Fenêtre vidéo, même comportement que sur l'accueil et sur Before-Start. */
@@ -100,8 +106,8 @@
     <div class="mob__bloc">
       <p>Placez des coussins de part et d'autre pour alléger les rotations, et un oreiller
       pour préserver les cervicales.</p>
-      <p>Les sangles sont fortement conseillées pour éviter d'engager la musculature
-      des bras.</p>
+      <p>Les <a class="or" href="/#boutique">sangles</a> sont fortement conseillées pour
+      éviter d'engager la musculature des bras.</p>
     </div>
 
     <button class="ecran" type="button" data-video="" data-affiche="">
