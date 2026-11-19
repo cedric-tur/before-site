@@ -241,6 +241,14 @@ qu'il faut être souple.
 **7. Toujours partir de la gêne concrète**, pas du bien-être abstrait. « Un matin où le dos
 tire » vaut mieux que « retrouver l'harmonie ».
 
+**8. Jamais le vocabulaire de l'effort ni de la tâche.** *Décision de Cédric, 19 novembre 2026,
+en écartant « découvrez ce que chaque posture fait travailler » : « ça rappelle une tâche
+souvent fastidieuse et négative ».* Les verbes de corvée, travailler, forcer, s'astreindre,
+pousser, contredisent la promesse de la méthode. On garde les verbes de sensation :
+**procurer**, ressentir, détendre, délier. Écarter aussi les verbes froids de causalité,
+« engendrer » par exemple, qui appartiennent au vocabulaire administratif et supposent
+un mécanisme là où il faut un corps.
+
 ---
 
 ## Le système de nommage
