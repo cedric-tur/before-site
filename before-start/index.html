@@ -80,10 +80,18 @@
   .attente { font-family: "Archivo", sans-serif; font-size: .8rem; color: var(--ink-muted); margin: .2rem 0 0; }
 
   /* Le bas de page : la porte vers les audios. */
-  .suite { background: var(--surface); border: 1px solid var(--line);
-    border-radius: var(--radius-lg); padding: 1.8rem; max-width: var(--texte); }
-  .suite h2 { font-size: var(--step-1); margin: 0 0 .7rem; }
+  /* Fond blanc : on redefinit les jetons sur le bloc, tout ce qu il contient
+     suit. L or en texte sur blanc tombe a 1,7 de contraste, d ou le bronze
+     pour --accent ; le bouton garde l or vrai par --or. */
+  .suite {
+    --surface: #FFFFFF; --surface-2: #F3F6FA;
+    --ink: #16202E; --ink-soft: #3B4859; --ink-muted: #64718A;
+    --line: #DBE2EB; --accent: #8A6418;
+    background: #FFFFFF; border: 1px solid #DBE2EB; color: var(--ink);
+    border-radius: var(--radius-lg); padding: 1.8rem; max-width: var(--texte);
+  }
   .suite p { color: var(--ink-soft); margin: 0 0 1.2rem; }
+  .suite .btn { background: var(--or); border-color: var(--or); color: #16202E; }
   .seances { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .9rem; }
   .seances li { display: grid; gap: .15rem; padding-left: 1rem; border-left: 2px solid var(--accent); }
   .seances b { font-family: "Archivo", sans-serif; font-size: .98rem; font-weight: 600; color: var(--ink); }
@@ -188,10 +196,9 @@
     </div>
 
     <div class="suite">
-      <h2>L'éveil musculaire est acquis</h2>
       <p>Dès que vous aurez expérimenté ces 3 vidéos, pratiquez au quotidien la version la
       plus adaptée à vos disponibilités.</p>
-      <a class="btn" href="/#membre">Accédez aux audios</a>
+      <a class="btn" href="/#membre">Accédez aux audios de l'éveil musculaire</a>
       <ul class="seances">
         <li>
           <b>Before-Sleep, <span data-dur-sans="11 min" data-dur-avec="12 min">11 min</span></b>

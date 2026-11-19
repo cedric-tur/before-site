@@ -17,6 +17,8 @@
   --accent-wash: #33290F;
   /* un cran sous le fond : les encadres et les cadres video */
   --fonce:       #151B2C;
+  /* L or vrai, que les blocs a fond blanc ne redefinissent pas. */
+  --or:          #DFBA6E;
 
   --wrap: 1120px;
   --texte: 68ch;
