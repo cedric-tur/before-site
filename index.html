@@ -84,11 +84,15 @@
 
 * { box-sizing: border-box; }
 
+/* Garde-fou sur la racine ET sur le corps. Sur le corps seul, la valeur se
+   propage a la zone d'affichage mais scrollWidth restait superieur a la
+   largeur d'ecran : la page se laissait encore faire glisser. Clip et non
+   hidden : hidden creerait un conteneur de defilement qui casserait le
+   position: sticky de la barre du haut. */
+html { overflow-x: clip; }
+
 body {
   margin: 0;
-  /* Garde-fou : plus rien ne peut faire glisser la page lateralement. clip et
-     non hidden, car hidden creerait un conteneur de defilement qui casserait
-     le position: sticky de la barre du haut. */
   overflow-x: clip;
   background: var(--bg);
   color: var(--ink);
@@ -571,7 +575,11 @@ a { color: inherit; }
 .eveilrow { display: grid; grid-template-columns: 1fr; gap: 2rem; }
 @media (max-width: 880px) { .eveilrow { grid-template-columns: 1fr; gap: 2rem; } }
 
-.carou { display: grid; gap: .8rem; min-width: 0; }
+/* Le carrousel mesurait 27 px de plus que l'ecran sur un telephone, sans
+   que j'aie pu identifier l'element responsable avec un navigateur sans
+   fenetre. Ces 3 bornes l'empechent de depasser, quelle que soit la cause. */
+.carou { display: grid; gap: .8rem; min-width: 0; max-width: 100%; }
+.carou__piste, .eveil { max-width: 100%; min-width: 0; }
 .carou__cap { font-family: "Archivo", sans-serif; font-size: var(--step--1); color: var(--ink-muted); }
 
 /* les fleches sont posees a cheval sur les 2 bords de la bande de photos */
