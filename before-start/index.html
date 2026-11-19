@@ -1,0 +1,315 @@
+<!doctype html>
+<!--
+  PAGE BEFORE-START : /before-start/
+  Hors menu, volontairement : on y entre depuis l'accueil, par le bouton posé
+  sous le carrousel des 12 postures. Elle porte les 3 vidéos d'apprentissage,
+  qui sont libres d'accès. Ce sont les audios qui demandent de devenir membre,
+  et leur porte est le bouton « Accédez aux audios » en bas de page.
+
+  POUR ACTIVER UNE VIDÉO : renseignez data-video-sans et data-video-avec sur
+  le bouton de l'étape, avec l'adresse du fichier ou du lecteur. Tant qu'ils
+  sont vides, l'affiche reste visible et la mention « Vidéo en préparation »
+  s'affiche dessous. Rien d'autre à modifier.
+
+  Les affiches viennent de before-start/affiches/, converties depuis les PNG
+  5120x2880 de Cédric. 2 par étape, une par mode de pratique.
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Before-Start, les 3 vidéos pour commencer | Before-S</title>
+<meta name="description" content="Les 3 vidéos Before-Start : Découverte, Initiation et Initiation SPEED. Familiarisez-vous avec chaque mouvement de l'éveil musculaire avant de le pratiquer au quotidien.">
+<link rel="canonical" href="https://before-s.com/before-start/">
+<link rel="icon" href="/favicon.png?v=3" type="image/png">
+<link rel="shortcut icon" href="/favicon.png?v=3" type="image/png">
+<link rel="apple-touch-icon" href="/favicon.png?v=3">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Before-Start, les 3 vidéos pour commencer">
+<meta property="og:url" content="https://before-s.com/before-start/">
+<meta property="og:image" content="https://before-s.com/before-start/affiches/decouverte-avec.webp">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/blog/blog.css">
+<style>
+  /* Styles propres à cette page. Tout le reste vient de blog.css, qui porte
+     la palette, la barre du haut et le pied de page. */
+  /* Colonne centrée, plus large que celle des articles : le contenu principal
+     de cette page est une suite d'écrans 16/9, pas du texte courant. Les
+     paragraphes gardent leur mesure de lecture grâce à .bstart p. */
+  .article__tete, .bstart { max-width: 760px; margin-inline: auto; }
+  .bstart__lede { font-size: var(--step-1); line-height: 1.5; color: var(--ink-soft); margin: 0 0 2rem; max-width: 56ch; }
+
+  /* Le sélecteur de mode, repris de l'accueil : il change l'affiche et la
+     source de chaque vidéo, sans recharger la page. */
+  .modeset { display: inline-flex; gap: .25rem; padding: .25rem; margin-bottom: 2.5rem;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 100px; }
+  .modebtn { font-family: "Archivo", sans-serif; font-size: .88rem; font-weight: 600;
+    color: var(--ink-muted); background: transparent; border: 0; border-radius: 100px;
+    padding: .5rem 1.1rem; cursor: pointer; transition: background .18s ease, color .18s ease; }
+  .modebtn[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  .modebtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .etapes { display: grid; gap: 2.6rem; margin: 0 0 3rem; }
+  .etape { display: grid; gap: 1rem; }
+  .etape__num { font-family: "Archivo", sans-serif; font-size: .72rem; font-weight: 700;
+    letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0; }
+  .etape__nom { font-size: var(--step-2); margin: 0; font-weight: 500; }
+  .etape p { margin: 0; color: var(--ink-soft); line-height: 1.65; }
+  .etape ul { margin: 0; padding-left: 1.2rem; color: var(--ink-soft); }
+  .etape li { margin-bottom: .3rem; }
+
+  /* L'affiche fait bouton. Tant qu'aucune vidéo n'est renseignée, elle reste
+     une image et le script pose la mention d'attente. */
+  .ecran { position: relative; display: block; width: 100%; padding: 0; border: 1px solid var(--line);
+    border-radius: var(--radius-lg); overflow: hidden; background: #000; cursor: pointer;
+    transition: border-color .18s ease; }
+  .ecran:hover:not(:disabled) { border-color: var(--accent); }
+  .ecran:disabled { cursor: default; }
+  .ecran img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+  .ecran__play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 62px; height: 62px; border-radius: 50%; background: rgba(28, 24, 17, .82);
+    display: grid; place-items: center; color: var(--accent); pointer-events: none; }
+  .ecran:hover:not(:disabled) .ecran__play { background: rgba(28, 24, 17, .95); }
+  .ecran__play svg { width: 18px; height: 20px; margin-left: 4px; fill: currentColor; }
+  .ecran:disabled .ecran__play { opacity: .45; }
+  .attente { font-family: "Archivo", sans-serif; font-size: .8rem; color: var(--ink-muted); margin: .2rem 0 0; }
+
+  /* Le bas de page : la porte vers les audios. */
+  .suite { background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius-lg); padding: 1.8rem; max-width: var(--texte); }
+  .suite h2 { font-size: var(--step-1); margin: 0 0 .7rem; }
+  .suite p { color: var(--ink-soft); margin: 0 0 1.2rem; }
+  .seances { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .9rem; }
+  .seances li { display: grid; gap: .15rem; padding-left: 1rem; border-left: 2px solid var(--accent); }
+  .seances b { font-family: "Archivo", sans-serif; font-size: .98rem; font-weight: 600; color: var(--ink); }
+  .seances span { font-size: .9rem; color: var(--ink-muted); }
+
+  /* Fenêtre vidéo, même comportement que sur l'accueil : clic sur le fond ou
+     touche Échap pour fermer, source vidée à la fermeture. */
+  .vid { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center;
+    padding: 1.5rem; background: rgba(10, 8, 5, .9); }
+  .vid[hidden] { display: none; }
+  .vid__box { width: min(100%, 1000px); display: grid; gap: .9rem; }
+  .vid__box video { display: block; width: 100%; height: auto; max-height: 76vh;
+    border-radius: var(--radius-lg); background: #000; }
+  .vid__close { justify-self: end; font-family: "Archivo", sans-serif; font-size: .85rem;
+    font-weight: 600; color: var(--ink); background: transparent; border: 1px solid var(--line);
+    border-radius: 100px; padding: .5rem 1.1rem; cursor: pointer; }
+  .vid__close:hover { color: var(--accent); border-color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header class="topbar"><div class="wrap topbar__in">
+  <a class="brand" href="/" aria-label="Before-S, retour à l'accueil"><img src="/photo-marque/before-s.webp" alt="Before-S" width="157" height="38"></a>
+  <nav class="topnav" aria-label="Principal">
+    <a href="/#accueil" class="opt">Accueil</a>
+    <a href="/#postures">Les postures</a>
+    <a href="/#methode" class="opt">La méthode</a>
+    <a href="/#boutique" class="opt">Boutique</a>
+    <a href="/blog/">Blog</a>
+  </nav>
+</div></header>
+
+<main class="wrap article">
+
+  <div class="article__tete">
+    <p class="eyebrow">Avant de commencer</p>
+    <h1>Before-Start</h1>
+  </div>
+
+  <div class="bstart">
+    <p class="bstart__lede">Familiarisez-vous avec ces 3 vidéos. L'objectif est que vous
+    vous placiez correctement dans chaque posture.</p>
+
+    <div class="modeset" role="group" aria-label="Choisir le mode de pratique">
+      <button class="modebtn" type="button" data-mode="sans" aria-pressed="true">sans Sangles</button>
+      <button class="modebtn" type="button" data-mode="avec" aria-pressed="false">avec Sangles</button>
+    </div>
+
+    <div class="etapes">
+
+      <section class="etape">
+        <p class="etape__num">Première étape</p>
+        <h2 class="etape__nom">Découverte</h2>
+        <p>Chaque mouvement est détaillé pour prendre vos repères.</p>
+        <ul>
+          <li>4 postures sont raccourcies (demi-Pont &amp; Bâton &amp; Inspire &amp; Expire)</li>
+          <li>Le croissant de Lune est retiré</li>
+        </ul>
+        <button class="ecran" type="button"
+                data-video-sans="" data-video-avec=""
+                data-affiche-sans="affiches/decouverte-sans.webp"
+                data-affiche-avec="affiches/decouverte-avec.webp">
+          <img src="affiches/decouverte-sans.webp" alt="Before-Start Découverte" width="1280" height="720">
+          <span class="ecran__play" aria-hidden="true"><svg viewBox="0 0 16 18"><path d="M15 9 0 18V0z"/></svg></span>
+        </button>
+      </section>
+
+      <section class="etape">
+        <p class="etape__num">La prochaine fois</p>
+        <h2 class="etape__nom">Initiation</h2>
+        <p>Continuez avec la version Initiation.</p>
+        <ul>
+          <li>Le croissant de Lune a été ajouté</li>
+        </ul>
+        <button class="ecran" type="button"
+                data-video-sans="" data-video-avec=""
+                data-affiche-sans="affiches/initiation-sans.webp"
+                data-affiche-avec="affiches/initiation-avec.webp">
+          <img src="affiches/initiation-sans.webp" alt="Before-Start Initiation" width="1280" height="720">
+          <span class="ecran__play" aria-hidden="true"><svg viewBox="0 0 16 18"><path d="M15 9 0 18V0z"/></svg></span>
+        </button>
+      </section>
+
+      <section class="etape">
+        <p class="etape__num">Pour clôturer</p>
+        <h2 class="etape__nom">Initiation SPEED</h2>
+        <p>Même durée, mais les postures s'enchaînent plus rapidement et sont rallongées, dont :</p>
+        <ul>
+          <li>Demi Pont</li>
+          <li>Inspire</li>
+          <li>Expire</li>
+        </ul>
+        <button class="ecran" type="button"
+                data-video-sans="" data-video-avec=""
+                data-affiche-sans="affiches/speed-sans.webp"
+                data-affiche-avec="affiches/speed-avec.webp">
+          <img src="affiches/speed-sans.webp" alt="Before-Start Initiation SPEED" width="1280" height="720">
+          <span class="ecran__play" aria-hidden="true"><svg viewBox="0 0 16 18"><path d="M15 9 0 18V0z"/></svg></span>
+        </button>
+      </section>
+
+    </div>
+
+    <div class="suite">
+      <h2>L'éveil musculaire est acquis</h2>
+      <p>Dès que vous aurez expérimenté ces 3 vidéos, pratiquez au quotidien la version la
+      plus adaptée à vos disponibilités.</p>
+      <a class="btn" href="/#membre">Accédez aux audios</a>
+      <ul class="seances">
+        <li>
+          <b>Before-Sleep, 11 ou 12 min</b>
+          <span>Avant de dormir, au coucher, dans le lit</span>
+        </li>
+        <li>
+          <b>Before-Standup, 8mn20 ou 9 min</b>
+          <span>Avant de vous lever, le matin, idéalement sur un tapis de yoga</span>
+        </li>
+        <li>
+          <b>Before-Speed, 5mn40 ou 6 min</b>
+          <span>L'express, lorsqu'on manque de temps</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+<div class="vid" id="vid" hidden>
+  <div class="vid__box">
+    <button class="vid__close" id="vidclose" type="button">Fermer</button>
+    <video id="vidplayer" controls playsinline preload="none"></video>
+  </div>
+</div>
+
+<footer class="foot"><div class="wrap foot__in">
+  <div>
+    <a class="brand" href="/"><img src="/photo-marque/before-s.webp" alt="Before-S" width="207" height="50" style="height:50px"></a>
+    <p class="foot__def">Before-S est une méthode de yoga accessible et détaillée : un éveil musculaire gratuit de 12 postures allongé sur le dos, qui se pratique dans un lit, sans tapis ni tenue.</p>
+  </div>
+  <nav class="foot__col" aria-label="Ressources">
+    <h2>Ressources</h2>
+    <ul>
+      <li><a href="/blog/yoga-au-lit-le-matin/">Yoga au lit le matin</a></li>
+      <li><a href="/blog/">Tous les articles</a></li>
+    </ul>
+  </nav>
+  <nav class="foot__col" aria-label="Before-S">
+    <h2>Before-S</h2>
+    <ul>
+      <li><a href="/#accueil">Les séances gratuites</a></li>
+      <li><a href="/#postures">Les 90 postures</a></li>
+      <li><a href="/auteur/">Qui est Cédric TURMEL</a></li>
+    </ul>
+  </nav>
+  <p class="foot__legal">Before-S, marque déposée à l'INPI. Tous droits réservés. <a href="/mentions-legales.html">Mentions légales</a> · <a href="/cgv.html">Conditions générales de vente</a> · <a href="/confidentialite.html">Politique de confidentialité</a> · <a href="mailto:contact@before-s.com">contact@before-s.com</a><br>
+  Les séances proposées ne remplacent pas un avis médical. En cas de douleur ou de pathologie, demandez conseil à votre médecin avant de pratiquer.</p>
+</div></footer>
+
+<script>
+(function () {
+  "use strict";
+
+  var ecrans = Array.prototype.slice.call(document.querySelectorAll(".ecran"));
+  var fen = document.getElementById("vid");
+  var lecteur = document.getElementById("vidplayer");
+  var mode = "sans";
+
+  /* Pose l'affiche et la source du mode courant sur chaque écran. Un écran
+     sans source reste inactif : mieux vaut une affiche muette qu'un bouton
+     qui ouvre sur du vide. */
+  function poser() {
+    ecrans.forEach(function (e) {
+      var img = e.querySelector("img");
+      var affiche = e.getAttribute("data-affiche-" + mode);
+      var source = e.getAttribute("data-video-" + mode);
+      if (affiche && img) { img.setAttribute("src", affiche); }
+      e.disabled = !source;
+      var mot = e.nextElementSibling;
+      if (!source) {
+        if (!mot || !mot.classList.contains("attente")) {
+          mot = document.createElement("p");
+          mot.className = "attente";
+          mot.textContent = "Vidéo en préparation.";
+          e.parentNode.insertBefore(mot, e.nextSibling);
+        }
+      } else if (mot && mot.classList.contains("attente")) {
+        mot.parentNode.removeChild(mot);
+      }
+    });
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll(".modebtn"), function (b) {
+    b.addEventListener("click", function () {
+      mode = b.getAttribute("data-mode");
+      Array.prototype.forEach.call(document.querySelectorAll(".modebtn"), function (a) {
+        a.setAttribute("aria-pressed", a === b ? "true" : "false");
+      });
+      poser();
+    });
+  });
+
+  ecrans.forEach(function (e) {
+    e.addEventListener("click", function () {
+      var source = e.getAttribute("data-video-" + mode);
+      if (!source) { return; }
+      var affiche = e.getAttribute("data-affiche-" + mode);
+      if (affiche) { lecteur.setAttribute("poster", affiche); }
+      lecteur.setAttribute("src", source);
+      fen.hidden = false;
+      var p = lecteur.play();
+      if (p && p.catch) { p.catch(function () {}); }
+    });
+  });
+
+  function fermer() {
+    lecteur.pause();
+    lecteur.removeAttribute("src");
+    lecteur.load();
+    fen.hidden = true;
+  }
+
+  document.getElementById("vidclose").addEventListener("click", fermer);
+  fen.addEventListener("click", function (e) { if (e.target === fen) { fermer(); } });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !fen.hidden) { fermer(); }
+  });
+
+  poser();
+}());
+</script>
+
+</body>
+</html>
