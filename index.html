@@ -1213,7 +1213,6 @@ a { color: inherit; }
 }
 .garder h3 { font-family: "Archivo", sans-serif; font-size: var(--step-1); margin: 0; }
 .garder p { color: var(--ink-soft); font-size: .95rem; margin: 0; max-width: 58ch; line-height: 1.6; }
-.garder__note { color: var(--ink-muted); font-size: .88rem; }
 .garder__etat { font-family: "Archivo", sans-serif; font-size: var(--step--1);
   color: var(--ink-muted); min-height: 1.2em; }
 .garder .btn:disabled { opacity: .65; cursor: default; }
@@ -1976,11 +1975,6 @@ fill="currentColor" stroke="none">
         <p>Vous pourrez alors les écouter <strong>sans 5G ni wifi</strong>. Si vous vous
         endormez après <span class="bs"><span class="pre">Before-</span><span class="s">Sleep</span></span>,
         votre téléphone est déjà en mode avion.</p>
-        <p class="garder__note"><strong>Les fichiers ne vont pas dans vos téléchargements.</strong>
-        Ils sont rangés dans la mémoire de ce navigateur, la seule qui permette de lancer
-        une séance sans connexion. Vous n'avez rien à ouvrir ni à ranger.</p>
-        <p class="garder__note">Ajoutez aussi l'icône Before-S dans vos applications : ouvrez
-        le site sur votre téléphone, puis « Sur l'écran d'accueil » depuis le menu de partage.</p>
         <button class="btn btn--ghost" type="button" id="garder-btn">Télécharger les séances</button>
         <p class="garder__etat" id="garder-etat" role="status" aria-live="polite"></p>
       </div>
@@ -2654,15 +2648,15 @@ fill="currentColor" stroke="none">
       });
     }
 
-    function fini(n) {
+    /* Le libelle du bouton suffit comme confirmation : Cedric a tranche que
+       le fonctionnement n'interesse personne. On telecharge, ca marche. */
+    function fini() {
       bouton.disabled = true;
       bouton.textContent = "Séances enregistrées";
-      etat.innerHTML = "<strong>" + n + " séances sur " + FICHIERS.length
-        + " sont dans la mémoire de ce navigateur.</strong> Pour le vérifier : "
-        + "coupez le réseau, ou passez en mode avion, et lancez une séance.";
+      etat.textContent = "";
     }
 
-    verifie().then(function (n) { if (n >= FICHIERS.length) { fini(n); } })
+    verifie().then(function (n) { if (n >= FICHIERS.length) { fini(); } })
       .catch(function () {});
 
     bouton.addEventListener("click", function () {
@@ -2680,7 +2674,7 @@ fill="currentColor" stroke="none">
         }, Promise.resolve());
       }).then(verifie).then(function (n) {
         if (n >= FICHIERS.length) {
-          fini(n);
+          fini();
         } else {
           bouton.disabled = false;
           etat.textContent = "Seules " + n + " séances sur " + FICHIERS.length
