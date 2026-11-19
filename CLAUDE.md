@@ -268,6 +268,13 @@ Deux règles :
   couleur courante** : il prend donc la teinte de son contexte, et il n'existe pas de
   version colorée à maintenir. Il est placé derrière un `@supports` : sans masque,
   le mot revient en Archivo plutôt que de disparaître.
+- **Exception, décidée le 19 novembre 2026 : pas de verrou dans une phrase de corps de
+  texte.** Le tracé manuscrit est un bloc atomique de 4,82 em. Au milieu d'un paragraphe
+  il ne se coupe jamais, impose ses propres césures et laisse des mots seuls en fin de
+  ligne, sur téléphone en particulier. Ni l'espace insécable ni un 
+  autour n'y changent rien : ils déplacent le problème. Dans ce cas, **écrire le nom en
+  texte simple**. Le verrou reste pour les titres, les noms de carte et les boutons, où
+  le nom est seul sur sa ligne.
 - **La marque elle-même, en en-tête et en pied de page, est le logo déposé à l'INPI**
   depuis le 7 octobre 2026 : ruban doré et « Before-S » manuscrit, texte blanc sur fond
   transparent. Il n'est plus composé en Archivo. Sources dans `photo-marque/` :

@@ -1980,13 +1980,13 @@ fill="currentColor" stroke="none">
            montrer une promesse qu'il ne tiendra pas. -->
       <div class="garder" id="garder" hidden>
         <h3>En option : téléchargez les audios (30 Mo)</h3>
-        <!-- Le trace manuscrit de Before- est un bloc atomique : les navigateurs
-             menagent une cesure a ses bords, et un simple espace insecable ne la
-             supprime pas. Il faut enfermer les 2 mots dans un .insec, sinon
-             « apres » reste seul en fin de ligne. -->
+        <!-- Before-Sleep en texte simple, sans le verrou typographique de la
+             marque. Le trace manuscrit est un bloc atomique de 4,82em : dans
+             une phrase de corps de texte il ne se coupe pas, impose ses propres
+             cesures et laisse des mots seuls en fin de ligne. Decision de
+             Cedric le 19 novembre 2026. -->
         <p>Vous pourrez alors les écouter <strong>sans 5G ni wifi</strong>.<br>
-        Si vous vous endormez <span class="insec">après <span class="bs"><span class="pre">Before-</span><span class="s">Sleep</span></span></span>,
-        votre téléphone est <span class="insec">déjà en mode avion</span>.</p>
+        Si vous vous endormez après Before-Sleep, votre téléphone est déjà en mode avion.</p>
         <button class="btn btn--ghost" type="button" id="garder-btn">Télécharger les séances</button>
         <p class="garder__etat" id="garder-etat" role="status" aria-live="polite"></p>
       </div>
