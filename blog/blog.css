@@ -4,17 +4,19 @@
    Toute nouvelle couleur passe par un token, jamais par une valeur en dur. */
 
 :root {
-  --bg:          #2D271C;
-  --surface:     #362F22;
-  --surface-2:   #423929;
-  --ink:         #F2EADB;
-  --ink-soft:    #D3C7B2;
-  --ink-muted:   #9C8F78;
-  --line:        #3A3226;
-  --line-soft:   #3E3625;
+  --bg:          #212A3E;
+  --surface:     #283149;
+  --surface-2:   #323D58;
+  --ink:         #EAEFF8;
+  --ink-soft:    #C3CBDD;
+  --ink-muted:   #8891A8;
+  --line:        #394560;
+  --line-soft:   #2D3750;
   --accent:      #DFBA6E;
   --accent-lift: #EED08B;
   --accent-wash: #33290F;
+  /* un cran sous le fond : les encadres et les cadres video */
+  --fonce:       #151B2C;
 
   --wrap: 1120px;
   --texte: 68ch;

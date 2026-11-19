@@ -23,37 +23,41 @@
    ============================================================ */
 
 :root {
-  /* --- SABLE : brun sombre, or clair.
+  /* --- NUIT ENCREE : bleu nuit legerement indigo, or clair.
+         Retenue par Cedric le 19 novembre 2026, en remplacement du brun
+         SABLE, qui lui paraissait vieux. Le couple bleu plus or rappelle
+         le ciel et le soleil, ce qui colle a une methode qu'on pratique
+         au reveil.
          Palette unique et assumée : la page s'affiche ainsi quel que soit le
          réglage clair/sombre du visiteur. Toutes les couleurs sont posées
          explicitement, rien n'est hérité du navigateur. --- */
-  --bg:          #2D271C;
-  --surface:     #362F22;
-  --surface-2:   #423929;
-  --ink:         #F2EADB;
-  --ink-soft:    #D3C7B2;
-  --ink-muted:   #9C8F78;
-  --line:        #3A3226;
-  --line-soft:   #3E3625;
+  --bg:          #212A3E;
+  --surface:     #283149;
+  --surface-2:   #323D58;
+  --ink:         #EAEFF8;
+  --ink-soft:    #C3CBDD;
+  --ink-muted:   #8891A8;
+  --line:        #394560;
+  --line-soft:   #2D3750;
   --accent:      #DFBA6E;
   --accent-lift: #EED08B;
   --accent-wash: #33290F;
-  /* un cran sous le fond : l'encadre de la version adaptee */
-  --brun-fonce:  #1C1811;
+  /* un cran sous le fond : les encadres et les cadres video */
+  --fonce:  #151B2C;
   --shadow:      0 1px 2px rgba(0,0,0,.5), 0 16px 40px -22px rgba(0,0,0,.9);
 
   /* --- bandeau d'ouverture : un cran plus sombre que le fond --- */
-  --hero-bg:     #241F15;
-  --hero-bg-2:   #3E3321;
-  --hero-ink:    #F5EFE2;
-  --hero-muted:  #B5A78C;
-  --hero-line:   rgba(245,239,226,.18);
+  --hero-bg:     #191F33;
+  --hero-bg-2:   #2D3955;
+  --hero-ink:    #EFF3FB;
+  --hero-muted:  #A4ADC5;
+  --hero-line:   rgba(239,243,251,.18);
   --hero-accent: #DFBA6E;
 
-  --sky-warm:    #B98B3E;
-  --sky-cool:    #4A3A22;
-  --sky-top:     #1F1B12;
-  --sky-bottom:  #3A2D1B;
+  --sky-warm:    #96702E;
+  --sky-cool:    #26314E;
+  --sky-top:     #141A2B;
+  --sky-bottom:  #2C3853;
 
   --wrap: 1120px;
   --gutter: clamp(1.25rem, 5vw, 3rem);
@@ -1025,7 +1029,7 @@ a { color: inherit; }
 .porte__btn {
   display: inline-flex; align-items: center; justify-content: center;
   padding: 1.1rem 2rem; border-radius: var(--radius-lg);
-  background: var(--brun-fonce); border: 1px solid var(--accent);
+  background: var(--fonce); border: 1px solid var(--accent);
   color: var(--ink); text-decoration: none; font-size: var(--step-2);
   transition: background .18s ease, border-color .18s ease;
 }
@@ -1039,86 +1043,13 @@ a { color: inherit; }
 .adapt {
   margin-top: 1.75rem; padding: 1.5rem 1.6rem;
   border: 1px solid var(--accent); border-radius: var(--radius-lg);
-  background: var(--brun-fonce);
+  background: var(--fonce);
   display: grid; gap: .85rem; justify-items: start;
 }
 .adapt p { font-size: .97rem; line-height: 1.6; color: var(--ink-soft); max-width: 62ch; }
 .adapt .eyebrow { color: var(--accent); }
 .adapt .btn { margin-top: .45rem; }
 .adapt .btn:disabled { background: transparent; border-color: var(--line); color: var(--ink-muted); cursor: default; }
-
-/* Fenetre video. Meme comportement que .zoom et .fiche : clic sur le fond
-   ou touche Echap pour fermer. La source n'est posee qu'au clic, donc rien
-   n'est telecharge tant que personne ne demande la video. A la fermeture on
-   vide la source, sinon le son continue derriere la page. */
-.vid {
-  position: fixed; inset: 0; z-index: 200;
-  display: grid; place-items: center; padding: 1.5rem;
-  background: rgba(10, 8, 5, .9);
-}
-.vid[hidden] { display: none; }
-.vid__box { position: relative; width: min(100%, 1000px); display: grid; gap: .9rem; }
-.vid__box video {
-  display: block; width: 100%; height: auto; max-height: 76vh;
-  border-radius: var(--radius-lg); background: #000;
-}
-.vid__close {
-  justify-self: end; font-family: "Archivo", sans-serif;
-  font-size: .85rem; font-weight: 600; color: var(--ink);
-  background: transparent; border: 1px solid var(--line);
-  border-radius: 100px; padding: .5rem 1.1rem; cursor: pointer;
-}
-.vid__close:hover { color: var(--accent); border-color: var(--accent); }
-
-/* Mention posee par le script quand aucune video n'est renseignee. */
-.attente {
-  font-family: "Archivo", sans-serif; font-size: .8rem;
-  color: var(--ink-muted); margin: 0;
-}
-
-/* Le bloc « devenir membre ». Le texte a gauche, le formulaire a droite,
-   l'un sous l'autre sur telephone. Le formulaire poste directement chez
-   Brevo : le site est statique, il ne doit JAMAIS porter de cle d'API,
-   sinon n'importe qui pourrait lire la liste des contacts. Le champ
-   email_address_check est le piege a robots attendu par Brevo : il reste
-   vide et hors ecran, ne pas le supprimer. */
-.membre { display: grid; gap: 2rem; align-items: start; }
-@media (min-width: 900px) { .membre { grid-template-columns: 1.15fr .85fr; gap: 3rem; } }
-.membre__txt h2 { font-size: var(--step-2); font-weight: 500; margin: .6rem 0 .9rem; }
-.membre__txt .lede { color: var(--ink-soft); margin: 0; }
-
-.seances { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; gap: 1rem; }
-.seances li { display: grid; gap: .2rem; padding-left: 1rem; border-left: 2px solid var(--accent); }
-.seances b { font-family: "Archivo", sans-serif; font-size: 1rem; font-weight: 600; color: var(--ink); }
-.seances span { font-size: .92rem; color: var(--ink-muted); }
-
-.membre__form {
-  background: var(--surface-2); border: 1px solid var(--line);
-  border-radius: var(--radius-lg); padding: 1.6rem;
-}
-.membre__form h3 { font-family: "Archivo", sans-serif; font-size: var(--step-1); margin: 0 0 .5rem; }
-.membre__form > p { color: var(--ink-soft); font-size: .95rem; margin: 0 0 1.1rem; }
-
-.lettre__f { display: flex; flex-wrap: wrap; gap: .7rem; }
-.lettre__f[hidden] { display: none; }
-.lettre__f input[type="email"] {
-  flex: 1 1 14rem; min-width: 0; font: inherit; color: var(--ink);
-  background: var(--bg); border: 1px solid var(--line); border-radius: 100px;
-  padding: .85rem 1.2rem;
-}
-.lettre__f input[type="email"]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-.lettre__piege { position: absolute; left: -9999px; }
-.lettre__etat {
-  margin: 1.1rem 0 0; padding: .9rem 1.1rem; border: 1px solid var(--line);
-  border-radius: var(--radius-lg); background: var(--bg); color: var(--ink-soft);
-  font-family: "Archivo", sans-serif; font-size: var(--step--1); line-height: 1.6;
-}
-.lettre__etat--ok { border-color: var(--accent); color: var(--ink); }
-.lettre__etat--attente { color: var(--ink-muted); }
-.lettre__note {
-  font-family: "Archivo", sans-serif; font-size: var(--step--1);
-  color: var(--ink-muted); margin: .9rem 0 0; line-height: 1.55;
-}
 
 /* ============================ MODULES DE LA MÉTHODE ============================ */
 
@@ -1734,17 +1665,11 @@ fill="currentColor" stroke="none">
         <p class="porte__txt">Avant de commencer, familiarisez-vous avec ces 3 vidéos.</p>
       </div>
 
-      <!-- La version adaptee s'ouvre en fenetre, et non plus dans un espace
-           pose sous le texte : l'accueil n'a plus qu'une video a demeure,
-           celle de l'eveil en accelere. Le fichier se renseigne dans
-           data-video sur le bouton, l'affiche dans data-poster. Vide, le
-           bouton reste inactif et affiche « Bientot », comme les boutons
-           d'ecoute. Rien d'autre a modifier. -->
+      <!-- Porte vers /mobilite/, hors menu : le texte et la video y vivent,
+           il ne reste ici que la question et le bouton. -->
       <div class="adapt">
         <p class="eyebrow">Vous manquez de mobilité ?</p>
-        <p>Placez des coussins de part et d'autre pour alléger les rotations, et un oreiller pour préserver les cervicales.</p>
-        <p>Les sangles sont fortement conseillées pour éviter d'engager la musculature des bras.</p>
-        <button class="btn" type="button" data-video="" data-poster="">Visionnez cet éveil adapté</button>
+        <a class="btn" href="mobilite/">Visionnez cet éveil adapté</a>
       </div>
 
     </div>
@@ -2224,13 +2149,6 @@ fill="currentColor" stroke="none">
      15 mini-cours et ses 6 seances restent dans l'historique git. -->
 
 </main>
-
-<div class="vid" id="vid" hidden>
-  <div class="vid__box">
-    <button class="vid__close" id="vidclose" type="button">Fermer</button>
-    <video id="vidplayer" controls playsinline preload="none"></video>
-  </div>
-</div>
 
 <div class="zoom" id="zoom" hidden>
   <div class="zoom__box">
@@ -2941,49 +2859,6 @@ fill="currentColor" stroke="none">
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") { fiche.hidden = true; } });
   }}());
 
-  /* ======================= FENÊTRE VIDÉO =======================
-     Tout bouton portant data-video ouvre la fenêtre. Attribut vide : le
-     bouton reste inactif et une mention « en préparation » s'affiche
-     dessous, même convention que les boutons d'écoute. Renseigner
-     data-video, et facultativement data-poster, suffit à l'activer. */
-  (function () {
-    var fen = document.getElementById("vid");
-    var lecteur = document.getElementById("vidplayer");
-    if (!fen || !lecteur) { return; }
-
-    function fermer() {
-      lecteur.pause();
-      lecteur.removeAttribute("src");
-      lecteur.load();
-      fen.hidden = true;
-    }
-
-    Array.prototype.forEach.call(document.querySelectorAll("[data-video]"), function (b) {
-      var src = b.getAttribute("data-video");
-      if (!src) {
-        b.disabled = true;
-        var mot = document.createElement("p");
-        mot.className = "attente";
-        mot.textContent = "Vidéo en préparation.";
-        b.parentNode.insertBefore(mot, b.nextSibling);
-        return;
-      }
-      b.addEventListener("click", function () {
-        var aff = b.getAttribute("data-poster");
-        if (aff) { lecteur.setAttribute("poster", aff); }
-        lecteur.setAttribute("src", src);
-        fen.hidden = false;
-        var p = lecteur.play();
-        if (p && p.catch) { p.catch(function () {}); }
-      });
-    });
-
-    document.getElementById("vidclose").addEventListener("click", fermer);
-    fen.addEventListener("click", function (e) { if (e.target === fen) { fermer(); } });
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && !fen.hidden) { fermer(); }
-    });
-  }());
 </script>
 
 <!--

@@ -1,0 +1,210 @@
+<!doctype html>
+<!--
+  PAGE MOBILITÉ : /mobilite/
+  Hors menu, comme /before-start/ : on y entre depuis l'accueil, par l'encadré
+  « Vous manquez de mobilité ? ». Elle porte la pratique avec coussins et
+  oreiller, en vidéo.
+
+  POUR ACTIVER LA VIDÉO : renseignez data-video sur le bouton de l'écran, et
+  data-affiche si vous avez une vignette. Tant que data-video est vide,
+  l'écran reste inactif et la mention « Vidéo en préparation » s'affiche
+  dessous. Rien d'autre à modifier.
+
+  TEXTE À VENIR : la section repérée « À COMPLÉTER » plus bas attend les
+  paragraphes que Cédric doit écrire. Elle est commentée, donc invisible pour
+  le visiteur tant qu'elle est vide.
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pratiquer avec coussins et oreiller | Before-S</title>
+<meta name="description" content="La version adaptée de l'éveil musculaire Before-S : des coussins de part et d'autre pour alléger les rotations, un oreiller pour préserver les cervicales.">
+<link rel="canonical" href="https://before-s.com/mobilite/">
+<link rel="icon" href="/favicon.png?v=3" type="image/png">
+<link rel="shortcut icon" href="/favicon.png?v=3" type="image/png">
+<link rel="apple-touch-icon" href="/favicon.png?v=3">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Pratiquer avec coussins et oreiller">
+<meta property="og:url" content="https://before-s.com/mobilite/">
+<meta property="og:image" content="https://before-s.com/photo-marque/before-s.png">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/blog/blog.css">
+<style>
+  /* Styles propres à cette page. Le reste vient de blog.css, qui porte la
+     palette, la barre du haut et le pied de page. */
+  .article__tete, .mob { max-width: 760px; margin-inline: auto; }
+  .mob__lede { font-size: var(--step-1); line-height: 1.5; color: var(--ink-soft);
+    margin: 0 0 2rem; max-width: 56ch; }
+  .mob p { color: var(--ink-soft); line-height: 1.65; max-width: 62ch; }
+  .mob__bloc { display: grid; gap: 1rem; margin: 0 0 2.5rem; }
+
+  /* L'écran vidéo. Sans vignette renseignée, il reste un cadre sombre avec
+     son chevron : mieux qu'une image vide. */
+  .ecran { position: relative; display: block; width: 100%; padding: 0;
+    border: 1px solid var(--line); border-radius: var(--radius-lg);
+    overflow: hidden; background: var(--fonce); cursor: pointer;
+    aspect-ratio: 16 / 9; transition: border-color .18s ease; }
+  .ecran:hover:not(:disabled) { border-color: var(--accent); }
+  .ecran:disabled { cursor: default; }
+  .ecran img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .ecran__play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 62px; height: 62px; border-radius: 50%; background: rgba(28, 24, 17, .82);
+    display: grid; place-items: center; color: var(--accent); pointer-events: none; }
+  .ecran:hover:not(:disabled) .ecran__play { background: rgba(28, 24, 17, .95); }
+  .ecran__play svg { width: 18px; height: 20px; margin-left: 4px; fill: currentColor; }
+  .ecran:disabled .ecran__play { opacity: .45; }
+  .attente { font-family: "Archivo", sans-serif; font-size: .8rem; color: var(--ink-muted);
+    margin: .2rem 0 0; }
+
+  .retour { margin-top: 3rem; }
+
+  /* Fenêtre vidéo, même comportement que sur l'accueil et sur Before-Start. */
+  .vid { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center;
+    padding: 1.5rem; background: rgba(10, 8, 5, .9); }
+  .vid[hidden] { display: none; }
+  .vid__box { width: min(100%, 1000px); display: grid; gap: .9rem; }
+  .vid__box video { display: block; width: 100%; height: auto; max-height: 76vh;
+    border-radius: var(--radius-lg); background: #000; }
+  .vid__close { justify-self: end; font-family: "Archivo", sans-serif; font-size: .85rem;
+    font-weight: 600; color: var(--ink); background: transparent; border: 1px solid var(--line);
+    border-radius: 100px; padding: .5rem 1.1rem; cursor: pointer; }
+  .vid__close:hover { color: var(--accent); border-color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header class="topbar"><div class="wrap topbar__in">
+  <a class="brand" href="/" aria-label="Before-S, retour à l'accueil"><img src="/photo-marque/before-s.webp" alt="Before-S" width="157" height="38"></a>
+  <nav class="topnav" aria-label="Principal">
+    <a href="/#accueil" class="opt">Accueil</a>
+    <a href="/#postures">Les postures</a>
+    <a href="/#methode" class="opt">La méthode</a>
+    <a href="/#boutique" class="opt">Boutique</a>
+    <a href="/blog/">Blog</a>
+  </nav>
+</div></header>
+
+<main class="wrap article">
+
+  <div class="article__tete">
+    <p class="eyebrow">Vous manquez de mobilité ?</p>
+    <h1>Pratiquer avec coussins et oreiller</h1>
+  </div>
+
+  <div class="mob">
+    <p class="mob__lede">L'éveil musculaire se pratique aussi quand le corps est raide.
+    Il suffit de le soutenir.</p>
+
+    <div class="mob__bloc">
+      <p>Placez des coussins de part et d'autre pour alléger les rotations, et un oreiller
+      pour préserver les cervicales.</p>
+      <p>Les sangles sont fortement conseillées pour éviter d'engager la musculature
+      des bras.</p>
+    </div>
+
+    <button class="ecran" type="button" data-video="" data-affiche="">
+      <span class="ecran__play" aria-hidden="true"><svg viewBox="0 0 16 18"><path d="M15 9 0 18V0z"/></svg></span>
+    </button>
+
+    <!-- ===================== À COMPLÉTER =====================
+         Cédric doit écrire les paragraphes qui viennent ici, sous la vidéo.
+         Pour les ajouter : décommentez le bloc ci-dessous et remplacez le
+         texte. Tant qu'il reste commenté, le visiteur ne voit rien.
+
+    <div class="mob__bloc" style="margin-top:2.5rem">
+      <h2>Titre de la section</h2>
+      <p>Premier paragraphe.</p>
+      <p>Second paragraphe.</p>
+    </div>
+         ======================================================= -->
+
+    <p class="retour"><a href="/#accueil">Retour aux séances</a></p>
+  </div>
+
+</main>
+
+<div class="vid" id="vid" hidden>
+  <div class="vid__box">
+    <button class="vid__close" id="vidclose" type="button">Fermer</button>
+    <video id="vidplayer" controls playsinline preload="none"></video>
+  </div>
+</div>
+
+<footer class="foot"><div class="wrap foot__in">
+  <div>
+    <a class="brand" href="/"><img src="/photo-marque/before-s.webp" alt="Before-S" width="207" height="50" style="height:50px"></a>
+    <p class="foot__def">Before-S est une méthode de yoga accessible et détaillée : un éveil musculaire gratuit de 12 postures allongé sur le dos, qui se pratique dans un lit, sans tapis ni tenue.</p>
+  </div>
+  <nav class="foot__col" aria-label="Ressources">
+    <h2>Ressources</h2>
+    <ul>
+      <li><a href="/before-start/">Commencer par Before-Start</a></li>
+      <li><a href="/blog/">Tous les articles</a></li>
+    </ul>
+  </nav>
+  <nav class="foot__col" aria-label="Before-S">
+    <h2>Before-S</h2>
+    <ul>
+      <li><a href="/#accueil">Les séances gratuites</a></li>
+      <li><a href="/#postures">Les 90 postures</a></li>
+      <li><a href="/auteur/">Qui est Cédric TURMEL</a></li>
+    </ul>
+  </nav>
+  <p class="foot__legal">Before-S, marque déposée à l'INPI. Tous droits réservés. <a href="/mentions-legales.html">Mentions légales</a> · <a href="/cgv.html">Conditions générales de vente</a> · <a href="/confidentialite.html">Politique de confidentialité</a> · <a href="mailto:contact@before-s.com">contact@before-s.com</a><br>
+  Les séances proposées ne remplacent pas un avis médical. En cas de douleur ou de pathologie, demandez conseil à votre médecin avant de pratiquer.</p>
+</div></footer>
+
+<script>
+(function () {
+  "use strict";
+
+  var ecran = document.querySelector(".ecran");
+  var fen = document.getElementById("vid");
+  var lecteur = document.getElementById("vidplayer");
+  if (!ecran || !fen || !lecteur) { return; }
+
+  var source = ecran.getAttribute("data-video");
+  var affiche = ecran.getAttribute("data-affiche");
+
+  if (affiche) {
+    var img = document.createElement("img");
+    img.setAttribute("src", affiche);
+    img.setAttribute("alt", "");
+    ecran.insertBefore(img, ecran.firstChild);
+  }
+
+  if (!source) {
+    ecran.disabled = true;
+    var mot = document.createElement("p");
+    mot.className = "attente";
+    mot.textContent = "Vidéo en préparation.";
+    ecran.parentNode.insertBefore(mot, ecran.nextSibling);
+  } else {
+    ecran.addEventListener("click", function () {
+      if (affiche) { lecteur.setAttribute("poster", affiche); }
+      lecteur.setAttribute("src", source);
+      fen.hidden = false;
+      var p = lecteur.play();
+      if (p && p.catch) { p.catch(function () {}); }
+    });
+  }
+
+  function fermer() {
+    lecteur.pause();
+    lecteur.removeAttribute("src");
+    lecteur.load();
+    fen.hidden = true;
+  }
+
+  document.getElementById("vidclose").addEventListener("click", fermer);
+  fen.addEventListener("click", function (e) { if (e.target === fen) { fermer(); } });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !fen.hidden) { fermer(); }
+  });
+}());
+</script>
+
+</body>
+</html>
