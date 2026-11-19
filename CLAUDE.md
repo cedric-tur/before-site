@@ -271,7 +271,7 @@ Deux règles :
 - **Exception, décidée le 19 novembre 2026 : pas de verrou dans une phrase de corps de
   texte.** Le tracé manuscrit est un bloc atomique de 4,82 em. Au milieu d'un paragraphe
   il ne se coupe jamais, impose ses propres césures et laisse des mots seuls en fin de
-  ligne, sur téléphone en particulier. Ni l'espace insécable ni un 
+  ligne, sur téléphone en particulier. Ni l'espace insécable ni un `white-space: nowrap`
   autour n'y changent rien : ils déplacent le problème. Dans ce cas, **écrire le nom en
   texte simple**. Le verrou reste pour les titres, les noms de carte et les boutons, où
   le nom est seul sur sa ligne.
