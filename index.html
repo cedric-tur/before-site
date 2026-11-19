@@ -1760,21 +1760,20 @@ fill="currentColor" stroke="none">
         <div class="membre__txt">
           <p class="eyebrow">Après votre apprentissage</p>
           <h2>Devenez membre Before-S, c'est gratuit</h2>
-          <p class="lede">Après votre apprentissage Before-Start, nous vous invitons à devenir
-          membre pour accéder aux 3 versions audios de l'éveil musculaire, à suivre à l'oreille,
-          les yeux fermés.</p>
+          <p class="lede"><span class="bs"><span class="pre">Before-</span><span class="s">Start</span></span>
+          expérimenté, accédez aux 3 versions audios de l'éveil musculaire.</p>
 
           <ul class="seances">
             <li>
-              <b><span class="bs"><span class="pre">Before-</span><span class="s">Sleep</span></span>, 11 ou 12 min</b>
+              <b><span class="bs"><span class="pre">Before-</span><span class="s">Sleep</span></span>, <span data-dur-sans="11 min" data-dur-avec="12 min">11 min</span></b>
               <span>Au coucher, dans le lit</span>
             </li>
             <li>
-              <b><span class="bs"><span class="pre">Before-</span><span class="s">Standup</span></span>, 8mn20 ou 9 min</b>
+              <b><span class="bs"><span class="pre">Before-</span><span class="s">Standup</span></span>, <span data-dur-sans="8mn20" data-dur-avec="9 min">8mn20</span></b>
               <span>Le matin, idéalement sur un tapis de yoga</span>
             </li>
             <li>
-              <b><span class="bs"><span class="pre">Before-</span><span class="s">Speed</span></span>, 5mn40 ou 6 min</b>
+              <b><span class="bs"><span class="pre">Before-</span><span class="s">Speed</span></span>, <span data-dur-sans="5mn40" data-dur-avec="6 min">5mn40</span></b>
               <span>L'express, si on manque de temps</span>
             </li>
           </ul>
@@ -2380,6 +2379,13 @@ fill="currentColor" stroke="none">
     });
 
     document.querySelectorAll("[data-modehint]").forEach(function (el) { el.textContent = data.hint; });
+
+    // Toute duree portant ses 2 valeurs suit le mode. Generique a dessein :
+    // une nouvelle duree se branche en posant data-dur-sans et data-dur-avec,
+    // sans revenir dans ce script.
+    document.querySelectorAll("[data-dur-sans][data-dur-avec]").forEach(function (el) {
+      el.textContent = el.getAttribute("data-dur-" + mode);
+    });
 
     document.querySelectorAll(".modebtn").forEach(function (btn) {
       btn.setAttribute("aria-pressed", String(btn.getAttribute("data-mode") === mode));

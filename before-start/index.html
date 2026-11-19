@@ -38,7 +38,10 @@
      de cette page est une suite d'écrans 16/9, pas du texte courant. Les
      paragraphes gardent leur mesure de lecture grâce à .bstart p. */
   .article__tete, .bstart { max-width: 760px; margin-inline: auto; }
-  .bstart__lede { font-size: var(--step-1); line-height: 1.5; color: var(--ink-soft); margin: 0 0 2rem; max-width: 56ch; }
+  .bstart__lede { font-size: var(--step-1); line-height: 1.5; color: var(--ink-soft); margin: 0 0 .9rem; max-width: 56ch; }
+  .bstart__obj { font-size: var(--step-0); line-height: 1.6; color: var(--ink); margin: 0 0 2rem; max-width: 56ch; }
+  .bstart__obj span { font-family: "Archivo", sans-serif; font-size: var(--step--1); font-weight: 600;
+    letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-right: .5rem; }
 
   /* Le sélecteur de mode, repris de l'accueil : il change l'affiche et la
      source de chaque vidéo, sans recharger la page. */
@@ -120,8 +123,8 @@
   </div>
 
   <div class="bstart">
-    <p class="bstart__lede">Familiarisez-vous avec ces 3 vidéos. L'objectif est que vous
-    vous placiez correctement dans chaque posture.</p>
+    <p class="bstart__lede">Familiarisez-vous avec ces 3 vidéos.</p>
+    <p class="bstart__obj"><span>Objectif</span> Placez le corps correctement dans chaque posture.</p>
 
     <div class="modeset" role="group" aria-label="Choisir le mode de pratique">
       <button class="modebtn" type="button" data-mode="sans" aria-pressed="true">sans Sangles</button>
@@ -190,15 +193,15 @@
       <a class="btn" href="/#membre">Accédez aux audios</a>
       <ul class="seances">
         <li>
-          <b>Before-Sleep, 11 ou 12 min</b>
+          <b>Before-Sleep, <span data-dur-sans="11 min" data-dur-avec="12 min">11 min</span></b>
           <span>Avant de dormir, au coucher, dans le lit</span>
         </li>
         <li>
-          <b>Before-Standup, 8mn20 ou 9 min</b>
+          <b>Before-Standup, <span data-dur-sans="8mn20" data-dur-avec="9 min">8mn20</span></b>
           <span>Avant de vous lever, le matin, idéalement sur un tapis de yoga</span>
         </li>
         <li>
-          <b>Before-Speed, 5mn40 ou 6 min</b>
+          <b>Before-Speed, <span data-dur-sans="5mn40" data-dur-avec="6 min">5mn40</span></b>
           <span>L'express, lorsqu'on manque de temps</span>
         </li>
       </ul>
@@ -271,6 +274,15 @@
     });
   }
 
+  /* Les durees des 3 audios suivent le meme selecteur que les videos : une
+     seule bascule pour toute la page. */
+  function poserDurees() {
+    Array.prototype.forEach.call(
+      document.querySelectorAll("[data-dur-sans][data-dur-avec]"), function (el) {
+        el.textContent = el.getAttribute("data-dur-" + mode);
+      });
+  }
+
   Array.prototype.forEach.call(document.querySelectorAll(".modebtn"), function (b) {
     b.addEventListener("click", function () {
       mode = b.getAttribute("data-mode");
@@ -278,6 +290,7 @@
         a.setAttribute("aria-pressed", a === b ? "true" : "false");
       });
       poser();
+      poserDurees();
     });
   });
 
@@ -308,6 +321,7 @@
   });
 
   poser();
+  poserDurees();
 }());
 </script>
 
