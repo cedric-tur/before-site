@@ -1230,9 +1230,11 @@ a { color: inherit; }
    doit JAMAIS porter de cle d'API, sinon n'importe qui pourrait lire la liste
    des contacts. Le champ email_address_check est le piege a robots attendu
    par Brevo, il reste vide et hors ecran : ne pas le supprimer. */
+/* Meme bleu que l'encadre d'inscription du blog, qui utilise --surface :
+   les 2 doivent se ressembler, le visiteur passe de l'un a l'autre. */
 .membre__form {
   margin-top: 2.6rem; max-width: var(--texte);
-  background: var(--surface-2); border: 1px solid var(--line);
+  background: var(--surface); border: 1px solid var(--line);
   border-radius: var(--radius-lg); padding: 1.6rem;
 }
 .membre__form h3 { font-family: "Archivo", sans-serif; font-size: var(--step-1); margin: 0 0 .5rem; }
@@ -2443,7 +2445,7 @@ fill="currentColor" stroke="none">
      et ne doit JAMAIS porter de cle d'API, sinon n'importe qui pourrait lire
      la liste des contacts. Le champ email_address_check est le piege a robots
      attendu par Brevo : il reste vide et hors ecran, ne pas le supprimer. -->
-<section class="lettre band--blanc">
+<section class="lettre">
   <div class="wrap">
     <div class="membre__form">
       <h3>Recevez les nouvelles séances à venir et diverses informations</h3>
