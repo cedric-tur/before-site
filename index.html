@@ -306,6 +306,9 @@ a { color: inherit; }
   background: transparent; border-color: var(--line); color: var(--ink);
 }
 .band--blanc .btn--ghost:hover { border-color: var(--accent); }
+/* --fonce vaut un gris clair dans une bande blanche : le libelle du mode
+   choisi serait presque blanc sur l or. On le force a l encre. */
+.band--blanc .modebtn[aria-pressed="true"] { color: #16202E; }
 
 .band { padding-block: clamp(3.25rem, 8vh, 5.5rem); border-top: 1px solid var(--line-soft); }
 .band--tint { background: var(--surface); }
@@ -1153,7 +1156,13 @@ a { color: inherit; }
    puisqu'il ne conditionne plus l'ecoute. */
 .membre__txt { max-width: var(--texte); }
 .membre__txt h2 { font-size: var(--step-2); font-weight: 500; margin: 0 0 .5rem; }
-.membre__action { margin: 0 0 .4rem; }
+/* Le declencheur et le selecteur de mode sur la meme ligne. Ils se replient
+   l'un sous l'autre quand la largeur ne suffit plus. */
+.membre__action {
+  margin: 0 0 .4rem; display: flex; flex-wrap: wrap;
+  align-items: center; gap: .6rem 1rem;
+}
+.modeset[hidden] { display: none; }
 .seances[hidden] { display: none; }
 .membre__txt .lede { color: var(--ink-soft); margin: 0; }
 #audios { margin-top: 1.9rem; }
@@ -1911,6 +1920,10 @@ fill="currentColor" stroke="none">
         <p class="membre__action">
           <button class="lien" type="button" id="ouvrir-audios"
                   aria-expanded="false" aria-controls="audios">accédez aux 3 versions audios de l'éveil musculaire</button>
+          <span class="modeset" id="membre-mode" role="group" aria-label="Choisir le mode de pratique" hidden>
+            <button class="modebtn" type="button" data-mode="sans" aria-pressed="true">sans Sangles</button>
+            <button class="modebtn" type="button" data-mode="avec" aria-pressed="false">avec Sangles</button>
+          </span>
         </p>
 
         <ul class="seances" id="apercu">
@@ -2621,9 +2634,12 @@ fill="currentColor" stroke="none">
     var bloc = document.getElementById("audios");
     if (ouvre && bloc) {
       var apercu = document.getElementById("apercu");
+      var mode = document.getElementById("membre-mode");
       ouvre.addEventListener("click", function () {
         var ouvert = bloc.hidden;
         bloc.hidden = !ouvert;
+        /* Le selecteur n'a d'interet qu'une fois les cartes visibles. */
+        if (mode) { mode.hidden = !ouvert; }
         /* L'apercu des 3 seances laisse la place aux 3 cartes : elles disent
            la meme chose, en mieux. */
         if (apercu) { apercu.hidden = ouvert; }
