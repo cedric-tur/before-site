@@ -1212,7 +1212,7 @@ a { color: inherit; }
   border-radius: var(--radius-lg); display: grid; gap: .7rem; justify-items: start;
 }
 .garder h3 { font-family: "Archivo", sans-serif; font-size: var(--step-1); margin: 0; }
-.garder p { color: var(--ink-soft); font-size: .95rem; margin: 0; max-width: 58ch; line-height: 1.6; }
+.garder p { color: var(--ink-soft); font-size: .95rem; margin: 0; max-width: 58ch; line-height: 1.6; text-wrap: pretty; }
 .garder__etat { font-family: "Archivo", sans-serif; font-size: var(--step--1);
   color: var(--ink-muted); min-height: 1.2em; }
 .garder .btn:disabled { opacity: .65; cursor: default; }
@@ -1972,8 +1972,11 @@ fill="currentColor" stroke="none">
            montrer une promesse qu'il ne tiendra pas. -->
       <div class="garder" id="garder" hidden>
         <h3>En option : téléchargez les audios (30 Mo)</h3>
+        <!-- Espace insecable avant la marque : le trace manuscrit de Before- est
+             un bloc de 4,82em qui ne se coupe pas. Sans cela, « apres » restait
+             seul en fin de ligne et le nom partait a la ligne suivante. -->
         <p>Vous pourrez alors les écouter <strong>sans 5G ni wifi</strong>. Si vous vous
-        endormez après <span class="bs"><span class="pre">Before-</span><span class="s">Sleep</span></span>,
+        endormez apr&egrave;s&nbsp;<span class="bs"><span class="pre">Before-</span><span class="s">Sleep</span></span>,
         votre téléphone est déjà en mode avion.</p>
         <button class="btn btn--ghost" type="button" id="garder-btn">Télécharger les séances</button>
         <p class="garder__etat" id="garder-etat" role="status" aria-live="polite"></p>
