@@ -331,8 +331,19 @@ et encodées dans `index.html`. Les fichiers sont la source ; `index.html` se r�
 partir d'eux et de `_liste.tsv`. Modifier une image sans régénérer ne change rien au site.
 
 **Design**
-- Palette **« Sable »** : brun sombre (`#191510`) et or clair (`#DFBA6E`). Choisie par Cédric
+- Palette **« Sable »** : brun sombre (`#2D271C`) et or clair (`#DFBA6E`). Choisie par Cédric
   parmi quatre propositions : *« sombre mais intimiste, doux à la lecture »*.
+- **Le fond a été éclairci le 19 novembre 2026**, de `#191510` à `#2D271C` : sur un téléphone
+  l'ancien brun passait pour du noir. Cédric a comparé 4 crans et retenu le 2e ; le 3e
+  (`#373022`) lui a paru trop clair. Les surfaces, le filet discret et le bandeau d'ouverture
+  ont été remontés d'autant, pour garder les mêmes écarts entre les niveaux. L'or, les encres
+  et les plaques de postures n'ont pas bougé. **Toute nouvelle valeur de fond se teste à
+  largeur de téléphone et SOUS le bandeau d'ouverture** : dans le bandeau, c'est le dégradé
+  qu'on voit, pas le fond.
+- *Un essai de palette claire « Azur et crème » a été mené le 19 novembre 2026 puis annulé
+  (commits a9bb8ae et 5da00be). Il avait un argument sérieux, la tenue noire de Cédric qui
+  se fond dans un fond sombre sur les 120 postures détourées, mais le rendu ne lui a pas plu.
+  Ne pas le relancer sans qu'il le demande.*
 - **Palette unique et assumée, pas de mode clair.** La page s'affiche en Sable quel que soit
   le réglage du visiteur. Toutes les couleurs sont posées explicitement dans `:root` ; il n'y
   a plus de bloc `@media (prefers-color-scheme)` ni de `[data-theme]`, et il ne faut pas en

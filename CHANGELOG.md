@@ -7,6 +7,26 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 19 novembre 2026
+
+- **Le fond s'éclaircit**, de `#191510` à `#2D271C`. Sur un téléphone, l'ancien brun
+  passait pour du noir. Cédric a comparé 4 crans et retenu le 2e. Le 3e, `#373022`,
+  lui a paru trop clair.
+
+- Les surfaces des cartes, le filet discret et le bandeau d'ouverture sont remontés
+  d'autant : remonter le fond seul aurait fait disparaître les cartes dedans. La teinte
+  brune et les écarts entre les niveaux sont conservés. L'or, les encres et les plaques
+  de postures n'ont pas bougé.
+
+- **Leçon de méthode :** la première comparaison que j'avais montrée était trompeuse,
+  parce qu'elle cadrait le bandeau d'ouverture, dont le dégradé couvre le fond. Une valeur
+  de fond se juge à largeur de téléphone et sous le bandeau.
+
+- **Un essai de palette claire, « Azur et crème », a été mené puis annulé** le même jour
+  (commits `a9bb8ae` et `5da00be`). L'argument était sérieux : Cédric pratique en tenue
+  noire, et sur fond sombre la silhouette des 120 postures détourées se fond dans le fond.
+  Le rendu ne lui a pas plu. L'éclaircissement du brun est la réponse retenue.
+
 ## 18 novembre 2026
 
 - **La lettre d'information est en service.** Un bloc d'inscription figure au bas des
