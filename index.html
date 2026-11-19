@@ -1197,6 +1197,11 @@ a { color: inherit; }
   cursor: pointer; transition: filter .18s ease;
 }
 .lien:hover { filter: brightness(1.08); }
+
+/* Garde un mot colle au nom de seance qui le suit. Le trace manuscrit est un
+   bloc atomique : les navigateurs menagent une cesure a ses bords, qu un
+   espace insecable ne supprime pas. */
+.insec { white-space: nowrap; }
 .lien:focus-visible { outline: 2px solid var(--accent-lift); outline-offset: 3px; }
 
 .seances { list-style: none; margin: 1.6rem 0 1.9rem; padding: 0; display: grid; gap: 1rem; }
@@ -1972,11 +1977,12 @@ fill="currentColor" stroke="none">
            montrer une promesse qu'il ne tiendra pas. -->
       <div class="garder" id="garder" hidden>
         <h3>En option : téléchargez les audios (30 Mo)</h3>
-        <!-- Espace insecable avant la marque : le trace manuscrit de Before- est
-             un bloc de 4,82em qui ne se coupe pas. Sans cela, « apres » restait
-             seul en fin de ligne et le nom partait a la ligne suivante. -->
+        <!-- Le trace manuscrit de Before- est un bloc atomique : les navigateurs
+             menagent une cesure a ses bords, et un simple espace insecable ne la
+             supprime pas. Il faut enfermer les 2 mots dans un .insec, sinon
+             « apres » reste seul en fin de ligne. -->
         <p>Vous pourrez alors les écouter <strong>sans 5G ni wifi</strong>. Si vous vous
-        endormez apr&egrave;s&nbsp;<span class="bs"><span class="pre">Before-</span><span class="s">Sleep</span></span>,
+        endormez <span class="insec">après <span class="bs"><span class="pre">Before-</span><span class="s">Sleep</span></span></span>,
         votre téléphone est déjà en mode avion.</p>
         <button class="btn btn--ghost" type="button" id="garder-btn">Télécharger les séances</button>
         <p class="garder__etat" id="garder-etat" role="status" aria-live="polite"></p>
@@ -2622,6 +2628,20 @@ fill="currentColor" stroke="none">
           : "accédez aux 3 versions audios de l'éveil musculaire";
         if (ouvert && window.majLecteurs) { window.majLecteurs(); }
       });
+
+      /* Arrivee depuis /before-start/ : le bloc s'ouvre tout seul et la page
+         se place dessus. On passe par un parametre et non par une ancre, le
+         routage ne connaissant que ses 5 vues et ramenant tout le reste a
+         l'accueil, avec un retour en haut de page. */
+      if (/(^|[?&])audios(=|&|$)/.test(location.search) && bloc.hidden) {
+        ouvre.click();
+        setTimeout(function () {
+          var cible = document.getElementById("membre");
+          if (cible) {
+            cible.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 120);
+      }
     }
 
     var zone = document.getElementById("garder");
