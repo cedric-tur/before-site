@@ -1077,7 +1077,9 @@ a { color: inherit; }
 }
 
 .modebtn:hover { color: var(--ink); }
-.modebtn[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+/* Le mode choisi se marque en dore : c'est le seul reglage de la page,
+   il doit se voir. */
+.modebtn[aria-pressed="true"] { background: var(--or); color: var(--fonce); }
 
 .modehint { font-size: .95rem; color: var(--ink-muted); }
 
@@ -1165,20 +1167,25 @@ a { color: inherit; }
 .band--blanc .garder .btn--ghost:hover { color: var(--or); border-color: var(--or); }
 .band--blanc .card .play { background: var(--ink); color: #283149; border-color: var(--ink); }
 
-/* Le bandeau d'inscription, juste avant le pied de page. */
-.lettre { padding-block: clamp(2.5rem, 6vh, 4rem); border-top: 1px solid var(--line-soft); }
+/* Le bandeau d'inscription, juste avant le pied de page. Fond blanc : il
+   doit se detacher du pied, qui est sombre. */
+.lettre { padding-block: clamp(2.5rem, 6vh, 4rem); }
+.lettre .membre__form { margin-top: 0; }
 
-/* Le declencheur est dans la phrase : le titre, la phrase et un bouton
-   repetaient tous les 3 la meme chose. Souligne en or epais pour qu'il se
-   voie comme un bouton, avec une zone de touche confortable au pouce. */
+/* Le declencheur reste dans la phrase, pour ne pas repeter une 3e fois ce
+   que disent deja le titre et le texte, mais il a l'aspect d'un bouton dore :
+   il doit se voir et s'atteindre au pouce. --or et non --accent, car dans
+   une bande blanche --accent est un bronze. */
 .lien {
-  font: inherit; color: var(--accent); background: none; border: 0;
-  padding: 0 0 .1em; cursor: pointer; text-align: left;
-  text-decoration: underline; text-decoration-color: var(--or);
-  text-decoration-thickness: 2px; text-underline-offset: .2em;
+  display: inline-block; vertical-align: baseline;
+  font-family: "Archivo", sans-serif; font-size: .95rem; font-weight: 600;
+  letter-spacing: -.01em; line-height: 1.2;
+  background: var(--or); color: #16202E; border: 1px solid var(--or);
+  border-radius: 100px; padding: .6rem 1.15rem; margin: .2rem 0;
+  cursor: pointer; transition: filter .18s ease;
 }
-.lien:hover { color: var(--accent-lift); }
-.lien:focus-visible { outline: 2px solid var(--accent-lift); outline-offset: 3px; border-radius: 2px; }
+.lien:hover { filter: brightness(1.08); }
+.lien:focus-visible { outline: 2px solid var(--accent-lift); outline-offset: 3px; }
 
 .seances { list-style: none; margin: 1.6rem 0 1.9rem; padding: 0; display: grid; gap: 1rem; }
 .seances li { display: grid; gap: .2rem; padding-left: 1rem; border-left: 2px solid var(--accent); }
@@ -1329,6 +1336,10 @@ a { color: inherit; }
 
 .daygroup { margin-bottom: 2.75rem; }
 .daygroup[hidden] { display: none; }
+
+/* Bande dont l'en-tete est centre. Le titre des 90 postures le demande :
+   le repertoire s'annonce au milieu de la page, pas en marge. */
+.band--centre .band__head { text-align: center; justify-items: center; }
 
 .note { margin-top: 1.5rem; font-size: .95rem; color: var(--ink-muted); }
 .note b { color: var(--ink-soft); font-weight: 500; font-family: "Archivo", sans-serif; font-size: .9rem; }
@@ -1998,7 +2009,7 @@ fill="currentColor" stroke="none">
     </div>
   </section>
 
-  <section class="band" id="plaquettes">
+  <section class="band band--centre" id="plaquettes">
     <div class="wrap">
       <div class="band__head">
         <h2>Les 90 postures</h2>
@@ -2409,7 +2420,7 @@ fill="currentColor" stroke="none">
      et ne doit JAMAIS porter de cle d'API, sinon n'importe qui pourrait lire
      la liste des contacts. Le champ email_address_check est le piege a robots
      attendu par Brevo : il reste vide et hors ecran, ne pas le supprimer. -->
-<section class="lettre">
+<section class="lettre band--blanc">
   <div class="wrap">
     <div class="membre__form">
       <h3>Recevez les nouvelles séances à venir et diverses informations</h3>

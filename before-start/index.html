@@ -50,7 +50,8 @@
   .modebtn { font-family: "Archivo", sans-serif; font-size: .88rem; font-weight: 600;
     color: var(--ink-muted); background: transparent; border: 0; border-radius: 100px;
     padding: .5rem 1.1rem; cursor: pointer; transition: background .18s ease, color .18s ease; }
-  .modebtn[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  /* Le mode choisi se marque en dore, comme sur l'accueil. */
+  .modebtn[aria-pressed="true"] { background: var(--accent); color: var(--fonce); }
   .modebtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
   .etapes { display: grid; gap: 2.6rem; margin: 0 0 3rem; }
