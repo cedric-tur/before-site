@@ -1217,7 +1217,10 @@ a { color: inherit; }
   border-radius: var(--radius-lg); display: grid; gap: .7rem; justify-items: start;
 }
 .garder h3 { font-family: "Archivo", sans-serif; font-size: var(--step-1); margin: 0; }
-.garder p { color: var(--ink-soft); font-size: .95rem; margin: 0; max-width: 58ch; line-height: 1.6; text-wrap: pretty; }
+/* Pas de cap a 58ch ici : la phrase sur Before-Sleep a besoin de toute la
+   largeur de l encadre pour ne pas laisser 2 mots seuls sur la derniere
+   ligne. L encadre lui-meme est deja borne a --texte. */
+.garder p { color: var(--ink-soft); font-size: .95rem; margin: 0; line-height: 1.6; text-wrap: pretty; }
 .garder__etat { font-family: "Archivo", sans-serif; font-size: var(--step--1);
   color: var(--ink-muted); min-height: 1.2em; }
 .garder .btn:disabled { opacity: .65; cursor: default; }
@@ -1981,9 +1984,9 @@ fill="currentColor" stroke="none">
              menagent une cesure a ses bords, et un simple espace insecable ne la
              supprime pas. Il faut enfermer les 2 mots dans un .insec, sinon
              « apres » reste seul en fin de ligne. -->
-        <p>Vous pourrez alors les écouter <strong>sans 5G ni wifi</strong>. Si vous vous
-        endormez <span class="insec">après <span class="bs"><span class="pre">Before-</span><span class="s">Sleep</span></span></span>,
-        votre téléphone est déjà en mode avion.</p>
+        <p>Vous pourrez alors les écouter <strong>sans 5G ni wifi</strong>.<br>
+        Si vous vous endormez <span class="insec">après <span class="bs"><span class="pre">Before-</span><span class="s">Sleep</span></span></span>,
+        votre téléphone est <span class="insec">déjà en mode avion</span>.</p>
         <button class="btn btn--ghost" type="button" id="garder-btn">Télécharger les séances</button>
         <p class="garder__etat" id="garder-etat" role="status" aria-live="polite"></p>
       </div>
