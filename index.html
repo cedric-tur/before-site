@@ -47,6 +47,10 @@
   --accent:      #DFBA6E;
   --accent-lift: #EED08B;
   --accent-wash: #33290F;
+  /* L'or vrai. --accent devient un bronze dans les bandes blanches,
+     ou l'or serait illisible en texte. --or ne bouge jamais : il sert
+     aux fonds de bouton et aux filets, partout. */
+  --or:          #DFBA6E;
   /* un cran sous le fond : les encadres et les cadres video */
   --fonce:  #151B2C;
   --shadow:      0 1px 2px rgba(0,0,0,.5), 0 16px 40px -22px rgba(0,0,0,.9);
@@ -259,6 +263,39 @@ a { color: inherit; }
 .chip::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--hero-accent); opacity: .8; }
 
 /* ============================ BANDES ============================ */
+
+/* Bande a fond blanc. On redefinit les jetons localement : tout ce qui est a
+   l'interieur suit, sans regle supplementaire. Retirer la classe annule tout.
+   L'or passe en bronze pour le texte, car sur blanc il tombe a 1,7 de
+   contraste ; les fonds de bouton gardent l'or vrai par --or. */
+.band--blanc {
+  --bg:          #FFFFFF;
+  --surface:     #FFFFFF;
+  --surface-2:   #F3F6FA;
+  --ink:         #16202E;
+  --ink-soft:    #3B4859;
+  --ink-muted:   #64718A;
+  --line:        #DBE2EB;
+  --line-soft:   #E9EDF3;
+  --accent:      #8A6418;
+  --accent-lift: #6E4F12;
+  --accent-wash: #F7EFDB;
+  /* --fonce signifie "un cran a l'ecart du fond". Sur blanc, c'est un gris
+     bleute clair, pas du bleu nuit : sinon l'encadre Garder sur mon telephone
+     deviendrait du texte sombre sur fond sombre. */
+  --fonce:       #EFF3F8;
+  --shadow:      0 1px 2px rgba(22,32,46,.05), 0 16px 40px -26px rgba(22,32,46,.25);
+  background: #FFFFFF;
+  color: var(--ink);
+  border-top-color: var(--line);
+}
+.band--blanc .btn {
+  background: var(--or); border-color: var(--or); color: #16202E;
+}
+.band--blanc .btn--ghost {
+  background: transparent; border-color: var(--line); color: var(--ink);
+}
+.band--blanc .btn--ghost:hover { border-color: var(--accent); }
 
 .band { padding-block: clamp(3.25rem, 8vh, 5.5rem); border-top: 1px solid var(--line-soft); }
 .band--tint { background: var(--surface); }
@@ -498,7 +535,7 @@ a { color: inherit; }
 @media (max-width: 700px) { .gallery { grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); } }
 
 .tile {
-  background: #F3EDE1; border: 1px solid transparent; border-radius: 8px;
+  background: #FFFFFF; border: 1px solid transparent; border-radius: 8px;
   padding: .8rem; display: grid; gap: .7rem; justify-items: center; cursor: pointer; container-type: inline-size;
   transition: transform .18s ease, border-color .18s ease;
 }
@@ -551,7 +588,7 @@ a { color: inherit; }
 
 .ev {
   flex: 0 0 clamp(150px, 46%, 200px); scroll-snap-align: start;
-  background: #F3EDE1; border-radius: 8px; padding: .8rem .8rem .9rem;
+  background: #FFFFFF; border-radius: 8px; padding: .8rem .8rem .9rem;
   display: grid; gap: .3rem; justify-items: center;
   container-type: inline-size;
   --f: calc(100cqw / 728);
@@ -644,7 +681,7 @@ a { color: inherit; }
 .zoom { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 1.5rem; background: rgba(10,8,5,.86); }
 .zoom[hidden] { display: none; }
 .zoom__box {
-  background: #F3EDE1; border-radius: 10px; padding: 2.4rem 1.75rem 1.75rem;
+  background: #FFFFFF; border-radius: 10px; padding: 2.4rem 1.75rem 1.75rem;
   max-width: 620px; width: 100%; max-height: 90vh; overflow-y: auto;
   display: grid; gap: .8rem; justify-items: center; position: relative;
 }
@@ -667,9 +704,9 @@ a { color: inherit; }
 .art {
   display: grid; grid-template-columns: .95fr 1.05fr; gap: 2.5rem 3rem;
   align-items: center; padding-block: clamp(2rem, 5vh, 3.25rem);
-  border-bottom: 1px solid var(--line-soft);
 }
-.art:last-of-type { border-bottom: 0; }
+/* Le filet entre 2 produits est pose par .art + .art, en dore. Le filet gris
+   qui etait ici faisait double trait juste au-dessus. */
 .art--inverse .art__vis { order: 2; }
 .art--livre { grid-template-columns: 1fr; max-width: 64ch; }
 @media (max-width: 860px) {
@@ -715,7 +752,7 @@ a { color: inherit; }
 .flori { display: grid; grid-template-columns: repeat(5, 1fr); gap: .45rem; }
 @media (max-width: 560px) { .flori { grid-template-columns: repeat(3, 1fr); } }
 .fl {
-  background: #F3EDE1; border-radius: 6px; padding: .3rem;
+  background: #FFFFFF; border-radius: 6px; padding: .3rem;
   display: grid; justify-items: center;
   container-type: inline-size;
   --f: calc(100cqw / 728);
@@ -879,7 +916,7 @@ a { color: inherit; }
 .fiche[hidden] { display: none; }
 
 .fiche__box {
-  background: #F3EDE1; border-radius: 10px; padding: 1.75rem;
+  background: #FFFFFF; border-radius: 10px; padding: 1.75rem;
   max-width: 900px; width: 100%; max-height: 90vh; overflow-y: auto;
   display: grid; gap: 1rem; justify-items: center; position: relative;
 }
@@ -1124,6 +1161,15 @@ a { color: inherit; }
 .lettre__note {
   font-family: "Archivo", sans-serif; font-size: var(--step--1);
   color: var(--ink-muted); margin: .9rem 0 0; line-height: 1.55;
+}
+
+/* Filet dore entre les 2 produits de la boutique, de la meme epaisseur que
+   celui du menu. --or et non --accent : dans une bande blanche, --accent est
+   un bronze. */
+.art + .art {
+  border-top: 2px solid var(--or);
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  padding-top: clamp(2.5rem, 6vw, 4rem);
 }
 
 /* ============================ MODULES DE LA MÉTHODE ============================ */
@@ -1755,7 +1801,7 @@ fill="currentColor" stroke="none">
        19 novembre 2026, « je me mets des batons dans les roues avant de
        commencer ». Le bouton ne protege donc rien, il garde seulement la page
        legere. Le formulaire, en fin de bloc, ne conditionne plus rien. -->
-  <section class="band band--tint" id="membre">
+  <section class="band band--blanc" id="membre">
     <div class="wrap">
       <div class="membre__txt">
         <p class="eyebrow">Après votre apprentissage</p>
@@ -1877,7 +1923,7 @@ fill="currentColor" stroke="none">
     </div>
   </section>
 
-  <section class="band band--tint">
+  <section class="band band--blanc">
     <div class="wrap">
       <div class="story__duo">
         <div class="story__tete">
@@ -2218,15 +2264,9 @@ fill="currentColor" stroke="none">
      ================================================================== -->
 <div class="view" id="view-boutique" data-view="boutique">
 
-  <section class="hero hero--slim">
-    <div class="hero__sky" aria-hidden="true"></div>
-    <div class="hero__grain" aria-hidden="true"></div>
-    <div class="wrap hero__in">
-      <p class="eyebrow">Boutique</p>
-    </div>
-  </section>
-
-  <section class="band band--flush">
+  <!-- Pas de bandeau de titre : on entre directement dans les produits.
+       Fond blanc sur toute la vue, c'est une boutique. -->
+  <section class="band band--flush band--blanc">
     <div class="wrap">
 
       <article class="art art--tapis">
