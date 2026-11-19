@@ -86,6 +86,10 @@
 
 body {
   margin: 0;
+  /* Garde-fou : plus rien ne peut faire glisser la page lateralement. clip et
+     non hidden, car hidden creerait un conteneur de defilement qui casserait
+     le position: sticky de la barre du haut. */
+  overflow-x: clip;
   background: var(--bg);
   color: var(--ink);
   font-family: "Newsreader", Georgia, "Times New Roman", serif;
@@ -581,6 +585,12 @@ a { color: inherit; }
 }
 .carou__b--g { left: -.7rem; }
 .carou__b--d { right: -.7rem; }
+/* Sur un telephone, 0.7rem vaut 14 px : les 2 fleches debordaient de 28 px
+   au total et la page se faisait glisser lateralement. Elles rentrent. */
+@media (max-width: 700px) {
+  .carou__b--g { left: 0; }
+  .carou__b--d { right: 0; }
+}
 .carou__b:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
 .carou__b:disabled { opacity: .3; cursor: default; }
 
@@ -1157,6 +1167,18 @@ a { color: inherit; }
 
 /* Le bandeau d'inscription, juste avant le pied de page. */
 .lettre { padding-block: clamp(2.5rem, 6vh, 4rem); border-top: 1px solid var(--line-soft); }
+
+/* Le declencheur est dans la phrase : le titre, la phrase et un bouton
+   repetaient tous les 3 la meme chose. Souligne en or epais pour qu'il se
+   voie comme un bouton, avec une zone de touche confortable au pouce. */
+.lien {
+  font: inherit; color: var(--accent); background: none; border: 0;
+  padding: 0 0 .1em; cursor: pointer; text-align: left;
+  text-decoration: underline; text-decoration-color: var(--or);
+  text-decoration-thickness: 2px; text-underline-offset: .2em;
+}
+.lien:hover { color: var(--accent-lift); }
+.lien:focus-visible { outline: 2px solid var(--accent-lift); outline-offset: 3px; border-radius: 2px; }
 
 .seances { list-style: none; margin: 1.6rem 0 1.9rem; padding: 0; display: grid; gap: 1rem; }
 .seances li { display: grid; gap: .2rem; padding-left: 1rem; border-left: 2px solid var(--accent); }
@@ -1855,7 +1877,8 @@ fill="currentColor" stroke="none">
         <h2>Les 3 versions audios de l'éveil musculaire</h2>
         <p class="lede">Après votre apprentissage
         <span class="bs"><span class="pre">Before-</span><span class="s">Start</span></span>,
-        accédez aux 3 versions audios.</p>
+        <button class="lien" type="button" id="ouvrir-audios"
+                aria-expanded="false" aria-controls="audios">accédez aux 3 versions audios</button>.</p>
 
         <ul class="seances">
           <li>
@@ -1872,8 +1895,6 @@ fill="currentColor" stroke="none">
           </li>
         </ul>
 
-        <button class="btn" type="button" id="ouvrir-audios"
-                aria-expanded="false" aria-controls="audios">Accéder aux 3 versions audios</button>
       </div>
 
       <!-- Les 3 cartes et l'encadre de telechargement se deplient ensemble :
@@ -2567,7 +2588,7 @@ fill="currentColor" stroke="none">
         var ouvert = bloc.hidden;
         bloc.hidden = !ouvert;
         ouvre.setAttribute("aria-expanded", String(ouvert));
-        ouvre.textContent = ouvert ? "Masquer les 3 versions" : "Accéder aux 3 versions audios";
+        ouvre.textContent = ouvert ? "masquer les 3 versions audios" : "accédez aux 3 versions audios";
         if (ouvert && window.majLecteurs) { window.majLecteurs(); }
       });
     }
