@@ -7,6 +7,44 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 19 novembre 2026, soir
+
+- **La palette passe au bleu.** « Nuit encrée », `#212A3E`, un bleu nuit légèrement
+  indigo. Le brun paraissait vieux à Cédric ; le couple bleu plus or rappelle le ciel
+  et le soleil, ce qui colle à une méthode qu'on pratique au réveil. Retenue après
+  2 séries de propositions, la seconde déclinant 3 voisines du bleu retenu dans la
+  première.
+
+- **Le changement a coûté peu**, et pour une raison précise : les plaques des
+  120 postures sont crème avec du texte brun, et crème sur bleu est justement l'accord
+  recherché. Elles n'ont pas bougé, l'or non plus. Seules la rampe sombre et les encres
+  ont changé, ces dernières passant d'un blanc chaud à un blanc légèrement froid, sans
+  quoi le texte aurait gardé une pointe de jaune.
+
+- `--brun-fonce` devient `--fonce` : il ne contient plus de brun. Il est désormais
+  défini dans `blog/blog.css` aussi, dont dépendent les pages autonomes.
+
+- **L'accueil est allégé.** Sont partis : les 3 cartes Sleep, Standup et Speed, la bande
+  des témoignages, la note « L'approche de YOGA la plus simple » et le lien « Mon parcours
+  en détail ». Un visiteur avait reproché à Cédric une page où l'on a envie de cliquer
+  partout sans rien finir.
+
+- **2 pages autonomes hors menu.** `/before-start/` porte les 3 vidéos d'apprentissage,
+  avec les 6 affiches de Cédric et un sélecteur sans/avec sangles qui change l'affiche,
+  la source et les durées. `/mobilite/` porte la pratique avec coussins et oreiller.
+  L'accueil ne garde qu'une porte vers chacune.
+
+- **Les vidéos restent libres d'accès.** Cédric a abandonné l'idée d'imposer une
+  inscription pour les voir. Ce sont les audios qui demandent de devenir membre, et le
+  bloc `#membre` de l'accueil porte le formulaire qui récupère l'adresse.
+
+- **Les durées suivent le mode.** « 11 ou 12 min » a disparu : la durée affichée est
+  celle du mode choisi. Le branchement est générique, par `data-dur-sans` et
+  `data-dur-avec`.
+
+- La fenêtre vidéo de l'accueil est retirée : plus aucun élément n'y portait
+  `data-video`. Les 2 pages qui en ont besoin portent chacune la leur.
+
 ## 19 novembre 2026
 
 - **Le fond s'éclaircit**, de `#191510` à `#2D271C`. Sur un téléphone, l'ancien brun

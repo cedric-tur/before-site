@@ -331,9 +331,20 @@ et encodées dans `index.html`. Les fichiers sont la source ; `index.html` se r�
 partir d'eux et de `_liste.tsv`. Modifier une image sans régénérer ne change rien au site.
 
 **Design**
-- Palette **« Sable »** : brun sombre (`#2D271C`) et or clair (`#DFBA6E`). Choisie par Cédric
-  parmi quatre propositions : *« sombre mais intimiste, doux à la lecture »*.
-- **Le fond a été éclairci le 19 novembre 2026**, de `#191510` à `#2D271C` : sur un téléphone
+- Palette **« Nuit encrée »** depuis le 19 novembre 2026 : bleu nuit légèrement indigo
+  (`#212A3E`) et or clair (`#DFBA6E`). Retenue par Cédric après 2 séries de propositions.
+  *Elle remplace « Sable », brun sombre et or, en place depuis l'origine.*
+- **La raison, à ne pas perdre :** le brun lui paraissait vieux. Le couple bleu plus or
+  rappelle le ciel et le soleil, ce qui colle à une méthode qu'on pratique au réveil.
+- **Ce qui n'a pas bougé :** l'or et ses variantes, le logo, et les plaques de postures,
+  qui sont crème avec du texte brun. Crème sur bleu est justement l'accord recherché :
+  c'est ce qui a rendu le changement si peu coûteux. Les encres sont passées d'un blanc
+  chaud à un blanc légèrement froid, sans quoi le texte garderait une pointe de jaune.
+- `--fonce` (`#151B2C`), un cran sous le fond, porte les encadrés et les cadres vidéo.
+  Il s'appelait `--brun-fonce` et ne contient plus de brun. Il est défini dans
+  `index.html` **et** dans `blog/blog.css`, que les pages autonomes utilisent.
+- *Étape intermédiaire, pour mémoire : le brun avait d'abord été éclairci de `#191510`
+  à `#2D271C`, parce que sur un téléphone
   l'ancien brun passait pour du noir. Cédric a comparé 4 crans et retenu le 2e ; le 3e
   (`#373022`) lui a paru trop clair. Les surfaces, le filet discret et le bandeau d'ouverture
   ont été remontés d'autant, pour garder les mêmes écarts entre les niveaux. L'or, les encres
@@ -344,13 +355,26 @@ partir d'eux et de `_liste.tsv`. Modifier une image sans régénérer ne change 
   (commits a9bb8ae et 5da00be). Il avait un argument sérieux, la tenue noire de Cédric qui
   se fond dans un fond sombre sur les 120 postures détourées, mais le rendu ne lui a pas plu.
   Ne pas le relancer sans qu'il le demande.*
-- **Palette unique et assumée, pas de mode clair.** La page s'affiche en Sable quel que soit
+- **Palette unique et assumée, pas de mode clair.** La page s'affiche en Nuit encrée quel que soit
   le réglage du visiteur. Toutes les couleurs sont posées explicitement dans `:root` ; il n'y
   a plus de bloc `@media (prefers-color-scheme)` ni de `[data-theme]`, et il ne faut pas en
   réintroduire. Toute nouvelle couleur passe par un token, jamais par une valeur en dur.
 - Typographie : **Archivo** (titres, interface, chiffres) + **Newsreader** (texte courant).
 - Les 3 versions courtes de l'éveil gardent chacune leur teinte, accordée à l'or :
   matin `#DFBA6E`, express `#A9BC7A`, soir `#AFA2DA`.
+- **2 pages autonomes hors menu**, construites sur le gabarit de `/auteur/` :
+  `/before-start/` porte les 3 vidéos d'apprentissage et leurs 6 affiches,
+  `/mobilite/` porte la pratique avec coussins et oreiller. On y entre depuis
+  l'accueil et de nulle part ailleurs.
+- **Les vidéos sont libres d'accès.** La stratégie d'imposer une inscription pour
+  les voir a été abandonnée par Cédric le 19 novembre 2026 : *« ma stratégie n'est
+  pas bonne d'imposer une inscription »*. Ce sont les **audios** qui demandent de
+  devenir membre, et c'est là que l'adresse se récupère, dans le bloc `#membre`
+  de l'accueil.
+- **Les durées suivent le mode de pratique.** Tout élément portant `data-dur-sans`
+  et `data-dur-avec` est réécrit par le sélecteur sans/avec sangles, sur l'accueil
+  comme sur `/before-start/`. Une nouvelle durée se branche en posant ces
+  2 attributs, sans toucher au script.
 
 **Mécanismes**
 - Les boutons « Écouter » lisent un attribut posé sur la carte, ou sur l'étape pour les
