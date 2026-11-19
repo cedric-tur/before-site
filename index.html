@@ -191,9 +191,11 @@ a { color: inherit; }
    dore sous toute la barre faisait double emploi. */
 .topnav a[aria-current="page"] { color: var(--accent); }
 
+/* Les entrees ne disparaissent plus sous 820 px : elles se replient sur
+   2 lignes. Les masquer laissait un menu de 2 entrees, incomprehensible
+   depuis le blog. */
 @media (max-width: 820px) {
-  .topnav { gap: 1rem; font-size: .82rem; }
-  .topnav a.opt { display: none; }
+  .topnav { gap: .35rem .9rem; font-size: .82rem; flex-wrap: wrap; justify-content: flex-end; }
 }
 
 /* ============================ ROUTAGE ============================ */
@@ -1142,7 +1144,9 @@ a { color: inherit; }
 /* Le bloc des 3 audios. Une seule colonne : le formulaire n'est plus a cote
    puisqu'il ne conditionne plus l'ecoute. */
 .membre__txt { max-width: var(--texte); }
-.membre__txt h2 { font-size: var(--step-2); font-weight: 500; margin: .6rem 0 .9rem; }
+.membre__txt h2 { font-size: var(--step-2); font-weight: 500; margin: 0 0 .5rem; }
+.membre__action { margin: 0 0 .4rem; }
+.seances[hidden] { display: none; }
 .membre__txt .lede { color: var(--ink-soft); margin: 0; }
 #audios { margin-top: 1.9rem; }
 #audios[hidden] { display: none; }
@@ -1885,13 +1889,14 @@ fill="currentColor" stroke="none">
   <section class="band band--blanc" id="membre">
     <div class="wrap">
       <div class="membre__txt">
-        <h2>Les 3 versions audios de l'éveil musculaire</h2>
-        <p class="lede">Après votre apprentissage
-        <span class="bs"><span class="pre">Before-</span><span class="s">Start</span></span>,
-        <button class="lien" type="button" id="ouvrir-audios"
-                aria-expanded="false" aria-controls="audios">accédez aux 3 versions audios</button>.</p>
+        <h2 class="lede">Après votre apprentissage
+        <span class="bs"><span class="pre">Before-</span><span class="s">Start</span></span>,</h2>
+        <p class="membre__action">
+          <button class="lien" type="button" id="ouvrir-audios"
+                  aria-expanded="false" aria-controls="audios">accédez aux 3 versions audios de l'éveil musculaire</button>
+        </p>
 
-        <ul class="seances">
+        <ul class="seances" id="apercu">
           <li>
             <b><span class="bs"><span class="pre">Before-</span><span class="s">Sleep</span></span>, <span data-dur-sans="11 min" data-dur-avec="12 min">11 min</span></b>
             <span>Au coucher, dans le lit</span>
@@ -1962,6 +1967,9 @@ fill="currentColor" stroke="none">
         <h3>Téléchargez les audios sur mon téléphone (30 Mo)</h3>
         <p>Les séances restent alors disponibles <strong>sans réseau</strong>, et se lancent
         sans attendre. À faire de préférence en wifi.</p>
+        <p class="garder__note"><strong>Les fichiers ne vont pas dans vos téléchargements.</strong>
+        Ils sont rangés dans la mémoire de ce navigateur, la seule qui permette de lancer
+        une séance sans connexion. Vous n'avez rien à ouvrir ni à ranger.</p>
         <p class="garder__note">Ajoutez aussi l'icône Before-S dans vos applications : ouvrez
         le site sur votre téléphone, puis « Sur l'écran d'accueil » depuis le menu de partage.</p>
         <button class="btn btn--ghost" type="button" id="garder-btn">Télécharger les séances</button>
@@ -2595,11 +2603,17 @@ fill="currentColor" stroke="none">
     var ouvre = document.getElementById("ouvrir-audios");
     var bloc = document.getElementById("audios");
     if (ouvre && bloc) {
+      var apercu = document.getElementById("apercu");
       ouvre.addEventListener("click", function () {
         var ouvert = bloc.hidden;
         bloc.hidden = !ouvert;
+        /* L'apercu des 3 seances laisse la place aux 3 cartes : elles disent
+           la meme chose, en mieux. */
+        if (apercu) { apercu.hidden = ouvert; }
         ouvre.setAttribute("aria-expanded", String(ouvert));
-        ouvre.textContent = ouvert ? "masquer les 3 versions audios" : "accédez aux 3 versions audios";
+        ouvre.textContent = ouvert
+          ? "masquer les 3 versions audios"
+          : "accédez aux 3 versions audios de l'éveil musculaire";
         if (ouvert && window.majLecteurs) { window.majLecteurs(); }
       });
     }
@@ -2621,14 +2635,25 @@ fill="currentColor" stroke="none">
     ];
     var BOITE = "before-s-audios";
 
-    function fini() {
-      bouton.disabled = true;
-      bouton.textContent = "Séances gardées";
-      etat.textContent = "Vous pouvez pratiquer sans réseau.";
+    /* On ne declare pas la reussite sur la foi des telechargements : on
+       redemande au cache ce qu'il contient vraiment. */
+    function verifie() {
+      return caches.open(BOITE).then(function (c) {
+        return Promise.all(FICHIERS.map(function (f) { return c.match(f); }));
+      }).then(function (r) {
+        return r.filter(Boolean).length;
+      });
     }
 
-    caches.open(BOITE).then(function (c) { return c.keys(); })
-      .then(function (k) { if (k.length >= FICHIERS.length) { fini(); } })
+    function fini(n) {
+      bouton.disabled = true;
+      bouton.textContent = "Séances enregistrées";
+      etat.innerHTML = "<strong>" + n + " séances sur " + FICHIERS.length
+        + " sont dans la mémoire de ce navigateur.</strong> Pour le vérifier : "
+        + "coupez le réseau, ou passez en mode avion, et lancez une séance.";
+    }
+
+    verifie().then(function (n) { if (n >= FICHIERS.length) { fini(n); } })
       .catch(function () {});
 
     bouton.addEventListener("click", function () {
@@ -2644,9 +2669,17 @@ fill="currentColor" stroke="none">
             });
           });
         }, Promise.resolve());
-      }).then(fini).catch(function () {
+      }).then(verifie).then(function (n) {
+        if (n >= FICHIERS.length) {
+          fini(n);
+        } else {
+          bouton.disabled = false;
+          etat.textContent = "Seules " + n + " séances sur " + FICHIERS.length
+            + " ont pu être enregistrées. Réessayez, de préférence en wifi.";
+        }
+      }).catch(function () {
         bouton.disabled = false;
-        etat.textContent = "Le téléchargement n'a pas abouti. Réessayez, de préférence en wifi.";
+        etat.textContent = "L'enregistrement n'a pas abouti. Réessayez, de préférence en wifi.";
       });
     });
   }());

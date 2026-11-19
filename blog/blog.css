@@ -73,9 +73,11 @@ img { max-width: 100%; height: auto; }
 /* La page courante se marque par la couleur, plus par un trait : le filet
    dore sous toute la barre faisait double emploi. */
 .topnav a[aria-current="page"] { color: var(--accent); }
+/* Les entrees ne disparaissent plus sous 820 px : elles se replient sur
+   2 lignes. Les masquer laissait un menu de 2 entrees, incomprehensible
+   depuis le blog. */
 @media (max-width: 820px) {
-  .topnav { gap: 1rem; font-size: .82rem; }
-  .topnav a.opt { display: none; }
+  .topnav { gap: .35rem .9rem; font-size: .82rem; flex-wrap: wrap; justify-content: flex-end; }
 }
 
 /* --- article --- */
