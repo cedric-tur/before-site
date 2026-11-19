@@ -137,10 +137,12 @@ a { color: inherit; }
 
 /* ============================ EN-TÊTE ============================ */
 
+/* Bleu plein, celui du fond de l'eveil musculaire. Elle etait translucide :
+   par-dessus le bandeau d'ouverture, plus sombre, elle prenait une teinte
+   intermediaire que Cedric ne voulait pas. */
 .topbar {
   position: sticky; top: 0; z-index: 40;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
-  backdrop-filter: blur(10px);
+  background: var(--bg);
   border-bottom: 1px solid var(--line-soft);
 }
 
@@ -1035,20 +1037,24 @@ a { color: inherit; }
 }
 .porte__btn:hover { background: var(--accent-wash); border-color: var(--accent-lift); }
 .porte__btn:focus-visible { outline: 2px solid var(--accent-lift); outline-offset: 3px; }
-.porte__txt { font-size: var(--step-1); color: var(--ink-soft); margin: 0; max-width: 28ch; }
+/* Pas de largeur maximale : la phrase doit tenir sur 1 ligne a cote du
+   bouton. Sous 760px, .porte passe en colonne et elle se replie seule. */
+.porte__txt { font-size: var(--step-1); color: var(--ink-soft); margin: 0; }
 
 /* Encadre de la version adaptee. Brun fonce, un cran sous le fond de page,
    file d'or : c'est le seul bloc sombre de la bande, il se remarque sans
    crier. Une seule colonne depuis que l'espace video est parti. */
+/* La question et le bouton sur la meme ligne, et un cadre qui se dimensionne
+   sur son contenu plutot que de tirer sur toute la largeur. */
 .adapt {
-  margin-top: 1.75rem; padding: 1.5rem 1.6rem;
+  margin-top: 1.75rem; padding: 1.05rem 1.4rem;
   border: 1px solid var(--accent); border-radius: var(--radius-lg);
   background: var(--fonce);
-  display: grid; gap: .85rem; justify-items: start;
+  display: flex; flex-wrap: wrap; align-items: center; gap: .9rem 1.6rem;
+  width: fit-content; max-width: 100%;
 }
-.adapt p { font-size: .97rem; line-height: 1.6; color: var(--ink-soft); max-width: 62ch; }
-.adapt .eyebrow { color: var(--accent); }
-.adapt .btn { margin-top: .45rem; }
+.adapt .eyebrow { color: var(--accent); margin: 0; }
+.adapt .btn { flex: none; }
 .adapt .btn:disabled { background: transparent; border-color: var(--line); color: var(--ink-muted); cursor: default; }
 
 /* ============================ MODULES DE LA MÉTHODE ============================ */
@@ -1768,7 +1774,7 @@ fill="currentColor" stroke="none">
       <div class="capture">
         <div>
           <p style="text-align:center;margin-bottom:1.3rem;">
-            <a class="btn btn--ghost" href="#postures">Ouvrir le répertoire</a>
+            <a class="btn" href="#postures">Ouvrir le répertoire</a>
           </p>
           <p>Découvrez le glossaire, la classification des postures selon la difficulté d'exécution et le tri par famille.</p>
           <p style="margin-top:1rem;">Sur une plaquette individuelle, parfois une posture se pratique de différentes manières avec la version « niveau confirmé ».</p>
