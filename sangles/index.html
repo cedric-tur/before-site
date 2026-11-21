@@ -102,7 +102,16 @@
      seulement là. Sur 1 ou 2 colonnes rien n'est rabattu, les proportions
      naturelles tiennent, et c'est la disposition que Cédric trouve juste. */
   @media (min-width: 980px) {
-    .quatre .pose--haut img { --k: 0.19; }
+    /* À 5 colonnes la colonne fait 138 px. À 0,30 les 2 postures les plus
+       larges étaient rabattues par max-width et se retrouvaient à 0,23 et
+       0,22 d'échelle réelle, pendant que le Foetus gardait 0,30 et que les
+       Pigeons, réduits à la main, tombaient à 0,19. L'échelle commune, qui
+       est le principe de cette page, n'était donc plus tenue, et Cédric l'a
+       vu : Foetus trop grand, Pigeons trop petits. 0,22 est la plus grande
+       valeur qui laisse la plus large des 5 (Voilier, 622 px) tenir dans sa
+       colonne sans être rabattue. Plus aucune image n'est rabattue, et le
+       personnage garde la même taille d'une vignette à l'autre. */
+    .quatre .pose img { --k: 0.22; }
 
     /* Les 5 vignettes n'ont pas la même hauteur d'image, et le nom suit le
        bas de son image : les noms ne tombaient donc pas sur une ligne
@@ -225,11 +234,11 @@
         <img src="/photo-posture/voilier-sangle.webp" alt="La posture Voilier avec une sangle" width="622" height="400" style="--l:622" loading="lazy">
         <p class="pose__nom">Voilier</p>
       </div>
-      <div class="pose pose--haut">
+      <div class="pose">
         <img src="/photo-posture/pigeon-royal.webp" alt="La posture Pigeon royal" width="426" height="420" style="--l:426" loading="lazy">
         <p class="pose__nom">Pigeon royal</p>
       </div>
-      <div class="pose pose--haut">
+      <div class="pose">
         <img src="/photo-posture/pigeon-royal-niveau-confirme.webp" alt="La posture Pigeon royal, niveau confirmé" width="327" height="457" style="--l:327" loading="lazy">
         <p class="pose__nom">Pigeon royal</p>
       </div>
