@@ -46,43 +46,45 @@
 
   /* Une paire par posture : la même posture avec et sans sangle, côte à côte.
      Les plaques sont sur fond blanc comme dans le répertoire. */
-  .paires { display: grid; gap: 1.6rem; margin: 0 0 1.6rem; }
+  /* Les postures s'affichent a leur proportion naturelle : largeur en pixels
+     fois un coefficient commun. C'est ce qui garde le personnage a la meme
+     taille d'une image a l'autre, puisque les decoupes partagent l'echelle
+     du tirage. --l porte la largeur d'origine de chaque image. */
+  .pose img { display: block; height: auto; width: calc(var(--l) * 0.52px); max-width: 100%; }
+
+  .paires { display: grid; gap: 1.2rem; margin: 0 0 1.4rem; }
   @media (min-width: 720px) { .paires { grid-template-columns: repeat(2, 1fr); } }
 
   .pose { background: #FFFFFF; border: 1px solid var(--line); border-radius: var(--radius-lg);
-    padding: 1rem 1rem 1.1rem; display: grid; gap: .6rem; justify-items: center; }
-  .pose img { display: block; width: 100%; height: auto; max-width: 100%; }
-  /* .sg p est plus specifique que .pose__dit : sans le .sg devant, les
-     legendes restaient en encre claire sur le fond blanc des plaques. */
+    padding: 1rem 1rem 1.1rem; display: grid; gap: .5rem; justify-items: center;
+    align-content: center; }
+
   .sg .pose__nom { font-family: "Archivo", sans-serif; font-size: .95rem; font-weight: 600;
     color: #2A2419; margin: 0; text-align: center; max-width: none; }
-  .sg .pose__nom b { color: #8A6418; font-weight: 700; }
   .sg .pose__dit { font-family: "Archivo", sans-serif; font-size: .82rem; color: #7A6A50;
-    margin: 0; text-align: center; max-width: none; line-height: 1.5; }
+    margin: 0; text-align: center; max-width: 34ch; line-height: 1.5; }
 
-  /* La case  Pilier sans sangle  n a pas de photo, et c est le propos. Elle
-     se presente donc comme une absence assumee, pas comme une image manquante. */
-  .pose--vide { background: #F2F0EA; border-style: dashed; align-content: center; }
+  /* Le filet dore demande, meme epaisseur que celui du menu. */
+  .sg__suite { font-family: "Archivo", sans-serif; font-size: .92rem;
+    color: var(--ink-muted); margin: 0; }
+  .sg__trait { border: 0; border-top: 2px solid var(--or); margin: 3rem 0 1.8rem; }
 
-  .sg__note { font-family: "Archivo", sans-serif; font-size: .9rem; color: var(--ink-muted);
-    margin: 0 0 2.6rem; max-width: 58ch; }
+  /* Plus petit que les autres titres : c'est une precision, pas une section. */
+  .sg h2.cours { font-family: "Archivo", sans-serif; font-size: var(--step-0);
+    font-weight: 600; margin: 0 0 1.4rem; color: var(--ink-soft); text-wrap: balance; }
 
-  /* Le filet doré demandé, même épaisseur que celui du menu. */
-  .sg__trait { border: 0; border-top: 2px solid var(--or); margin: 3rem 0 2.2rem; }
-
-  .sg h2 { font-size: var(--step-2); font-weight: 500; margin: 0 0 1.4rem; text-wrap: balance; }
-
-  .quatre { display: grid; gap: 1.2rem; margin: 0 0 2.6rem; }
+  .quatre { display: grid; gap: 1rem; margin: 0 0 2.6rem; }
   @media (min-width: 560px) { .quatre { grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 900px) { .quatre { grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 980px) { .quatre { grid-template-columns: repeat(5, 1fr); } }
+  .quatre .pose img { width: calc(var(--l) * 0.30px); }
+  .quatre .pose { padding: .7rem .6rem .8rem; }
 
   /* L'achat vient en dernier, une fois l'explication faite. */
   .achat { background: #FFFFFF; border: 1px solid #DBE2EB; border-radius: var(--radius-lg);
     padding: 1.6rem 1.8rem; max-width: 62ch; display: grid; gap: .8rem; justify-items: start; }
   .achat h2 { font-family: "Archivo", sans-serif; font-size: var(--step-1); margin: 0; color: #16202E; }
-  .achat p { color: #3B4859; margin: 0; }
   .achat .prix { font-family: "Archivo", sans-serif; font-size: var(--step-2);
-    font-weight: 600; color: #16202E; }
+    font-weight: 600; color: #16202E; margin: 0; }
   .achat .prix span { font-size: .95rem; font-weight: 400; color: #64718A; }
   .achat .btn { background: var(--or); border-color: var(--or); color: #16202E; margin-top: .3rem; }
 
@@ -113,8 +115,8 @@
     <div class="sg__intro">
       <p class="sg__lede">Dans l'éveil musculaire, elles s'insèrent sur chaque pied et
       permettent de vous détendre au lieu d'engager la musculature.</p>
-      <p>Vous optimisez ainsi vos capacités et vous évitez d'aller trop loin dans
-      les postures.</p>
+      <p>Elles sont moins épaisses qu'une sangle de judo : 3 cm de large, 3 mm d'épaisseur.
+      Vous les saisissez plus facilement dans la main.</p>
 
       <!-- La photo de la boutique, en petit : elle montre les 2 anses cousues,
            donc comment le pied s'insere. C'est la question que les gens se
@@ -129,71 +131,72 @@
     <div class="paires">
 
       <div class="pose">
-        <img src="/photo-posture/estomac-sangle.webp" alt="La posture Estomac avec une sangle" width="621" height="406" loading="lazy">
-        <p class="pose__nom">Estomac, <b>avec sangle</b></p>
-        <p class="pose__dit">la jambe est tenue, les bras se relâchent</p>
+        <img src="/photo-posture/estomac-sangle.webp" alt="La posture Estomac avec une sangle" width="621" height="406" style="--l:621" loading="lazy">
+        <p class="pose__nom">Estomac</p>
+        <p class="pose__dit">Grâce à la sangle, l'étirement se fait en douceur</p>
       </div>
       <div class="pose">
-        <img src="/photo-posture/estomac.webp" alt="La posture Estomac sans sangle" width="512" height="382" loading="lazy">
+        <img src="/photo-posture/estomac.webp" alt="La posture Estomac sans sangle" width="512" height="382" style="--l:512" loading="lazy">
         <p class="pose__nom">Estomac, sans sangle</p>
-        <p class="pose__dit">les bras travaillent pour maintenir la jambe</p>
+        <p class="pose__dit">Les bras travaillent pour maintenir la jambe</p>
       </div>
 
       <div class="pose">
-        <img src="/photo-posture/grand-ecart-sangle.webp" alt="La posture Grand écart avec une sangle" width="556" height="438" loading="lazy">
-        <p class="pose__nom">Grand écart, <b>avec sangle</b></p>
-        <p class="pose__dit">l'ouverture se fait sans tirer avec les mains</p>
+        <img src="/photo-posture/grand-ecart-sangle.webp" alt="La posture Grand écart avec une sangle" width="556" height="438" style="--l:556" loading="lazy">
+        <p class="pose__nom">Grand écart</p>
+        <p class="pose__dit">Les jambes sont soutenues, l'étirement des adducteurs ne dépasse pas nos capacités</p>
       </div>
       <div class="pose">
-        <img src="/photo-posture/grand-ecart.webp" alt="La posture Grand écart sans sangle" width="548" height="451" loading="lazy">
+        <img src="/photo-posture/grand-ecart.webp" alt="La posture Grand écart sans sangle" width="548" height="451" style="--l:548" loading="lazy">
         <p class="pose__nom">Grand écart, sans sangle</p>
-        <p class="pose__dit">la main doit aller chercher le pied</p>
+        <p class="pose__dit">La puissance des bras retient le poids des jambes pour éviter d'étirer trop fortement les adducteurs</p>
       </div>
 
       <div class="pose">
-        <img src="/photo-posture/pilier-sangle.webp" alt="La posture Pilier avec une sangle" width="345" height="400" loading="lazy">
-        <p class="pose__nom">Pilier, <b>avec sangle</b></p>
-        <p class="pose__dit">la jambe monte à la verticale, sans effort des bras</p>
+        <img src="/photo-posture/pilier-sangle.webp" alt="La posture Pilier avec une sangle" width="345" height="400" style="--l:345" loading="lazy">
+        <p class="pose__nom">Pilier</p>
+        <p class="pose__dit">Les ischio-jambiers s'étirent sans aucun effort</p>
       </div>
-      <div class="pose pose--vide">
-        <p class="pose__nom">Pilier, sans sangle</p>
-        <p class="pose__dit">Cette posture n'existe pas sans sangle. Elle est retirée
-        de la séance, qui passe alors de 12 à 11 postures.</p>
+      <div class="pose">
+        <img src="/photo-posture/equerre-allongee.webp" alt="La posture Équerre allongée" width="399" height="476" style="--l:399" loading="lazy">
+        <p class="pose__nom">Équerre <span style="font-weight:400">(pilier sans sangle)</span></p>
+        <p class="pose__dit">Dans cette posture similaire, c'est la puissance des abdominaux qui maintient les jambes à la verticale</p>
       </div>
 
     </div>
 
-    <p class="sg__note">Elles sont moins épaisses qu'une sangle de judo : 3 cm de large,
-    3 mm d'épaisseur. Vous les saisissez plus facilement dans la main.</p>
+    <p class="sg__suite">Le pilier est une préparation optimale avant l'équerre,
+    qui est plus intense.</p>
 
     <hr class="sg__trait">
 
-    <h2>Ces sangles seront indispensables pour ces 4 postures pratiquées dans les cours</h2>
+    <h2 class="cours">Ces sangles seront indispensables pour ces 4 postures pratiquées dans les cours</h2>
 
     <div class="quatre">
       <div class="pose">
-        <img src="/photo-posture/foetus-sangle.webp" alt="La posture Foetus avec une sangle" width="305" height="211" loading="lazy">
+        <img src="/photo-posture/foetus-sangle.webp" alt="La posture Foetus avec une sangle" width="305" height="211" style="--l:305" loading="lazy">
         <p class="pose__nom">Foetus</p>
       </div>
       <div class="pose">
-        <img src="/photo-posture/hamac-sangle.webp" alt="La posture Hamac avec une sangle" width="589" height="262" loading="lazy">
+        <img src="/photo-posture/hamac-sangle.webp" alt="La posture Hamac avec une sangle" width="589" height="262" style="--l:589" loading="lazy">
         <p class="pose__nom">Hamac</p>
       </div>
       <div class="pose">
-        <img src="/photo-posture/voilier-sangle.webp" alt="La posture Voilier avec une sangle" width="622" height="400" loading="lazy">
+        <img src="/photo-posture/voilier-sangle.webp" alt="La posture Voilier avec une sangle" width="622" height="400" style="--l:622" loading="lazy">
         <p class="pose__nom">Voilier</p>
       </div>
       <div class="pose">
-        <img src="/photo-posture/pigeon-royal.webp" alt="La posture Pigeon royal" width="426" height="420" loading="lazy">
+        <img src="/photo-posture/pigeon-royal.webp" alt="La posture Pigeon royal" width="426" height="420" style="--l:426" loading="lazy">
         <p class="pose__nom">Pigeon royal</p>
+      </div>
+      <div class="pose">
+        <img src="/photo-posture/pigeon-royal-niveau-confirme.webp" alt="La posture Pigeon royal, niveau confirmé" width="327" height="457" style="--l:327" loading="lazy">
+        <p class="pose__nom">Pigeon royal <span style="font-weight:400">(confirmé)</span></p>
       </div>
     </div>
 
     <div class="achat">
       <h2>La paire de sangles</h2>
-      <p>Rigides, type judo, tissées pour tenir des années. 85 cm de long, 3 cm de large,
-      3 mm d'épaisseur. Deux anses cousues, une de 20 cm pour un pied d'enfant, une de 26 cm
-      pour un pied d'adulte.</p>
       <p class="prix">9 € <span>TTC, livraison 3,90 €. Offerte à partir de 3 paires.</span></p>
       <a class="btn" href="/#boutique">Voir la boutique</a>
     </div>
