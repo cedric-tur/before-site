@@ -5,10 +5,16 @@
   « Vous manquez de mobilité ? ». Elle porte la pratique avec coussins et
   oreiller, en vidéo.
 
-  POUR ACTIVER LA VIDÉO : renseignez data-video sur le bouton de l'écran, et
-  data-affiche si vous avez une vignette. Tant que data-video est vide,
-  l'écran reste inactif et la mention « Vidéo en préparation » s'affiche
-  dessous. Rien d'autre à modifier.
+  LA VIDÉO EST HÉBERGÉE PAR BUNNY STREAM, bibliothèque 816710, comme celles
+  de Before-Start. Pour l'activer : collez l'identifiant de la vidéo dans
+  data-video sur le bouton de l'écran, et une vignette dans data-affiche si
+  vous en avez une. Tant que data-video est vide, l'écran reste inactif et la
+  mention « Vidéo en préparation » s'affiche dessous. Rien d'autre à modifier.
+
+  CE QUE SERA CETTE VIDÉO, décidé le 21 novembre 2026 : une vingtaine de
+  secondes en accéléré, sur la musique de Modjo. Pas d'audio guidé pour la
+  version adaptée, et donc pas de bouton d'écoute : elle montre l'installation
+  avec les coussins et l'oreiller, elle ne mène pas une séance.
 
   TEXTE À VENIR : la section repérée « À COMPLÉTER » plus bas attend les
   paragraphes que Cédric doit écrire. Elle est commentée, donc invisible pour
@@ -71,8 +77,9 @@
     padding: 1.5rem; background: rgba(10, 8, 5, .9); }
   .vid[hidden] { display: none; }
   .vid__box { width: min(100%, 1000px); display: grid; gap: .9rem; }
-  .vid__box video { display: block; width: 100%; height: auto; max-height: 76vh;
-    border-radius: var(--radius-lg); background: #000; }
+  .vid__cadre { position: relative; padding-top: 56.25%; background: #000;
+    border-radius: var(--radius-lg); overflow: hidden; }
+  .vid__cadre iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   .vid__close { justify-self: end; font-family: "Archivo", sans-serif; font-size: .85rem;
     font-weight: 600; color: var(--ink); background: transparent; border: 1px solid var(--line);
     border-radius: 100px; padding: .5rem 1.1rem; cursor: pointer; }
@@ -134,7 +141,9 @@
 <div class="vid" id="vid" hidden>
   <div class="vid__box">
     <button class="vid__close" id="vidclose" type="button">Fermer</button>
-    <video id="vidplayer" controls playsinline preload="none"></video>
+    <!-- Le cadre du lecteur Bunny est créé au clic et détruit à la fermeture.
+         Rien n'est demandé à Bunny tant que personne ne lance la vidéo. -->
+    <div class="vid__cadre" id="vidcadre"></div>
   </div>
 </div>
 
@@ -158,12 +167,14 @@
 (function () {
   "use strict";
 
+  var BIBLIO = "816710";
+
   var ecran = document.querySelector(".ecran");
   var fen = document.getElementById("vid");
-  var lecteur = document.getElementById("vidplayer");
-  if (!ecran || !fen || !lecteur) { return; }
+  var boite = document.getElementById("vidcadre");
+  if (!ecran || !fen || !boite) { return; }
 
-  var source = ecran.getAttribute("data-video");
+  var id = ecran.getAttribute("data-video");
   var affiche = ecran.getAttribute("data-affiche");
 
   if (affiche) {
@@ -173,7 +184,7 @@
     ecran.insertBefore(img, ecran.firstChild);
   }
 
-  if (!source) {
+  if (!id) {
     ecran.disabled = true;
     var mot = document.createElement("p");
     mot.className = "attente";
@@ -181,18 +192,25 @@
     ecran.parentNode.insertBefore(mot, ecran.nextSibling);
   } else {
     ecran.addEventListener("click", function () {
-      if (affiche) { lecteur.setAttribute("poster", affiche); }
-      lecteur.setAttribute("src", source);
+      /* On construit l'adresse nous-mêmes : le code fourni par Bunny demande
+         une lecture en sourdine, or cette vidéo n'a que sa musique. */
+      var cadre = document.createElement("iframe");
+      cadre.setAttribute("src", "https://player.mediadelivery.net/embed/" + BIBLIO
+        + "/" + id + "?autoplay=true&loop=false&muted=false&preload=true&responsive=true");
+      cadre.setAttribute("loading", "lazy");
+      cadre.setAttribute("allow", "accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;fullscreen;");
+      cadre.setAttribute("allowfullscreen", "true");
+      cadre.setAttribute("title", "Lecteur vidéo Before-S");
+      boite.innerHTML = "";
+      boite.appendChild(cadre);
       fen.hidden = false;
-      var p = lecteur.play();
-      if (p && p.catch) { p.catch(function () {}); }
     });
   }
 
   function fermer() {
-    lecteur.pause();
-    lecteur.removeAttribute("src");
-    lecteur.load();
+    /* Vider le cadre arrête la lecture : sans ça, la musique continuerait
+       derrière la page. */
+    boite.innerHTML = "";
     fen.hidden = true;
   }
 

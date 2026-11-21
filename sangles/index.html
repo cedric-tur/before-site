@@ -103,14 +103,31 @@
      naturelles tiennent, et c'est la disposition que Cédric trouve juste. */
   @media (min-width: 980px) {
     .quatre .pose--haut img { --k: 0.19; }
+
+    /* Les 5 vignettes n'ont pas la même hauteur d'image, et le nom suit le
+       bas de son image : les noms ne tombaient donc pas sur une ligne
+       commune. La carte emprunte ses rangées à la grille parente, ce qui
+       donne à la rangée d'image la hauteur de la plus haute pour toutes les
+       cartes : les noms démarrent ensemble sans qu'aucune hauteur soit
+       écrite en dur, et une image remplacée se replace toute seule. Les
+       images se posent au bas de leur rangée, donc sur un sol commun.
+       L'écart entre rangées revient à celui des cartes, l'espacement entre
+       colonnes ne bouge pas. */
+    .quatre { grid-template-rows: auto auto; column-gap: 1rem; row-gap: .5rem; }
+    .quatre .pose { grid-row: span 2; grid-template-rows: subgrid; }
+    .quatre .pose img { align-self: end; }
   }
 
   /* L'achat vient en dernier, une fois l'explication faite. */
   .achat { background: #FFFFFF; border: 1px solid #DBE2EB; border-radius: var(--radius-lg);
     padding: 1.6rem 1.8rem; max-width: 62ch; display: grid; gap: .8rem; justify-items: start; }
+  /* Le nom et le prix sur une seule ligne, cales sur la meme ligne de base :
+     le prix est compose plus gros, et sans alignement sur la base il
+     paraitrait flotter. Le repli reste autorise pour les ecrans etroits. */
+  .achat__tete { display: flex; align-items: baseline; gap: .8rem; flex-wrap: wrap; }
   .achat h2 { font-family: "Archivo", sans-serif; font-size: var(--step-1); margin: 0; color: #16202E; }
   .achat .prix { font-family: "Archivo", sans-serif; font-size: var(--step-2);
-    font-weight: 600; color: #16202E; margin: 0; }
+    font-weight: 600; color: #16202E; margin: 0; line-height: 1.2; }
   .achat .prix span { font-size: .95rem; font-weight: 400; color: #64718A; }
   .achat .btn { background: var(--or); border-color: var(--or); color: #16202E; margin-top: .3rem; }
 
@@ -214,13 +231,15 @@
       </div>
       <div class="pose pose--haut">
         <img src="/photo-posture/pigeon-royal-niveau-confirme.webp" alt="La posture Pigeon royal, niveau confirmé" width="327" height="457" style="--l:327" loading="lazy">
-        <p class="pose__nom">Pigeon royal <span style="font-weight:400">(confirmé)</span></p>
+        <p class="pose__nom">Pigeon royal</p>
       </div>
     </div>
 
     <div class="achat">
-      <h2>La paire de sangles</h2>
-      <p class="prix">9 € <span>TTC, livraison 3,90 €. Offerte à partir de 3 paires.</span></p>
+      <div class="achat__tete">
+        <h2>La paire de sangles</h2>
+        <p class="prix">9 € <span>TTC</span></p>
+      </div>
       <a class="btn" href="/#boutique">Voir la boutique</a>
     </div>
 

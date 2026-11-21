@@ -217,6 +217,17 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 700px) {
   html { font-size: 20px; }
   .brand img { height: 34px; }
+
+  /* La barre du haut passe sur 2 lignes : la marque, puis les entrées
+     réparties sur toute la largeur. Ces 2 règles existaient sur l'accueil
+     depuis le passage de la racine à 20 px, mais n'avaient jamais été
+     reportées ici : sur les pages autonomes le menu restait coincé à côté
+     de la marque, se repliait dans ce reste de place et débordait à droite,
+     « Boutique » coupé. Signalé par Cédric le 21 novembre 2026 sur la page
+     sangles ; le défaut touchait en réalité toutes les pages du blog. */
+  .topbar__in { flex-wrap: wrap; gap: .3rem 1rem; min-height: 0; padding-block: .5rem; }
+  .topnav { flex: 1 1 100%; justify-content: space-between; flex-wrap: wrap;
+    gap: .45rem; font-size: .76rem; }
   .article { padding-block: 2rem 3rem; }
   .reponse, .cta { padding: 1.1rem; }
 }

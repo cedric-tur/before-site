@@ -396,11 +396,11 @@ partir d'eux et de `_liste.tsv`. Modifier une image sans régénérer ne change 
   3 temps de Before-Start. Vide → le bouton affiche sa durée ou « Bientôt » et reste
   inactif. Renseigné → il devient un lecteur. Rien d'autre à modifier.
 - Le filtre par durée de la page Séances utilise `data-max` sur chaque carte.
-- **Les 7 séances de l'éveil ont 2 enregistrements**, un par mode, et portent donc
-  `data-audio-sans` et `data-audio-avec` : le sélecteur change l'enregistrement en même
-  temps que la durée. Les 4 autres séances gardent `data-audio`. Soit **14 fichiers pour
-  17 emplacements**, chaque séance de l'éveil figurant sur l'accueil et sur la page
-  Séances, sauf la version adaptée qui n'est que sur l'accueil.
+- **Les 6 séances audio de l'éveil ont 2 enregistrements**, un par mode, et portent
+  donc `data-audio-sans` et `data-audio-avec` : le sélecteur change l'enregistrement en
+  même temps que la durée. Les 4 autres séances gardent `data-audio`. Soit **12 fichiers
+  pour 15 emplacements**, chaque séance de l'éveil figurant sur l'accueil et sur la page
+  Séances. La version adaptée n'en fait plus partie : elle n'a pas d'audio.
   Durées confirmées par Cédric le 12 octobre 2026 :
 
 | Séance | Sans sangles | Avec sangles |
@@ -411,11 +411,14 @@ partir d'eux et de `_liste.tsv`. Modifier une image sans régénérer ne change 
 | Before-Sleep | 11 min | 12 min |
 | Before-Standup | 8mn20 | 9 min |
 | Before-Speed | 5mn40 | 6 min |
-| Version adaptée (encadré mobilité) | 13 min | 14 min |
+| Version adaptée (encadré mobilité) | pas d'audio | pas d'audio |
 
 La **version adaptée** est la pratique avec coussins et oreiller, présentée dans
-l'encadré « Vous manquez de mobilité ? » de l'accueil. Elle a son bouton d'écoute
-depuis le 12 octobre 2026, à côté de l'espace vidéo qui l'attend déjà.
+l'encadré « Vous manquez de mobilité ? » de l'accueil, qui mène à `/mobilite/`.
+**Elle n'aura pas d'audio**, décision de Cédric du 21 novembre 2026 : ce sera une
+**vidéo d'une vingtaine de secondes, en accéléré, sur la musique de Modjo**. Courte
+et démonstrative, elle montre l'installation plutôt qu'elle ne guide une séance.
+Son bouton d'écoute a donc disparu de l'accueil, et il ne faut pas le remettre.
 
 **Infrastructure prévue**
 - Paiement : **Stripe Payment Link**
@@ -455,9 +458,9 @@ depuis le 12 octobre 2026, à côté de l'espace vidéo qui l'attend déjà.
 
 - Marque déposée, domaines réservés, société créée
 - Vidéos tournées (deux angles), plans drone sur deux postures de l'éveil
-- **12 audios sur 14 sont en ligne.** Les masters du 7 novembre 2026 remplacent
-  ceux d'octobre pour Before-Sleep et Before-Standup, et Before-Speed arrive. Il ne
-  manque que la version adaptée, en 2 modes.
+- **Les 12 audios de l'offre gratuite sont en ligne.** Les masters du 7 novembre 2026 remplacent
+  ceux d'octobre pour Before-Sleep et Before-Standup, et Before-Speed arrive. Il n'en
+  manque aucun : la version adaptée, qu'on attendait, n'aura pas d'audio.
   **Recette d'encodage, à reprendre telle quelle** : coupe sous 70 Hz, puis loudnorm
   EBU R128 en 2 passes vers -16,0 LUFS et -1,5 dB de pic vrai, sortie AAC 96 kbit/s
   stéréo 48 kHz avec `-movflags +faststart`. Les 2 passes ne sont pas un luxe :
@@ -476,13 +479,14 @@ avec de bons avis Facebook à récupérer comme témoignages.
 mentions légales, les CGV, la politique de confidentialité, et le formulaire
 d'inscription à la lettre d'information, présent au bas des articles du blog.
 
-**Reste à brancher sur le site** : les 2 audios de la version adaptée, la vidéo
-adaptée de `/mobilite/`, la vidéo drone, et les titres des 15 mini-cours.
+**Reste à brancher sur le site** : la vidéo courte de `/mobilite/`, la vidéo drone,
+et les titres des 15 mini-cours. Côté audio, les 12 fichiers de l'offre gratuite sont
+tous en ligne.
 
-**Before-Short, séance inconnue.** Les masters de novembre 2026 portent 2 fichiers
-de plus que les 14 attendus : « Before-Short 3mn » et « Before-Short sans sangles
-2,45mn ». Cette séance ne figure nulle part dans ce document et n'est sur aucune
-page. À élucider avec Cédric avant d'en faire quoi que ce soit.
+**Before-Short appartient à la partie payante**, précisé par Cédric le 21 novembre
+2026 : elle servira aux séances payantes, et **surtout à Before-Small**. Ses 2 masters
+(« Before-Short 3mn » et « Before-Short sans sangles 2,45mn ») sont déjà montés, mais
+ils n'ont rien à faire sur les pages gratuites. Ne pas les y brancher.
 
 ---
 
