@@ -1,0 +1,223 @@
+<!doctype html>
+<!--
+  PAGE SANGLES : /sangles/
+  Hors menu. On y arrive en cliquant sur le mot « sangles », partout où il
+  compte : l'éveil musculaire, l'encadré mobilité, la boutique.
+
+  Son rôle est d'expliquer avant de vendre. Le visiteur voit d'abord à quoi
+  sert une sangle, posture par posture, et seulement ensuite le prix.
+
+  Les photos viennent de photo-posture/, les mêmes que le répertoire des
+  90 postures. Les dimensions sont celles de _liste.tsv : elles doivent
+  rester exactes, sinon la page saute au chargement des images.
+
+  PILIER N'A PAS DE VERSION SANS SANGLE, et ce n'est pas un oubli : en mode
+  sans sangles, cette posture est retirée de l'éveil. C'est l'argument le
+  plus fort de la page, il est écrit tel quel.
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>À quoi servent les sangles | Before-S</title>
+<meta name="description" content="Les sangles s'insèrent sur chaque pied et permettent de se détendre au lieu d'engager la musculature. Voyez la différence posture par posture.">
+<link rel="canonical" href="https://before-s.com/sangles/">
+<link rel="icon" href="/favicon.png?v=3" type="image/png">
+<link rel="shortcut icon" href="/favicon.png?v=3" type="image/png">
+<link rel="apple-touch-icon" href="/favicon.png?v=3">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="À quoi servent les sangles">
+<meta property="og:url" content="https://before-s.com/sangles/">
+<meta property="og:image" content="https://before-s.com/photo-marque/before-s.png">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/blog/blog.css">
+<style>
+  .article__tete, .sg { max-width: 860px; margin-inline: auto; }
+  .sg__lede { font-size: var(--step-1); line-height: 1.5; color: var(--ink); margin: 0 0 1rem; max-width: 56ch; }
+  .sg p { color: var(--ink-soft); line-height: 1.65; max-width: 62ch; }
+  .sg__intro { margin: 0 0 2.6rem; }
+
+  /* Volontairement petite : c'est une precision, pas le sujet de la page. */
+  .sg__objet { margin: 1.6rem 0 0; max-width: 340px; }
+  .sg__objet img { display: block; width: 100%; height: auto; border-radius: var(--radius-lg); }
+  .sg__objet figcaption { font-family: "Archivo", sans-serif; font-size: .82rem;
+    color: var(--ink-muted); margin-top: .6rem; line-height: 1.5; }
+
+  /* Une paire par posture : la même posture avec et sans sangle, côte à côte.
+     Les plaques sont sur fond blanc comme dans le répertoire. */
+  .paires { display: grid; gap: 1.6rem; margin: 0 0 1.6rem; }
+  @media (min-width: 720px) { .paires { grid-template-columns: repeat(2, 1fr); } }
+
+  .pose { background: #FFFFFF; border: 1px solid var(--line); border-radius: var(--radius-lg);
+    padding: 1rem 1rem 1.1rem; display: grid; gap: .6rem; justify-items: center; }
+  .pose img { display: block; width: 100%; height: auto; max-width: 100%; }
+  /* .sg p est plus specifique que .pose__dit : sans le .sg devant, les
+     legendes restaient en encre claire sur le fond blanc des plaques. */
+  .sg .pose__nom { font-family: "Archivo", sans-serif; font-size: .95rem; font-weight: 600;
+    color: #2A2419; margin: 0; text-align: center; max-width: none; }
+  .sg .pose__nom b { color: #8A6418; font-weight: 700; }
+  .sg .pose__dit { font-family: "Archivo", sans-serif; font-size: .82rem; color: #7A6A50;
+    margin: 0; text-align: center; max-width: none; line-height: 1.5; }
+
+  /* La case  Pilier sans sangle  n a pas de photo, et c est le propos. Elle
+     se presente donc comme une absence assumee, pas comme une image manquante. */
+  .pose--vide { background: #F2F0EA; border-style: dashed; align-content: center; }
+
+  .sg__note { font-family: "Archivo", sans-serif; font-size: .9rem; color: var(--ink-muted);
+    margin: 0 0 2.6rem; max-width: 58ch; }
+
+  /* Le filet doré demandé, même épaisseur que celui du menu. */
+  .sg__trait { border: 0; border-top: 2px solid var(--or); margin: 3rem 0 2.2rem; }
+
+  .sg h2 { font-size: var(--step-2); font-weight: 500; margin: 0 0 1.4rem; text-wrap: balance; }
+
+  .quatre { display: grid; gap: 1.2rem; margin: 0 0 2.6rem; }
+  @media (min-width: 560px) { .quatre { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 900px) { .quatre { grid-template-columns: repeat(4, 1fr); } }
+
+  /* L'achat vient en dernier, une fois l'explication faite. */
+  .achat { background: #FFFFFF; border: 1px solid #DBE2EB; border-radius: var(--radius-lg);
+    padding: 1.6rem 1.8rem; max-width: 62ch; display: grid; gap: .8rem; justify-items: start; }
+  .achat h2 { font-family: "Archivo", sans-serif; font-size: var(--step-1); margin: 0; color: #16202E; }
+  .achat p { color: #3B4859; margin: 0; }
+  .achat .prix { font-family: "Archivo", sans-serif; font-size: var(--step-2);
+    font-weight: 600; color: #16202E; }
+  .achat .prix span { font-size: .95rem; font-weight: 400; color: #64718A; }
+  .achat .btn { background: var(--or); border-color: var(--or); color: #16202E; margin-top: .3rem; }
+
+  .retour { margin-top: 3rem; }
+</style>
+</head>
+<body>
+
+<header class="topbar"><div class="wrap topbar__in">
+  <a class="brand" href="/" aria-label="Before-S, retour à l'accueil"><img src="/photo-marque/before-s.webp" alt="Before-S" width="157" height="38"></a>
+  <nav class="topnav" aria-label="Principal">
+    <a href="/#accueil" class="opt">Accueil</a>
+    <a href="/#postures">Les postures</a>
+    <a href="/#methode" class="opt">La méthode</a>
+    <a href="/#boutique" class="opt">Boutique</a>
+    <a href="/blog/">Blog</a>
+  </nav>
+</div></header>
+
+<main class="wrap article">
+
+  <div class="article__tete">
+    <p class="eyebrow">Le matériel</p>
+    <h1>Les sangles sont des alliés formidables</h1>
+  </div>
+
+  <div class="sg">
+    <div class="sg__intro">
+      <p class="sg__lede">Dans l'éveil musculaire, elles s'insèrent sur chaque pied et
+      permettent de vous détendre au lieu d'engager la musculature.</p>
+      <p>Vous optimisez ainsi vos capacités et vous évitez d'aller trop loin dans
+      les postures.</p>
+
+      <!-- La photo de la boutique, en petit : elle montre les 2 anses cousues,
+           donc comment le pied s'insere. C'est la question que les gens se
+           posent avant d'acheter. -->
+      <figure class="sg__objet">
+        <img src="/photo-boutique/sangles.webp" alt="Une paire de sangles Before-S, avec leurs deux anses cousues" width="1000" height="635" loading="lazy">
+        <figcaption>Le pied se glisse dans l'anse cousue. La petite, 20 cm de tour,
+        pour un pied d'enfant. La grande, 26 cm, pour un pied d'adulte.</figcaption>
+      </figure>
+    </div>
+
+    <div class="paires">
+
+      <div class="pose">
+        <img src="/photo-posture/estomac-sangle.webp" alt="La posture Estomac avec une sangle" width="621" height="406" loading="lazy">
+        <p class="pose__nom">Estomac, <b>avec sangle</b></p>
+        <p class="pose__dit">la jambe est tenue, les bras se relâchent</p>
+      </div>
+      <div class="pose">
+        <img src="/photo-posture/estomac.webp" alt="La posture Estomac sans sangle" width="512" height="382" loading="lazy">
+        <p class="pose__nom">Estomac, sans sangle</p>
+        <p class="pose__dit">les bras travaillent pour maintenir la jambe</p>
+      </div>
+
+      <div class="pose">
+        <img src="/photo-posture/grand-ecart-sangle.webp" alt="La posture Grand écart avec une sangle" width="556" height="438" loading="lazy">
+        <p class="pose__nom">Grand écart, <b>avec sangle</b></p>
+        <p class="pose__dit">l'ouverture se fait sans tirer avec les mains</p>
+      </div>
+      <div class="pose">
+        <img src="/photo-posture/grand-ecart.webp" alt="La posture Grand écart sans sangle" width="548" height="451" loading="lazy">
+        <p class="pose__nom">Grand écart, sans sangle</p>
+        <p class="pose__dit">la main doit aller chercher le pied</p>
+      </div>
+
+      <div class="pose">
+        <img src="/photo-posture/pilier-sangle.webp" alt="La posture Pilier avec une sangle" width="345" height="400" loading="lazy">
+        <p class="pose__nom">Pilier, <b>avec sangle</b></p>
+        <p class="pose__dit">la jambe monte à la verticale, sans effort des bras</p>
+      </div>
+      <div class="pose pose--vide">
+        <p class="pose__nom">Pilier, sans sangle</p>
+        <p class="pose__dit">Cette posture n'existe pas sans sangle. Elle est retirée
+        de la séance, qui passe alors de 12 à 11 postures.</p>
+      </div>
+
+    </div>
+
+    <p class="sg__note">Elles sont moins épaisses qu'une sangle de judo : 3 cm de large,
+    3 mm d'épaisseur. Vous les saisissez plus facilement dans la main.</p>
+
+    <hr class="sg__trait">
+
+    <h2>Ces sangles seront indispensables pour ces 4 postures pratiquées dans les cours</h2>
+
+    <div class="quatre">
+      <div class="pose">
+        <img src="/photo-posture/foetus-sangle.webp" alt="La posture Foetus avec une sangle" width="305" height="211" loading="lazy">
+        <p class="pose__nom">Foetus</p>
+      </div>
+      <div class="pose">
+        <img src="/photo-posture/hamac-sangle.webp" alt="La posture Hamac avec une sangle" width="589" height="262" loading="lazy">
+        <p class="pose__nom">Hamac</p>
+      </div>
+      <div class="pose">
+        <img src="/photo-posture/voilier-sangle.webp" alt="La posture Voilier avec une sangle" width="622" height="400" loading="lazy">
+        <p class="pose__nom">Voilier</p>
+      </div>
+      <div class="pose">
+        <img src="/photo-posture/pigeon-royal.webp" alt="La posture Pigeon royal" width="426" height="420" loading="lazy">
+        <p class="pose__nom">Pigeon royal</p>
+      </div>
+    </div>
+
+    <div class="achat">
+      <h2>La paire de sangles</h2>
+      <p>Rigides, type judo, tissées pour tenir des années. 85 cm de long, 3 cm de large,
+      3 mm d'épaisseur. Deux anses cousues, une de 20 cm pour un pied d'enfant, une de 26 cm
+      pour un pied d'adulte.</p>
+      <p class="prix">9 € <span>TTC, livraison 3,90 €. Offerte à partir de 3 paires.</span></p>
+      <a class="btn" href="/#boutique">Voir la boutique</a>
+    </div>
+
+    <p class="retour"><a href="/#accueil">Retour aux séances</a></p>
+  </div>
+
+</main>
+
+<footer class="foot"><div class="wrap foot__in">
+  <div>
+    <a class="brand" href="/"><img src="/photo-marque/before-s.webp" alt="Before-S" width="207" height="50" style="height:50px"></a>
+    <p class="foot__def">Before-S est une méthode de yoga accessible et détaillée : un éveil musculaire gratuit de 12 postures allongé sur le dos, qui se pratique dans un lit, sans tapis ni tenue.</p>
+  </div>
+  <nav class="foot__col" aria-label="Ressources">
+    <h2>Ressources</h2>
+    <ul>
+      <li><a href="/before-start/">Commencer par Before-Start</a></li>
+      <li><a href="/blog/">Tous les articles</a></li>
+    </ul>
+  </nav>
+  <p class="foot__legal">Before-S, marque déposée à l'INPI. Tous droits réservés. <a href="/mentions-legales.html">Mentions légales</a> · <a href="/cgv.html">Conditions générales de vente</a> · <a href="/confidentialite.html">Politique de confidentialité</a> · <a href="mailto:contact@before-s.com">contact@before-s.com</a><br>
+  Les séances proposées ne remplacent pas un avis médical. En cas de douleur ou de pathologie, demandez conseil à votre médecin avant de pratiquer.</p>
+</div></footer>
+
+</body>
+</html>

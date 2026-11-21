@@ -1207,6 +1207,13 @@ a { color: inherit; }
 }
 .lien:hover { filter: brightness(1.08); }
 
+/* Le mot « sangles » mene a la page qui les explique. Dore et gras, sans
+   soulignement : il doit se remarquer dans la phrase sans la hacher. Pose
+   seulement aux endroits ou le visiteur peut vouloir comprendre, pas sur
+   les 67 occurrences du mot dans la page. */
+.sg-lien { color: var(--or); font-weight: 700; text-decoration: none; }
+.sg-lien:hover { color: var(--accent-lift); text-decoration: underline; text-decoration-color: var(--or); }
+
 /* Garde un mot colle au nom de seance qui le suit. Le trace manuscrit est un
    bloc atomique : les navigateurs menagent une cesure a ses bords, qu un
    espace insecable ne supprime pas. */
@@ -2461,7 +2468,7 @@ fill="currentColor" stroke="none">
 <section class="lettre">
   <div class="wrap">
     <div class="membre__form">
-      <h3>Recevez les nouvelles séances à venir et diverses informations</h3>
+      <h3>Recevez les nouvelles séances à venir et des conseils</h3>
       <form class="lettre__f" action="https://86081234.sibforms.com/serve/MUIFAOPM7pWSUmQ1XW3TesA0Ez1o0WXfY6WbKqCr8Eh9QZ0XujLrkSPdaBk33_NDO3ljLn3znj8qcMFiA_MZmyoC9P_5fNRcCATEsv1sFnj_si_ouEr2cA2LctGI8Zb6tLLwSCQ6lqDK04wc5lEeVAezV3-0RK7DdR3eDTJx211V2H5vvQ4U_nQQjZu-w2JUpxd1UUw8i9OiIRR27Q==" method="POST" target="_blank" rel="noopener">
         <input type="email" name="EMAIL" required autocomplete="email"
                placeholder="Votre adresse électronique" aria-label="Votre adresse électronique">
@@ -2576,12 +2583,12 @@ fill="currentColor" stroke="none">
 
   var MODES = {
     avec: {
-      hint: "12 postures (Pilier, Estomac & Grand écart sont soutenus par les sangles qui procurent un relâchement musculaire profond).",
+      hint: "12 postures (Pilier, Estomac & Grand écart sont soutenus par les <a class="sg-lien" href="sangles/">sangles</a>).",
       dur: { "card--night": "12 min", "card--dawn": "9 min", "card--day": "à venir" },
       etapes: { decouverte: "Découverte : 12mn", initiation: "Initiation : 14mn", speed: "Initiation SPEED : 14mn", adapte: "Version adaptée : 14mn" }
     },
     sans: {
-      hint: "11 postures (Pilier retiré, Estomac & Grand écart plus difficiles à réaliser sans l’aide des sangles).",
+      hint: "11 postures (Pilier retiré, Estomac & Grand écart plus difficiles à réaliser sans l’aide des <a class="sg-lien" href="sangles/">sangles</a>).",
       dur: { "card--night": "11 min", "card--dawn": "8mn20", "card--day": "à venir" },
       etapes: { decouverte: "Découverte : 11mn", initiation: "Initiation : 13mn", speed: "Initiation SPEED : 13mn", adapte: "Version adaptée : 13mn" }
     }
@@ -2603,7 +2610,9 @@ fill="currentColor" stroke="none">
       if (t) { b.setAttribute("data-attente", t); }
     });
 
-    document.querySelectorAll("[data-modehint]").forEach(function (el) { el.textContent = data.hint; });
+    /* innerHTML et non textContent : l'indication porte un lien vers
+       /sangles/. Le texte vient de MODES ci-dessus, pas du visiteur. */
+    document.querySelectorAll("[data-modehint]").forEach(function (el) { el.innerHTML = data.hint; });
 
     // Toute duree portant ses 2 valeurs suit le mode. Generique a dessein :
     // une nouvelle duree se branche en posant data-dur-sans et data-dur-avec,
