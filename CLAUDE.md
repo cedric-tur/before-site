@@ -68,8 +68,8 @@ arrivant sur le site, et le discours est « découvrez sans, équipez-vous ensui
 
 | Mode | Postures | Durées |
 |---|---|---|
-| Avec sangles | 12 | Start 12 à 14 / Sleep 12 / Standup 9 / Speed à venir |
-| Sans sangles | 11 | Start 11 à 13 / Sleep 11 / Standup 8mn20 / Speed à venir |
+| Avec sangles | 12 | Start 12 à 14 / Sleep 12 / Standup 9 / Speed 6 |
+| Sans sangles | 11 | Start 11 à 13 / Sleep 11 / Standup 8mn20 / Speed 5mn40 |
 
 **3 postures de l'éveil se pratiquent avec une sangle rigide.** En mode « sans sangles » :
 1 posture est retirée (12 → 11) et les 2 autres deviennent plus engageantes, les bras devant
@@ -410,7 +410,7 @@ partir d'eux et de `_liste.tsv`. Modifier une image sans régénérer ne change 
 | Before-Start, Initiation SPEED | 13 min | 14 min |
 | Before-Sleep | 11 min | 12 min |
 | Before-Standup | 8mn20 | 9 min |
-| Before-Speed | en cours | en cours |
+| Before-Speed | 5mn40 | 6 min |
 | Version adaptée (encadré mobilité) | 13 min | 14 min |
 
 La **version adaptée** est la pratique avec coussins et oreiller, présentée dans
@@ -455,7 +455,15 @@ depuis le 12 octobre 2026, à côté de l'espace vidéo qui l'attend déjà.
 
 - Marque déposée, domaines réservés, société créée
 - Vidéos tournées (deux angles), plans drone sur deux postures de l'éveil
-- **Audios en cours de finalisation** : c'est le chemin critique
+- **12 audios sur 14 sont en ligne.** Les masters du 7 novembre 2026 remplacent
+  ceux d'octobre pour Before-Sleep et Before-Standup, et Before-Speed arrive. Il ne
+  manque que la version adaptée, en 2 modes.
+  **Recette d'encodage, à reprendre telle quelle** : coupe sous 70 Hz, puis loudnorm
+  EBU R128 en 2 passes vers -16,0 LUFS et -1,5 dB de pic vrai, sortie AAC 96 kbit/s
+  stéréo 48 kHz avec `-movflags +faststart`. Les 2 passes ne sont pas un luxe :
+  une seule laisse des écarts audibles entre 2 séances enchaînées, et les masters
+  de novembre arrivaient à +0,06 dB de pic vrai, donc en écrêtage.
+  Le script est dans l'historique de session, les masters dans `Archive.zip`.
 - Planches des 90 postures terminées
 - Stock physique en place
 - **Rien n'est encore publié.** Aucun élève n'a pratiqué la méthode.
@@ -468,9 +476,13 @@ avec de bons avis Facebook à récupérer comme témoignages.
 mentions légales, les CGV, la politique de confidentialité, et le formulaire
 d'inscription à la lettre d'information, présent au bas des articles du blog.
 
-**Reste à brancher sur le site** : les fichiers audio, la vidéo drone, les titres des
-15 mini-cours, et le bloc d'inscription sur la page d'accueil (il n'existe que sur
-le blog).
+**Reste à brancher sur le site** : les 2 audios de la version adaptée, la vidéo
+adaptée de `/mobilite/`, la vidéo drone, et les titres des 15 mini-cours.
+
+**Before-Short, séance inconnue.** Les masters de novembre 2026 portent 2 fichiers
+de plus que les 14 attendus : « Before-Short 3mn » et « Before-Short sans sangles
+2,45mn ». Cette séance ne figure nulle part dans ce document et n'est sur aucune
+page. À élucider avec Cédric avant d'en faire quoi que ce soit.
 
 ---
 

@@ -58,9 +58,24 @@
   .paires { display: grid; gap: 1.2rem; margin: 0 0 1.4rem; }
   @media (min-width: 720px) { .paires { grid-template-columns: repeat(2, 1fr); } }
 
+
   .pose { background: #FFFFFF; border: 1px solid var(--line); border-radius: var(--radius-lg);
     padding: 1rem 1rem 1.1rem; display: grid; gap: .5rem; justify-items: center;
     align-content: center; }
+  /* Pilier et Équerre : dans les 2 postures les pieds sont en haut de
+     l'image, et Cédric veut les voir à la même hauteur. Le personnage de
+     l'Équerre est dessiné 11 px plus haut que celui du Pilier (219 contre
+     208) : caler les pieds décale donc les bas d'image, et le nom, qui suit
+     le bas d'image, se décale avec. On fige la hauteur de la rangée d'images
+     pour séparer les 2 : les images se posent en haut de cette rangée, donc
+     pieds alignés, et les noms démarrent à la même hauteur puisque la rangée
+     ne bouge plus. Le contenu part du haut de la carte, sans quoi le
+     centrage reintroduirait l'écart, la description de l'Équerre faisant
+     3 lignes contre 2. Sur 1 colonne il n'y a rien à aligner. */
+  @media (min-width: 720px) {
+    .pose--pieds-haut { align-content: start; grid-template-rows: 220px auto auto; }
+    .pose--pieds-haut img { align-self: start; }
+  }
 
   .sg .pose__nom { font-family: "Archivo", sans-serif; font-size: .95rem; font-weight: 600;
     color: #2A2419; margin: 0; text-align: center; max-width: none; }
@@ -79,6 +94,16 @@
   @media (min-width: 980px) { .quatre { grid-template-columns: repeat(5, 1fr); } }
   .quatre .pose img { --k: 0.30; }
   .quatre .pose { padding: .7rem .6rem .8rem; }
+
+  /* À 5 colonnes la colonne fait 138 px, et max-width rabat à cette largeur
+     toutes les postures plus larges. Celles qui sont étroites et hautes
+     passent sans être rabattues, et se retrouvent 2 fois plus hautes que
+     leurs voisines : 137 px contre 61. On réduit donc leur échelle, mais
+     seulement là. Sur 1 ou 2 colonnes rien n'est rabattu, les proportions
+     naturelles tiennent, et c'est la disposition que Cédric trouve juste. */
+  @media (min-width: 980px) {
+    .quatre .pose--haut img { --k: 0.19; }
+  }
 
   /* L'achat vient en dernier, une fois l'explication faite. */
   .achat { background: #FFFFFF; border: 1px solid #DBE2EB; border-radius: var(--radius-lg);
@@ -153,12 +178,12 @@
         <p class="pose__dit">La puissance des bras retient le poids des jambes pour éviter d'étirer trop fortement les adducteurs</p>
       </div>
 
-      <div class="pose">
+      <div class="pose pose--pieds-haut">
         <img src="/photo-posture/pilier-sangle.webp" alt="La posture Pilier avec une sangle" width="345" height="400" style="--l:345" loading="lazy">
         <p class="pose__nom">Pilier</p>
         <p class="pose__dit">Les ischio-jambiers s'étirent sans aucun effort</p>
       </div>
-      <div class="pose">
+      <div class="pose pose--pieds-haut">
         <img src="/photo-posture/equerre-allongee.webp" alt="La posture Équerre allongée" width="399" height="476" style="--l:399;--k:.46" loading="lazy">
         <p class="pose__nom">Équerre <span style="font-weight:400">(pilier sans sangle)</span></p>
         <p class="pose__dit">Dans cette posture similaire, c'est la puissance des abdominaux qui maintient les jambes à la verticale</p>
@@ -183,11 +208,11 @@
         <img src="/photo-posture/voilier-sangle.webp" alt="La posture Voilier avec une sangle" width="622" height="400" style="--l:622" loading="lazy">
         <p class="pose__nom">Voilier</p>
       </div>
-      <div class="pose">
+      <div class="pose pose--haut">
         <img src="/photo-posture/pigeon-royal.webp" alt="La posture Pigeon royal" width="426" height="420" style="--l:426" loading="lazy">
         <p class="pose__nom">Pigeon royal</p>
       </div>
-      <div class="pose">
+      <div class="pose pose--haut">
         <img src="/photo-posture/pigeon-royal-niveau-confirme.webp" alt="La posture Pigeon royal, niveau confirmé" width="327" height="457" style="--l:327" loading="lazy">
         <p class="pose__nom">Pigeon royal <span style="font-weight:400">(confirmé)</span></p>
       </div>
