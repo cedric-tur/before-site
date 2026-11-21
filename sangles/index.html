@@ -50,7 +50,10 @@
      fois un coefficient commun. C'est ce qui garde le personnage a la meme
      taille d'une image a l'autre, puisque les decoupes partagent l'echelle
      du tirage. --l porte la largeur d'origine de chaque image. */
-  .pose img { display: block; height: auto; width: calc(var(--l) * 0.52px); max-width: 100%; }
+  /* --l : largeur d'origine de l'image. --k : coefficient d'affichage, 0.52
+     par defaut, surchargeable sur une image dont l'echelle du tirage differe. */
+  .pose img { display: block; height: auto; max-width: 100%;
+    width: calc(var(--l) * var(--k, 0.52) * 1px); }
 
   .paires { display: grid; gap: 1.2rem; margin: 0 0 1.4rem; }
   @media (min-width: 720px) { .paires { grid-template-columns: repeat(2, 1fr); } }
@@ -76,7 +79,7 @@
   .quatre { display: grid; gap: 1rem; margin: 0 0 2.6rem; }
   @media (min-width: 560px) { .quatre { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 980px) { .quatre { grid-template-columns: repeat(5, 1fr); } }
-  .quatre .pose img { width: calc(var(--l) * 0.30px); }
+  .quatre .pose img { --k: 0.30; }
   .quatre .pose { padding: .7rem .6rem .8rem; }
 
   /* L'achat vient en dernier, une fois l'explication faite. */
@@ -158,7 +161,7 @@
         <p class="pose__dit">Les ischio-jambiers s'étirent sans aucun effort</p>
       </div>
       <div class="pose">
-        <img src="/photo-posture/equerre-allongee.webp" alt="La posture Équerre allongée" width="399" height="476" style="--l:399" loading="lazy">
+        <img src="/photo-posture/equerre-allongee.webp" alt="La posture Équerre allongée" width="399" height="476" style="--l:399;--k:.44" loading="lazy">
         <p class="pose__nom">Équerre <span style="font-weight:400">(pilier sans sangle)</span></p>
         <p class="pose__dit">Dans cette posture similaire, c'est la puissance des abdominaux qui maintient les jambes à la verticale</p>
       </div>
