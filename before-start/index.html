@@ -6,10 +6,12 @@
   qui sont libres d'accès. Ce sont les audios qui demandent de devenir membre,
   et leur porte est le bouton « Accédez aux audios » en bas de page.
 
-  POUR ACTIVER UNE VIDÉO : renseignez data-video-sans et data-video-avec sur
-  le bouton de l'étape, avec l'adresse du fichier ou du lecteur. Tant qu'ils
-  sont vides, l'affiche reste visible et la mention « Vidéo en préparation »
-  s'affiche dessous. Rien d'autre à modifier.
+  LES VIDÉOS SONT HÉBERGÉES PAR BUNNY STREAM, bibliothèque 816710. Chaque
+  bouton d'étape porte data-video-sans et data-video-avec : non pas une
+  adresse, mais l'identifiant de la vidéo dans la bibliothèque. Le script
+  construit l'adresse du lecteur autour. Pour remplacer une vidéo, il suffit
+  de changer cet identifiant. Si l'un des 2 est vide, l'affiche reste visible
+  et la mention « Vidéo en préparation » s'affiche dessous dans ce mode.
 
   Les affiches viennent de before-start/affiches/, converties depuis les PNG
   5120x2880 de Cédric. 2 par étape, une par mode de pratique.
@@ -103,8 +105,9 @@
     padding: 1.5rem; background: rgba(10, 8, 5, .9); }
   .vid[hidden] { display: none; }
   .vid__box { width: min(100%, 1000px); display: grid; gap: .9rem; }
-  .vid__box video { display: block; width: 100%; height: auto; max-height: 76vh;
-    border-radius: var(--radius-lg); background: #000; }
+  .vid__cadre { position: relative; padding-top: 56.25%; background: #000;
+    border-radius: var(--radius-lg); overflow: hidden; }
+  .vid__cadre iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   .vid__close { justify-self: end; font-family: "Archivo", sans-serif; font-size: .85rem;
     font-weight: 600; color: var(--ink); background: transparent; border: 1px solid var(--line);
     border-radius: 100px; padding: .5rem 1.1rem; cursor: pointer; }
@@ -151,7 +154,7 @@
           <li>Le croissant de Lune est retiré</li>
         </ul>
         <button class="ecran" type="button"
-                data-video-sans="" data-video-avec=""
+                data-video-sans="4f016046-4f0d-4dcd-a75a-84b0f8f6517f" data-video-avec="89c5cb5c-de79-44da-ad6b-e8a104ae5314"
                 data-affiche-sans="affiches/decouverte-sans.webp"
                 data-affiche-avec="affiches/decouverte-avec.webp">
           <img src="affiches/decouverte-sans.webp" alt="Before-Start Découverte" width="1280" height="720">
@@ -167,7 +170,7 @@
           <li>Le croissant de Lune a été ajouté</li>
         </ul>
         <button class="ecran" type="button"
-                data-video-sans="" data-video-avec=""
+                data-video-sans="b511c415-15e2-48a5-9a5a-586bfe2f4605" data-video-avec="45056a91-2406-4285-8e39-db00d467e22f"
                 data-affiche-sans="affiches/initiation-sans.webp"
                 data-affiche-avec="affiches/initiation-avec.webp">
           <img src="affiches/initiation-sans.webp" alt="Before-Start Initiation" width="1280" height="720">
@@ -185,7 +188,7 @@
           <li>Expire</li>
         </ul>
         <button class="ecran" type="button"
-                data-video-sans="" data-video-avec=""
+                data-video-sans="09bcfea9-9582-4644-b9a9-134dbfef8e90" data-video-avec="4859731e-0f1b-4543-ad90-354e3c05fd2d"
                 data-affiche-sans="affiches/speed-sans.webp"
                 data-affiche-avec="affiches/speed-avec.webp">
           <img src="affiches/speed-sans.webp" alt="Before-Start Initiation SPEED" width="1280" height="720">
@@ -221,7 +224,9 @@
 <div class="vid" id="vid" hidden>
   <div class="vid__box">
     <button class="vid__close" id="vidclose" type="button">Fermer</button>
-    <video id="vidplayer" controls playsinline preload="none"></video>
+    <!-- Le cadre du lecteur Bunny est cree au clic et detruit a la fermeture.
+         Rien n'est appele chez Bunny tant que personne ne demande la video. -->
+    <div class="vid__cadre" id="vidcadre"></div>
   </div>
 </div>
 
@@ -247,7 +252,7 @@
 
   var ecrans = Array.prototype.slice.call(document.querySelectorAll(".ecran"));
   var fen = document.getElementById("vid");
-  var lecteur = document.getElementById("vidplayer");
+  var boite = document.getElementById("vidcadre");
   var mode = "sans";
 
   /* Pose l'affiche et la source du mode courant sur chaque écran. Un écran
@@ -294,23 +299,32 @@
     });
   });
 
+  var BIBLIO = "816710";
+
   ecrans.forEach(function (e) {
     e.addEventListener("click", function () {
-      var source = e.getAttribute("data-video-" + mode);
-      if (!source) { return; }
-      var affiche = e.getAttribute("data-affiche-" + mode);
-      if (affiche) { lecteur.setAttribute("poster", affiche); }
-      lecteur.setAttribute("src", source);
+      var id = e.getAttribute("data-video-" + mode);
+      if (!id) { return; }
+      /* On construit nous-memes l'adresse : le code fourni par Bunny demande
+         une lecture automatique en sourdine, ce qui n'a pas de sens pour une
+         seance guidee a la voix. */
+      var cadre = document.createElement("iframe");
+      cadre.setAttribute("src", "https://player.mediadelivery.net/embed/" + BIBLIO
+        + "/" + id + "?autoplay=true&loop=false&muted=false&preload=true&responsive=true");
+      cadre.setAttribute("loading", "lazy");
+      cadre.setAttribute("allow", "accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;fullscreen;");
+      cadre.setAttribute("allowfullscreen", "true");
+      cadre.setAttribute("title", "Lecteur vidéo Before-S");
+      boite.innerHTML = "";
+      boite.appendChild(cadre);
       fen.hidden = false;
-      var p = lecteur.play();
-      if (p && p.catch) { p.catch(function () {}); }
     });
   });
 
   function fermer() {
-    lecteur.pause();
-    lecteur.removeAttribute("src");
-    lecteur.load();
+    /* Vider le cadre arrete la lecture : sans ca, le son continuerait
+       derriere la page. */
+    boite.innerHTML = "";
     fen.hidden = true;
   }
 

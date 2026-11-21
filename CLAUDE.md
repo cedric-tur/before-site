@@ -419,7 +419,19 @@ depuis le 12 octobre 2026, à côté de l'espace vidéo qui l'attend déjà.
 
 **Infrastructure prévue**
 - Paiement : **Stripe Payment Link**
-- Audios : **Bunny Stream**
+- Vidéos : **Bunny Stream**, retenu et en service depuis le 21 novembre 2026, après
+  avoir écarté YouTube. Bibliothèque **816710**, région de diffusion Francfort.
+  **La raison du choix, à ne pas perdre :** YouTube impose son droit de monétisation
+  aux vidéos hors programme partenaire, donc des coupures publicitaires possibles au
+  milieu d'un rituel guidé à la voix, sans moyen de s'y opposer. Les 6 vidéos
+  Before-Start y sont branchées, 1 par étape et par mode de pratique. Les boutons
+  d'étape portent l'identifiant de la vidéo, pas son adresse : le script construit
+  l'adresse du lecteur autour. **Rien n'est demandé à Bunny avant le clic du
+  visiteur** : le cadre du lecteur est créé à l'ouverture et détruit à la fermeture.
+  C'est ce qui permet à la politique de confidentialité de dire que celui qui lit la
+  page sans regarder n'est pas vu. **Ne pas demander la clé d'API** : elle est inutile
+  pour afficher le lecteur, et le dépôt est public.
+- Audios : à héberger, Bunny Stream également
 - E-mails : **Brevo**, retenu et en service depuis le 18 novembre 2026. Compte
   « Before-S newsletter », plan gratuit (300 envois par jour, logo Brevo en pied de
   courriel non supprimable). Expéditeur unique `contact@before-s.com`, domaine
