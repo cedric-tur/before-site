@@ -128,17 +128,21 @@
   }
 
   /* L'achat vient en dernier, une fois l'explication faite. */
+  /* Tout sur une ligne, et compose petit : ce n'est pas l'argument de la
+     page, seulement le moyen d'y donner suite. Le nom et le prix restent
+     colles, cales sur la meme ligne de base pour que le prix, plus gros, ne
+     flotte pas ; le bouton part a droite. Le repli reste autorise, sur
+     telephone la ligne ne tient pas. */
   .achat { background: #FFFFFF; border: 1px solid #DBE2EB; border-radius: var(--radius-lg);
-    padding: 1.6rem 1.8rem; max-width: 62ch; display: grid; gap: .8rem; justify-items: start; }
-  /* Le nom et le prix sur une seule ligne, cales sur la meme ligne de base :
-     le prix est compose plus gros, et sans alignement sur la base il
-     paraitrait flotter. Le repli reste autorise pour les ecrans etroits. */
-  .achat__tete { display: flex; align-items: baseline; gap: .8rem; flex-wrap: wrap; }
-  .achat h2 { font-family: "Archivo", sans-serif; font-size: var(--step-1); margin: 0; color: #16202E; }
-  .achat .prix { font-family: "Archivo", sans-serif; font-size: var(--step-2);
+    padding: .8rem 1.1rem; max-width: 62ch; display: flex; align-items: center;
+    gap: .6rem 1.2rem; flex-wrap: wrap; }
+  .achat__tete { display: flex; align-items: baseline; gap: .7rem; flex-wrap: wrap; }
+  .achat h2 { font-family: "Archivo", sans-serif; font-size: var(--step-0); margin: 0; color: #16202E; }
+  .achat .prix { font-family: "Archivo", sans-serif; font-size: var(--step-1);
     font-weight: 600; color: #16202E; margin: 0; line-height: 1.2; }
-  .achat .prix span { font-size: .95rem; font-weight: 400; color: #64718A; }
-  .achat .btn { background: var(--or); border-color: var(--or); color: #16202E; margin-top: .3rem; }
+  .achat .prix span { font-size: .82rem; font-weight: 400; color: #64718A; }
+  .achat .btn { background: var(--or); border-color: var(--or); color: #16202E;
+    margin-left: auto; padding: .5rem 1.1rem; font-size: .88rem; }
 
   .retour { margin-top: 3rem; }
 </style>
