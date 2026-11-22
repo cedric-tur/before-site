@@ -89,6 +89,101 @@ besoins. Avec 1,99 kg/m², c'est la stabilité qui a gagné.
 
 ---
 
+## 1 bis. Relevé du 22 novembre 2026 : la marketplace Decathlon
+
+Cédric a collé 16 fiches produit dans ses notes Word, presque toutes issues de la
+**marketplace** Decathlon, c'est-à-dire de vendeurs tiers et non de Decathlon.
+Son constat : *« Décathlon est vraiment un concurrent hors pair avec tous ces
+partenaires européens, voire chinois. »* Les densités et les masses au m² ci-dessous
+sont **calculées** à partir des fiches, aucune marque ne les publie.
+
+| Tapis | Matière | Dim. | Ép. | Poids | Densité | **Masse/m²** | Prix rendu |
+|---|---|---|---|---|---|---|---|
+| Suprfit 5 mm | liège + caoutchouc | 183 × 66 | 5 mm | 3,50 kg | 579 kg/m³ | **2,90 kg/m²** | 59,99 € |
+| **Before-S** | liège + caoutchouc | 183 × 61 | 6 mm | 3,20 kg | 477 kg/m³ | **2,87 kg/m²** | 78,00 € |
+| Achamana 5 mm + sac | liège + caoutchouc | 183 × 68 | 5 mm | 3,30 kg | 530 kg/m³ | **2,65 kg/m²** | 121,00 € |
+| Divasya liège/caoutchouc | liège + caoutchouc | 183 × 66 | 4 mm | 2,70 kg | 558 kg/m³ | **2,24 kg/m²** | 79,99 € |
+| Divasya SET + 2 genouillères | liège + caoutchouc | 183 × 66 | 4 mm | 2,70 kg | 558 kg/m³ | **2,24 kg/m²** | 92,99 € |
+| Chin Mudra LUNA | liège + caoutchouc | 185 × 66 | 4 mm | 2,40 kg | 491 kg/m³ | **1,97 kg/m²** | 72,69 € |
+| Achamana enfant | liège + caout. + TPE | 152 × 61 | 6 mm | 1,60 kg | 287 kg/m³ | **1,73 kg/m²** | 79,00 € |
+| Myga Cork XL | liège, base n.c. | 200 × 70 | 6 mm | 1,41 kg | 167 kg/m³ | **1,01 kg/m²** | 54,75 € |
+| Xtrexo 6 mm | liège + TPE | 183 × 61 | 6 mm | 1,00 kg | 149 kg/m³ | **0,90 kg/m²** | 40,88 € |
+| Divasya liège/TPE | liège + TPE | 183 × 61 | 6 mm | 0,90 kg | 134 kg/m³ | **0,81 kg/m²** | 59,99 € |
+| Gorilla Sports | liège, base n.c. | 183 × 61 | 5 mm | 0,80 kg | 143 kg/m³ | **0,72 kg/m²** | 29,99 € |
+| Tunturi liège | liège + TPE | 183 × 61 | 4 mm | 0,70 kg | 156 kg/m³ | **0,63 kg/m²** | 35,99 € |
+| Mobiclinic | liège + TPE | 183 × 61 | 4 mm | 0,65 kg | 145 kg/m³ | **0,58 kg/m²** | 32,95 € |
+| Le Temple Yogi | liège + caoutchouc | 183 × 61 | 5 mm | **non publié** | — | — | 85,90 € |
+| DH FitLife caoutchouc | liège + caoutchouc | 183 × 61 | 6 mm | **non publié** | — | — | 41,00 € |
+| DH FitLife TPE | liège + TPE | 183 × 61 | 6 mm | **non publié** | — | — | 48,69 € |
+| Spokey Savasana | liège + TPE | 183 × 61 | 4 mm | **non publié** | — | — | 39,32 € |
+
+« Prix rendu » = prix affiché plus frais de port annoncés.
+
+### Ce que ce relevé établit
+
+**La fracture TPE / caoutchouc ne se recouvre pas.** Les tapis à base de caoutchouc
+vont de 1,97 à 2,90 kg/m². Ceux à base de TPE vont de 0,58 à 1,01 kg/m². Il n'y a
+aucun chevauchement entre les 2 familles, et le mot « liège » figure sur les
+17 étiquettes. C'est l'argument central de l'article, et il tient en un chiffre :
+**le tapis à 32,95 € oppose 5 fois moins de matière que celui à 78 €.**
+
+**4 tapis sur 17 ne publient pas leur poids**, dont Le Temple Yogi à 85,90 €, le
+2e plus cher du relevé. DH FitLife annonce « caoutchouc naturel » à 41 € sans donner
+de poids : invérifiable.
+
+**2 fiches Decathlon portent une épaisseur fausse** : Gorilla Sports affiche « 50 mm »
+et DH FitLife « 60 mm », pour 5 et 6 mm. Personne ne relit. Cela appuie la demande de
+Cédric : donner les informations essentielles plutôt que du développement.
+
+### Suprfit, le seul concurrent sérieux du relevé
+
+**Vérification faite le 22 novembre 2026, à la demande de Cédric**, qui soupçonnait
+une erreur de poids : *« je pense qu'il doit sûrement mentir sur le poids. »*
+
+- Le chiffre **n'est pas une erreur de Decathlon** : le fabricant l'annonce lui-même
+  sur `suprfit.com`, « Dimensions : 183 × 66 × 0,501 cm, poids : env. 3,5 kg ».
+- Il est **physiquement plausible** : 579 kg/m³ reste très en dessous du caoutchouc
+  plein, et un tapis comparable, le Casall liège 5 mm à base de caoutchouc naturel,
+  est annoncé à 3,00 kg.
+- Le site de Suprfit **refuse les requêtes automatiques** (HTTP 403). Les chiffres
+  ci-dessus viennent de l'index des moteurs et de la fiche Decathlon collée par Cédric,
+  pas d'une lecture directe.
+
+**Donc le soupçon ne tient pas, et il faut faire avec.** Suprfit donne 1 % de matière
+de plus que Before-S, pour 18 € de moins.
+
+**Les 2 points où Before-S garde l'avantage, et qui sont vérifiables :**
+
+1. **La répartition liège / caoutchouc.** Before-S annonce 5 mm de caoutchouc plus
+   1 mm de liège. Suprfit annonce 5 mm au total et **ne dit nulle part** quelle part
+   revient au caoutchouc. Sa densité plus élevée sur une épaisseur plus faible va dans
+   ce sens : plus de matière comprimée dans moins d'épaisseur, ce qui n'est pas la même
+   chose qu'un amorti plus épais sous le genou. À vérifier avant d'en faire un argument
+   public : la fiche ne permet pas de l'affirmer.
+2. **Le petit tapis d'appui, 12 mm sous les genoux.** Aucun des 16 tapis relevés ne le
+   propose. Divasya vend 2 genouillères, mais dans un lot à 92,99 €, soit 15 € de plus
+   que Before-S, et Cédric les juge moins pratiques qu'un tapis d'appui.
+
+**Consigne de Cédric : ne pas présenter Suprfit dans l'article**, *« sinon certains
+clients iront acheter ce modèle 20 € moins cher que le mien »*. À respecter, avec une
+réserve à lui rappeler : si l'article affirme que Before-S est le mieux garni du marché,
+un lecteur qui tombe sur Suprfit prend le texte en défaut. Formuler l'avantage là où il
+est réel, sur l'épaisseur de caoutchouc et sur les 12 mm sous les genoux, plutôt que sur
+un premier rang au classement.
+
+### Les consignes de rédaction de Cédric, telles qu'il les a écrites
+
+- Plusieurs tableaux, pour que la personne comprenne vite l'importance de la densité.
+- Dire que tous les concurrents démontrent que leur tapis est souple et incroyable,
+  commentaires à l'appui, et qu'au lieu de ce développement il suffirait de donner
+  les informations essentielles.
+- La priorité est le poids, qui révèle la matière et la quantité de caoutchouc.
+- Démontrer que le TPE est moins cher mais pas adapté, et qu'il faut chercher la densité.
+- L'épaisseur compte, la densité davantage.
+- Conclusion : **5 mm de caoutchouc est le minimum pour un support ferme.**
+
+---
+
 ## 2. Les sangles
 
 | Sangle | Matière | Largeur | Ép. | Section | Longueur | Prix |
