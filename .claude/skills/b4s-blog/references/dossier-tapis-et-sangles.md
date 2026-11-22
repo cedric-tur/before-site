@@ -21,7 +21,7 @@ chiffres sont venus de Cédric ou de sources secondaires nommées plus bas.
 | Liforme Classic | caoutchouc + PU | 185 × 68 | 4,2 mm | 2,50 kg | 473 kg/m³ | 1,99 kg/m² | 131,75 € |
 | Manduka PROlite | 95 % PVC + 5 % polyester | 180 × 61 | 4,7 mm | 2,10 kg | 407 kg/m³ | 1,91 kg/m² | n.c. |
 | Achamana tri-plis | **TPE** + caoutchouc + liège | 183 × 68 | 6 mm | 2,30 kg | 308 kg/m³ | 1,85 kg/m² | 79 € |
-| Achamana XL 7 chakras | 75 % caoutchouc, 25 % liège | 183 × 68 | 5 mm | **non publié** | — | — | 97 € |
+| Achamana XL 7 chakras | 75 % caoutchouc, 25 % liège | 183 × 68 | 5 mm | **non publié** | n.c. | n.c. | 97 € |
 | Kimjaly 8 mm | mousse 100 % PVC | 173 × 61 | 8 mm | 1,85 kg | 219 kg/m³ | 1,75 kg/m² | 24,99 € |
 | Tunturi liège | liège + TPE | 183 × 61 | 4 mm | 0,70 kg | 157 kg/m³ | 0,63 kg/m² | 35,99 € |
 
@@ -112,10 +112,10 @@ sont **calculées** à partir des fiches, aucune marque ne les publie.
 | Gorilla Sports | liège, base n.c. | 183 × 61 | 5 mm | 0,80 kg | 143 kg/m³ | **0,72 kg/m²** | 29,99 € |
 | Tunturi liège | liège + TPE | 183 × 61 | 4 mm | 0,70 kg | 156 kg/m³ | **0,63 kg/m²** | 35,99 € |
 | Mobiclinic | liège + TPE | 183 × 61 | 4 mm | 0,65 kg | 145 kg/m³ | **0,58 kg/m²** | 32,95 € |
-| Le Temple Yogi | liège + caoutchouc | 183 × 61 | 5 mm | **non publié** | — | — | 85,90 € |
-| DH FitLife caoutchouc | liège + caoutchouc | 183 × 61 | 6 mm | **non publié** | — | — | 41,00 € |
-| DH FitLife TPE | liège + TPE | 183 × 61 | 6 mm | **non publié** | — | — | 48,69 € |
-| Spokey Savasana | liège + TPE | 183 × 61 | 4 mm | **non publié** | — | — | 39,32 € |
+| Le Temple Yogi | liège + caoutchouc | 183 × 61 | 5 mm | **non publié** | n.c. | n.c. | 85,90 € |
+| DH FitLife caoutchouc | liège + caoutchouc | 183 × 61 | 6 mm | **non publié** | n.c. | n.c. | 41,00 € |
+| DH FitLife TPE | liège + TPE | 183 × 61 | 6 mm | **non publié** | n.c. | n.c. | 48,69 € |
+| Spokey Savasana | liège + TPE | 183 × 61 | 4 mm | **non publié** | n.c. | n.c. | 39,32 € |
 
 « Prix rendu » = prix affiché plus frais de port annoncés.
 
@@ -302,11 +302,11 @@ le tarif d'un fournisseur qui l'a communiqué à titre commercial.
 |---|---|---|---|---|---|---|
 | **Before-S** | **65 % polyester, 35 % coton** | **30 mm** | **3 mm** | **90 mm²** | 2 × 125 cm | **9 € la paire** |
 | Liforme Magic Galaxy | coton bio + bambou | 50 mm | 1,5 mm | 75 mm² | 2,40 m | £55, env. 63 € |
-| Manduka Align | 100 % coton | 44 mm | n.c. | — | 1,82 à 3,04 m | 22 $, env. 20,50 € |
-| Kimjaly | 100 % coton, bouclerie inox | n.c. | n.c. | — | 2,50 m | 7,99 € |
+| Manduka Align | 100 % coton | 44 mm | n.c. | n.c. | 1,82 à 3,04 m | 22 $, env. 20,50 € |
+| Kimjaly | 100 % coton, bouclerie inox | n.c. | n.c. | n.c. | 2,50 m | 7,99 € |
 | Achamana Mandala | 100 % coton, double anneau D inox | 38 mm | 2,5 mm | 95 mm² | 2,50 m | 19,90 € |
 | Ceinture judo Budo-Fight | 100 % coton | 45 mm | 5 mm | 225 mm² | 2,20 à 3,30 m | 19 € |
-| Ceinture judo Energetics | coton | n.c. | n.c. | — | 2,50 m | 3,49 € |
+| Ceinture judo Energetics | coton | n.c. | n.c. | n.c. | 2,50 m | 3,49 € |
 
 **Les anses Before-S** : 2 anses cousues par sangle, **26 cm de circonférence**
 (13 cm à plat) pour un pied adulte, **20 cm** (10 cm à plat) pour un petit pied.
