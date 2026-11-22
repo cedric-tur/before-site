@@ -184,6 +184,118 @@ un premier rang au classement.
 
 ---
 
+## 1 ter. Vérification du 22 novembre 2026 : le poids Suprfit et le prix européen
+
+Cédric soupçonne Suprfit de se tromper, ou de mentir, sur le poids annoncé :
+*« Qu'ils pèsent aussi lourd avec 4 mm de caoutchouc me paraît impossible, mais
+peut-être ai-je tort. »* Il demande que l'article en tire la conclusion. **Le calcul
+dit le contraire, et il faut le lui dire avant d'écrire quoi que ce soit.**
+
+### D'abord, corriger le prix que nous avions
+
+Le relevé Decathlon donnait 59,99 €. Le site de la marque donne un autre chiffre.
+
+| Où | Prix affiché | Port vers la France | Rendu |
+|---|---|---|---|
+| suprfit.com, promotion | 29,99 € | 16,90 € | **46,89 €** |
+| suprfit.com, prix plein | 39,99 € | 16,90 € | 56,89 € |
+| Marketplace Decathlon | 59,99 € | inclus | 59,99 € |
+
+**Le même tapis vaut 29,99 € chez la marque et 59,99 € sur Decathlon.** C'est un
+constat utile au lecteur, et vérifiable : une fiche de marketplace n'est pas le prix
+du fabricant. La marque est **Innovative Training Systems GmbH**, à Hockenheim, un
+importateur allemand qui vend sa propre marque sur Decathlon et Galaxus. Rien
+d'exotique : volume d'import, marque propre, distribution par marketplaces.
+
+### Le poids : la densité implicite de la couche caoutchouc
+
+On ne peut pas vérifier 3,5 kg sans peser le tapis. On peut vérifier si le chiffre est
+**cohérent**. Méthode : retirer la masse du liège (1 mm à 240 kg/m³, valeur haute de
+l'aggloméré), puis calculer la densité qu'il faudrait à la couche caoutchouc pour
+expliquer le poids annoncé. Si Suprfit sort du nuage, le soupçon tient. Sinon, non.
+
+| Tapis | Épaisseur | Poids | kg/m² | Densité du caoutchouc |
+|---|---|---|---|---|
+| **Before-S** | 6 mm | 3,20 kg | 2,87 | **525 kg/m³** |
+| Cork mat 183 × 66 (annonce) | 5 mm | 3,00 kg | 2,48 | 561 kg/m³ |
+| Chin Mudra LUNA | 4 mm | 2,40 kg | 1,97 | 575 kg/m³ |
+| Achamana 5 mm | 5 mm | 3,30 kg | 2,65 | 603 kg/m³ |
+| Casall 5 mm | 5 mm | 3,00 kg | 2,69 | 612 kg/m³ |
+| Yogamatata Confort | 4 mm | 2,35 kg | 2,11 | 622 kg/m³ |
+| **Suprfit** | 5 mm | 3,50 kg | 2,90 | **663 kg/m³** |
+| Divasya | 4 mm | 2,70 kg | 2,24 | 665 kg/m³ |
+| Yogom Liège | 4 mm | 2,80 kg | 2,25 | 670 kg/m³ |
+
+Le nuage va de 525 à 670 kg/m³. **Suprfit est à 663, soit 3e sur 9, et 10 % au-dessus
+de la moyenne des autres.** Deux marques françaises, Yogom à 94 € et Divasya à 79,99 €,
+utilisent un caoutchouc exactement aussi dense. Le poids de Suprfit n'est donc pas une
+anomalie : il est dans la fourchette, et ce sont les concurrents de Cédric qui
+l'établissent.
+
+### L'hypothèse TPE ne tient pas non plus
+
+Les tapis liège + TPE du relevé donnent une couche moussée entre 134 et 156 kg/m³.
+Un 183 × 66 de 5 mm construit ainsi pèserait **0,94 kg à 1,04 kg**. Pour que la photo
+montre du TPE, il faudrait que la fiche se trompe d'un facteur 3,4. Une coquille de
+cette ampleur est possible, elle n'est pas démontrable.
+
+Trois indices supplémentaires vont dans le sens d'un poids réel :
+
+1. Le fabricant publie **0,501 cm** d'épaisseur. Cette précision est celle d'une fiche
+   mesurée, pas d'un copier-coller.
+2. Le port vers la France est facturé **16,90 €**. C'est le tarif d'un colis lourd.
+   Un tapis de 1 kg ne se facture pas ainsi.
+3. Le port est **offert en Allemagne** sur un article à 29,99 €. Sur 3,5 kg, cela coûte
+   5 à 7 € au vendeur. C'est le comportement d'une marque propre en promotion, pas
+   celui d'une marge confortable sur un produit léger.
+
+**Conclusion pour l'article : on ne peut pas écrire que Suprfit se trompe.** Affirmer
+publiquement qu'une fiche concurrente est fausse, sans avoir pesé le tapis, est un
+dénigrement au sens de l'article 1240 du code civil. Et c'est factuellement fragile :
+le premier lecteur qui refait le calcul trouve ce que nous trouvons ici.
+
+**Ce qui est écrivable, et qui dit la même chose honnêtement** : donner la méthode de
+calcul, publier le tableau des densités, et poser que seule une pesée tranche. Le
+lecteur en tire lui-même la leçon utile, qui est de se méfier d'une fiche sans poids
+plutôt que d'une fiche avec un poids élevé.
+
+### Le point de prix européen : le catalogue portugais
+
+Catalogue Yoga 2025 de **Portugaliacork S.A.**, Espinho, Portugal, mis à jour le
+24 avril 2025, obtenu par Cédric. C'est la seule entreprise portugaise qui lui a
+répondu. Prix **départ usine**, hors transport, hors TVA, hors marge.
+
+| Référence | Composition | Dimensions | Épaisseur | Prix départ usine |
+|---|---|---|---|---|
+| 08899 agglo | liège + latex | 60 × 180 | 5 mm | **37,00 €** |
+| 08905 surface | liège + latex | 60 × 180 | 5 mm | 46,00 € |
+| 09872 / 09865 imprimés | liège + latex | 60 × 180 | 5 mm | 49,00 € |
+| 10953 / 06512 | liège + mousse EVA | 60 × 180 | 5 mm | 41,00 € |
+| 05201 brun | liège + mousse EVA | 60 × 180 | 5 mm | 52,00 € |
+
+Conditions : pas de quantité minimale, mais **50 € de frais de dossier sous 500 €** de
+commande, paiement avant expédition, 3 à 6 semaines en production.
+
+**Deux précisions à retenir avant d'écrire.** Le latex **est** du caoutchouc naturel :
+la référence à 37 € est donc bien un liège + caoutchouc, et c'est la moins chère du
+catalogue, pas l'inverse. Et le schéma du catalogue indique « latex with cork » en
+sous-couche, c'est-à-dire un aggloméré liège-latex et non une feuille de caoutchouc
+pleine : construction plus légère, poids non publié, pas directement comparable aux
+tapis du relevé.
+
+**Ce que ce catalogue démontre, et c'est l'argument fort de l'article :** 37 € départ
+usine, plus le transport, plus la TVA, plus la marge d'un revendeur, place un tapis
+liège + caoutchouc **fabriqué en Europe autour de 95 à 110 € en rayon**. Suprfit en
+demande 29,99 €. L'écart n'est pas un écart de qualité, c'est un écart de lieu de
+fabrication. Voilà le fait vérifiable, documenté, et sans risque, sur lequel reposer
+le passage sur les prix.
+
+À arbitrer avec Cédric : citer Portugaliacork par son nom, ou écrire « un fabricant
+portugais ». La seconde formulation ne coûte rien à l'argument et évite de publier
+le tarif d'un fournisseur qui l'a communiqué à titre commercial.
+
+---
+
 ## 2. Les sangles
 
 | Sangle | Matière | Largeur | Ép. | Section | Longueur | Prix |
