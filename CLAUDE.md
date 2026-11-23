@@ -230,6 +230,15 @@ sont l'argument de vente de Before-S : elles doivent se lire d'un coup d'œil, s
 déchiffrées. Seules les tournures purement rhétoriques gardent les lettres
 (« deux fois plus », « les deux seules choses »).
 
+**4 quater. Peu de virgules.** *Décision de Cédric, 23 novembre 2026, en relisant
+l'article sur les tapis : « j'ai retiré aussi beaucoup de virgules qui montrent que le
+texte utilise une IA ».* Même raison que le tiret cadratin : la virgule posée devant
+chaque « et », chaque « mais », chaque incise courte, est une signature de texte généré.
+Deux propositions liées par une conjonction n'en prennent pas (« C'est l'inverse qui se
+produit et la rééducation le sait »). On garde la virgule quand elle évite une lecture
+fausse, quand elle ouvre ET ferme une incise, et dans les énumérations. Dans le doute,
+couper la phrase en deux plutôt qu'ajouter une virgule.
+
 **5. L'autonomie est l'argument, pas la fidélisation.** Ne jamais écrire une phrase qui
 suppose que l'élève doit revenir. C'est l'inverse du discours du secteur, et c'est délibéré.
 
