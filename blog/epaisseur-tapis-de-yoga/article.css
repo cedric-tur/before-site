@@ -1,0 +1,117 @@
+/* Tableaux comparatifs de l'article sur l'epaisseur des tapis.
+   Reprend les tokens de blog.css, aucune couleur en dur.
+   A deplacer dans blog.css le jour ou un deuxieme article s'en sert. */
+
+.tbl {
+  margin: 2rem 0;
+  /* le tableau deborde la colonne de texte : il porte la demonstration */
+  width: 100%;
+  max-width: none;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tbl table {
+  width: 100%;
+  min-width: 34rem;
+  border-collapse: collapse;
+  font-family: "Archivo", sans-serif;
+  font-size: var(--step--1);
+}
+
+.tbl caption {
+  margin-bottom: .7rem;
+  font-family: "Archivo", sans-serif;
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+  text-align: left;
+}
+
+.tbl th,
+.tbl td {
+  padding: .55rem .7rem;
+  border-bottom: 1px solid var(--line-soft);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tbl th:first-child,
+.tbl td:first-child {
+  text-align: left;
+  white-space: normal;
+}
+
+.tbl thead th {
+  border-bottom: 1px solid var(--line);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* les intertitres de famille dans le tableau des 15 tapis en liege :
+   ils portent la demonstration, le lecteur doit voir les 3 paquets */
+.tbl tr.fam td {
+  padding-top: 1.1rem;
+  border-bottom: 1px solid var(--line);
+  font-family: "Archivo", sans-serif;
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-align: left;
+  white-space: normal;
+}
+.tbl tr.fam:first-child td { padding-top: .55rem; }
+
+/* la ligne Before-S se distingue sans crier */
+.tbl tr.nous td {
+  background: var(--accent-wash);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* la colonne qui porte la demonstration */
+.tbl .cle { color: var(--accent-lift); }
+
+.tbl tfoot td {
+  border-bottom: 0;
+  padding-top: .8rem;
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+  text-align: left;
+  white-space: normal;
+}
+
+/* La note du tableau vit DEHORS, et c'est volontaire : tout ce qui est
+   dans <table> herite de son min-width de 34rem, donc depassait l'ecran
+   d'un telephone. Posee ici, elle se plie a la largeur disponible. */
+.tbl__note {
+  margin: -1.4rem 0 2rem;
+  font-style: italic;
+  max-width: var(--texte);
+  font-family: "Archivo", sans-serif;
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+/* l'etiquette annonce ce qui suit : sans elle, 4 phrases techniques
+   s'enchainent sans qu'on sache pourquoi */
+.tbl__note strong { font-style: normal; color: var(--accent); }
+
+/* le calcul, mis en evidence sans etre un encadre de plus */
+.calcul {
+  margin: 1.6rem 0;
+  padding: 1rem 1.2rem;
+  border-left: 2px solid var(--accent);
+  background: var(--surface);
+  font-family: "Archivo", sans-serif;
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+.calcul strong { color: var(--ink); }
+
+@media (max-width: 600px) {
+  /* la note suit le tableau qu'elle explique : meme corps, sinon elle se
+     lit comme un paragraphe de l'article et non comme sa legende */
+  .tbl table, .tbl caption, .tbl__note { font-size: .76rem; }
+  .tbl th, .tbl td { padding: .45rem .5rem; }
+}

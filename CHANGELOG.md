@@ -7,6 +7,43 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 23 novembre 2026
+
+- **Article 03 publié : « Épaisseur du tapis de yoga : ce que personne ne mesure ».**
+  21 tapis calculés depuis les fiches des marques, 18 en liège et 3 sans liège qui
+  servent de repères. La démonstration tient sur un chiffre que personne ne publie,
+  la masse au mètre carré, et sur la densité de la couche d'appui, qui range les tapis
+  en 3 familles séparées par un vide : caoutchouc de 525 à 670 kg/m³, hybrides vers
+  300, TPE et mousses de 113 à 185.
+
+- **Ce que l'article concède, et c'est ce qui le rend crédible** : le périmètre est
+  déclaré comme une sélection, Yogom et Yogamatata passent devant Before-S sur la
+  densité pure, Decathlon est imbattable sur le prix d'achat, et aucun tapis ne
+  prévient quoi que ce soit. Le terrain revendiqué est le prix de la matière, 24 €
+  le kilo contre 51 € pour le Tunturi.
+
+- **Un fabricant portugais sert de point de repère européen** : 37 € départ usine pour
+  un liège et latex de 5 mm, soit près de 100 € en rayon. L'article en tire que les
+  tapis vendus entre 30 et 80 € viennent tous d'Asie, celui de Before-S compris.
+
+- **2 pourcentages étaient inversés** et ont été corrigés avant publication : 55 % et
+  64 % sont ce que Before-S a en plus, pas ce que les concurrents ont en moins. Les
+  bons chiffres sont 36 % pour l'Achamana tri-plis et 39 % pour le Kimjaly. La mise en
+  garde est écrite dans le dossier de recherche.
+
+- **Règle éditoriale 4 quater ajoutée** : peu de virgules, pour la même raison que le
+  tiret cadratin.
+
+- **Les colonnes des 2 tableaux sont réordonnées** pour le téléphone : nom, prix, puis
+  les 2 colonnes calculées. Ce qui compte se voit sans faire défiler.
+
+- **La mention « à suivre à l'oreille les yeux fermés » quitte les encarts de fin** des
+  3 articles du blog.
+
+- **Le sitemap reçoit l'article, et aussi yoga-au-lit-le-soir**, oublié depuis octobre.
+
+---
+
 ## 19 novembre 2026, soir
 
 - **La palette passe au bleu.** « Nuit encrée », `#212A3E`, un bleu nuit légèrement
