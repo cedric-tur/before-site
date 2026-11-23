@@ -39,9 +39,12 @@ Publier les deux colonnes, y compris celle où Before-S est 3e.
 
 ### Les 3 comparaisons qui portent l'article
 
-- **Achamana tri-plis contre Before-S** : **même épaisseur annoncée (6 mm), même
-  prix (79 € contre 78 €), même mot « liège » sur l'étiquette, et 55 % de matière
-  en moins.** Leur fiche l'explique : une 3e couche en TPE sous le caoutchouc.
+- **Achamana tri-plis contre Before-S** : même épaisseur annoncée (6 mm), même prix
+  (79 € contre 78 €), même mot « liège » sur l'étiquette, et **36 % de matière en
+  moins**, soit 1,85 kg/m² contre 2,87. Leur fiche l'explique : une 3e couche en TPE
+  sous le caoutchouc.
+  Attention au sens de la division, l'article l'a eu faux un temps : 55 % est ce que
+  Before-S a **en plus**, ce n'est pas ce qu'Achamana a en moins.
   Ils écrivent eux-mêmes « un hybride entre le tapis en caoutchouc et celui en
   plastique TPE ». C'est la meilleure comparaison du dossier, parce qu'on ne peut
   pas la balayer d'un « oui mais c'est du premier prix ».
@@ -58,8 +61,11 @@ Publier les deux colonnes, y compris celle où Before-S est 3e.
 
 ### Les 2 autres comparaisons
 
-- **Kimjaly 8 mm contre Before-S 6 mm** : 25 % plus fin, **64 % de matière en
-  plus**, 2,2 fois plus dense. L'épaisseur affichée ne dit rien de la protection.
+- **Kimjaly 8 mm contre Before-S 6 mm** : Before-S est 25 % plus fin, 2,2 fois plus
+  dense, et oppose **64 % de matière en plus**. Dit dans l'autre sens, le Kimjaly en a
+  **39 % de moins** : 1,75 kg/m² contre 2,87. Les 2 formulations ne donnent pas le même
+  chiffre, ne jamais les confondre. L'épaisseur affichée ne dit rien de la protection.
+  Ce tapis n'a pas de liège : il sert de repère, pas de concurrent.
 - **Tunturi contre Before-S**, mêmes dimensions, même famille de matières
   annoncée : **4,6 fois moins de matière** au m², pour 35,99 € contre 78 €.
   Le mot « liège » sur une étiquette ne garantit rien.
