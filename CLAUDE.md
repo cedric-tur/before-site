@@ -123,6 +123,12 @@ quelqu'un qui a fini d'apprendre.
   l'épaisseur à 12 mm sous les genoux. Fabrication en Chine confirmée, après recherche
   infructueuse en Europe, mais la page Boutique n'annonce **aucune origine** : la mention
   « Portugal » d'un ancien texte a disparu avec lui, et le texte de la fiche reste à écrire.
+- **Les sangles ne sont pas offertes avec le tapis.** *Décision de Cédric, 24 novembre
+  2026.* Elles entreront dans un **pack promotion de Noël**, pas dans l offre courante du
+  tapis. L article 03 annonçait un temps « livraison offerte plus 1 paire de sangles » :
+  ce passage a été retiré en relecture, l offre n existe donc nulle part. Ne pas la
+  reproposer tant que le pack n est pas défini.
+
 - **Le livre** : les 90 postures imprimées en grand format. En préparation avec une amie
   graphiste ; il reste à intégrer les plaquettes et à finaliser la mise en page.
   **Retiré de la boutique le 6 octobre 2026**, il n'est plus annoncé sur le site.
