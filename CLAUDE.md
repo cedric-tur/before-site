@@ -487,8 +487,18 @@ Son bouton d'écoute a donc disparu de l'accueil, et il ne faut pas le remettre.
 - **Rien n'est encore publié.** Aucun élève n'a pratiqué la méthode.
 
 Base de contacts à réactiver : une cinquantaine de pratiquantes (téléphones), plus les clients
-de l'activité shiatsu / massage antérieure. Ancien site capzen.fr, à l'arrêt depuis 2020,
-avec de bons avis Facebook à récupérer comme témoignages.
+de l'activité shiatsu / massage antérieure.
+
+**capzen.fr est abandonné**, décision de Cédric du 24 novembre 2026 : *« c'est du passé »*.
+Ne plus le proposer, ni en lien dans la lettre d'information ni ailleurs. Les 3 constats
+qui ont mené là, relevés le 24 novembre 2026 : le site répond encore mais en **http seul,
+sans certificat**, donc inutilisable en lien dans un courriel ; sa **page de réservation
+reste en ligne et fonctionnelle**, avec ses tarifs, pour une activité fermée en 2018 ;
+et les **avis Facebook ont disparu de l affichage**, le site chargeant le kit Facebook
+sur la version v2.4 de 2015, que Meta ne sert plus. Les commentaires existent sans doute
+encore côté Facebook, mais les ressortir supposerait de recréer une application et de
+passer la vérification d entreprise, pour des témoignages vieux de 8 ans sur une activité
+fermée. Ce document le comptait à tort comme une réserve de témoignages à récupérer.
 
 **Branché en novembre 2026** : les 3 liens de paiement Stripe de la boutique, les
 mentions légales, les CGV, la politique de confidentialité, et le formulaire
