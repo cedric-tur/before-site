@@ -172,7 +172,7 @@ C'est le seul terrain où aucun concurrent ne peut suivre sans refaire tout son 
 Tous exigent un tapis, une tenue, de la place et un écran devant soi. Before-S, non.
 
 - **Rien à installer** : ni tapis, ni tenue, ni vestiaire. Le lit suffit.
-- **Rien à regarder** : tout se suit à l'oreille, les yeux fermés.
+- **Rien à regarder** : tout se suit à l'oreille, sans écran devant soi.
 - **Rien à prévoir** : de 6 à 30 minutes, on prend ce qui rentre dans la journée.
 
 Ce trio doit rester visible sur l'accueil et guider toute nouvelle rédaction. Le titre du
@@ -263,6 +263,13 @@ pousser, contredisent la promesse de la méthode. On garde les verbes de sensati
 **procurer**, ressentir, détendre, délier. Écarter aussi les verbes froids de causalité,
 « engendrer » par exemple, qui appartiennent au vocabulaire administratif et supposent
 un mécanisme là où il faut un corps.
+
+**9. Jamais « les yeux fermés ».** *Décision de Cédric, 25 novembre 2026.* On ne ferme pas
+les yeux en pratiquant Before-S, et la formule suggère le sommeil ou la méditation alors que
+l'écoute est **active** : suivre une description précise et ajuster son placement au fur et à
+mesure demande plus d'attention que de regarder une vidéo, pas moins. On écrit « à l'oreille »,
+« sans écran », « sans image sous les yeux ». Le bénéfice à formuler est toujours le même :
+on ne quitte jamais la posture pour vérifier sur un écran ce qu'il fallait faire.
 
 ---
 

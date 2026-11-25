@@ -7,6 +7,20 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 25 novembre 2026
+
+- **« Les yeux fermés » disparaît du site.** *Décision de Cédric.* On ne ferme pas les yeux
+  en pratiquant, et la formule laissait croire au sommeil ou à la méditation alors que
+  l'écoute est active. Corrigé sur `/auteur/`, dans les 2 articles au lit et dans le trio
+  de différenciation. Le titre « Pourquoi suivre la séance à l'oreille, les yeux fermés ? »
+  devient « Pourquoi suivre la séance à l'oreille plutôt qu'en vidéo ? », ce qui est aussi
+  la vraie question du lecteur. Un paragraphe est ajouté pour dire ce que la formule cachait :
+  écouter demande plus d'attention qu'un écran, pas moins.
+
+- **Règle éditoriale 9** ajoutée dans `CLAUDE.md`.
+
+---
+
 ## 23 novembre 2026
 
 - **Article 03 publié : « Épaisseur du tapis de yoga : ce que personne ne mesure ».**

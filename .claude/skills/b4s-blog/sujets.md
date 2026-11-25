@@ -19,7 +19,7 @@ Relevé du 14 octobre 2026. Les pages « en tête » sont celles qui ressortaien
 | 6 | Yoga après 50 ans pour la mobilité | yoga après 50 ans | Before-Start, version adaptée | 2 | 2 | 3 | 7 | prudence des adultes plus âgés |
 | 7 | Yoga quand on n'est pas souple | yoga pas souple | Before-Start | 2 | 2 | 3 | 7 | aucun |
 | 8 | Combien de minutes de yoga par jour | yoga combien de minutes par jour | Before-Speed et l'ensemble 6 à 30 min | 2 | 3 | 2 | 7 | aucun |
-| 9 | Yoga guidé à la voix, les yeux fermés | yoga guidé audio | Toutes les séances | 1 | 3 | 3 | 7 | demande faible, à mesurer |
+| 9 | Yoga guidé à la voix, sans écran | yoga guidé audio | Toutes les séances | 1 | 3 | 3 | 7 | demande faible, à mesurer |
 | 10 | Yoga pour les enfants de 3 à 6 ans | yoga enfant 3 ans | Before-School | 2 | 2 | 2 | 6 | public mineur : présence d'un adulte |
 
 Les 4 premiers suivent l'ordre imposé. Les 6 suivants sont classés par total, puis par proximité avec le public prioritaire (40 à 65 ans, dos raide au réveil).
@@ -45,7 +45,7 @@ Les 4 premiers suivent l'ordre imposé. Les 6 suivants sont classés par total, 
   - Decathlon, routine de yoga du matin : https://conseilsport.decathlon.fr/routine-yoga-du-matin-demarrer-la-journee-du-bon-pied
   - Consoglobe, « 3 positions de yoga pour se lever du bon pied chaque matin » : https://www.consoglobe.com/?p=324304
   - Format dominant : listes de 3 à 5 postures illustrées, écrites par des magazines minceur ou généralistes. Decathlon déconseille même les postures allongées le matin, par peur de se rendormir.
-- **Pourquoi Before-S peut gagner** : aucune page en tête n'est écrite par un professeur, aucune ne propose une séance guidée à la voix qui se suit les yeux fermés, aucune ne parle au public qui se réveille raide. Before-S a la seule offre construite entièrement pour le lit.
+- **Pourquoi Before-S peut gagner** : aucune page en tête n'est écrite par un professeur, aucune ne propose une séance guidée à la voix qui se suit sans écran, aucune ne parle au public qui se réveille raide. Before-S a la seule offre construite entièrement pour le lit.
 - **Sources à vérifier** : Ameli (mal de dos, « ne pas bouger, c'est se rouiller ») ; OMS (activité physique) ; Harvard Health (étirements) ; NCCIH (sécurité du yoga). Toutes vérifiées en 200, voir l'en-tête de l'article.
 - **Score** : demande 3 / concurrence 3 / lien méthode 3 = **9**
 - **Bloquants** : aucun, à condition de rester sur le confort et la raideur.
@@ -117,7 +117,7 @@ Les 4 premiers suivent l'ordre imposé. Les 6 suivants sont classés par total, 
   - Le Tigre Yoga, « Le yoga pour dormir : retrouver des nuits régénératrices » : https://www.tigre-yoga.com/lifestyle/nos-articles/yoga-dormir-retrouver-nuits-regeneratrices
   - Consoglobe, « Insomnie : 6 positions de yoga pour stimuler le sommeil » : https://www.consoglobe.com/insomnie-positions-yoga-sommeil-cg
   - Format dominant : listes de postures, souvent avec vocabulaire sanskrit, et promesses d'endormissement rapide.
-- **Pourquoi Before-S peut gagner** : l'argument « les yeux fermés, sans écran » vaut encore plus le soir qu'au réveil. Les pages en tête demandent de regarder des images pour suivre.
+- **Pourquoi Before-S peut gagner** : l'argument « sans écran » vaut encore plus le soir qu'au réveil. Les pages en tête demandent de regarder des images pour suivre.
 - **Sources à vérifier** : NCCIH (« Yoga has been shown to be helpful for sleep in multiple studies », avec les populations étudiées) ; une source française sur le sommeil et les écrans (Inserm ou Santé publique France, à trouver et vérifier).
 - **Score** : 3 / 2 / 3 = **8**
 - **Bloquants** : aucune promesse sur l'insomnie. Parler de détente et de préparation au sommeil.
@@ -176,9 +176,9 @@ Les 4 premiers suivent l'ordre imposé. Les 6 suivants sont classés par total, 
 - **Score** : 2 / 3 / 2 = **7**
 - **Bloquants** : aucun. Attention à la règle maison sur l'autonomie : ne pas écrire une phrase qui suppose que le lecteur doit revenir chaque jour sur le site.
 
-## 9. Yoga guidé à la voix, les yeux fermés
+## 9. Yoga guidé à la voix, sans écran
 
-- **Titre provisoire** : Yoga guidé à la voix : pratiquer les yeux fermés, sans écran
+- **Titre provisoire** : Yoga guidé à la voix : pratiquer sans écran
 - **Slug** : yoga-guide-a-la-voix
 - **Requête cible** : yoga guidé audio
 - **Secondaires** : yoga sans écran ; séance de yoga audio en français
