@@ -10,6 +10,17 @@ et extensions européennes réservés.
 Professeur de yoga depuis plus de 10 ans, spécialisé en **yoga postural**. Avant cela :
 shiatsu, massage thaï et modelage corporel, des années les mains sur des corps.
 
+**Les dates, confirmées par Cédric le 27 novembre 2026**, à reprendre telles quelles :
+cours collectifs à partir de 2005 (Aquaboulevard, body balance, puis ashtanga au Yoga Rive
+Gauche) ; élève de **Thomas Pasquon de 2009 à 2013**, 2 heures par semaine ; formation à
+l'**École Française de Yoga de 2013 à 2017**, auprès de Patrick Tomatis, mentor de Thomas,
+et de Gianna Dupont ; **École Iokaï Shiatsu Paris à partir de 2008** sous la direction de
+Christine Breton, cursus suivi 2 fois ; **modelage corps au Spa Aquatonic Val d'Europe de
+2010 à 2013** ; **praticien shiatsu de 2014 à 2020**, avant et après le cabinet, qui n'a
+tenu que de 2015 à 2018 ; enseignement en entreprise avec Wellness ; éveil musculaire
+pratiqué quotidiennement **depuis 2020**. Thomas Pasquon est mort en 2024, Patrick Tomatis
+en 2025, et Nil Hahoutoff, le mentor de Patrick, en 1982.
+
 Sa formule, à reprendre telle quelle : *« J'affine depuis plus de 10 ans la précision du
 placement dans chaque posture, à comprendre chaque détail pour vous en offrir la synthèse. »*
 
@@ -305,6 +316,14 @@ Deux règles :
   `logo INPI TURMEL 3 versions.ai`, dont la page 3 est la version à fond transparent
   et texte blanc.
 
+**Exception à la règle du sous-titre, décidée le 27 novembre 2026 : un nom qui est un
+lien n'en porte pas.** Cédric a retiré « la séance de découverte » posé derrière
+Before-Start dans une lettre : *« cela fait trop d'informations, il vaut mieux que la
+personne clique dessus pour ouvrir la page »*. Le sous-titre français reste la règle
+partout ailleurs. À savoir aussi, et c'est la raison de sa prudence : **Initiation est la
+même vidéo que Découverte, avec la demi Lune en plus.** Il a voulu que la première écoute
+ne soit pas trop longue, pour ne pas décourager.
+
 Exception au système : **Before-Start** ne nomme pas un moment mais une étape.
 C'est assumé : c'est la seule séance dont le rôle est d'être la première.
 
@@ -496,8 +515,14 @@ Son bouton d'écoute a donc disparu de l'accueil, et il ne faut pas le remettre.
 Base de contacts à réactiver : une cinquantaine de pratiquantes (téléphones), plus les clients
 de l'activité shiatsu / massage antérieure.
 
-**capzen.fr est abandonné**, décision de Cédric du 24 novembre 2026 : *« c'est du passé »*.
-Ne plus le proposer, ni en lien dans la lettre d'information ni ailleurs. Les 3 constats
+**capzen.fr : abandonné pour la lettre d'information, rouvert comme passerelle.**
+Le 24 novembre 2026 Cédric tranchait *« c'est du passé »*. Le 27 il précise : le site ne
+servira pas dans la lettre d'information, mais il veut le mentionner dans le message qu'il
+enverra à ses anciens contacts, *« pour qu'ils puissent se souvenir de moi »*, et il demande
+de le remettre à jour. Le site est du HTML écrit à la main sur Bootstrap 3, sans base de
+données : une mise à jour ne demande qu'un accès FTP. Priorité absolue, retirer la page de
+réservation et ses tarifs. Ensuite un bandeau renvoyant vers before-s.com, puis les vidéos
+où il montre des postures, qui contredisent tout son discours. Les 3 constats
 qui ont mené là, relevés le 24 novembre 2026 : le site répond encore mais en **http seul,
 sans certificat**, donc inutilisable en lien dans un courriel ; sa **page de réservation
 reste en ligne et fonctionnelle**, avec ses tarifs, pour une activité fermée en 2018 ;
