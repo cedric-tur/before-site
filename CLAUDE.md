@@ -8,7 +8,7 @@ et extensions européennes réservés.
 ## Cédric Turmel
 
 Professeur de yoga depuis plus de 10 ans, spécialisé en **yoga postural**. Avant cela :
-shiatsu, massage thaï et modelage corporel, des années les mains sur des corps.
+shiatsu et modelage corporel, des années d'exercice avant l'enseignement.
 
 **Les dates, confirmées par Cédric le 27 novembre 2026**, à reprendre telles quelles :
 cours collectifs à partir de 2005 (Aquaboulevard, body balance, puis ashtanga au Yoga Rive
@@ -284,6 +284,25 @@ on ne quitte jamais la posture pour vérifier sur un écran ce qu'il fallait fai
 
 ---
 
+**10. Le mot « massage » est banni, et avec lui « les mains sur des corps ».**
+*Décision de Cédric, 28 novembre 2026.* Ce que la loi réserve aux
+masseurs-kinésithérapeutes, c'est l'acte de massage à visée thérapeutique,
+et les tribunaux ont plutôt admis le massage de bien-être sans promesse de soin. Mais
+l'Ordre attaque régulièrement sur le mot lui-même, et c'est pour cela que toute
+l'industrie du spa dit « modelage » depuis 20 ans. Le critère est l'usage : le mot
+dans une offre commerciale avec un tarif expose au maximum, le même mot dans un récit
+au passé expose au minimum. On écrit **« modelage corporel »**, et pour le thaï
+**« le thaï »** seul, puisque « thaï traditionnel » se confond avec la boxe et
+« Nuad Bo Rarn » ne dit rien à personne. Retiré le 28 novembre 2026 de `/auteur/`
+(description et mots-clés de la fiche structurée, texte visible) et de la signature du
+blog `yoga-au-lit-le-matin`. **Reste à faire, et c'est l'exposition la plus forte : la page
+d'accueil de capzen.fr l'affiche en gros au-dessus d'une offre commerciale.** Dans la même
+correction, « j'ai passé des années les mains sur des corps » a quitté `/auteur/` :
+c'est l'image que Cédric avait lui-même jugée « très limite » en refusant un
+objet de lettre, et elle était en ligne depuis la publication du site.
+
+---
+
 ## Le système de nommage
 
 `Before-` + un mot en S qui nomme **un moment ou une situation d'usage**, en anglais.
@@ -513,7 +532,7 @@ Son bouton d'écoute a donc disparu de l'accueil, et il ne faut pas le remettre.
 - **Rien n'est encore publié.** Aucun élève n'a pratiqué la méthode.
 
 Base de contacts à réactiver : une cinquantaine de pratiquantes (téléphones), plus les clients
-de l'activité shiatsu / massage antérieure.
+de l'activité shiatsu antérieure.
 
 **capzen.fr : abandonné pour la lettre d'information, rouvert comme passerelle.**
 Le 24 novembre 2026 Cédric tranchait *« c'est du passé »*. Le 27 il précise : le site ne

@@ -7,6 +7,34 @@ versionné. L'historique git réel démarre au premier commit.
 
 ---
 
+## 28 novembre 2026
+
+- **Le mot « massage » quitte le site.** *Décision de Cédric.* Ce que la loi
+  réserve aux masseurs-kinésithérapeutes, c'est l'acte à visée
+  thérapeutique, et le massage de bien-être a plutôt été admis par les
+  tribunaux. Mais l'Ordre attaque régulièrement sur le mot, et c'est pour cela que
+  l'industrie du spa dit « modelage » depuis 20 ans. Corrigé aux 4 endroits où
+  il était en ligne : la description et les mots-clés de la fiche structurée de
+  `/auteur/`, son texte visible, et la signature de bas d'article de
+  `blog/yoga-au-lit-le-matin`. On écrit désormais « modelage corporel », et
+  « le thaï » seul pour le thaï.
+
+- **« J'ai passé des années les mains sur des corps » retiré de `/auteur/`**,
+  dans la même correction. C'est l'image que Cédric avait lui-même jugée
+  « très limite » en refusant un objet de lettre d'information, et elle était
+  publique depuis la mise en ligne. La phrase devient « j'ai exercé pendant des
+  années en shiatsu et en modelage corporel ».
+
+- **Règle éditoriale 10** ajoutée dans `CLAUDE.md`, avec le critère qui compte :
+  le mot dans une offre commerciale expose au maximum, le même mot dans un récit au
+  passé expose au minimum.
+
+- **Reste à corriger, et c'est l'exposition la plus forte** : la page d'accueil de
+  capzen.fr affiche le mot en gros au-dessus d'une offre commerciale. En attente de
+  l'accès FTP.
+
+---
+
 ## 25 novembre 2026
 
 - **« Les yeux fermés » disparaît du site.** *Décision de Cédric.* On ne ferme pas les yeux
