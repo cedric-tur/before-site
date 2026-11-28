@@ -532,6 +532,68 @@ encore côté Facebook, mais les ressortir supposerait de recréer une applicati
 passer la vérification d entreprise, pour des témoignages vieux de 8 ans sur une activité
 fermée. Ce document le comptait à tort comme une réserve de témoignages à récupérer.
 
+**L'hébergement de capzen.fr, établi le 27 novembre 2026.** Tout est chez **OVH**,
+compte dont l’identifiant ne figure pas ici, ce dépôt étant public, et capzen.fr comme before-s.com y sont. Le domaine est en
+renouvellement automatique. L'hébergement porte le nom de **shiatsu-thai-paris.fr**,
+son 1er site de 2014 à 2015 avant capzen.fr, domaine depuis expiré et sorti du
+portefeuille : c'est pour cela que la ligne de l'hébergement ne s'appelle pas capzen.fr.
+Ce domaine mort reste **rattaché aux 2 sites de l'hébergement**, ce qui explique les
+avertissements « DNS à vérifier » et **bloque le certificat https gratuit** :
+le détacher avant de demander le certificat. Les 2 sites sont *Website-www* sur `./www`
+et *Website-mobile* sur `./mobile`. **m.capzen.fr ne résout plus**, la version mobile est
+donc hors ligne et seul `./www` compte, contrairement à ce que je lui avais dit d'abord.
+Le long lien `webhooks-webhosting...` du panneau OVH est une clé de déploiement
+valable jusqu'en 2049 : ne pas activer le déploiement Git maintenant qu'il a circulé.
+
+**Le courrier de capzen.fr, en place les 27 et 28 novembre 2026.** Le domaine n'avait
+**aucune authentification** : ni SPF, ni DKIM, ni DMARC. Or Gmail et Orange les exigent
+depuis février 2024 pour tout envoi de masse. Posé depuis :
+`v=spf1 include:mx.ovh.com ~all`, puis les 4 enregistrements de Brevo, et le domaine est
+**authentifié chez Brevo**. À savoir pour la prochaine fois : le formulaire DNS d'OVH
+**exige un sous-domaine non vide** pour un TXT, donc écrire `@` pour viser le domaine nu,
+ou passer par le bouton **Modifier en mode textuel** et ajouter une ligne commençant par
+`@`, le mode textuel remplaçant toute la zone par ce qu'il contient.
+
+**L'adresse d'expédition.** Aucune boîte n'existait sur le domaine, d'où une
+**redirection `contact@capzen.fr` vers son Gmail personnel**, vérifiée 2 fois, par
+dialogue SMTP avec mx4.mail.ovh.net (250 pour cette adresse, 550 pour une adresse
+inventée) et par un envoi réel depuis Hotmail. Son ancienne adresse publique du temps
+de capzen.fr était une adresse **@gmail.com**, qui ne figure pas ici pour la même raison, et il voulait l'utiliser pour être
+reconnu : impossible, **Brevo bloque les domaines publics** comme expéditeur de campagne
+et personne d'autre que Google ne peut signer au nom de gmail.com. La reconnaissance passe
+donc par le **nom affiché**, fixé à **« Cédric Turmel » seul**,
+13 caractères : au-delà de 20 à 25 caractères un téléphone tronque,
+et une virgule dans ce champ force des guillemets que de vieux logiciels coupent. L'adresse
+de réponse reste `contact@capzen.fr`, donc ses réponses partiront de son Gmail et
+afficheront l'adresse que ses anciens clients connaissaient, au moment où la conversation
+s'engage. L'option « branded subdomain » de Brevo est ignorée, elle ne vaudra
+l'effort que plus tard et sur before-s.com.
+
+**Le lien dans le courriel : décision révisée le 28 novembre 2026.** Je conseillais
+de ne pointer que vers capzen.fr, pour qu'un signalement en spam n'atteigne jamais
+before-s.com par les listes noires d'adresses web. **Brevo réécrit déjà tous les
+liens cliquables par son domaine de suivi**, donc before-s.com n'apparaît pas dans le
+corps du message et le détour ne protégeait plus rien tout en coûtant des clics.
+**Lien direct vers before-s.com**, suivi des clics laissé actif. `www.before-s.com`
+répond en 301 vers `https://before-s.com` avec un certificat valide, et `www.capzen.fr`
+répond 200 : les 2 formes avec `www` sont utilisables.
+
+**La reprise de contact, arrêtée le 28 novembre 2026.** La liste fait **640 adresses**
+dans un fichier Excel non segmenté, et une cinquantaine de téléphones nommés
+dans son portable, qu'il peut trier entre shiatsu et yoga. **Le SMS nominatif part le
+premier**, depuis son téléphone, prénom par prénom, en 2 versions selon le
+métier. C'est sa trouvaille et elle vaut mieux que ce que je proposais : après 10 ans
+l'obstacle n'est pas technique mais la reconnaissance, et aucune réputation de domaine
+n'est en jeu. Les 2 textes tiennent en 2 SMS chacun, à condition de n'y mettre **ni
+apostrophe courbe ni accent circonflexe**, qui font basculer le message en codage long :
+« A très vite » et non « A très bientôt », et l'apostrophe droite
+de Bloc-notes plutôt que celle de Word. Le courriel suit, avec l'objet **« Je ne vous
+ai pas écrit depuis 10 ans »** : il dit la vérité au lieu de la contourner
+devant des gens qui, eux, le savent. Rappel du point légal : la prospection d'anciens
+clients pour un service analogue est permise avec un lien de désinscription, mais la
+durée de conservation autorisée, relation commerciale plus 3 ans, est **écoulée
+depuis 2023**. Il en a été averti, c'est sa décision.
+
 **Branché en novembre 2026** : les 3 liens de paiement Stripe de la boutique, les
 mentions légales, les CGV, la politique de confidentialité, et le formulaire
 d'inscription à la lettre d'information, présent au bas des articles du blog.
